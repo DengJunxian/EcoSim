@@ -1,0 +1,16 @@
+annotated-types==0.8.0
+networkx==3.7
+numpy==2.5.4
+packaging==26.3
+pandas==3.1.1
+pip==26.1.2
+pybind11==3.1.0
+pydantic==2.14.3
+pydantic_core==2.50.4
+python-dateutil==4.0.0
+PyYAML==6.0.3
+setuptools==84.2.1
+typing_extensions==4.16.0
+typing-inspection==0.4.5
+tzdata==2026.6
+wheel==0.48.0

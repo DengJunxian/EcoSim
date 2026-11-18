@@ -1,0 +1,23 @@
+% Behavioral and Cognitive Core Parameters
+\begin{table*}[t]
+  \centering\small
+  \caption{\tr{参考设计中的估值、委托与认知参数。}{Valuation, order, and cognition parameters in the reference design.}}
+  \label{tab:behavior}
+  \begin{tabularx}{\textwidth}{@{}l p{3.2cm} p{3.5cm} X@{}}
+    \toprule
+    \tr{模块}{Module} & \tr{参数}{Parameter} & \tr{设置}{Setting} & \tr{含义}{Meaning} \\
+    \midrule
+    \tr{前景理论}{Prospect Theory} & \tr{损失厌恶 $\lambda_i$、幂指数 $\alpha$、缩放系数 $\kappa_v$}{Loss aversion $\lambda_i$, power $\alpha$, scale $\kappa_v$} & \mbox{2.25, 0.88, 10} & \tr{参考依赖价值函数。$\alpha$ 与 $\lambda$ 取自文献，$\kappa_v$ 为模型设定}{Reference-dependent value; $\alpha$ and $\lambda$ follow literature values, $\kappa_v$ is a model choice} \\
+    \tr{参考点更新}{Reference Dynamics} & \tr{记忆速率 $(\kappa_p, \kappa_h, \kappa_n, \kappa_e)$}{Memory rates $(\kappa_p, \kappa_h, \kappa_n, \kappa_e)$} & $(0.03, 0.10, 0.16, 0.18)$ & \tr{持仓成本、滚动高点、同伴与政策参考点的更新速率}{Adaptive update rates for purchase cost, local rolling peak, peer consensus, and policy anchor} \\
+    \tr{参考点权重}{Reference Weights} & \tr{参考点权重 $(\omega_p, \omega_h, \omega_n, \omega_e)$}{Anchor weights $(\omega_p, \omega_h, \omega_n, \omega_e)$} & $(0.34, 0.26, 0.20, 0.20)$ & \tr{多参考点心理账户，滚动窗口 $H_h=100$ 步，参考点目标幅度 $\xi_n=\xi_e=0.05$}{Multi-reference mental accounting; $H_h = 100$ rolling steps, reference-target amplitudes $\xi_n = \xi_e = 0.05$} \\
+    \tr{损失压力}{Loss Pressure} & \tr{敏感度 $\chi$、上下界 $[\ell_{\min},\ell_{\max}]$、损失缩放 $\nu$}{Coupling $\chi$, bounds $[\ell_{\min}, \ell_{\max}]$, loss-penalty scale $\nu$} & \tr{$\chi=0.50$，$[1.0,5.0]$\newline $\nu=4.0$}{$0.50, [1.0, 5.0], 4.0$} & \tr{由持仓成本及近期高点驱动的损失压力}{Reference-loss pressure based on cost and high-price anchors} \\
+    \tr{风险容忍度}{Risk Preference} & \tr{动态权重 $\boldsymbol{\omega}_a$}{Dynamic weights $\boldsymbol{\omega}_a$} & $(0.35, 0.45, 0.10, 0.10, 0.15)$ & \tr{信心、上一期风险容忍度、情绪、估值方向、损失惩罚权重}{Weights on confidence, previous risk, emotion, direction, and loss penalty} \\
+    \tr{订单生成}{Order Generation} & \tr{缩放系数 $\kappa_a$、阈值 $\delta_a$、投入范围 $[f_{\min},f_{\max}]$}{Scale $\kappa_a$, threshold $\delta_a$, limits $[f_{\min}, f_{\max}]$} & $5.0, 0.25, [0.01, 0.10]$ & \tr{交易意图至委托的映射及资源投入比例}{Intent-to-order mapping; fraction of available liquidity deployed per active trading step} \\
+    \tr{交易意图}{Intention} & \tr{权重 $(\omega_\tau^d,\omega_\tau^s,\omega_\tau^a)$}{Weights $(\omega_\tau^d,\omega_\tau^s,\omega_\tau^a)$} & $(0.45,0.40,0.15)$ & \tr{估值方向、情绪与风险容忍度权重}{Valuation direction, sentiment, and risk tolerance} \\
+    \tr{报价}{Quote Pricing} & \tr{扰动 $\sigma_p$、价格档位 $\Delta_p$}{Perturbation $\sigma_p$, tick size $\Delta_p$} & $0.002, 0.01$ & \tr{以上一提交价格为中心作均值校正的对数正态扰动}{Mean-corrected log-normal quote dispersion around the previous committed price} \\
+    \tr{情绪权重}{Emotion Weights} & \tr{技术型、新闻型、从众型}{Technical / News / Herding styles} & \shortstack[l]{$(.6,.1,.1,.2)$\\$(.35,.35,.2,.1)$\\$(.25,.15,.5,.1)$} & \tr{不同风格的惯性、感染、同伴与上一期收益权重}{Weights on inertia, infection, peers, and prior return by cognitive style} \\
+    \tr{双速混合调度}{Dual-Speed Hybrid} & \tr{慢组人数 $k$、周期 $T_{\mathrm{slow}}$、缓存寿命 $A_{\max}$}{Count $k$, period $T_{\mathrm{slow}}$, cache TTL $A_{\max}$} & \tr{$10$、10 步、10 步}{$10, 10\text{ steps}, 10\text{ steps}$} & \tr{认知参考配置的慢组人数、请求周期与缓存有效期}{Slow group size, request period, and cache lifetime in the cognition profile} \\
+    \tr{主体记忆}{Agent Memory} & \tr{衰减尺度 $S_m$、最大条目 $M_{\max}$}{Decay factor $S_m$, max items $M_{\max}$} & \tr{$100$ 步、8}{$100\text{ steps}, 8$} & \tr{主体自己的近期执行回执与记忆衰减尺度}{Own execution receipts and their decay scale in the cognition profile} \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}

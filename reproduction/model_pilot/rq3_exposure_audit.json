@@ -1,0 +1,1413 @@
+{
+  "scope": "OFFLINE_MASK_ARITHMETIC_AND_STATIC_CODE_AUDIT",
+  "generated_at_utc": "2026-11-14T16:15:16.503288+00:00",
+  "baseline_commit": "33fe94f2cf53fc830cdd75e3eec6c52cb9d5fd55",
+  "base_config_path": "kdd27_repository/configs/research/kdd27_rq3_v1.json",
+  "base_config_sha256": "03904d218d88b3c5931fffc3f2660c931eae040282ca6f7a03d38992bb813bbd",
+  "seeds": [
+    20261110,
+    20261111,
+    20261112,
+    20261113,
+    20261114,
+    20261115,
+    20261116,
+    20261117,
+    20261118,
+    20261119,
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124,
+    20261125,
+    20261126,
+    20261127,
+    20261128,
+    20261129
+  ],
+  "assumed_branch_condition": "neutral; identical schedule for negative",
+  "plain_base_run_has_no_text": "RQ3 wording requires the rq3 branch intervention; base run/batch has no wording event",
+  "numeric_parameters": {
+    "N": 100,
+    "T": 4000,
+    "p_active": 0.05,
+    "event_tick": 1200,
+    "slow_agents": 10,
+    "slow_period": 10,
+    "direct_infected_count": 5,
+    "maximum_cache_age": 10
+  },
+  "summary": {
+    "seeds": 20,
+    "actor_world_opportunities": 2000,
+    "direct_infection_opportunities": 100,
+    "llm_scheduled_text_requests": 101,
+    "llm_scheduled_directly_infected_requests": 5,
+    "hybrid_scheduled_text_requests": 10,
+    "hybrid_scheduled_directly_infected_requests": 0,
+    "llm_zero_text_seeds": [],
+    "hybrid_zero_text_seeds": [
+      20261111,
+      20261114,
+      20261115,
+      20261116,
+      20261117,
+      20261118,
+      20261120,
+      20261122,
+      20261125,
+      20261128
+    ],
+    "llm_zero_directly_infected_text_seeds": [
+      20261110,
+      20261111,
+      20261112,
+      20261113,
+      20261114,
+      20261115,
+      20261117,
+      20261118,
+      20261120,
+      20261121,
+      20261122,
+      20261124,
+      20261125,
+      20261126,
+      20261127,
+      20261129
+    ],
+    "hybrid_zero_directly_infected_text_seeds": [
+      20261110,
+      20261111,
+      20261112,
+      20261113,
+      20261114,
+      20261115,
+      20261116,
+      20261117,
+      20261118,
+      20261119,
+      20261120,
+      20261121,
+      20261122,
+      20261123,
+      20261124,
+      20261125,
+      20261126,
+      20261127,
+      20261128,
+      20261129
+    ],
+    "llm_per_seed_count_distribution": {
+      "2": 3,
+      "3": 1,
+      "4": 5,
+      "5": 4,
+      "6": 1,
+      "7": 4,
+      "8": 1,
+      "10": 1
+    },
+    "hybrid_per_seed_count_distribution": {
+      "0": 10,
+      "1": 10
+    },
+    "hybrid_to_llm_event_text_request_ratio": 0.09900990099009901
+  },
+  "per_seed_rows": [
+    {
+      "seed": 20261110,
+      "config_hash": "7e3cfb2586a74fc5940400d43aa475df2ad3e282616a03e6de5308235350fd66",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0055",
+        "agent_0048",
+        "agent_0064",
+        "agent_0050",
+        "agent_0012"
+      ],
+      "strategic_actors": [
+        "agent_0007",
+        "agent_0021",
+        "agent_0041",
+        "agent_0056",
+        "agent_0059",
+        "agent_0081",
+        "agent_0090",
+        "agent_0091",
+        "agent_0095",
+        "agent_0097"
+      ],
+      "active_actors_at_event": [
+        "agent_0031",
+        "agent_0063",
+        "agent_0084",
+        "agent_0090"
+      ],
+      "active_count_at_event": 4,
+      "llm_scheduled_text_requests": 4,
+      "llm_scheduled_text_actors": [
+        "agent_0031",
+        "agent_0063",
+        "agent_0084",
+        "agent_0090"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0090"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261111,
+      "config_hash": "74e40d4d6daf0a087472dcd55f854765334750d564c7a50cb586ee232a6980a2",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0045",
+        "agent_0016",
+        "agent_0078",
+        "agent_0003",
+        "agent_0006"
+      ],
+      "strategic_actors": [
+        "agent_0006",
+        "agent_0050",
+        "agent_0059",
+        "agent_0069",
+        "agent_0072",
+        "agent_0073",
+        "agent_0074",
+        "agent_0080",
+        "agent_0081",
+        "agent_0087"
+      ],
+      "active_actors_at_event": [
+        "agent_0025",
+        "agent_0027",
+        "agent_0034",
+        "agent_0047",
+        "agent_0058",
+        "agent_0096"
+      ],
+      "active_count_at_event": 6,
+      "llm_scheduled_text_requests": 6,
+      "llm_scheduled_text_actors": [
+        "agent_0025",
+        "agent_0027",
+        "agent_0034",
+        "agent_0047",
+        "agent_0058",
+        "agent_0096"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [
+        "agent_0006"
+      ],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261112,
+      "config_hash": "ae67446a05b648c22640fe96c24f92fe2e79d8915064c5191fa0d6fda5672d2e",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0043",
+        "agent_0042",
+        "agent_0023",
+        "agent_0021",
+        "agent_0073"
+      ],
+      "strategic_actors": [
+        "agent_0018",
+        "agent_0027",
+        "agent_0034",
+        "agent_0037",
+        "agent_0040",
+        "agent_0051",
+        "agent_0066",
+        "agent_0078",
+        "agent_0080",
+        "agent_0090"
+      ],
+      "active_actors_at_event": [
+        "agent_0001",
+        "agent_0048",
+        "agent_0065",
+        "agent_0080"
+      ],
+      "active_count_at_event": 4,
+      "llm_scheduled_text_requests": 4,
+      "llm_scheduled_text_actors": [
+        "agent_0001",
+        "agent_0048",
+        "agent_0065",
+        "agent_0080"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0080"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261113,
+      "config_hash": "ae2fa0eabe980e92c0902827c9a3fe6131e3ec7dc5765eed1c590db8fc19bb64",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0010",
+        "agent_0097",
+        "agent_0008",
+        "agent_0026",
+        "agent_0051"
+      ],
+      "strategic_actors": [
+        "agent_0014",
+        "agent_0034",
+        "agent_0042",
+        "agent_0051",
+        "agent_0063",
+        "agent_0073",
+        "agent_0077",
+        "agent_0079",
+        "agent_0090",
+        "agent_0092"
+      ],
+      "active_actors_at_event": [
+        "agent_0009",
+        "agent_0014",
+        "agent_0061",
+        "agent_0081"
+      ],
+      "active_count_at_event": 4,
+      "llm_scheduled_text_requests": 4,
+      "llm_scheduled_text_actors": [
+        "agent_0009",
+        "agent_0014",
+        "agent_0061",
+        "agent_0081"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0014"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [
+        "agent_0051"
+      ],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261114,
+      "config_hash": "c7936489385c691dc470d9a1cddbfcdd65424d8b819e5f16319fffc644f10997",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0009",
+        "agent_0042",
+        "agent_0053",
+        "agent_0056",
+        "agent_0075"
+      ],
+      "strategic_actors": [
+        "agent_0027",
+        "agent_0033",
+        "agent_0056",
+        "agent_0060",
+        "agent_0064",
+        "agent_0070",
+        "agent_0078",
+        "agent_0084",
+        "agent_0096",
+        "agent_0098"
+      ],
+      "active_actors_at_event": [
+        "agent_0024",
+        "agent_0036"
+      ],
+      "active_count_at_event": 2,
+      "llm_scheduled_text_requests": 2,
+      "llm_scheduled_text_actors": [
+        "agent_0024",
+        "agent_0036"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [
+        "agent_0056"
+      ],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261115,
+      "config_hash": "cb95af2a92f7783074df29e9793781f0d61c6a5ccec5a171c7a0af85f4393ba6",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0043",
+        "agent_0011",
+        "agent_0091",
+        "agent_0090",
+        "agent_0044"
+      ],
+      "strategic_actors": [
+        "agent_0008",
+        "agent_0012",
+        "agent_0031",
+        "agent_0036",
+        "agent_0039",
+        "agent_0051",
+        "agent_0064",
+        "agent_0073",
+        "agent_0092",
+        "agent_0098"
+      ],
+      "active_actors_at_event": [
+        "agent_0061",
+        "agent_0074"
+      ],
+      "active_count_at_event": 2,
+      "llm_scheduled_text_requests": 2,
+      "llm_scheduled_text_actors": [
+        "agent_0061",
+        "agent_0074"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261116,
+      "config_hash": "a9c4c6f80865b3731a6adee7c3ad5017d010260c8a0329708a94e974eb935c5d",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0052",
+        "agent_0085",
+        "agent_0083",
+        "agent_0039",
+        "agent_0028"
+      ],
+      "strategic_actors": [
+        "agent_0005",
+        "agent_0006",
+        "agent_0009",
+        "agent_0027",
+        "agent_0031",
+        "agent_0034",
+        "agent_0038",
+        "agent_0076",
+        "agent_0088",
+        "agent_0089"
+      ],
+      "active_actors_at_event": [
+        "agent_0037",
+        "agent_0040",
+        "agent_0044",
+        "agent_0073",
+        "agent_0082",
+        "agent_0085",
+        "agent_0098"
+      ],
+      "active_count_at_event": 7,
+      "llm_scheduled_text_requests": 7,
+      "llm_scheduled_text_actors": [
+        "agent_0037",
+        "agent_0040",
+        "agent_0044",
+        "agent_0073",
+        "agent_0082",
+        "agent_0085",
+        "agent_0098"
+      ],
+      "llm_scheduled_directly_infected_requests": 1,
+      "llm_scheduled_directly_infected_actors": [
+        "agent_0085"
+      ],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261117,
+      "config_hash": "daa6730da128b58f9ed641f83f680e0ceef69c658c2ff5ef89bd1e9a3f090a51",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0095",
+        "agent_0045",
+        "agent_0081",
+        "agent_0060",
+        "agent_0090"
+      ],
+      "strategic_actors": [
+        "agent_0005",
+        "agent_0027",
+        "agent_0030",
+        "agent_0031",
+        "agent_0034",
+        "agent_0043",
+        "agent_0063",
+        "agent_0065",
+        "agent_0071",
+        "agent_0085"
+      ],
+      "active_actors_at_event": [
+        "agent_0004",
+        "agent_0009",
+        "agent_0029",
+        "agent_0079",
+        "agent_0080"
+      ],
+      "active_count_at_event": 5,
+      "llm_scheduled_text_requests": 5,
+      "llm_scheduled_text_actors": [
+        "agent_0004",
+        "agent_0009",
+        "agent_0029",
+        "agent_0079",
+        "agent_0080"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261118,
+      "config_hash": "538532be3b7bff4c9ae879d5ebe79b283fe87d872e49254115f967796938b9d5",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0021",
+        "agent_0062",
+        "agent_0087",
+        "agent_0091",
+        "agent_0045"
+      ],
+      "strategic_actors": [
+        "agent_0000",
+        "agent_0006",
+        "agent_0009",
+        "agent_0018",
+        "agent_0020",
+        "agent_0022",
+        "agent_0032",
+        "agent_0037",
+        "agent_0047",
+        "agent_0073"
+      ],
+      "active_actors_at_event": [
+        "agent_0016",
+        "agent_0025",
+        "agent_0049",
+        "agent_0070",
+        "agent_0090"
+      ],
+      "active_count_at_event": 5,
+      "llm_scheduled_text_requests": 5,
+      "llm_scheduled_text_actors": [
+        "agent_0016",
+        "agent_0025",
+        "agent_0049",
+        "agent_0070",
+        "agent_0090"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261119,
+      "config_hash": "683342a9aeb5de9d71027a2e8460aa6005ee17771aa88e89cafd42a6b4584fc4",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0006",
+        "agent_0061",
+        "agent_0071",
+        "agent_0082",
+        "agent_0087"
+      ],
+      "strategic_actors": [
+        "agent_0009",
+        "agent_0011",
+        "agent_0013",
+        "agent_0022",
+        "agent_0030",
+        "agent_0034",
+        "agent_0041",
+        "agent_0070",
+        "agent_0077",
+        "agent_0095"
+      ],
+      "active_actors_at_event": [
+        "agent_0013",
+        "agent_0039",
+        "agent_0053",
+        "agent_0057",
+        "agent_0068",
+        "agent_0071",
+        "agent_0075",
+        "agent_0082"
+      ],
+      "active_count_at_event": 8,
+      "llm_scheduled_text_requests": 8,
+      "llm_scheduled_text_actors": [
+        "agent_0013",
+        "agent_0039",
+        "agent_0053",
+        "agent_0057",
+        "agent_0068",
+        "agent_0071",
+        "agent_0075",
+        "agent_0082"
+      ],
+      "llm_scheduled_directly_infected_requests": 2,
+      "llm_scheduled_directly_infected_actors": [
+        "agent_0071",
+        "agent_0082"
+      ],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0013"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261120,
+      "config_hash": "43ce50894a204aa9456c700338786444c3726408fdc3f711953b187585aa67ca",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0023",
+        "agent_0030",
+        "agent_0049",
+        "agent_0029",
+        "agent_0060"
+      ],
+      "strategic_actors": [
+        "agent_0001",
+        "agent_0014",
+        "agent_0018",
+        "agent_0021",
+        "agent_0043",
+        "agent_0051",
+        "agent_0064",
+        "agent_0071",
+        "agent_0091",
+        "agent_0092"
+      ],
+      "active_actors_at_event": [
+        "agent_0015",
+        "agent_0037",
+        "agent_0039",
+        "agent_0087"
+      ],
+      "active_count_at_event": 4,
+      "llm_scheduled_text_requests": 4,
+      "llm_scheduled_text_actors": [
+        "agent_0015",
+        "agent_0037",
+        "agent_0039",
+        "agent_0087"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261121,
+      "config_hash": "a32f7f549d7bb6b7a6ff142cfae738f2dd9aa805fc3a662f05871e3436e9c1fd",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0051",
+        "agent_0014",
+        "agent_0043",
+        "agent_0011",
+        "agent_0057"
+      ],
+      "strategic_actors": [
+        "agent_0010",
+        "agent_0024",
+        "agent_0028",
+        "agent_0043",
+        "agent_0063",
+        "agent_0067",
+        "agent_0077",
+        "agent_0090",
+        "agent_0095",
+        "agent_0098"
+      ],
+      "active_actors_at_event": [
+        "agent_0005",
+        "agent_0024"
+      ],
+      "active_count_at_event": 2,
+      "llm_scheduled_text_requests": 2,
+      "llm_scheduled_text_actors": [
+        "agent_0005",
+        "agent_0024"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0024"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [
+        "agent_0043"
+      ],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261122,
+      "config_hash": "6eb1ea2e1eacfc138ec2127b411ab402254503d0887ebffa25e9cbfa56e0ac8f",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0077",
+        "agent_0047",
+        "agent_0016",
+        "agent_0046",
+        "agent_0090"
+      ],
+      "strategic_actors": [
+        "agent_0019",
+        "agent_0023",
+        "agent_0025",
+        "agent_0050",
+        "agent_0055",
+        "agent_0064",
+        "agent_0070",
+        "agent_0071",
+        "agent_0078",
+        "agent_0087"
+      ],
+      "active_actors_at_event": [
+        "agent_0001",
+        "agent_0002",
+        "agent_0043",
+        "agent_0088"
+      ],
+      "active_count_at_event": 4,
+      "llm_scheduled_text_requests": 4,
+      "llm_scheduled_text_actors": [
+        "agent_0001",
+        "agent_0002",
+        "agent_0043",
+        "agent_0088"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261123,
+      "config_hash": "8fb4b48d92a09ecad51d932d235f945ef2f52ef9773c82b8c7196ef44ebd6de6",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0021",
+        "agent_0070",
+        "agent_0041",
+        "agent_0030",
+        "agent_0062"
+      ],
+      "strategic_actors": [
+        "agent_0000",
+        "agent_0039",
+        "agent_0048",
+        "agent_0051",
+        "agent_0053",
+        "agent_0060",
+        "agent_0064",
+        "agent_0073",
+        "agent_0081",
+        "agent_0093"
+      ],
+      "active_actors_at_event": [
+        "agent_0040",
+        "agent_0047",
+        "agent_0057",
+        "agent_0060",
+        "agent_0070",
+        "agent_0086",
+        "agent_0098"
+      ],
+      "active_count_at_event": 7,
+      "llm_scheduled_text_requests": 7,
+      "llm_scheduled_text_actors": [
+        "agent_0040",
+        "agent_0047",
+        "agent_0057",
+        "agent_0060",
+        "agent_0070",
+        "agent_0086",
+        "agent_0098"
+      ],
+      "llm_scheduled_directly_infected_requests": 1,
+      "llm_scheduled_directly_infected_actors": [
+        "agent_0070"
+      ],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0060"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261124,
+      "config_hash": "94f8c00952f603005d87d5b01274208fc345f081f6c52c3db8ffc543b3ee3a57",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0040",
+        "agent_0070",
+        "agent_0057",
+        "agent_0095",
+        "agent_0064"
+      ],
+      "strategic_actors": [
+        "agent_0011",
+        "agent_0024",
+        "agent_0029",
+        "agent_0039",
+        "agent_0056",
+        "agent_0059",
+        "agent_0060",
+        "agent_0071",
+        "agent_0080",
+        "agent_0090"
+      ],
+      "active_actors_at_event": [
+        "agent_0009",
+        "agent_0016",
+        "agent_0090"
+      ],
+      "active_count_at_event": 3,
+      "llm_scheduled_text_requests": 3,
+      "llm_scheduled_text_actors": [
+        "agent_0009",
+        "agent_0016",
+        "agent_0090"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0090"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261125,
+      "config_hash": "c25e3a912b1141452737c8d065c24e488a6ccc5517ca91456b732750953fa134",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0093",
+        "agent_0099",
+        "agent_0073",
+        "agent_0047",
+        "agent_0036"
+      ],
+      "strategic_actors": [
+        "agent_0004",
+        "agent_0009",
+        "agent_0017",
+        "agent_0035",
+        "agent_0044",
+        "agent_0047",
+        "agent_0056",
+        "agent_0059",
+        "agent_0071",
+        "agent_0096"
+      ],
+      "active_actors_at_event": [
+        "agent_0001",
+        "agent_0007",
+        "agent_0049",
+        "agent_0057",
+        "agent_0076",
+        "agent_0083",
+        "agent_0089"
+      ],
+      "active_count_at_event": 7,
+      "llm_scheduled_text_requests": 7,
+      "llm_scheduled_text_actors": [
+        "agent_0001",
+        "agent_0007",
+        "agent_0049",
+        "agent_0057",
+        "agent_0076",
+        "agent_0083",
+        "agent_0089"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [
+        "agent_0047"
+      ],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261126,
+      "config_hash": "2fb5097e62bfbb5b4fb8ff8495610a814094890bcd30b1ca1f7ff7dc057d99bc",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0021",
+        "agent_0084",
+        "agent_0083",
+        "agent_0066",
+        "agent_0086"
+      ],
+      "strategic_actors": [
+        "agent_0013",
+        "agent_0025",
+        "agent_0038",
+        "agent_0039",
+        "agent_0043",
+        "agent_0053",
+        "agent_0057",
+        "agent_0072",
+        "agent_0091",
+        "agent_0097"
+      ],
+      "active_actors_at_event": [
+        "agent_0004",
+        "agent_0008",
+        "agent_0026",
+        "agent_0040",
+        "agent_0053",
+        "agent_0055",
+        "agent_0056",
+        "agent_0059",
+        "agent_0069",
+        "agent_0075"
+      ],
+      "active_count_at_event": 10,
+      "llm_scheduled_text_requests": 10,
+      "llm_scheduled_text_actors": [
+        "agent_0004",
+        "agent_0008",
+        "agent_0026",
+        "agent_0040",
+        "agent_0053",
+        "agent_0055",
+        "agent_0056",
+        "agent_0059",
+        "agent_0069",
+        "agent_0075"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0053"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261127,
+      "config_hash": "095cfb2e3132d8f3dfb3922b731d82b8e874ead2e76ef66041e0f9d7ea9eebb9",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0090",
+        "agent_0067",
+        "agent_0031",
+        "agent_0022",
+        "agent_0033"
+      ],
+      "strategic_actors": [
+        "agent_0012",
+        "agent_0035",
+        "agent_0044",
+        "agent_0052",
+        "agent_0055",
+        "agent_0067",
+        "agent_0077",
+        "agent_0082",
+        "agent_0091",
+        "agent_0098"
+      ],
+      "active_actors_at_event": [
+        "agent_0004",
+        "agent_0058",
+        "agent_0079",
+        "agent_0082",
+        "agent_0084"
+      ],
+      "active_count_at_event": 5,
+      "llm_scheduled_text_requests": 5,
+      "llm_scheduled_text_actors": [
+        "agent_0004",
+        "agent_0058",
+        "agent_0079",
+        "agent_0082",
+        "agent_0084"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0082"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [
+        "agent_0067"
+      ],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261128,
+      "config_hash": "254937135ac02d417a261f30c238a1c74f9186a29cfc122b0bd6e3cd876cdaa8",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0006",
+        "agent_0005",
+        "agent_0000",
+        "agent_0051",
+        "agent_0039"
+      ],
+      "strategic_actors": [
+        "agent_0011",
+        "agent_0034",
+        "agent_0043",
+        "agent_0060",
+        "agent_0069",
+        "agent_0071",
+        "agent_0072",
+        "agent_0082",
+        "agent_0086",
+        "agent_0090"
+      ],
+      "active_actors_at_event": [
+        "agent_0006",
+        "agent_0027",
+        "agent_0059",
+        "agent_0083",
+        "agent_0084"
+      ],
+      "active_count_at_event": 5,
+      "llm_scheduled_text_requests": 5,
+      "llm_scheduled_text_actors": [
+        "agent_0006",
+        "agent_0027",
+        "agent_0059",
+        "agent_0083",
+        "agent_0084"
+      ],
+      "llm_scheduled_directly_infected_requests": 1,
+      "llm_scheduled_directly_infected_actors": [
+        "agent_0006"
+      ],
+      "hybrid_scheduled_text_requests": 0,
+      "hybrid_scheduled_text_actors": [],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    },
+    {
+      "seed": 20261129,
+      "config_hash": "30b643e4e9ccda1f8672b9ed00c439c1cb34bc3e441d38849b95ec2835223a1d",
+      "event_tick": 1200,
+      "neutral_text_present_in_public_observation_count": 100,
+      "directly_infected_count": 5,
+      "directly_infected_actors": [
+        "agent_0004",
+        "agent_0091",
+        "agent_0094",
+        "agent_0014",
+        "agent_0027"
+      ],
+      "strategic_actors": [
+        "agent_0019",
+        "agent_0030",
+        "agent_0033",
+        "agent_0049",
+        "agent_0061",
+        "agent_0065",
+        "agent_0067",
+        "agent_0095",
+        "agent_0097",
+        "agent_0099"
+      ],
+      "active_actors_at_event": [
+        "agent_0007",
+        "agent_0009",
+        "agent_0032",
+        "agent_0058",
+        "agent_0076",
+        "agent_0080",
+        "agent_0097"
+      ],
+      "active_count_at_event": 7,
+      "llm_scheduled_text_requests": 7,
+      "llm_scheduled_text_actors": [
+        "agent_0007",
+        "agent_0009",
+        "agent_0032",
+        "agent_0058",
+        "agent_0076",
+        "agent_0080",
+        "agent_0097"
+      ],
+      "llm_scheduled_directly_infected_requests": 0,
+      "llm_scheduled_directly_infected_actors": [],
+      "hybrid_scheduled_text_requests": 1,
+      "hybrid_scheduled_text_actors": [
+        "agent_0097"
+      ],
+      "hybrid_scheduled_directly_infected_requests": 0,
+      "hybrid_scheduled_directly_infected_actors": [],
+      "direct_infected_strategic_actors": [],
+      "scheduled_only_not_provider_success": true,
+      "formal_eligible": false
+    }
+  ],
+  "per_tick_visibility_exhaustive_ranges": [
+    {
+      "ticks_inclusive": [
+        1,
+        1199
+      ],
+      "public_text_in_current_observation": false,
+      "new_model_requests_containing_this_text_per_tick": 0
+    },
+    {
+      "ticks_inclusive": [
+        1200,
+        1200
+      ],
+      "public_text_in_current_observation": true,
+      "visible_to_public_observer_count": 100,
+      "model_scheduled_counts": "per_seed_rows"
+    },
+    {
+      "ticks_inclusive": [
+        1201,
+        4000
+      ],
+      "public_text_in_current_observation": false,
+      "new_model_requests_containing_this_text_per_tick": 0
+    }
+  ],
+  "interpretation": {
+    "public_observation_vs_model_call": "All100 have public text in event-tick observation; only scheduled active actors send it to a model.",
+    "no_later_direct_text": "At every tick1201..4000 this announcement is absent from current event facts and receipt-only memory; raw response stores are not reread as semantic memories.",
+    "possible_indirect_persistence": "A successful event-tick model response can alter the market, receipts and a resource-relative cached strategy through tick1210, inclusive. Its effects can persist; this audit does not estimate them.",
+    "no_claim": "These counts are deterministic scheduled opportunities, not provider successes, cognition effects, trajectories, or H3 evidence."
+  },
+  "sources": {
+    "addressed_rng": {
+      "anchor": "kdd27_repository/src/civitas/core/rng.py:24",
+      "sha256": "157039b87d53b5449388dd5ad8531e4be61375eadf51ac3e3f830eabac017abe"
+    },
+    "strategic_selection": {
+      "anchor": "kdd27_repository/src/civitas/population/kdd27.py:59",
+      "sha256": "910005def8c0a4a2cd5fb4b05062f40fb0a290df6cf4228515aacf7ce2c3dbab"
+    },
+    "direct_infection_list": {
+      "anchor": "kdd27_repository/src/civitas/scenarios/kdd27.py:104",
+      "sha256": "7cf4c2134e69db772c1779de0137542e263bbd6d10c844ef0f4f584f8e032c90"
+    },
+    "active_mask": {
+      "anchor": "kdd27_repository/src/civitas/scenarios/kdd27.py:191",
+      "sha256": "7cf4c2134e69db772c1779de0137542e263bbd6d10c844ef0f4f584f8e032c90"
+    },
+    "text_event": {
+      "anchor": "kdd27_repository/src/civitas/experiments/branch.py:195",
+      "sha256": "ad34d11c363b3dfe408c2d230a762a73bea44bac45c808b80ab55f51ec540e83"
+    },
+    "tick_event_reset": {
+      "anchor": "kdd27_repository/src/civitas/scenarios/kdd27.py:137",
+      "sha256": "7cf4c2134e69db772c1779de0137542e263bbd6d10c844ef0f4f584f8e032c90"
+    },
+    "public_event_projection": {
+      "anchor": "kdd27_repository/src/civitas/scenarios/kdd27.py:212",
+      "sha256": "7cf4c2134e69db772c1779de0137542e263bbd6d10c844ef0f4f584f8e032c90"
+    },
+    "model_schedule": {
+      "anchor": "kdd27_repository/src/civitas/cognition/kdd27_policy.py:119",
+      "sha256": "d974fe4d6d5bc3f63eb9f88b79bbb036e9c62d03bce6c1b29976cff42fd12593"
+    },
+    "receipt_only_memories": {
+      "anchor": "kdd27_repository/src/civitas/cognition/kdd27_policy.py:44",
+      "sha256": "d974fe4d6d5bc3f63eb9f88b79bbb036e9c62d03bce6c1b29976cff42fd12593"
+    },
+    "empty_agent_memory": {
+      "anchor": "kdd27_repository/src/civitas/cognition/kdd27_policy.py:133",
+      "sha256": "d974fe4d6d5bc3f63eb9f88b79bbb036e9c62d03bce6c1b29976cff42fd12593"
+    },
+    "strategy_cache_only": {
+      "anchor": "kdd27_repository/src/civitas/cognition/kdd27_policy.py:148",
+      "sha256": "d974fe4d6d5bc3f63eb9f88b79bbb036e9c62d03bce6c1b29976cff42fd12593"
+    },
+    "receipt_feedback": {
+      "anchor": "kdd27_repository/src/civitas/core/world.py:238",
+      "sha256": "dcfc7d67bd14ecc951c078d8c1efb05564d703f997d100fb40408ed7fd588a84"
+    }
+  },
+  "existing_masks_verified": [
+    {
+      "path": "kdd06_execution/masks/original_E3-20261110.bin.gz",
+      "gzip_sha256": "de7af509e44d9b3d9bf16f3dc08f73c436573ac36e455175a769d6e13c419648",
+      "mask_sha256": "380fd26ad25340044f896bdfd31e1304996eb43906ecae380fd50b89cb32fb1e",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261110.json",
+      "metadata_sha256": "43aaaf940907d1c02e49ca8789585511769bfd50d7c989b4d04f1eb105ef092b"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261111.bin.gz",
+      "gzip_sha256": "e3359db4639feaf1a9c3750ffe6065d13460d8a34d8feca997c0285330a38afa",
+      "mask_sha256": "86543ce78b63759dad25337ebe3a480345e6e87b0aff21cc1d6430900240dd63",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261111.json",
+      "metadata_sha256": "b711c2d8525d61b7b9fc22a7a1073271836a63500d508b93bd066d293d9ffbaf"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261112.bin.gz",
+      "gzip_sha256": "b82e46e76edfe208790dcdbb5ad9c0499d0962b26e586163b975c4bdef79f44b",
+      "mask_sha256": "fde7e2dbfd56793dc085847d58da4a4a66bbbf09064bd01697915d6da7624b9b",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261112.json",
+      "metadata_sha256": "ae34f9e6dd0ee021ee2c4f2f2bf35af6ae2fcc4f80a019ba897ce43f91d62822"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261113.bin.gz",
+      "gzip_sha256": "9d5765ec66efe462827f71e6a26fe61a07af9376b82968a73555d1ac1251e9fb",
+      "mask_sha256": "acec16533028976710973fba3f6a638f066e94cb64cf3d83e7047ce64774e5c1",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261113.json",
+      "metadata_sha256": "1cf987f1024f8376b57f30a597c9bab6b6a858aaa59cc54238a4e2fe94f4e668"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261114.bin.gz",
+      "gzip_sha256": "5d68f87705523f66c171b7142607824de41387022d7acd6af21b25d0777c4328",
+      "mask_sha256": "663e3ee9c2854ff1eaedeb895b45f3053c66a123b4f52cbc070b5c9980515201",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261114.json",
+      "metadata_sha256": "41aa48d7ead21c1cfabf9e5f345027dc3fad37210fec63cfcc0af999a5d74269"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261115.bin.gz",
+      "gzip_sha256": "c0500f4794104a81296648a71dc376aede5237bc834bf6ac00b8b6dcbb24d6e4",
+      "mask_sha256": "4b91cfad827d7cb926a07501b5d712e6f4522a2066ce6b6968c26f0e6a4dfa27",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261115.json",
+      "metadata_sha256": "bc3a97039ee6d648072de43d6cc0c8a06573a8792e9b18216baa8da7fccce323"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261116.bin.gz",
+      "gzip_sha256": "8240bbd557164c9fbc8b0ea161e14e12f43c649cefcd0dbc6b92f1f2983403c5",
+      "mask_sha256": "ba40ba596b8884797e9b37b97e8c44ab1aa96cd7ad367dcb2affe043d81a488c",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261116.json",
+      "metadata_sha256": "98da03f87de9acdee6048605154cc1d323f3b10a1ea36b651be17458a47f5cd2"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261117.bin.gz",
+      "gzip_sha256": "6ee66d319bdb3b6167745d8f45dd4a22f48bd9c1639e155a631eb1d087f96396",
+      "mask_sha256": "912770d3160feee3c5d01fc1d84c6309f1fd918067033f9fead01e849c1d9132",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261117.json",
+      "metadata_sha256": "800f895d59031f1aaa9a559d0fc36881bd4bbca51108db9d2afd57b3786c870c"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261118.bin.gz",
+      "gzip_sha256": "3d7b995098c93997cf406e385d2c77ec72b763322b7039376d500940e677cdd1",
+      "mask_sha256": "3163d90fb518b1cf94f8d42298fc27689eb8597027227dcb9b7deaf13d620517",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261118.json",
+      "metadata_sha256": "cfae6a85cab8e1187ed3656651202c40ffd47456735ff4ad0d5822bc7f95cc3b"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261119.bin.gz",
+      "gzip_sha256": "cb78997bf73f7c75e5817ddb0334fee06bc7f7ecc63d106d422454338f2ef8ba",
+      "mask_sha256": "c827cf42672a5b7b93b0a8090fbd936312904ecfe55308f72f2494b596767936",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261119.json",
+      "metadata_sha256": "9f8f8ce438222b1b3d1b47692162844a147d05c707f11164e88087754f7fc0ad"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261120.bin.gz",
+      "gzip_sha256": "4f93f015db0d4d39e081c9ca13a4f0b4bc0fa21ae28bfd6efaa4699426a4f4d5",
+      "mask_sha256": "eb58ec33b9adff7de1e6b5f28f1c4d95ba614c631148715707561cbeafedc26e",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261120.json",
+      "metadata_sha256": "6257f5515a77ea8655df2fd0bf1ca1e5933803ec83c086be52f0393ea9c230e4"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261121.bin.gz",
+      "gzip_sha256": "4e930a077b061286ee11da7bc53f5d8c496265ec3b45b5dbec217fad44ddafb1",
+      "mask_sha256": "a10900fd5211541a88485b00f5466785b163c09f6894d0e38e210ac0a3376c4c",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261121.json",
+      "metadata_sha256": "3ca138ba3f7cead80da3296bd1801b200fc8ee4f460173ffe7244cc61bdccb9f"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261122.bin.gz",
+      "gzip_sha256": "74c6e658223a9e04d03c53f43672bb95007a320e99dc192df3e2b81bf718aa30",
+      "mask_sha256": "79da48946018014479b496fbe5324e2ae730ca637efd15d67837d09e7b71c4b5",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261122.json",
+      "metadata_sha256": "3d7090e128c08031a55e9625919a581e3f7867e7b67fbbb5720d00a2473e9a97"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261123.bin.gz",
+      "gzip_sha256": "cdb605d22c18de8ed3784dcfe8225ceb04b84651b32c632819d77288fd5cf32d",
+      "mask_sha256": "e79885ff0329dd48ac1a7bdf238a4074e06772e24394c89da8c531ef0c22643c",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261123.json",
+      "metadata_sha256": "2d5af01f028b0ecb43faa3276e465024f87ad527bb9b00a3f4cdbe1cf2a6d56d"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261124.bin.gz",
+      "gzip_sha256": "c8ef4d716bc7674c5c11faa34874e895d45f93ecf52742f640b8bcb4b0af0fe7",
+      "mask_sha256": "c0cc03fce3df33b0dd897175a3dd485b827e70be59f4f32c461271502a355cfc",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261124.json",
+      "metadata_sha256": "a19676179a4f411f712e02cf765f7151872e2e649a5926e60c091097d8b347b0"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261125.bin.gz",
+      "gzip_sha256": "093165e4f082f7abd7c1813674eb82230e73e7d32965023c7cb2a1e8ee827b53",
+      "mask_sha256": "41ff4bab9623ecc54d70b081dd281835aa8adc7c5c25757327309c116c1dcdab",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261125.json",
+      "metadata_sha256": "1153820e50884fa7d7bc1b82cce29706862c65d21b23c9c04ad18b0ed3557840"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261126.bin.gz",
+      "gzip_sha256": "076cb34b64e09ea07239f521f622de074c3655734f17871535235d17a9ae2191",
+      "mask_sha256": "d6b36f26cd47b6f29a3c8e752534955f11dac2bc65e55785336a9ac681ff7ea6",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261126.json",
+      "metadata_sha256": "044ac788eefd4ee458c991aafa696ef6d0e2ba6976317b20b4d7708aad55fcbc"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261127.bin.gz",
+      "gzip_sha256": "d4e89bec9d592fd97a8e4a9f137dd777f357768b139134169088802208ecd8c9",
+      "mask_sha256": "6b4a1484a5db7fc5150a09bddfe55cfec32f40e1d417ff11b83e9e14ce042d4f",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261127.json",
+      "metadata_sha256": "290a3dcec2c3c5279a8c135094c0155e4f12e6f2ce495523fb99301dd3d9e402"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261128.bin.gz",
+      "gzip_sha256": "467effbd1b6b13a519473888eee782821b060074b5783f229aa101b327739e81",
+      "mask_sha256": "7ae5f383869e34822d3fa499ac8e9bcb26f8756e6c0c8214e26e68f1b4d91a7f",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261128.json",
+      "metadata_sha256": "1073d710e611039ae7710bc77523e968305fde77c6e6821aefd49dd8d7180bbc"
+    },
+    {
+      "path": "kdd06_execution/masks/original_E3-20261129.bin.gz",
+      "gzip_sha256": "865f6efdcf7880e032f742ab7ab88129a3fe606de56d17779a1d6cce88a29162",
+      "mask_sha256": "a98897bfa0f49b9c5cc13190557927c1a4528214bb48f5c1003baaa20f162514",
+      "metadata_path": "kdd06_execution/masks/original_E3-20261129.json",
+      "metadata_sha256": "7b19ee1e14a2d5a3db5281cfc7d80573352231fdbec02c7d53c1e833ccf94827"
+    }
+  ],
+  "assertions": "passed",
+  "world_steps_executed": 0,
+  "model_requests_executed": 0,
+  "ledger_accessed": false,
+  "new_long_experiment": false
+}

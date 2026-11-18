@@ -1,0 +1,632 @@
+{
+  "status": "passed_delta_payload_diagnostic_raw_hash_comparison_remains_mismatch",
+  "observed_at": "2026-11-14T17:06:37.627322+00:00",
+  "first_comparison": "mac100-mac200-prefix-check.json",
+  "raw_state_hash_equality": false,
+  "raw_segment_sha256_equality": false,
+  "initial_snapshot_only_difference": "data.kdd27.config_hash",
+  "initial_embedded_config_hashes": {
+    "T100": "13f4937af505f6c5d110fefd70dd4f385eef28f8123bc71f37172bccbf504455",
+    "T200": "257f16f45238d27ec19407b139bdd7d2fdee07ae87c109766551480ee49a9754"
+  },
+  "delta_ticks_compared": [
+    1,
+    100
+  ],
+  "all_100_delta_changes_identical": true,
+  "every_segment_byte_hash_verified": true,
+  "only_delta_envelope_differences": [
+    "base_hash",
+    "state_hash"
+  ],
+  "source_explanation": "PaperScenario.__init__ hashes the entire config excluding only concurrency/cognition_mode, so ticks changes PaperWorldState.config_hash at initialization. Subsequent state/base hashes bind that field.",
+  "source_references": [
+    "src/civitas/scenarios/kdd27.py:69",
+    "src/civitas/scenarios/kdd27.py:122"
+  ],
+  "archive_bytes_changed": 0,
+  "new_simulation_steps": 0,
+  "independent_new_seed_units": 0,
+  "rows": [
+    {
+      "tick": 1,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 2,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 3,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 4,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 5,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 6,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 7,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 8,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 9,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 10,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 11,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 12,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 13,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 14,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 15,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 16,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 17,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 18,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 19,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 20,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 21,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 22,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 23,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 24,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 25,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 26,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 27,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 28,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 29,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 30,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 31,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 32,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 33,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 34,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 35,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 36,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 37,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 38,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 39,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 40,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 41,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 42,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 43,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 44,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 45,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 46,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 47,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 48,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 49,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 50,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 51,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 52,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 53,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 54,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 55,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 56,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 57,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 58,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 59,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 60,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 61,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 62,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 63,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 64,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 65,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 66,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 67,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 68,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 69,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 70,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 71,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 72,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 73,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 74,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 75,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 76,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 77,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 78,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 79,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 80,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 81,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 82,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 83,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 84,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 85,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 86,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 87,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 88,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 89,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 90,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 91,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 92,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 93,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 94,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 95,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 96,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 97,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 98,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 99,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    },
+    {
+      "tick": 100,
+      "delta_changes_equal": true,
+      "original_state_hash_equal": false,
+      "original_segment_hash_equal": false
+    }
+  ]
+}

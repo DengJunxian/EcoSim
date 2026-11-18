@@ -1,0 +1,21 @@
+\begin{table*}[t]
+  \centering\small
+  \setlength{\tabcolsep}{4pt}
+  \caption{\tr{金融市场仿真平台的设计与评估重点。各项概括所引文献报告的功能与研究重点。}{Design and evaluation focus of financial market simulators. Entries summarize features and study emphases reported in the cited work.}}
+  \label{tab:related_comparison}
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{1.95cm} >{\raggedright\arraybackslash}p{2.65cm} >{\raggedright\arraybackslash}p{3.5cm} >{\raggedright\arraybackslash}p{3.3cm} >{\raggedright\arraybackslash}X@{}}
+    \toprule
+    \tr{平台}{Platform} & \tr{交易机制}{Exchange} & \tr{社会与行为机制}{Social / behavioral layer} & \tr{决策组织}{Decision organization} & \tr{评估与审计重点}{Evaluation and audit focus} \\
+    \midrule
+    \textbf{ABIDES}\newline\cite{abides2020} & \tr{离散事件限价订单簿；通信延迟}{Discrete-event limit order book; communication latency} & \tr{背景交易者与策略交易者}{Background and strategic traders} & \tr{可编程主体策略}{Programmable agent policies} & \tr{订单与消息记录；交易实验}{Order and message traces; trading experiments} \\
+    \addlinespace
+    \textbf{TwinMarket}\newline\cite{yang2025twinmarket} & \tr{日级集合竞价}{Daily call auction} & \tr{交易相似度社会信息流；谣言传播}{Trading-similarity social feed; rumor diffusion} & \tr{基于信念--愿望--意图的 LLM 投资者}{Belief--desire--intention LLM investors} & \tr{风格化事实与社会响应场景}{Stylized facts and social-response scenarios} \\
+    \addlinespace
+    \textbf{MarketSim}\newline\cite{marketsim2026} & \tr{纳秒精度连续双向拍卖}{Nanosecond-resolution continuous double auction} & \tr{异质投资者；新闻与政策信息}{Heterogeneous investors; news and policy information} & \tr{战略层 LLM 决策与快速执行层}{Strategic LLM decisions with a faster execution layer} & \tr{风格化事实与高频价格跟踪}{Stylized facts and high-frequency price tracking} \\
+    \addlinespace
+    \textbf{StockSim}\newline\cite{papadakis2025stocksim} & \tr{订单级执行；延迟与滑点}{Order-level execution; latency and slippage} & \tr{异质交易角色与多主体协调}{Heterogeneous trading roles and multi-agent coordination} & \tr{两种执行设置下的 LLM 交易决策}{LLM trading decisions in two execution settings} & \tr{序列交易决策评估}{Sequential trading decision evaluation} \\
+    \addlinespace
+    \textbf{Civitas Economica} & \tr{同步决策；连续双向拍卖；整数结算}{Synchronous decisions; continuous double auction; integer settlement} & \tr{暴露加权联系；参考点估值；恐慌与从众}{Exposure-weighted ties; reference valuation; panic and herding} & \tr{共用契约下的规则、启发式、LLM 与双速策略}{Shared contract for rules, heuristics, LLM, and dual-speed policies} & \tr{共同状态分支；账本与接口检查}{Shared-state branches; ledger and interface checks} \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}

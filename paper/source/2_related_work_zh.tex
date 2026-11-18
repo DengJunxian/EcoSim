@@ -1,0 +1,22 @@
+\section{相关工作}
+\label{sec:related}
+
+\subsection{行为金融与社会关系}
+
+前景理论刻画参考依赖、损失厌恶与边际敏感性递减~\cite{kahneman1979prospect,tversky1992advances}。心理账户与内生参考点解释同一价格如何对应不同的评价基准~\cite{thaler1985mental,koszegi2006model}；处置效应则为区分持仓成本与当前价格提供动机~\cite{shefrin1985disposition,odean1998reluctant}。Civitas 将这些金融状态与人与人的关系相连：风险暴露相似度调整既有社会联系的权重，持仓成本、近期高点、同伴共识与政策信号共同进入参考依赖估值。
+
+社会心理学研究群体归属、情绪传染以及信息性和规范性影响~\cite{tajfel1979integrative,hatfield1993emotional,deutsch1955study}。小世界连通结构与选择性接触启发了联系网络和信息获取的建模~\cite{watts1998collective,sunstein2001republic}。在人与群体尺度上，Civitas 通过注意力受限的消息筛选与同步恐慌状态转移更新局部社会状态，由信心调节同伴权重。投资者画像规定异质角色，并与网络位置独立设置；模型中的群体反馈通过邻域互动形成。
+
+\subsection{协调行为与市场制度}
+
+战略互补性、对他人估值的预期和公共信息博弈刻画协调激励~\cite{cooper1988coordinating,keynes1936general,morris2002social}。信息级联模型解释先前行动如何影响后续决策~\cite{bikhchandani1992theory,banerjee1992simple}，噪声交易者风险与套利限制解释价格偏离为何可能持续~\cite{delong1990noise,shleifer1997limits}。这些理论为 Civitas 中依赖同伴的更新规则提供动机，仿真沿给定的行为动态逐步推进。群体与社会尺度对应模型内的市场制度：群体订单形成价格与交易机会，并反馈到个体决策。
+
+交易机制规定上述聚合过程。零智能实验分离出预算约束与双向拍卖规则的作用~\cite{gode1993allocative}；图表派与基本面派交互模型生成厚尾收益与波动率聚集~\cite{lux1999scaling,lux2000volatility,raberto2001agent}。市场微观结构理论将价格形成与信息不对称联系起来~\cite{kyle1985continuous,glosten1985bid}。ABIDES 提供带可配置通信延迟和可编程主体的离散事件限价订单簿~\cite{abides2020}。Civitas 先在离散决策时点统一可见信息，再将订单依次送入连续双向拍卖撮合。
+
+\subsection{市场仿真中的大语言模型}
+
+生成式主体通过语言理解观察并扮演角色~\cite{park2023generative}。金融应用包括 FinMem 的分层记忆、FinAgent 的多模态信号与工具，以及 StockAgent 和 TradingAgents 的角色化交易~\cite{yu2023finmem,zhang2024finagent,li2024stockagent,xiao2024tradingagents}。EconAgent 刻画家庭劳动与消费~\cite{li2024econagent}。TwinMarket 将信念--愿望--意图投资者及社会信息接入集合竞价~\cite{yang2025twinmarket}。MarketSim 在连续双向拍卖中分离战略层 LLM 决策与高频执行~\cite{marketsim2026}。StockSim 提供包含两种执行设置、延迟与滑点的订单级 LLM 评估环境~\cite{papadakis2025stocksim}。
+
+表~\ref{tab:related_comparison} 分别对照交易机制、社会与行为机制、决策组织以及评估重点。Civitas 将可独立调节的社会与估值规则、整数记账和共同状态分支结合起来，在共用决策契约下追踪人际接触与群体反馈如何进入订单意图及最终执行。
+
+\input{tables/tab_related_comparison}

@@ -1,0 +1,2519 @@
+{
+  "status": "completed",
+  "config_hash": "6e4207d0f764fb26433b3b88467c91b5553a8a5832d8bb4fdf5de86fc48f71c5",
+  "code_commit": null,
+  "code_dirty": null,
+  "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+  "dependency_hash": "146037c924261da23438e62fdb900455cdcb218f59886e61e07940e7eba0de04",
+  "dependencies": {
+    "PyYAML": "6.0.3",
+    "machine": "arm64",
+    "networkx": "3.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "pydantic": "2.14.3",
+    "pydantic_core": "2.50.4",
+    "python": "3.12.13"
+  },
+  "run_id": "run-a689613c0c2146c08498415993cb0fe8",
+  "n_agents": 100,
+  "ticks_requested": 200,
+  "seed": 931104,
+  "mode": "rule",
+  "concurrency": 8,
+  "degrees": 6,
+  "activation_probability": 0.05,
+  "model_invocation_count": 0,
+  "paid_calls": 0,
+  "initialization": {
+    "wall_seconds": 0.08203158294782043,
+    "cpu_seconds": 0.07123599999999997
+  },
+  "phase_totals": {
+    "BOUNDARY": {
+      "wall_seconds": 169.75758658116683,
+      "cpu_seconds": 169.26651400000213
+    },
+    "EVENTS": {
+      "wall_seconds": 0.001594499684870243,
+      "cpu_seconds": 0.0015970000020314457
+    },
+    "OBSERVE": {
+      "wall_seconds": 256.14632721757516,
+      "cpu_seconds": 255.41478799999894
+    },
+    "DECIDE": {
+      "wall_seconds": 5.789147334638983,
+      "cpu_seconds": 5.774035000001994
+    },
+    "VALIDATE": {
+      "wall_seconds": 2.750311418902129,
+      "cpu_seconds": 2.744686000002829
+    },
+    "EXECUTE": {
+      "wall_seconds": 2050.0716924606822,
+      "cpu_seconds": 2044.1984689999972
+    },
+    "FEEDBACK": {
+      "wall_seconds": 245.00811649346724,
+      "cpu_seconds": 244.28875800000208
+    },
+    "COMMIT": {
+      "wall_seconds": 1970.9974739975296,
+      "cpu_seconds": 1963.5086839999965
+    },
+    "durable_publish_tail": {
+      "wall_seconds": 1518.7423308794387,
+      "cpu_seconds": 1507.567087999996
+    }
+  },
+  "nested_times": {
+    "social_update": {
+      "wall_seconds": 1.0537517489865422,
+      "cpu_seconds": 1.0526210000035943
+    },
+    "behavior_update": {
+      "wall_seconds": 0.16761249583214521,
+      "cpu_seconds": 0.16726300005989514
+    }
+  },
+  "ticks": [
+    {
+      "tick": 1,
+      "wall_seconds": 0.5135213332250714,
+      "cpu_seconds": 0.509248,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 2,
+      "wall_seconds": 0.8080096249468625,
+      "cpu_seconds": 0.773342,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 3,
+      "wall_seconds": 0.9839591248892248,
+      "cpu_seconds": 0.9790650000000001,
+      "active": 7,
+      "trades": 1
+    },
+    {
+      "tick": 4,
+      "wall_seconds": 1.2460853327065706,
+      "cpu_seconds": 1.236952,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 5,
+      "wall_seconds": 1.4396027089096606,
+      "cpu_seconds": 1.431285,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 6,
+      "wall_seconds": 1.7047122921794653,
+      "cpu_seconds": 1.7000330000000003,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 7,
+      "wall_seconds": 1.7648675832897425,
+      "cpu_seconds": 1.7552160000000008,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 8,
+      "wall_seconds": 2.0047502918168902,
+      "cpu_seconds": 1.9351319999999994,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 9,
+      "wall_seconds": 2.121396459173411,
+      "cpu_seconds": 2.1186510000000016,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 10,
+      "wall_seconds": 2.448046708945185,
+      "cpu_seconds": 2.2979280000000006,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 11,
+      "wall_seconds": 2.638305624946952,
+      "cpu_seconds": 2.630781999999998,
+      "active": 7,
+      "trades": 1
+    },
+    {
+      "tick": 12,
+      "wall_seconds": 2.933120333123952,
+      "cpu_seconds": 2.9238370000000025,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 13,
+      "wall_seconds": 3.573920208029449,
+      "cpu_seconds": 3.5604510000000005,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 14,
+      "wall_seconds": 3.919075082987547,
+      "cpu_seconds": 3.8888549999999995,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 15,
+      "wall_seconds": 3.8674646662548184,
+      "cpu_seconds": 3.847627000000003,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 16,
+      "wall_seconds": 4.119053750298917,
+      "cpu_seconds": 4.108249999999998,
+      "active": 7,
+      "trades": 1
+    },
+    {
+      "tick": 17,
+      "wall_seconds": 4.3773877918720245,
+      "cpu_seconds": 4.365091,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 18,
+      "wall_seconds": 4.620886333286762,
+      "cpu_seconds": 4.608319999999999,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 19,
+      "wall_seconds": 4.770621750038117,
+      "cpu_seconds": 4.765312999999999,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 20,
+      "wall_seconds": 4.985293624922633,
+      "cpu_seconds": 4.977474000000001,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 21,
+      "wall_seconds": 5.502970291767269,
+      "cpu_seconds": 5.492715000000004,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 22,
+      "wall_seconds": 5.667586000170559,
+      "cpu_seconds": 5.662019999999998,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 23,
+      "wall_seconds": 6.238042999990284,
+      "cpu_seconds": 6.048211000000009,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 24,
+      "wall_seconds": 6.225476833060384,
+      "cpu_seconds": 6.219708999999995,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 25,
+      "wall_seconds": 6.611103540752083,
+      "cpu_seconds": 6.604073999999997,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 26,
+      "wall_seconds": 7.035509999841452,
+      "cpu_seconds": 6.9200620000000015,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 27,
+      "wall_seconds": 7.496356708928943,
+      "cpu_seconds": 7.373192000000003,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 28,
+      "wall_seconds": 8.655405042227358,
+      "cpu_seconds": 8.630870000000002,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 29,
+      "wall_seconds": 8.155565042048693,
+      "cpu_seconds": 8.074690000000004,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 30,
+      "wall_seconds": 8.22085791733116,
+      "cpu_seconds": 8.212719000000007,
+      "active": 9,
+      "trades": 3
+    },
+    {
+      "tick": 31,
+      "wall_seconds": 8.621349999681115,
+      "cpu_seconds": 8.605418000000014,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 32,
+      "wall_seconds": 8.782937875017524,
+      "cpu_seconds": 8.768408999999991,
+      "active": 7,
+      "trades": 1
+    },
+    {
+      "tick": 33,
+      "wall_seconds": 8.918036375194788,
+      "cpu_seconds": 8.908173999999974,
+      "active": 10,
+      "trades": 2
+    },
+    {
+      "tick": 34,
+      "wall_seconds": 10.041083708871156,
+      "cpu_seconds": 10.013137,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 35,
+      "wall_seconds": 9.664170040749013,
+      "cpu_seconds": 9.655706999999978,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 36,
+      "wall_seconds": 9.847514165565372,
+      "cpu_seconds": 9.837558000000001,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 37,
+      "wall_seconds": 10.5700652920641,
+      "cpu_seconds": 10.471201000000008,
+      "active": 8,
+      "trades": 1
+    },
+    {
+      "tick": 38,
+      "wall_seconds": 10.435314333066344,
+      "cpu_seconds": 10.420965000000024,
+      "active": 6,
+      "trades": 1
+    },
+    {
+      "tick": 39,
+      "wall_seconds": 10.874240749981254,
+      "cpu_seconds": 10.863400999999982,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 40,
+      "wall_seconds": 11.452109916135669,
+      "cpu_seconds": 11.270343999999994,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 41,
+      "wall_seconds": 11.677478374913335,
+      "cpu_seconds": 11.664231999999998,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 42,
+      "wall_seconds": 11.82640999974683,
+      "cpu_seconds": 11.81561099999999,
+      "active": 4,
+      "trades": 1
+    },
+    {
+      "tick": 43,
+      "wall_seconds": 13.019564332906157,
+      "cpu_seconds": 12.858922000000007,
+      "active": 2,
+      "trades": 1
+    },
+    {
+      "tick": 44,
+      "wall_seconds": 12.556940750218928,
+      "cpu_seconds": 12.537536999999986,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 45,
+      "wall_seconds": 13.848151792306453,
+      "cpu_seconds": 13.805506999999977,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 46,
+      "wall_seconds": 13.646988790947944,
+      "cpu_seconds": 13.61762200000004,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 47,
+      "wall_seconds": 13.462942874990404,
+      "cpu_seconds": 13.378709000000015,
+      "active": 12,
+      "trades": 1
+    },
+    {
+      "tick": 48,
+      "wall_seconds": 14.212029290851206,
+      "cpu_seconds": 14.185414000000037,
+      "active": 6,
+      "trades": 4
+    },
+    {
+      "tick": 49,
+      "wall_seconds": 14.111702375113964,
+      "cpu_seconds": 14.090124000000003,
+      "active": 4,
+      "trades": 1
+    },
+    {
+      "tick": 50,
+      "wall_seconds": 14.615244292188436,
+      "cpu_seconds": 14.589324999999974,
+      "active": 9,
+      "trades": 0
+    },
+    {
+      "tick": 51,
+      "wall_seconds": 14.856688084080815,
+      "cpu_seconds": 14.83253000000002,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 52,
+      "wall_seconds": 14.836708874907345,
+      "cpu_seconds": 14.823737999999992,
+      "active": 4,
+      "trades": 2
+    },
+    {
+      "tick": 53,
+      "wall_seconds": 15.29234595829621,
+      "cpu_seconds": 15.262268000000006,
+      "active": 7,
+      "trades": 1
+    },
+    {
+      "tick": 54,
+      "wall_seconds": 15.718324874993414,
+      "cpu_seconds": 15.66306099999997,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 55,
+      "wall_seconds": 17.15876983292401,
+      "cpu_seconds": 16.948401999999987,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 56,
+      "wall_seconds": 16.563518959097564,
+      "cpu_seconds": 16.441935,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 57,
+      "wall_seconds": 17.406293208245188,
+      "cpu_seconds": 17.36986999999999,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 58,
+      "wall_seconds": 17.26292045880109,
+      "cpu_seconds": 17.23623200000003,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 59,
+      "wall_seconds": 17.268380042165518,
+      "cpu_seconds": 17.21867599999996,
+      "active": 12,
+      "trades": 4
+    },
+    {
+      "tick": 60,
+      "wall_seconds": 17.59140808414668,
+      "cpu_seconds": 17.50260800000001,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 61,
+      "wall_seconds": 18.47180745843798,
+      "cpu_seconds": 18.443562000000043,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 62,
+      "wall_seconds": 19.673153250012547,
+      "cpu_seconds": 19.574686000000042,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 63,
+      "wall_seconds": 19.50370620796457,
+      "cpu_seconds": 19.409898999999996,
+      "active": 4,
+      "trades": 1
+    },
+    {
+      "tick": 64,
+      "wall_seconds": 18.839540041051805,
+      "cpu_seconds": 18.77078000000006,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 65,
+      "wall_seconds": 20.171438459306955,
+      "cpu_seconds": 20.129966999999965,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 66,
+      "wall_seconds": 19.777803833130747,
+      "cpu_seconds": 19.74173499999995,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 67,
+      "wall_seconds": 20.573646042030305,
+      "cpu_seconds": 20.466922000000068,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 68,
+      "wall_seconds": 20.092265916988254,
+      "cpu_seconds": 20.063785000000053,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 69,
+      "wall_seconds": 20.87860854063183,
+      "cpu_seconds": 20.81682999999998,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 70,
+      "wall_seconds": 20.72762387478724,
+      "cpu_seconds": 20.690042999999946,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 71,
+      "wall_seconds": 21.353302833158523,
+      "cpu_seconds": 21.313274999999976,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 72,
+      "wall_seconds": 21.700995666906238,
+      "cpu_seconds": 21.606595000000084,
+      "active": 9,
+      "trades": 2
+    },
+    {
+      "tick": 73,
+      "wall_seconds": 22.059244624804705,
+      "cpu_seconds": 22.027061000000003,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 74,
+      "wall_seconds": 22.145971375051886,
+      "cpu_seconds": 22.109721000000036,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 75,
+      "wall_seconds": 23.43851595930755,
+      "cpu_seconds": 23.352438000000006,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 76,
+      "wall_seconds": 22.79475412517786,
+      "cpu_seconds": 22.756730999999945,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 77,
+      "wall_seconds": 23.433418875094503,
+      "cpu_seconds": 23.384997999999996,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 78,
+      "wall_seconds": 23.663972583133727,
+      "cpu_seconds": 23.542018999999982,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 79,
+      "wall_seconds": 23.90168400015682,
+      "cpu_seconds": 23.863110000000006,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 80,
+      "wall_seconds": 24.46297916583717,
+      "cpu_seconds": 24.381198999999924,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 81,
+      "wall_seconds": 24.90606095828116,
+      "cpu_seconds": 24.770612999999912,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 82,
+      "wall_seconds": 25.005507624708116,
+      "cpu_seconds": 24.969496999999933,
+      "active": 7,
+      "trades": 1
+    },
+    {
+      "tick": 83,
+      "wall_seconds": 25.531767334323376,
+      "cpu_seconds": 25.433074999999917,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 84,
+      "wall_seconds": 25.690968708135188,
+      "cpu_seconds": 25.650151999999935,
+      "active": 6,
+      "trades": 1
+    },
+    {
+      "tick": 85,
+      "wall_seconds": 26.35076512489468,
+      "cpu_seconds": 26.313383000000158,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 86,
+      "wall_seconds": 25.917403209023178,
+      "cpu_seconds": 25.85299000000009,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 87,
+      "wall_seconds": 26.44875608291477,
+      "cpu_seconds": 26.356702999999925,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 88,
+      "wall_seconds": 26.853157999925315,
+      "cpu_seconds": 26.81628499999988,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 89,
+      "wall_seconds": 28.21106829168275,
+      "cpu_seconds": 28.12562600000001,
+      "active": 10,
+      "trades": 1
+    },
+    {
+      "tick": 90,
+      "wall_seconds": 27.434129958972335,
+      "cpu_seconds": 27.390931000000137,
+      "active": 6,
+      "trades": 1
+    },
+    {
+      "tick": 91,
+      "wall_seconds": 28.18366820877418,
+      "cpu_seconds": 28.03447200000005,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 92,
+      "wall_seconds": 28.107002624776214,
+      "cpu_seconds": 28.047787999999855,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 93,
+      "wall_seconds": 28.346078250091523,
+      "cpu_seconds": 28.29328200000009,
+      "active": 3,
+      "trades": 1
+    },
+    {
+      "tick": 94,
+      "wall_seconds": 28.305325250141323,
+      "cpu_seconds": 28.25933000000009,
+      "active": 9,
+      "trades": 3
+    },
+    {
+      "tick": 95,
+      "wall_seconds": 30.410218958742917,
+      "cpu_seconds": 30.258041999999932,
+      "active": 7,
+      "trades": 2
+    },
+    {
+      "tick": 96,
+      "wall_seconds": 28.917576250154525,
+      "cpu_seconds": 28.863025000000107,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 97,
+      "wall_seconds": 30.446018625050783,
+      "cpu_seconds": 30.393051000000014,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 98,
+      "wall_seconds": 30.221355124842376,
+      "cpu_seconds": 30.16951300000005,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 99,
+      "wall_seconds": 30.481701833195984,
+      "cpu_seconds": 30.385017999999945,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 100,
+      "wall_seconds": 31.02498050034046,
+      "cpu_seconds": 30.92870300000004,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 101,
+      "wall_seconds": 30.8152468749322,
+      "cpu_seconds": 30.639341999999942,
+      "active": 5,
+      "trades": 1
+    },
+    {
+      "tick": 102,
+      "wall_seconds": 32.319548666942865,
+      "cpu_seconds": 32.21914600000014,
+      "active": 7,
+      "trades": 2
+    },
+    {
+      "tick": 103,
+      "wall_seconds": 33.50893412483856,
+      "cpu_seconds": 33.08257400000002,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 104,
+      "wall_seconds": 34.84011420793831,
+      "cpu_seconds": 34.61484299999984,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 105,
+      "wall_seconds": 32.45237279077992,
+      "cpu_seconds": 32.23336600000016,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 106,
+      "wall_seconds": 32.86666141683236,
+      "cpu_seconds": 32.65167799999995,
+      "active": 4,
+      "trades": 1
+    },
+    {
+      "tick": 107,
+      "wall_seconds": 32.94552183384076,
+      "cpu_seconds": 32.770966000000044,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 108,
+      "wall_seconds": 33.56040183408186,
+      "cpu_seconds": 33.42427999999995,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 109,
+      "wall_seconds": 33.39443445811048,
+      "cpu_seconds": 33.23191400000019,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 110,
+      "wall_seconds": 33.808790042065084,
+      "cpu_seconds": 33.62377100000003,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 111,
+      "wall_seconds": 33.699993417132646,
+      "cpu_seconds": 33.59854099999984,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 112,
+      "wall_seconds": 35.39111529197544,
+      "cpu_seconds": 35.233188000000155,
+      "active": 6,
+      "trades": 2
+    },
+    {
+      "tick": 113,
+      "wall_seconds": 34.62876533297822,
+      "cpu_seconds": 34.53910100000007,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 114,
+      "wall_seconds": 35.00072858389467,
+      "cpu_seconds": 34.93022999999994,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 115,
+      "wall_seconds": 35.33866845816374,
+      "cpu_seconds": 35.24018000000001,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 116,
+      "wall_seconds": 35.21080929180607,
+      "cpu_seconds": 35.15198200000009,
+      "active": 1,
+      "trades": 0
+    },
+    {
+      "tick": 117,
+      "wall_seconds": 35.79348887503147,
+      "cpu_seconds": 35.64538299999981,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 118,
+      "wall_seconds": 36.43666729191318,
+      "cpu_seconds": 36.35057800000004,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 119,
+      "wall_seconds": 36.57234425004572,
+      "cpu_seconds": 36.44723900000008,
+      "active": 9,
+      "trades": 4
+    },
+    {
+      "tick": 120,
+      "wall_seconds": 36.535489291884005,
+      "cpu_seconds": 36.47924400000011,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 121,
+      "wall_seconds": 37.26543570822105,
+      "cpu_seconds": 37.19025499999998,
+      "active": 3,
+      "trades": 1
+    },
+    {
+      "tick": 122,
+      "wall_seconds": 38.61627724999562,
+      "cpu_seconds": 38.38507500000014,
+      "active": 10,
+      "trades": 1
+    },
+    {
+      "tick": 123,
+      "wall_seconds": 37.251282500103116,
+      "cpu_seconds": 37.18561799999998,
+      "active": 9,
+      "trades": 0
+    },
+    {
+      "tick": 124,
+      "wall_seconds": 38.64308120915666,
+      "cpu_seconds": 38.553641000000425,
+      "active": 9,
+      "trades": 0
+    },
+    {
+      "tick": 125,
+      "wall_seconds": 39.305172542110085,
+      "cpu_seconds": 39.16574700000001,
+      "active": 8,
+      "trades": 1
+    },
+    {
+      "tick": 126,
+      "wall_seconds": 38.84605408273637,
+      "cpu_seconds": 38.7689019999998,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 127,
+      "wall_seconds": 39.06923862500116,
+      "cpu_seconds": 38.99782200000027,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 128,
+      "wall_seconds": 40.10772179206833,
+      "cpu_seconds": 39.93788900000027,
+      "active": 1,
+      "trades": 0
+    },
+    {
+      "tick": 129,
+      "wall_seconds": 41.691029250156134,
+      "cpu_seconds": 41.492985999999746,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 130,
+      "wall_seconds": 40.60249516600743,
+      "cpu_seconds": 40.540484000000106,
+      "active": 11,
+      "trades": 0
+    },
+    {
+      "tick": 131,
+      "wall_seconds": 40.60514420783147,
+      "cpu_seconds": 40.5187219999998,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 132,
+      "wall_seconds": 41.52774466620758,
+      "cpu_seconds": 41.38773500000025,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 133,
+      "wall_seconds": 41.655345459003,
+      "cpu_seconds": 41.52138799999966,
+      "active": 1,
+      "trades": 0
+    },
+    {
+      "tick": 134,
+      "wall_seconds": 41.67430283408612,
+      "cpu_seconds": 41.48925899999995,
+      "active": 3,
+      "trades": 1
+    },
+    {
+      "tick": 135,
+      "wall_seconds": 41.95710495905951,
+      "cpu_seconds": 41.86124199999995,
+      "active": 6,
+      "trades": 1
+    },
+    {
+      "tick": 136,
+      "wall_seconds": 42.22285387525335,
+      "cpu_seconds": 42.06994699999996,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 137,
+      "wall_seconds": 42.068348333239555,
+      "cpu_seconds": 41.99430099999972,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 138,
+      "wall_seconds": 43.078473166096956,
+      "cpu_seconds": 42.98427700000002,
+      "active": 11,
+      "trades": 1
+    },
+    {
+      "tick": 139,
+      "wall_seconds": 42.838208875153214,
+      "cpu_seconds": 42.72736699999996,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 140,
+      "wall_seconds": 43.11620833398774,
+      "cpu_seconds": 43.038364999999885,
+      "active": 9,
+      "trades": 0
+    },
+    {
+      "tick": 141,
+      "wall_seconds": 43.874426582828164,
+      "cpu_seconds": 43.718065000000024,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 142,
+      "wall_seconds": 43.91372724995017,
+      "cpu_seconds": 43.82926700000007,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 143,
+      "wall_seconds": 44.50817908393219,
+      "cpu_seconds": 44.399648999999954,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 144,
+      "wall_seconds": 45.32179124979302,
+      "cpu_seconds": 45.157418000000234,
+      "active": 7,
+      "trades": 2
+    },
+    {
+      "tick": 145,
+      "wall_seconds": 44.71940358262509,
+      "cpu_seconds": 44.63708899999983,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 146,
+      "wall_seconds": 45.043098624795675,
+      "cpu_seconds": 44.88718199999994,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 147,
+      "wall_seconds": 45.49227508390322,
+      "cpu_seconds": 45.39028300000018,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 148,
+      "wall_seconds": 45.31288395775482,
+      "cpu_seconds": 45.237501000000066,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 149,
+      "wall_seconds": 46.120714167132974,
+      "cpu_seconds": 45.777812999999696,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 150,
+      "wall_seconds": 47.311936957761645,
+      "cpu_seconds": 47.03477000000021,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 151,
+      "wall_seconds": 46.83922062488273,
+      "cpu_seconds": 46.498777999999675,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 152,
+      "wall_seconds": 46.90575829194859,
+      "cpu_seconds": 46.73197200000004,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 153,
+      "wall_seconds": 48.060442249756306,
+      "cpu_seconds": 47.70099700000037,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 154,
+      "wall_seconds": 47.472846374846995,
+      "cpu_seconds": 47.347473000000264,
+      "active": 9,
+      "trades": 1
+    },
+    {
+      "tick": 155,
+      "wall_seconds": 48.212645625229925,
+      "cpu_seconds": 47.890727999999854,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 156,
+      "wall_seconds": 48.95561658265069,
+      "cpu_seconds": 48.604517000000214,
+      "active": 9,
+      "trades": 0
+    },
+    {
+      "tick": 157,
+      "wall_seconds": 50.92440816620365,
+      "cpu_seconds": 50.45603200000005,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 158,
+      "wall_seconds": 49.66089858300984,
+      "cpu_seconds": 49.49500500000022,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 159,
+      "wall_seconds": 49.95965879177675,
+      "cpu_seconds": 49.402950000000146,
+      "active": 4,
+      "trades": 1
+    },
+    {
+      "tick": 160,
+      "wall_seconds": 50.16908170795068,
+      "cpu_seconds": 50.014896000000135,
+      "active": 8,
+      "trades": 0
+    },
+    {
+      "tick": 161,
+      "wall_seconds": 49.70717966603115,
+      "cpu_seconds": 49.45592500000021,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 162,
+      "wall_seconds": 51.6093904171139,
+      "cpu_seconds": 51.23115800000005,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 163,
+      "wall_seconds": 50.66880362527445,
+      "cpu_seconds": 50.39610800000037,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 164,
+      "wall_seconds": 50.893729666713625,
+      "cpu_seconds": 50.56639299999961,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 165,
+      "wall_seconds": 52.25239699985832,
+      "cpu_seconds": 52.109441000000515,
+      "active": 10,
+      "trades": 0
+    },
+    {
+      "tick": 166,
+      "wall_seconds": 51.901481207925826,
+      "cpu_seconds": 51.70756699999947,
+      "active": 7,
+      "trades": 1
+    },
+    {
+      "tick": 167,
+      "wall_seconds": 52.82992754178122,
+      "cpu_seconds": 52.729723999999806,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 168,
+      "wall_seconds": 51.582447041757405,
+      "cpu_seconds": 51.447683000000325,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 169,
+      "wall_seconds": 54.22133158426732,
+      "cpu_seconds": 54.00154600000042,
+      "active": 6,
+      "trades": 2
+    },
+    {
+      "tick": 170,
+      "wall_seconds": 52.806001332588494,
+      "cpu_seconds": 52.703065000000606,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 171,
+      "wall_seconds": 53.76694141700864,
+      "cpu_seconds": 53.54173199999968,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 172,
+      "wall_seconds": 53.759407999925315,
+      "cpu_seconds": 53.63566200000059,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 173,
+      "wall_seconds": 54.28960091713816,
+      "cpu_seconds": 54.17518399999972,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 174,
+      "wall_seconds": 54.999771541915834,
+      "cpu_seconds": 54.76434599999993,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 175,
+      "wall_seconds": 54.892432750202715,
+      "cpu_seconds": 54.79983599999923,
+      "active": 3,
+      "trades": 1
+    },
+    {
+      "tick": 176,
+      "wall_seconds": 55.406580416020006,
+      "cpu_seconds": 55.24063099999967,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 177,
+      "wall_seconds": 55.88244175026193,
+      "cpu_seconds": 55.33689200000026,
+      "active": 6,
+      "trades": 1
+    },
+    {
+      "tick": 178,
+      "wall_seconds": 56.898719457909465,
+      "cpu_seconds": 56.42786799999976,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 179,
+      "wall_seconds": 56.395438875071704,
+      "cpu_seconds": 56.099223999999595,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 180,
+      "wall_seconds": 57.101585917174816,
+      "cpu_seconds": 56.61832400000003,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 181,
+      "wall_seconds": 57.878416874911636,
+      "cpu_seconds": 57.3697659999998,
+      "active": 6,
+      "trades": 1
+    },
+    {
+      "tick": 182,
+      "wall_seconds": 57.742389749735594,
+      "cpu_seconds": 57.28541099999984,
+      "active": 6,
+      "trades": 2
+    },
+    {
+      "tick": 183,
+      "wall_seconds": 58.43020491627976,
+      "cpu_seconds": 57.87274999999954,
+      "active": 1,
+      "trades": 0
+    },
+    {
+      "tick": 184,
+      "wall_seconds": 58.689932874869555,
+      "cpu_seconds": 58.184345000000576,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 185,
+      "wall_seconds": 59.54854741599411,
+      "cpu_seconds": 58.80436700000064,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 186,
+      "wall_seconds": 58.88078779214993,
+      "cpu_seconds": 58.457000999999764,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 187,
+      "wall_seconds": 59.0736462501809,
+      "cpu_seconds": 58.734653999999864,
+      "active": 7,
+      "trades": 2
+    },
+    {
+      "tick": 188,
+      "wall_seconds": 59.90890183392912,
+      "cpu_seconds": 59.46414999999979,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 189,
+      "wall_seconds": 60.1910560419783,
+      "cpu_seconds": 59.71117800000047,
+      "active": 4,
+      "trades": 0
+    },
+    {
+      "tick": 190,
+      "wall_seconds": 60.2024385407567,
+      "cpu_seconds": 59.90707099999963,
+      "active": 3,
+      "trades": 0
+    },
+    {
+      "tick": 191,
+      "wall_seconds": 59.88334412500262,
+      "cpu_seconds": 59.72875799999929,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 192,
+      "wall_seconds": 60.54706725012511,
+      "cpu_seconds": 60.34237800000028,
+      "active": 5,
+      "trades": 2
+    },
+    {
+      "tick": 193,
+      "wall_seconds": 60.519771417137235,
+      "cpu_seconds": 60.28783299999941,
+      "active": 8,
+      "trades": 1
+    },
+    {
+      "tick": 194,
+      "wall_seconds": 61.04207316599786,
+      "cpu_seconds": 60.89983200000006,
+      "active": 7,
+      "trades": 3
+    },
+    {
+      "tick": 195,
+      "wall_seconds": 61.36242054216564,
+      "cpu_seconds": 61.20991299999969,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 196,
+      "wall_seconds": 61.70699287485331,
+      "cpu_seconds": 61.5090880000007,
+      "active": 6,
+      "trades": 0
+    },
+    {
+      "tick": 197,
+      "wall_seconds": 62.169804458040744,
+      "cpu_seconds": 62.01195499999994,
+      "active": 2,
+      "trades": 0
+    },
+    {
+      "tick": 198,
+      "wall_seconds": 62.807064041960984,
+      "cpu_seconds": 62.59231600000021,
+      "active": 7,
+      "trades": 0
+    },
+    {
+      "tick": 199,
+      "wall_seconds": 62.35721329180524,
+      "cpu_seconds": 62.23124900000039,
+      "active": 5,
+      "trades": 0
+    },
+    {
+      "tick": 200,
+      "wall_seconds": 63.18011208297685,
+      "cpu_seconds": 62.986095999999634,
+      "active": 8,
+      "trades": 3
+    }
+  ],
+  "checkpoint": {
+    "wall_seconds": 1394.5066615408286,
+    "cpu_seconds": 1391.1966219999995,
+    "path": "kdd27_completion_20261114/reviews/capacity/mac-n100-t200/run/checkpoints/7a9dd9b783661acbfe21d55a31d19f2227b197d15fe670692cda60c2e5bd98bd.json.gz",
+    "sha256": "7a9dd9b783661acbfe21d55a31d19f2227b197d15fe670692cda60c2e5bd98bd",
+    "bytes": 6815213,
+    "encoding": "json+gzip",
+    "tick": 200,
+    "commit_hash": "2e165d2cab68c80197526aedae33583073af7ba3706c302d5254fadefa98edba"
+  },
+  "total": {
+    "wall_seconds": 7619.7673667497,
+    "cpu_seconds": 7589.936649
+  },
+  "peak_rss_bytes": 2669428736,
+  "archive_bytes": 29331939,
+  "commits": [
+    {
+      "tick": 0,
+      "state_hash": "e35882483e1ac50daad188bc36db8a43344845ac2eb535f0469231491b1584de",
+      "segment_sha256": "af256bbcf1db567f048442f6c86d41b355c1216b875ba2d5db1b7ba01405d04f"
+    },
+    {
+      "tick": 1,
+      "state_hash": "a5899be5dfdbf377a83813cce46cfcafb8c89f5b7706c68805d38e634d74548d",
+      "segment_sha256": "ce989df38dda4620e031c4ee8b158a3d28bd057c53d964e8ec79edcd292577ff"
+    },
+    {
+      "tick": 2,
+      "state_hash": "b56178df2964bb304ceb7345606aaa8f438308522f31467a5a0292114b0a5b09",
+      "segment_sha256": "18f0e9a0be566a38c954f3a9a991cc5e17ae469f1ee3f837603fadd9e4951cb1"
+    },
+    {
+      "tick": 3,
+      "state_hash": "e45c8ec587c21633d71a0dcfa5e78b69519bf4086dba1b2cc04cac271b7fc831",
+      "segment_sha256": "3fd615b9ffdcc7f939d245509d60f2a68a52deaf3da37da3c597dfc15fe52b4d"
+    },
+    {
+      "tick": 4,
+      "state_hash": "caaec3513c46e08cdd3e6f2a051ee662ae8eede96e82f14f33a2e67ccae743fd",
+      "segment_sha256": "a9a7eba93c3dd3302f35b23d4e2306c0eab2819302969d075974d253193e5782"
+    },
+    {
+      "tick": 5,
+      "state_hash": "c7511eff00f14fe1fdf719c5233072d16773477f3a94121b56b9346d43a358bc",
+      "segment_sha256": "64e25ac9173ed47fafb1f01982db13221adcb419fe943bc326adb1ffc315fcd9"
+    },
+    {
+      "tick": 6,
+      "state_hash": "bf2492328ccf7c827e30417eaeb4f8b3df6e401f630463d353b03fc469f4fa0f",
+      "segment_sha256": "66d4b868e3dda58ac8a3f8f933056775e9087faadfa70a2ce458adae7b1c299e"
+    },
+    {
+      "tick": 7,
+      "state_hash": "d5fc612f13f45f1d30ffee4323d1fef5b407884fdaefb064aa2c38c7b5302c28",
+      "segment_sha256": "9af54b27ccad5e9b9a8394f077da8f2750e0a04c357e2c31796c3f402fdc0044"
+    },
+    {
+      "tick": 8,
+      "state_hash": "d5f71645cb496457a555341f2cce8cce5c8fc72507459e8c57990d3f5eca64c7",
+      "segment_sha256": "cb639e3b93b28aa4c044d540f64cd3b5135d0cea0e6ceaed0717caaf82cf4578"
+    },
+    {
+      "tick": 9,
+      "state_hash": "da4e21e726d1088016b05a6d105cbc482fa25cd5397ea38cbc4d914b5c7a24e4",
+      "segment_sha256": "1a454b7f4661ca1c45e719c0186571e4af23ff213f7c97eab2b318f3b40178b5"
+    },
+    {
+      "tick": 10,
+      "state_hash": "37c95dd32e0406715bbdb7150b76d8cee4794a1d1090dc97d285ae654993e912",
+      "segment_sha256": "3dcb85a402fc8900e8c7383f5957609e5e8e5532c02b1bca1c2969a1e30cacb7"
+    },
+    {
+      "tick": 11,
+      "state_hash": "fc6164bd00f4541f435c3f40960324aa357445b37c9012b156ca7defdfbee04f",
+      "segment_sha256": "7fbf401c1e85fbba8b40e3353bc9c5dea18a6048a7bb72dfc59d1c7d5fc3dc2e"
+    },
+    {
+      "tick": 12,
+      "state_hash": "a15f1be9fc38c2c975133dd041a94007d20b7bcc6e3067e85307a796aa96ca83",
+      "segment_sha256": "f25ec929afe4284505ef6b0a2f2ce7f4b004f63a0dcb229ad697ffd94bc7d6ad"
+    },
+    {
+      "tick": 13,
+      "state_hash": "28682757ecd21bb42e0f8473e4f4f210b7b8cee42db278f0126e8232b547e01d",
+      "segment_sha256": "ce30faba7d73c9ccb888f3cebc89724f782d3ed812786c7f765d8b1ef501cc92"
+    },
+    {
+      "tick": 14,
+      "state_hash": "6af4c3ae170fee6119d249ab597891c23b001dd4a324e4c6a0bf7545241e124e",
+      "segment_sha256": "c3ec3349fdb28e1d778af53237cd2d78d9aaf2d0e568fc047978c48160b0a73f"
+    },
+    {
+      "tick": 15,
+      "state_hash": "253c2e5cd52cd9cdc5371513df42868c11ee2ba86a3ef879e86ccb67b18aa41f",
+      "segment_sha256": "e550e0f5a82f6d401975a67b4fbf036cd54f7f7a7fbdc6803d44b9604670ba49"
+    },
+    {
+      "tick": 16,
+      "state_hash": "a0d803735c10abc47a19ed56563173362093b5664bc1d0d988a5bb2cb9ece460",
+      "segment_sha256": "504b340d14d6d0f75d2f8e276128d43f7548ce8d914b3b569c9746c3dcfd9fbb"
+    },
+    {
+      "tick": 17,
+      "state_hash": "a51c788ce1fb5b6252c57c0bd5f6d78164d63960cf0e4d9909b82a73b3c2e159",
+      "segment_sha256": "b5ec1e6e5a8bce27750cc33ec1d14e39d72fb70841b369fdad9c672db6de79dc"
+    },
+    {
+      "tick": 18,
+      "state_hash": "e467d83342fbd71cc8107dbb19249ec84d14e1761f44f469ce95c6c278150bc3",
+      "segment_sha256": "463ea7347421aeca2947bef269f1948450be648cd94d6d346b524df60396453e"
+    },
+    {
+      "tick": 19,
+      "state_hash": "8c1ba96cfd8495c430de0c48de8d227e2a2463e90485efcb4a5d188d99b5f562",
+      "segment_sha256": "3f9b8ff9adb2e93099050676cd8b77783a7daf046fdceffec6ab041bfc509541"
+    },
+    {
+      "tick": 20,
+      "state_hash": "c35657f3d90856ccc7b997d2a035a05eed75ab5ef248f8475688ede97cfee2f8",
+      "segment_sha256": "0dadc720b18dfd9822c458b688195c11fdff7f6cd80f05d522c02e189b3e5b85"
+    },
+    {
+      "tick": 21,
+      "state_hash": "85575206e450c639916d2c1f7a903bcf71d3018ccb87483b41136028c504448f",
+      "segment_sha256": "07a60e16a327a47a765404009f600163911f6fd269857336592a09f51859836e"
+    },
+    {
+      "tick": 22,
+      "state_hash": "12eb7a7ffb8dca9ae582cde800cd82f6f13eeb076d833bd6958f58335ee799a9",
+      "segment_sha256": "e1c397f4be7038f3ca4f11b0c3baff04ff451a2b854c4ea2087a39f1491c725c"
+    },
+    {
+      "tick": 23,
+      "state_hash": "487ddcce2fb5a76e7c7eb76c623c5b30f0a62ab902cde65b270a0f4cf182e142",
+      "segment_sha256": "823afcf68e763528f09454025ae81bc3c212003d64a87cf64c3b71977d857ac8"
+    },
+    {
+      "tick": 24,
+      "state_hash": "dc13560df524b696bc5c9f5ff4022215457cc8fe8654dc8c79648ad36a4ac092",
+      "segment_sha256": "94dda445afb00e82a76dff05eb4e06dee26c1e2b8608214631cba03951a9b74a"
+    },
+    {
+      "tick": 25,
+      "state_hash": "2ea6535a02aa545b2ea9b367a833bcc79457a3d07b27d8b5024f79590ea9c69f",
+      "segment_sha256": "12d7be87286f3af6046fe89a977df3786a3600145f7d7739747225bdf58aec4a"
+    },
+    {
+      "tick": 26,
+      "state_hash": "3ff8afd3035a9097603f39106c6b1a6714b9462762eac47b4847957a50f6853b",
+      "segment_sha256": "464c819ed943a59e93217d55b4f6eddb8567b29acc564e1a45bc67309093ed39"
+    },
+    {
+      "tick": 27,
+      "state_hash": "b546a8b60eabda99157f3ffc965c623bb05cc6fce7e0d423f11b1507daaa1677",
+      "segment_sha256": "e35b36036d5bfa30b3c54e8ce567a21cbb970a64075bd07588fc178f14719d5f"
+    },
+    {
+      "tick": 28,
+      "state_hash": "6a115d40b1569b86514954bcc1e4ef220aa648106e6442d0a2df378fdd44dbef",
+      "segment_sha256": "9f36c17590663fcf6f494bdfb3b923dfccb3fe5750c31316607845bb388c1337"
+    },
+    {
+      "tick": 29,
+      "state_hash": "9b66e750d553a8a44b91f35eb7c28e1e489f726c7e969221848e6fad5c3bec08",
+      "segment_sha256": "9383417de349a369516524fb29c6d53cf59fedece8cbb7c60167bab9907e92f0"
+    },
+    {
+      "tick": 30,
+      "state_hash": "e228e24a916221b062875a92c6219f540d75e14c45f2cc6532c45219b9c81652",
+      "segment_sha256": "c947854e0bc3122d1cfe6f3d5f8fccdfef82c7bffb4a34c85e96f0048532f434"
+    },
+    {
+      "tick": 31,
+      "state_hash": "f41e58de57f15e8f08aa20ebac70e4c374d4e7a5649850307f1c1bf28215be7b",
+      "segment_sha256": "707450af3137262a7f0a7d68dec92b7426fc0878ee963fc772d65d132c497eaa"
+    },
+    {
+      "tick": 32,
+      "state_hash": "59cd6bf2a94e2c4bc5edc7735a334ea922ccb73ca4ee0330437a9f0ce15a000e",
+      "segment_sha256": "a3a9c2ec86f625ae40719d08bfa4cf9eb8a5c2c5d1263ff941e0ea07257a26fd"
+    },
+    {
+      "tick": 33,
+      "state_hash": "9c3f75f4a3bfbbcc94218f0ee26b05fbdce94718647d777d0f4d3fc7fa8c0282",
+      "segment_sha256": "8d5e2cebfa99ddfd5cc9b55b1f73939ffe1ee68df331d346eb97f4385e937375"
+    },
+    {
+      "tick": 34,
+      "state_hash": "5f294d9d0213f4e1cbeade2ac08b1f614ce285d1e990b712cdfd796d1584aafa",
+      "segment_sha256": "bfd8e3623302da4aee3dcc82b9665f3ceb786f459b257a678aa24fc860f9b238"
+    },
+    {
+      "tick": 35,
+      "state_hash": "88b2f366f53d4947405a3ed2f9baab3f34cc38f217d7e1a1b3bcbf94818200fa",
+      "segment_sha256": "11952ad6ddfd4b7d34369e2050eca22899837d08ea117ab148ec266f87956255"
+    },
+    {
+      "tick": 36,
+      "state_hash": "d69bc89ca16104da5668a18d596d7f56b7355f11ea7f32e421067cabbeb53b6a",
+      "segment_sha256": "1264d107f8789bf6fb1afca64ca0efdd88a89279e4f8428dc8608d9641168cc6"
+    },
+    {
+      "tick": 37,
+      "state_hash": "f8c00daef981f59cca7a0185fe4482177c7ae10bf5de706ef16f9135c5cb1b36",
+      "segment_sha256": "0d69a95c398929d613636166fa5e323f9278bc56b9d2bd3724943199d9870a35"
+    },
+    {
+      "tick": 38,
+      "state_hash": "cdc0b0a999eefda519439ce2009ef7992e9911ceebb5704c1e57aff36036aabd",
+      "segment_sha256": "0ae5e702178cf40e76ead242f8db1252765b3be8ad45e8922d7a13ec79aad243"
+    },
+    {
+      "tick": 39,
+      "state_hash": "6ed0e5dce7d44b6beb8b30f807cec585c343a0e5bc425ac5d9a9aec2cabacb2b",
+      "segment_sha256": "e81194a9f0e3f6e2c7f2b1d9407667e0f68bc3c661f52f494521dc9457bfbf83"
+    },
+    {
+      "tick": 40,
+      "state_hash": "edbec8e86f3fe68b7551927cd7cc3ed204ca696067a82436766c772392970393",
+      "segment_sha256": "829feceab1a33ac6a7858efe26287dc744612d41318f2144c4b829e9cde4fd73"
+    },
+    {
+      "tick": 41,
+      "state_hash": "cc7e0e831c8d1e8ec1c81355941e922af2476ea977651365e2faff55589c4c83",
+      "segment_sha256": "53c486a4c29af53c0eb6f56dcd5f7e770873572aed240218f335e83ef30b899e"
+    },
+    {
+      "tick": 42,
+      "state_hash": "ed43a31bc9beb270fcbaddd028ffa34a552f0544b28fb8839cf4b66efa130812",
+      "segment_sha256": "c572ba240f7008fd0f5497a046270450f0dbeb1dd7a491338cba1cb99150bf46"
+    },
+    {
+      "tick": 43,
+      "state_hash": "b3dc70298239b6b9bc0819296f37e1d6df0d6def07c79161cbbd10b5ae7892e4",
+      "segment_sha256": "06e44205ad81e99e7fdd6a84e93733974adcb678a63c2368c5a02f617695df44"
+    },
+    {
+      "tick": 44,
+      "state_hash": "87802b98517fdfe49f171858ea862a0b8638d9ee6efa8891f6d9e4117c9619e4",
+      "segment_sha256": "cb3b3f367b54666d4cc6646625c2e5784c6d0a086b21a301d1a2e998b0d2f220"
+    },
+    {
+      "tick": 45,
+      "state_hash": "c9cc0f480b71c77a4e84cefb78cbc7c5678bb9fe4669a1992c4879401e3b49ee",
+      "segment_sha256": "ccd1819367cc1b95d887a58db252303446b0507723f557ad881e7739ee323f7e"
+    },
+    {
+      "tick": 46,
+      "state_hash": "f08428b2fddee9fa54b90c17fd3b8f951e46cc99d3701bb51c9e13010f7bbb32",
+      "segment_sha256": "706589a74fc30d5eb93ec62ba7e18406fb49995730e378161407595fa06b3abc"
+    },
+    {
+      "tick": 47,
+      "state_hash": "3fd6e58fd4f9b4b71534105999636f886cec301813bef794b1eae4b1ede76ba9",
+      "segment_sha256": "1479586c1342418fb10efeece61d06d4b6098da5b437a548eedf247e8d2718eb"
+    },
+    {
+      "tick": 48,
+      "state_hash": "911940a83851b610175b10ac91a17730672af28aa0fd97418a1188ee745057b1",
+      "segment_sha256": "a4f359bbff5b35f6f977f3ed7bddb478de3488168e8b3bf099d3bad2d18fc97b"
+    },
+    {
+      "tick": 49,
+      "state_hash": "0095feb4dbccdeac69d682c1de331b6c06f6d1f8696051be69be44639f07282f",
+      "segment_sha256": "e050d8f11d146d154a90157eca233abade9667d6be6909eb033cbb76afd11251"
+    },
+    {
+      "tick": 50,
+      "state_hash": "a87f77a6a3ff0903d5a33be5308cbe1801d716e56e68452c2ccef83de09afe67",
+      "segment_sha256": "3f921261693ac3626546b74f1201b689773ff4b14afb02f3418a4ed0a8779760"
+    },
+    {
+      "tick": 51,
+      "state_hash": "327b434948ffb2e5ae4a6addef59ffc96a6ec175593c347d0517577b4a86e5bb",
+      "segment_sha256": "3ce0d33aaa5f01733493234bb454cd7f62ea868799790bdd6ae76e699fa4fc19"
+    },
+    {
+      "tick": 52,
+      "state_hash": "261ab96a0ccc96ea3a7676883fd6fe4ca7eeb88e95e6433cf402d63402df1abe",
+      "segment_sha256": "a2207446ec3e243fd9f7759f56cc2d1494c78e8e4e2d4c0cc00481a1293e98d1"
+    },
+    {
+      "tick": 53,
+      "state_hash": "4e47f27006a2f6dfbd14dedf02903912287d94b91e2737967a0069cb96f32907",
+      "segment_sha256": "8ca6a2b5d0b8fe72eda3552564716eed9df450fee6a036a3c1a2bd41cd73a2f8"
+    },
+    {
+      "tick": 54,
+      "state_hash": "c6e722afa7c5e1a6639b610692bff89a73a52dff9ddfae1fdbdeeafaa151c967",
+      "segment_sha256": "af3e2dbf786220a6b6e406b6841b14622d3007c4f59c59a2787112f3499e6d99"
+    },
+    {
+      "tick": 55,
+      "state_hash": "da0f170684f5e36a4a7343341e395c4c63a697bdb7b82f3d8064910eaec026ca",
+      "segment_sha256": "5760c2306e59fb61fe707abb2934192e7f50494acfd736eb548eb1eef7323099"
+    },
+    {
+      "tick": 56,
+      "state_hash": "e82c54d1651b0f07693cbdc03cfb45177a2055792d3d85c7fc52b89eca365446",
+      "segment_sha256": "1e8aa583e8af57d5c011e664c2be4e8b18f01a8b42548bea1ed5e2ebb76e0b22"
+    },
+    {
+      "tick": 57,
+      "state_hash": "879292c30b4f4950a8cb237591567cbfa6d0bb059b64d76a603c3d567fd6c076",
+      "segment_sha256": "9026c5b3f06a98946414d9be52e403d9c530eddfed6ccc2eb925a9e1e9f1a90f"
+    },
+    {
+      "tick": 58,
+      "state_hash": "670162a563d5e3d0328a8008b3972c6be8b156a45b41075c31d78d56d26316bd",
+      "segment_sha256": "a982d650adf9caa954368864446fdcc8077cfb746bc17e66db976fac98a339ba"
+    },
+    {
+      "tick": 59,
+      "state_hash": "b7cf853fed5dee440c434ac3cb749967efacaa7270dc91bf3817d629af3ab955",
+      "segment_sha256": "963e84818855cc849c91be8a2e7219c2c0d685b3e31c5714aba7cd93b96451e6"
+    },
+    {
+      "tick": 60,
+      "state_hash": "af1943ea1903697eb1ec414ed9cf13855ac4c5d7987e9adeb267a3b761c8fb61",
+      "segment_sha256": "c295f0712f6e88ccf36e259e7c5ed883344bdf2af8468bc590880b0942122d47"
+    },
+    {
+      "tick": 61,
+      "state_hash": "75c2517c99c68c95d5221a778f8a6f487c6d319b7556a40565ef0765b064d492",
+      "segment_sha256": "32e23e984c7a504b11d776f91cbd6c3260ea55e578f25253b92e89bad85283f1"
+    },
+    {
+      "tick": 62,
+      "state_hash": "40f87016f6799e517973be2e33a1ed4d1d3ba017baadac8c6d1510bd39ecb229",
+      "segment_sha256": "f208fe730940781d0a5a54bb45c30ab4b7bb0d4255354cf57e4e1f1871964072"
+    },
+    {
+      "tick": 63,
+      "state_hash": "bc3496e6a8ed43ad9ca13239bf6c5716a8f11daecb903a05325c1fa3bf79ba2c",
+      "segment_sha256": "57585ecc0a0f22d959608c2cb025b40869302e358a0f66cd57b96f7f7f63de1e"
+    },
+    {
+      "tick": 64,
+      "state_hash": "37045e4e5053e752819fbc91e0b5f457e3c003b07c2a00fdc630b838f7a6c7f0",
+      "segment_sha256": "c64eab6b47367bc4bb202a9da31a28d9345255bddcfb4f2433980009fa6c4e30"
+    },
+    {
+      "tick": 65,
+      "state_hash": "ef6e8f6ef44c6601fd9bd32032eea0de177c953437f993d161c2dabd46bf1ee4",
+      "segment_sha256": "c84961304ee76ee6279008f389f2a52628c5bcb1a40721f05611d1169ca07e28"
+    },
+    {
+      "tick": 66,
+      "state_hash": "1e3d0f1354fd7db58e26d25e306aa089107a808d56fbba455df757ed81d337c6",
+      "segment_sha256": "87158b9e4239318e7a0cd680edc111ed25de8aea46fbb7cf020aab281764eb93"
+    },
+    {
+      "tick": 67,
+      "state_hash": "83438ce71c82d78f991a41a05ded87a9ea147e92b6a65088642e27568d3a64b6",
+      "segment_sha256": "1c6d6ff3b453468bd80e5375167e137955d995c1e5cc7b5d3140c42dd9d9041b"
+    },
+    {
+      "tick": 68,
+      "state_hash": "678a0e143f053d73385ca245a7e8e1b3ba11f7f66eddc28cf6d49df9620cc3af",
+      "segment_sha256": "dcf645b2763663905caf87ee78ea8c97ca8a0ae372cf3f57c8d7fb8ecfacbbd3"
+    },
+    {
+      "tick": 69,
+      "state_hash": "318b3fd3e3cbdbdf4edf839e6b817d792f828dcbd83bf52103a8dd0fcf69a54e",
+      "segment_sha256": "8e2c7e722151ed426da4099cf7ceae8efc1e324a3d547f2ea0cfb7db5a837e39"
+    },
+    {
+      "tick": 70,
+      "state_hash": "9258407ea2b6f15c5642611c60ff7043a2bf462fc58292ae6288497e5eece4d6",
+      "segment_sha256": "debe75cc505b85f3726725e24a45e176fbde1935d240ba31c284168f1b7d387d"
+    },
+    {
+      "tick": 71,
+      "state_hash": "435842dbb8d42f35c69079c8bf2f31383bbcc9a3205071cc3cc71868fb171ca6",
+      "segment_sha256": "83f4986b81c2a1460ec0d4c4bf310379ebc72ac8b11ee3558b3590dd1113ea1b"
+    },
+    {
+      "tick": 72,
+      "state_hash": "e6863576edf79755a14296d47e30b6ed5b15a2b07d9784da23bb2f532e7c4325",
+      "segment_sha256": "c333ae981c791536602adc619221d90c2757544aceadcb3d7511b4e2371e1eb7"
+    },
+    {
+      "tick": 73,
+      "state_hash": "2b4246819aa0d1e754d63c97d48dc4a76851c663620ea19e451fa5f866e24aca",
+      "segment_sha256": "d84eb3df563ab44266bbe80b5b6e2a0e11e3961459c7227359b49be69e233ce9"
+    },
+    {
+      "tick": 74,
+      "state_hash": "fb4fe27e1751cd38fcaf6eb2ce4dc816b1edc60cbee2be43d7431481d202ef22",
+      "segment_sha256": "a027f865d06382260e9d6bad5e3e8bd4f28417aed43a4ab81b072519e0c4054b"
+    },
+    {
+      "tick": 75,
+      "state_hash": "79bc4c393ea7b0b6e8dea2f3a4d4659e26983ff9e55a8b579aa19ff7d8ba158b",
+      "segment_sha256": "5071188217a877564eddf112f60916747348facd02a0692c0a826ee91eb78bfe"
+    },
+    {
+      "tick": 76,
+      "state_hash": "ae40b940df9195fc124251d1440105b6d4bcacb68f2710dc9e9236ff878089e6",
+      "segment_sha256": "4aa5a26f51e220c1f206ec5821cfac9f497295e79377ff0328c4f31a65198af5"
+    },
+    {
+      "tick": 77,
+      "state_hash": "45fd22d9c218d6e1fac4edfde5399d1b6faf7337aa9bc770f7623a690a984c01",
+      "segment_sha256": "daa9f0734d99498aa5e429d1bc4a0b482bad9557abd3d8ebf9f4d4c6a58aad2d"
+    },
+    {
+      "tick": 78,
+      "state_hash": "49ff648f24647551c2d613ab506d37b424124d0f1aa007b47161359d5604aaf4",
+      "segment_sha256": "5f5f5784ee249ca4038b520dcc79a00d02314a513e25d59731015bdf7741db2f"
+    },
+    {
+      "tick": 79,
+      "state_hash": "6a6e6b1ec2e307780200d6400cdc6304dd4f56ec77dad68a2e9ad1aca3c2a5f5",
+      "segment_sha256": "f05e0753484f90d33e39d55a08a82366329238c382c24f9796056eab61d3fdaa"
+    },
+    {
+      "tick": 80,
+      "state_hash": "aa7859a662a114b52dde657a5aa94cbc054de357356973da168b6e01ef9deb76",
+      "segment_sha256": "aa5518413fae9b28b4e4273c913aa44648b85f664350dce81ef9bd5be4c5d82f"
+    },
+    {
+      "tick": 81,
+      "state_hash": "b8856d67bfb6011076e5ed2fc3f7a24f0e901f693e45ea7ca6970aaf6b6d2875",
+      "segment_sha256": "df1528e28d8dd060c42710040fd6a2b8132cf734b0d8a125b842ee20a7e651c9"
+    },
+    {
+      "tick": 82,
+      "state_hash": "4558b5bf55f6fb0c7015865b2da25f5e80c01cb8fda6c0ef160c931c7e12ffc1",
+      "segment_sha256": "33da6cc00ed12dfb112219bd5145bcbc6cd7b0edcc187f3742d74f599e9dd44d"
+    },
+    {
+      "tick": 83,
+      "state_hash": "f2aac2647d322ac4609b24d5d66f0eca46cc5168b37e214b6f7b93ccb4f9cfc8",
+      "segment_sha256": "3c9d630fb7610e94c4671293a80d5a41e8ccfff169a26062208c174ba0afaf1c"
+    },
+    {
+      "tick": 84,
+      "state_hash": "1899f6c1caff0ccef81b448f6eb6d3879816632697f66a90594b0bb3cef33d5d",
+      "segment_sha256": "85d7c9b8aa864041b5fb98241c0dcc14e8b0c553743f2df2e8478b2691b65480"
+    },
+    {
+      "tick": 85,
+      "state_hash": "dc91c12eaea30af0ec20b85b10c90788f0f47f78cb0db54517a09dd15f8afeaa",
+      "segment_sha256": "7d3e846bdc3c1bcdbb32005a91b71e97ccb7ed97e8ad53c8901bc91cb433fa0c"
+    },
+    {
+      "tick": 86,
+      "state_hash": "ecd6bd1af7d683b25452b609994524f846cb9fe2053ffdb542af70ed51108608",
+      "segment_sha256": "4843a9f1e3e059be112769384e9d632468e333831ae292e3de689349d72eb8c0"
+    },
+    {
+      "tick": 87,
+      "state_hash": "478cb157b29787f2e297c87b83032adce034c20134c6288df65feaa033efe3ae",
+      "segment_sha256": "034779b5cecc766b704d51682709240c41811c8b2a7dea30e72d33da40b9b700"
+    },
+    {
+      "tick": 88,
+      "state_hash": "5e0aac1b51f8a2b70dececdae454f62f34e0be08351f9dc4e02f2acbc6702e15",
+      "segment_sha256": "46cffca0e3ae860989dee3ebe22c9aef6880c9f77bc9a23f855fd7c2cd6bce7a"
+    },
+    {
+      "tick": 89,
+      "state_hash": "9574d7dbcfa67de7eb514e0c75747758a01249ce06dc312dcbc60bfad1ab292c",
+      "segment_sha256": "ab976ee7ba3e4b3966fc6cf87ae8462eaec3f90f6f61641be2d2c10aa0f9f30b"
+    },
+    {
+      "tick": 90,
+      "state_hash": "8964252834ef748f0ef605b2ca747f948a226e57133b7533af15effc34591701",
+      "segment_sha256": "822658368bd90ebfd26ee31230b7979478995264522307fb5df9bec77541c9d5"
+    },
+    {
+      "tick": 91,
+      "state_hash": "7f3850bfb1800350e022314eaebe032a4f872bf770ac0c77e454ba69c1e96480",
+      "segment_sha256": "eff1b20b0d9bdc9a421170d313f08f3a835d35caf30576b798dfbe3f2731b5af"
+    },
+    {
+      "tick": 92,
+      "state_hash": "c622bdc98e42f6fd9c940a0ac31810a294fbf6d63774b4396b09de01f8c72611",
+      "segment_sha256": "cb17372cc5166d5dd759b7e567bf352bf83c3ca277f39a08552bb0d71f4ac375"
+    },
+    {
+      "tick": 93,
+      "state_hash": "9ee4ff910d4717788e1a03bc523017a79d3004eb7e872af993a174b2b5e53491",
+      "segment_sha256": "006c685e988279baf4f882465687841b4af72ab501842a5745fb0e5058adddcf"
+    },
+    {
+      "tick": 94,
+      "state_hash": "1d5219494659942e0ec8e379bfebe9b6c53bff4896a29112f6fb17a6726bdca5",
+      "segment_sha256": "7fe35c8279c77abe4caf62bcdab8a901c67bad0ebff015b1324c7ac26fca47b8"
+    },
+    {
+      "tick": 95,
+      "state_hash": "922ed47dc729eaf5a6964afcf6dcba2ef3009126a61a9698c769007a3d1536fb",
+      "segment_sha256": "03677278d4740afa1d58d1d7d7d44f9da265c0280ca477f051be4d2b607e53e5"
+    },
+    {
+      "tick": 96,
+      "state_hash": "468518fd5d7dcc683ef25dd08fed24845fff275a695dc95465637d80f6fee83b",
+      "segment_sha256": "0859f517e26857299fe721d74970f0642468377089bebf376435fcf62c7b0d8e"
+    },
+    {
+      "tick": 97,
+      "state_hash": "b2b93bf7117e4a6b76802ac7619b90b4c245693ae5b8dffc1b140a4bf15163d0",
+      "segment_sha256": "827df455165104198ce101e059d4c6857efa7e0fc9727438d19d30a0e4669b08"
+    },
+    {
+      "tick": 98,
+      "state_hash": "699930368b244ff32ad4fd825799e4262ebe454352c29f9d04a72c17c22321ae",
+      "segment_sha256": "949f7d3989e2be1169ac4908f73e2dcd0267a4a86250179457c064219ab900c7"
+    },
+    {
+      "tick": 99,
+      "state_hash": "fe97c0d979f1f87c72911f724b0b650c504a6b0df35cbca92af2ae043da6db82",
+      "segment_sha256": "0fbfe657fe76dfefcb6169cd71f9a52d8584c09aab98bcad59cc66f6af629087"
+    },
+    {
+      "tick": 100,
+      "state_hash": "3db00d11d0819f02859a619d2c78c5027399e4a78f6c9dfa62f125cc1e8798cd",
+      "segment_sha256": "cba7f6d43dca6c1505ef9e286ba34810d6930256f1bd00add4c210a3e4304c65"
+    },
+    {
+      "tick": 101,
+      "state_hash": "9af408cd30c9a69e35d15c2f479b962d9b50eb797959f47d3a05a027bd09e4e7",
+      "segment_sha256": "759667a47ac922c381825a1646669d24feac7cefc4de7f2b0d9e637bcaf27ad6"
+    },
+    {
+      "tick": 102,
+      "state_hash": "7a4d8d5b231803b898c5f71c9d518127800c4f06501611b270d5904e44d8147a",
+      "segment_sha256": "e53054d0da400374b2cfc6996056a278a693851eb2ff3720f7aa482a8ce93584"
+    },
+    {
+      "tick": 103,
+      "state_hash": "fe1f7708e610a53916cb69cb6b2ddc71aebd3c86fabb9ea5c9e5af56e07eb8c5",
+      "segment_sha256": "dd30ef38e860eb0b8082f532c8ae88d373f650f0f834aabc58f3d38b9cff7ad2"
+    },
+    {
+      "tick": 104,
+      "state_hash": "52d2de197635b0122091efd908dc6c46f3e3fbd1478815b377aac701cdaa12c1",
+      "segment_sha256": "d99165d0afd130a9ef62d0310ad751a6f3d073a3046d7d799c34565ab8bcffbf"
+    },
+    {
+      "tick": 105,
+      "state_hash": "e24e0ff5534662946c008f3fbac9d7a0d200fa92c8b649c8b602a2b17ea51fc6",
+      "segment_sha256": "5fa37c87595f0eebe2cc7567ec6a5135ee6996d5e7e44f00066b971bbe7c1cc4"
+    },
+    {
+      "tick": 106,
+      "state_hash": "32602c1d8580fe4121a4b113f858bb2a014e081706ec4d21b12be570111f8e3f",
+      "segment_sha256": "e1193ee478f37b7a29db55ca95e69e8ac18e5dcb10f9cc21c3afc797d74a5ee3"
+    },
+    {
+      "tick": 107,
+      "state_hash": "3f03f69f5be17b4454c53c370f969ea3470757ae4a2eaf19446770234fae8651",
+      "segment_sha256": "fd50d459b9e6439f41e6d6d5fbd4f1edb6631dd0790f45308c485ca084bc18d8"
+    },
+    {
+      "tick": 108,
+      "state_hash": "180acf9125f617b31c5c1298759b7ff7a60e4dc8ef2eb172a4961fb4f10b40f6",
+      "segment_sha256": "6b093c5b33750c25f2ae151b7effc023f9ad4a3b53a0d7e7fcb85eacd13082a6"
+    },
+    {
+      "tick": 109,
+      "state_hash": "2e4e46f930d9bf9f5e046c2bbc4bfc71b24c987389516f2facedad0eb747aa11",
+      "segment_sha256": "20292eb62655d86ea6c27b6a5f53d2986db68fd9ff6b76992a88d3b009ec08bb"
+    },
+    {
+      "tick": 110,
+      "state_hash": "3a252b580c95d21cc89d3fc50cef417edcadd0cdefa7ee8e064345272972e147",
+      "segment_sha256": "f550089b7772bd23df080709155570597f089b88df48d6df5ea057d041439289"
+    },
+    {
+      "tick": 111,
+      "state_hash": "d655efedefd23449bf520e94fd45a61984e885b69e87ac1eb932388a09604305",
+      "segment_sha256": "102d788b169915ca9cc67821cd88a069ccc1e467db38b3bfbddb2313e0364ff8"
+    },
+    {
+      "tick": 112,
+      "state_hash": "b801a0ff77869a6d0d5f22f8417213426937ee0eb5402fa8625277ca85846c53",
+      "segment_sha256": "510b8021b0070b5ff98c59fdb6d55de543ddd16041625658236499a383f03dbe"
+    },
+    {
+      "tick": 113,
+      "state_hash": "3637b57451ce1e70b170882bd6a862371eaf44f562f6de0a642ab8488f4561ca",
+      "segment_sha256": "d0858720d5aa576af72e749fe14764f6bfdf4b6f4f219d777af28772f1f6a46a"
+    },
+    {
+      "tick": 114,
+      "state_hash": "3f4a387046748bae8256370589120ad44cabe29a60a3a65f236fb6b2468bf203",
+      "segment_sha256": "db3edbe0bfaa1dbe61e881697a95fe7797c43e799904a7724c8f831cb8b581f1"
+    },
+    {
+      "tick": 115,
+      "state_hash": "35c752685178c84c443e0fdcb85e78dd2d3992641b0b93eab5e1ec99a1554da0",
+      "segment_sha256": "7db707e6fdb379d51f9d62194545c6dab1f6c5c7fa8e0d560a90c6c7956de805"
+    },
+    {
+      "tick": 116,
+      "state_hash": "b4bf0ade7942ca7e4b40614146d6bc8c7ce665d8e23d84f2efd4253ffd242755",
+      "segment_sha256": "d564988f0faecb25db7e451e766e394aa144c33110a15672cea25462b16f705d"
+    },
+    {
+      "tick": 117,
+      "state_hash": "7542c6a943b4b6daf9394639f9255f3173da79d5a1c9082dc7e63f7cf11fd2cb",
+      "segment_sha256": "ebef3af0e49459c80b4f67fdae8995689a64cd92ae4a02af22b5ec7a7b33973d"
+    },
+    {
+      "tick": 118,
+      "state_hash": "ca2ea55130e4fe68f70a644cbd14288cee5b277a27ffd140669056691619b6e3",
+      "segment_sha256": "4772c0647625253162ca15f635bd948f3925b9216cd16e8ddb7c6fff84b3e2c7"
+    },
+    {
+      "tick": 119,
+      "state_hash": "a8d053f79d78326c846e0aa2303f030e01672109f01e76a91a298d97e3d76d35",
+      "segment_sha256": "d757eb2813f25ed1ef2e8351701ccc7a7386e34cd0b198775e031dab491e6f6d"
+    },
+    {
+      "tick": 120,
+      "state_hash": "033767d5853d3a92f1bcfe544a483f81255df0d83942d32bc18da7023762fccc",
+      "segment_sha256": "ec8d17f716be2745f48417181b6b5be64ca0e54168a6a1cc7a252cf1d9cc6d2a"
+    },
+    {
+      "tick": 121,
+      "state_hash": "f6d274ea7d05c0c21d76e8f2d8fa8e1e619697bf522139c75d5a553c7202e6da",
+      "segment_sha256": "1e634cc6bf4c8cd48c268779a08a1f127de696e0d885b0075d2e3870241a86b4"
+    },
+    {
+      "tick": 122,
+      "state_hash": "a745cbf5819e80c2cef4988a4b4299fdff8569f9ce8f285c02494087c8b049ab",
+      "segment_sha256": "50962063daa66031d8e2f20300c3ee87365c35037ef9981c1c3077a787c9c2da"
+    },
+    {
+      "tick": 123,
+      "state_hash": "974e0cca9dd01fd6a0f9a92f89d0cd2f42ef1909e93cb6a861d903b08f5a4261",
+      "segment_sha256": "77e573a39806ea5bc35d000eb20861ffad62de7146eb5a3f745339b0170f5037"
+    },
+    {
+      "tick": 124,
+      "state_hash": "f252513446cd5dfadd7e9b66203f7d370c73dc61b70bac087f098a18b623a22f",
+      "segment_sha256": "7bf6bed33c57607f48aa35b0ea20491427cffcfcc0dd946eb7023f8f98c093ea"
+    },
+    {
+      "tick": 125,
+      "state_hash": "d0818ee488b0bd5340d62980c98502392bb3f9aab08aa139d36477a11d8c1927",
+      "segment_sha256": "deb09ed80fbfbde643170a42a08c03b9f0369eca3853c1988475736268ed50d7"
+    },
+    {
+      "tick": 126,
+      "state_hash": "75a6615276c23c5cf34a6d5bc4737bcbf1c57afedf16f5b87a1db9a5d71fb4fc",
+      "segment_sha256": "64a1c37c30ce3bbc873daed45890ae5fff947b6838f6bdaa739a1f2ca3ef65bb"
+    },
+    {
+      "tick": 127,
+      "state_hash": "5066d20c6d7732e0dcdcbefa164f138bd1cca983cc70afa6145dbc7a8b6c77ff",
+      "segment_sha256": "de3a752a6b4364db5e5d0f09bc4b35604af57b00b1c9bd450728a155bc7101e6"
+    },
+    {
+      "tick": 128,
+      "state_hash": "15e352f826ab29c9b517aae2801efc5325541006c8d785252f99df0c1a2584da",
+      "segment_sha256": "f22e9a905c530065af88a28d0817c7a62881d64182f862378d5ee2302cf7642d"
+    },
+    {
+      "tick": 129,
+      "state_hash": "bd726ce5b40150a4d2bcfc702fe27f4578bf98fd5ff3c92ab77fd22467e17991",
+      "segment_sha256": "78575a06098e2d7dfb58cf56b9245b6bd758826ca17e39f0b6d9da115b12f420"
+    },
+    {
+      "tick": 130,
+      "state_hash": "eef44d7d9cba9f4946d7c326a1deceea8420bd3ec307c3958303bcb394f0c8c9",
+      "segment_sha256": "f224e1dcac74d8a71416128b87498c77b858b7e303aaac5ba9f14055d593644d"
+    },
+    {
+      "tick": 131,
+      "state_hash": "624606654640291912c96d2187e489dcee652a88250ddd9c9dcfb6ff094150a7",
+      "segment_sha256": "d957371bceb1091a2703fb6e593a2c99ae893013d10aa98792adb2b03e53f1fd"
+    },
+    {
+      "tick": 132,
+      "state_hash": "afc4292a6741f290368873a2e6f9bb90a4f82fc9dd7a7ebf4d3d7d29e2275427",
+      "segment_sha256": "497dd43b4e21b1db3acad54017b4b4a93ab1cec77ce02d36b4b5916a8ca25dfb"
+    },
+    {
+      "tick": 133,
+      "state_hash": "779016cb1f71ba714d129d660bc0bb4ae352837372fdd79807ea5584f49f79e6",
+      "segment_sha256": "806b1a9300a641429419cfbff59298dde91e7edff8707454d9ba7e483a33bff3"
+    },
+    {
+      "tick": 134,
+      "state_hash": "b8cc4a05b671dbc7e56ae5eb7ee5180c28e53ba85bbe992f1e5f6a50aefe6692",
+      "segment_sha256": "633e2c718da5129d43fc43f8054221121d21e119347ea30362420a279c654832"
+    },
+    {
+      "tick": 135,
+      "state_hash": "e4803671ad10f3e358a5e0d87ec990b7152fd11f348157d1656814aece3040e2",
+      "segment_sha256": "ae6f3b2f7e7398daba712c8f342e827f25ad07d26fc9003cde18e82e3a549022"
+    },
+    {
+      "tick": 136,
+      "state_hash": "d6cda792838a92614770bee1b6fd5060765957ce389e25de77c174d723b2366f",
+      "segment_sha256": "657fcf501474db2b281ee86e545cd77ed4890896f6bb77148885ce79cb99945e"
+    },
+    {
+      "tick": 137,
+      "state_hash": "56246509280a7f9a505fc591be73f330674334b2de09df8b86345ee411a82d88",
+      "segment_sha256": "6e426028a44931b0a33ade51cca57bdc748efeed9e88474d830e1e9f04c68c50"
+    },
+    {
+      "tick": 138,
+      "state_hash": "836da23a16a5aa6ea26a719a8929fde6008653623143ce46d95bdb15d896932f",
+      "segment_sha256": "8cd809e848cb477bb7bb2b43cf822c2ca6dc649882059dcf7ab5c5e04e109a5e"
+    },
+    {
+      "tick": 139,
+      "state_hash": "1dcddbb631cd716e60a985a7f7672aad8ef0c3c046e98bac94518615bc10ab83",
+      "segment_sha256": "cf31317cfc476ed0e4fd118de9bde9122742cfcf4e1d665e51f8a0035d50ddbb"
+    },
+    {
+      "tick": 140,
+      "state_hash": "1d06089cd403bbe0aef0046153fd863070f724a1bffd850e99d23ed282a33ea6",
+      "segment_sha256": "a75868ebe5dd31faeb5f8ede9a182016d12527a1a172cfecf5eea02224313436"
+    },
+    {
+      "tick": 141,
+      "state_hash": "4d5d21d3131c44c01167b338c379594cecb94488ea7f70f4b1cfd8c6e013fe57",
+      "segment_sha256": "7a9213c9fd43d9cd69610f30efac177fcc1ac344ef48c71e67dc9f32a5905d86"
+    },
+    {
+      "tick": 142,
+      "state_hash": "689986905e73291a0af81d5842f4c1eb261d76737ec70543fd0bab53cae9afbf",
+      "segment_sha256": "9eb6880c51c5fb3d56de91f734cfecc993ac3e8152c32077cb16ce12319164d8"
+    },
+    {
+      "tick": 143,
+      "state_hash": "287e4d06187c674b4d86316375b0866ee540eb3ef0e28a512f0b03717645475e",
+      "segment_sha256": "317fa4eff39d8bc5d463f02ad9b4df9a77f24765f5406bafd901247f5e9f4737"
+    },
+    {
+      "tick": 144,
+      "state_hash": "2c84f63b4d5e381c84a21fc21676c74d35f490a6fa25ea4eca02a23255e265c9",
+      "segment_sha256": "d9b480c3d09d5299712fa4ef91299a7c6f42c5e9ecbdf6cc80f4e490f1248a35"
+    },
+    {
+      "tick": 145,
+      "state_hash": "fa68f6d231cbcaf6668600082b5dbb85b3fa14cb47723e322d368230127a0c96",
+      "segment_sha256": "a8d5b182e39459ebeb7830f5783450e3f2a0eb8d8c280088edffd513a525eabc"
+    },
+    {
+      "tick": 146,
+      "state_hash": "069f9a40334ee43b60b0eaa4305df108f30aebc43d1048abf6de9a4f0398f517",
+      "segment_sha256": "a8a41a0952411a9897169bc6ab96ba16b06b6df66a6d8f861453bd1e62440402"
+    },
+    {
+      "tick": 147,
+      "state_hash": "5cfb66cb5a3b55fc577838c00a75276700a28544e40c349fbfc34b8068416ef7",
+      "segment_sha256": "4b29c8664f7849bc767b1de89f0d83f8fdc5715e15b820f26e79add3ccd534a9"
+    },
+    {
+      "tick": 148,
+      "state_hash": "b2f72da9d399088bc565e4d83b98395babdab3a961e0601520290441d4fa4653",
+      "segment_sha256": "5d4d967901c95cf9f1cc33ebf89b86bb09aa3977751f585d93948ad42a220e1d"
+    },
+    {
+      "tick": 149,
+      "state_hash": "d8cc1ed45111a01b050c8a6a747a2028f0a8220168965b4ca4a2168868c251c2",
+      "segment_sha256": "162d8994622b783069332b44df31d7bd5695759ee5effff6ec5a9233ead8bea9"
+    },
+    {
+      "tick": 150,
+      "state_hash": "1f900729ceb14da0bf1ffed060d2cb3c03765cfed3fed93e1bf9e79d19001275",
+      "segment_sha256": "04ff90aeefd66007e80f3231606a9973fca6d38d503e0245e20907ae35a9c5b1"
+    },
+    {
+      "tick": 151,
+      "state_hash": "295dbe296c2dde965b2c7c1d60e769852edee41b52ac325a064ce13baaa2770d",
+      "segment_sha256": "093a2c658c2a08fd092572c31de9853ba32ae43649d3b23b8de8d897adecf210"
+    },
+    {
+      "tick": 152,
+      "state_hash": "f031ab4a7a48b0534accc74732b94ee32cda278e32b3219d3e97b710c038ff57",
+      "segment_sha256": "6c3acbcaa17371b4495e785507c127775eebd3870e3f9cee976bdd4cad943a63"
+    },
+    {
+      "tick": 153,
+      "state_hash": "3bc6fa7fc5dfbe9fb2978dde65db5226e94f551c1ee8c06056da872411f77d99",
+      "segment_sha256": "9652b96976c47286b2d2a611e932e7916de06bbd3c8b0b1b5e347002fd689a57"
+    },
+    {
+      "tick": 154,
+      "state_hash": "3bf7093ced46fafe353dd97782cb840d1e9e8658e55d675fdae9fa1b8da2fad1",
+      "segment_sha256": "4ad8489eb68eeb5d67d861a1e7daa3fa49214034572da61f5ce369f3d4188cce"
+    },
+    {
+      "tick": 155,
+      "state_hash": "676e26123a49e41b77e59f34ca8da74229863e72ffe8ffa08b9a4e7710a3d610",
+      "segment_sha256": "7be255c613429d38f89fcbf0bae15a20bb844b85c7edfafe0cc81b7834a3cf7c"
+    },
+    {
+      "tick": 156,
+      "state_hash": "bf49992bbe9bc50c17f2648dcfac02f3b827fb43d057a67bf200a8e96caaeef8",
+      "segment_sha256": "729ce07d37b813cb29d70026b040bc389c8cc41de7bfb17d8a2c1ca82fbba9e9"
+    },
+    {
+      "tick": 157,
+      "state_hash": "e1cf461e9c01e5f829c36321f1d12b5b1702316c13055081dc3c05acf243a913",
+      "segment_sha256": "56570934dacabd4aa88ed1de197e3d06468ff438e7cbd46ec3f25e83f2f1d6a0"
+    },
+    {
+      "tick": 158,
+      "state_hash": "7e6c24bf55563ec129f1311198d58fd2bb76794800bffe69e2b80aefe8b0a501",
+      "segment_sha256": "e62a74a799c582accce840186dabd2b6dbc3d1b9e46e6a1218bc79d08ffc9c0b"
+    },
+    {
+      "tick": 159,
+      "state_hash": "a877115d635fb9a65afb31dba9a6fff7754a70d091d16ac076b0e947f28ffe8a",
+      "segment_sha256": "c1ad7af3d0aad441b41e9feaeec86c5b740f4da53020f836e537980f43dc2723"
+    },
+    {
+      "tick": 160,
+      "state_hash": "d6650a1feb36c9470c31d77147a505ef067da78cbed829f0971239dd02e1b286",
+      "segment_sha256": "07f415d38c1d48cd6ae6a19610c32deaae946ef16f89afb2a012dd318fa02e75"
+    },
+    {
+      "tick": 161,
+      "state_hash": "4c5c50a05044ce2ed1fab3b6a4a262e940c05fe3bdde1368640096af3b1058cf",
+      "segment_sha256": "4817bc94da8c4041c5241a901d3341bcf446c33b57dbeeb5347681b1cb2e408b"
+    },
+    {
+      "tick": 162,
+      "state_hash": "a661cb62f06cf3ee319ff8f627a40dc901b1720fb01db705a95741f422c478ef",
+      "segment_sha256": "455f81b0c1a5a9196f024345cddd458edb9ca6257e0c3ebce5afc2b054814ae1"
+    },
+    {
+      "tick": 163,
+      "state_hash": "2d33db49cdb6f3dc4681bb6f68eb9ca992753d49867e7f5aefdf58238cfa65be",
+      "segment_sha256": "4624253796224e33f219cd2ba37792fe785cafbf11021bca7f3b19692e5ffc8a"
+    },
+    {
+      "tick": 164,
+      "state_hash": "ca3b851a8f354151bb82a292563878c6f58ceccb7dfc70c637d51a35dbd30a16",
+      "segment_sha256": "a0eadfdeccff597ff4d8039791d354b75c244bb815a1a663dc05e95685991d10"
+    },
+    {
+      "tick": 165,
+      "state_hash": "bdb1f4db2733b33996de0ab8e8d059d617f4455953335776935a6846d2c39f25",
+      "segment_sha256": "8c84c9fa584ce70b09222c376280a92285ddc82303dc47301b6ba4711250bafb"
+    },
+    {
+      "tick": 166,
+      "state_hash": "5abfe5e2e4e2bec0a9c0df17b77bee29b672f213f015e2cae947c92e1956f417",
+      "segment_sha256": "9a0e64aa9f4546bd51ccfb9ca17dada0907f163b2ebeddfa3aead5e3d04d2dea"
+    },
+    {
+      "tick": 167,
+      "state_hash": "18f524b5621ef8423d44b3fe5454166c3fb08bdc0a5b5e0c9026a4affa056957",
+      "segment_sha256": "89e68545847c01bf1a70e04ead755e94165deb05e853eada66da688793779ee7"
+    },
+    {
+      "tick": 168,
+      "state_hash": "2989928372c2cd574eed27772b93df716df9b17f0c9821f54934cac841f38886",
+      "segment_sha256": "cca91d73cb6b0068287186871eb2e51bec8dd4d657e85224ac39df1142674586"
+    },
+    {
+      "tick": 169,
+      "state_hash": "7a4aa2efe53031bc64a1b6e3d3bf2d1504498c0937a49c8352acd01311c30a74",
+      "segment_sha256": "09db90b70fc1c1127f5e7c552e601defb7e934395c08b759b19fa93a5445cc17"
+    },
+    {
+      "tick": 170,
+      "state_hash": "48cea0fe281e4a00fcb04973914b7d2d36ce5504896a0a1b3df7a4a29f281b73",
+      "segment_sha256": "933ca331b3f7f20cc4fb70b8f8728a82bc48cb6f6c18409081c4adc2684f1a16"
+    },
+    {
+      "tick": 171,
+      "state_hash": "26a4ac402f122faa77a168c96eabd2c962e1095cce88c14589fd4c2701690142",
+      "segment_sha256": "603f3ee350de0ebf8ea220cf49cd142a9c8ef4a6f9443938e720fd19730190dc"
+    },
+    {
+      "tick": 172,
+      "state_hash": "27ace20a28f4950493d90904de2492d8a3322124739ce14f073dad8f984c26ea",
+      "segment_sha256": "d7f0ebb018cf31fe2de323a4fd275cb47900f14d2b58e18c295a11abc994bf30"
+    },
+    {
+      "tick": 173,
+      "state_hash": "3eadc0ba9470fb16ef2a73300fa2d4645d9e2fed27c19d8075b217431410c219",
+      "segment_sha256": "e7f0f8c4d5af894f2505ef69475f5d2e54a53db2b0f0610df95834bf39fc941a"
+    },
+    {
+      "tick": 174,
+      "state_hash": "cfd9c667b808ffe616710fdeeaceb71d85102c33cb13d422e70616f1fd75f035",
+      "segment_sha256": "91b1d9aa98aec508c77eb8fa4e83010319206a9681269aee458c11fd10d11a98"
+    },
+    {
+      "tick": 175,
+      "state_hash": "f7b9b2f02b0fc44ba5e08e78e71348006e6130ea3e4aa2bf2ad348b1a9a38ff8",
+      "segment_sha256": "4dea89392575a4be6b0f0c1e126b9261f0632e2da27bcc62fecd333ab73201dc"
+    },
+    {
+      "tick": 176,
+      "state_hash": "9223f2d92b3fb42dbf79f31fc13ee50e1b1e79b6270793d35e30295c81628c7e",
+      "segment_sha256": "32adcfb6977aefdb091a3ea759b05d8b0ebcbc00e6bc264b3836e2c24b2654bb"
+    },
+    {
+      "tick": 177,
+      "state_hash": "6ea0623d4670112b5c4416ffaf4950ce42eccad1a6cf859c1b82835d82ce6673",
+      "segment_sha256": "b3ebec2a2e74e4a6d580a036de854403f2421dd8e61154964119d82a0727272c"
+    },
+    {
+      "tick": 178,
+      "state_hash": "de1fff607663ed6c8d4b8f4308c668b57b357e56b201d8c327b8dc973744e7c9",
+      "segment_sha256": "99f0a1c1988c550407688d07c19434f5fddd412ce8f80aad3389c4e6b1ad8abe"
+    },
+    {
+      "tick": 179,
+      "state_hash": "6588bcdda02a35b7193cec769db18949dabb4b2c825820192f98add30fc1cae8",
+      "segment_sha256": "7a898c50d6102e7160e2fca88fb393c7ea9a514f43318509984171bb1ac6cf3b"
+    },
+    {
+      "tick": 180,
+      "state_hash": "fa50b02478f78893c4f1b0507e4b1582136397272cadfff98a969eec5f1a97b7",
+      "segment_sha256": "191c19196854f1267d18dd5aed6b891ec94921eb9d87c2b4fc1f931f45c1876a"
+    },
+    {
+      "tick": 181,
+      "state_hash": "d4668c213dc53f038eedce4aec7a289278b3c500822bc7c63958b34cbad8490d",
+      "segment_sha256": "c4793e277f8cb5f24d5a58982131b471494e586f001163be182a43b19eab83b7"
+    },
+    {
+      "tick": 182,
+      "state_hash": "7cd136b9de787afe2c59afc72e2823a4d6573f03577a845c2d4c5349fc29a0a3",
+      "segment_sha256": "ad59f9de73abc2249427b81dd7d9921f546d76b8f09d61b0d3b24742c16942b1"
+    },
+    {
+      "tick": 183,
+      "state_hash": "58dd2ee9edfa3ed3a6f214ba5c1cf5403655cbd3319f4c1c59f1b3fa158139c2",
+      "segment_sha256": "19e7e97ec713fba34b9bad8b6626710ca244c8a33a6fd82c8f751f4d5cf1ab57"
+    },
+    {
+      "tick": 184,
+      "state_hash": "6fe651176646b4ca11e44a4acf255ef67424e21802b251495b94544f5b077177",
+      "segment_sha256": "c81fac37b83370c9f0e356e924e161117600e5161289c45477e9ffafe6ba9427"
+    },
+    {
+      "tick": 185,
+      "state_hash": "f11dc4c0b61668df24ed2370b3f4870bf514797b09a2b08639c4d9fb95914f0d",
+      "segment_sha256": "158f98bc0243dc70c4900b6ac8a3a6ac7c7779d22bae53ed281b37d2993dbefb"
+    },
+    {
+      "tick": 186,
+      "state_hash": "a6e108800c2de2b644484579dac2399de6ad974be199b9f86c0847ade1fcbfb7",
+      "segment_sha256": "1c90386c4af34ed508a9e5f57f1ac869261fe9e90d0f3a16045cadf8cc7bc3de"
+    },
+    {
+      "tick": 187,
+      "state_hash": "1fabab421c1a9e30c87f316ccb2ef51651ae1e8db397795bd73ce8596d8ee5ee",
+      "segment_sha256": "df9b8e995e363238cdc16824db36d764719534dc0967a1c50a389164c2b06201"
+    },
+    {
+      "tick": 188,
+      "state_hash": "ad743a377d53696ec93b5ff014034e4260a2fe793da4b77f6a79333fd350dfce",
+      "segment_sha256": "c2f64028369e5627436e05b5cd8ca8674dea779f05839a6101ad8c02eb27a9a0"
+    },
+    {
+      "tick": 189,
+      "state_hash": "097f6aa155c91a1cd27c6202cb17b5a7445090847e16ec07544a431e8f219e57",
+      "segment_sha256": "5c2a8ba70d47e7cf6d8785660651332c06282990fb58a9f0e7e80ff64cab086e"
+    },
+    {
+      "tick": 190,
+      "state_hash": "e982e835d0dec9c483ac274114375030fae67e1001c93fc0c2aab90a0a78b02d",
+      "segment_sha256": "1ce001c1e93337c088e1270cdf5245a0eff665e3f2226a40068a09f6a5d8c30e"
+    },
+    {
+      "tick": 191,
+      "state_hash": "c4c677bba936e730de3bc0e0099fc49dd739d8826e18cbf3b730e23a1e2e94ee",
+      "segment_sha256": "0044adfdeadc72ff55008987e3e3fd1a9b226af07c3f9d54de4f4f9d70154ece"
+    },
+    {
+      "tick": 192,
+      "state_hash": "0c2c7e6582200f9d0786a262a69aa98c7a4998daa162a0e0b68277361daff81b",
+      "segment_sha256": "e48b740f0a3a960c5bcf144067a2a79798d7b56210a94bc12f27587ab41c8092"
+    },
+    {
+      "tick": 193,
+      "state_hash": "bfd879e23c2efb5db881ff9e1278f9bc67076980c6f59c506466082885778f41",
+      "segment_sha256": "a8ce023d54f010bfec49edab0343032090a098b62273c2e68bebf58d4b69617a"
+    },
+    {
+      "tick": 194,
+      "state_hash": "f7e8a511ea15cc0d1c4508012d9810c0fd263f3e90ab386acbcdb1372a374b73",
+      "segment_sha256": "9af7ee8c4c0d6463c37c404e826f6f8759f2fb875a8229e09a2a218403fa5a75"
+    },
+    {
+      "tick": 195,
+      "state_hash": "6a6027092572d6962e723ecde0a0b78f18d173a2f9696f78a3c255e18bfe4e7a",
+      "segment_sha256": "fd82543ff6d95588f1b8a78ed86b66f03a1c39ee0dfbdb25bd54231d21402320"
+    },
+    {
+      "tick": 196,
+      "state_hash": "170a91412910a50b93db6c84fce9347d79e64dcb86d81b0c16c232cc55734047",
+      "segment_sha256": "cbcc4cf2fb33aad61d8934e60d746a99018cefbaffea126411c1e8740cc45877"
+    },
+    {
+      "tick": 197,
+      "state_hash": "d90d3d70f1573f89ceccd8d7d3e71505079f6c5b90170b57c56d0e4a6eeeb9fa",
+      "segment_sha256": "8319f925da54a05d4bb5d5b3edda9a4ada0bd19fae23f131574255beaec11367"
+    },
+    {
+      "tick": 198,
+      "state_hash": "9a4da6d594760f47e2057e3a411ead01674d5ccb911886f22a4d2e817dff9c53",
+      "segment_sha256": "313fe0780a14cf5b8e16132b86bbca92860d5288c8b1d7390999766809be7732"
+    },
+    {
+      "tick": 199,
+      "state_hash": "67d075779e7c6929c9d71bb02ee4f0a9f07167ba6e27a9b8e2c4322380baad68",
+      "segment_sha256": "5e6af18257c41cc46a2d10c07b2eb7b07832a5675f7796c4d714d866cac1ec5c"
+    },
+    {
+      "tick": 200,
+      "state_hash": "0707983eb5d7333686ea1f77675f750121d53aa8bd6ae9439e831aaff1a35202",
+      "segment_sha256": "342ed910db6540865b1e59ca94869fe49e10fddd56eb437f8f988db056266369"
+    }
+  ],
+  "profiled": false,
+  "command": [
+    "kdd27_completion_20261114/reviews/capacity/profile_run.py",
+    "--config",
+    "kdd27_completion_20261114/reviews/capacity/configs/mac-n100-t200.json",
+    "--output",
+    "kdd27_completion_20261114/reviews/capacity/mac-n100-t200",
+    "--expected-source-hash",
+    "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+    "--expected-config-hash",
+    "6e4207d0f764fb26433b3b88467c91b5553a8a5832d8bb4fdf5de86fc48f71c5"
+  ],
+  "logging": "complete durable audit"
+}

@@ -1,0 +1,857 @@
+{
+  "status": "PASS_FINAL_HEALTH_ARITHMETIC_AND_ADMISSION_TABLES",
+  "reviewed_at_utc": "2026-11-15T05:45:14.899151+00:00",
+  "plan_sha256": "eb0644f91d9f8293e11c7d40be0e31b00a0885306f6cefee7785b4cd0223909e",
+  "post_window_plan_sha256": "cd619f357fc3372eed77cf7b45e515e144b45ccd7c2edb7a6b4aa6883792b4d5",
+  "original_asus_postprocess": "NOT_RUN_PRESERVED",
+  "primary_postprocessing_phase": "post_window_readonly_closeout",
+  "table_checks": {
+    "run_rows": 9,
+    "paired_rows": 42,
+    "descriptive_rows": 21,
+    "planned_independent_seed_units": 3,
+    "trajectories_per_seed": 3,
+    "complete_rows": 9,
+    "zero_filled": false,
+    "pair_observed_seed_counts": {
+      "full-minus-homogeneous_linear_value/daily_log_return": 3,
+      "full-minus-homogeneous_linear_value/fees_minor": 3,
+      "full-minus-homogeneous_linear_value/no_trade_ratio": 3,
+      "full-minus-homogeneous_linear_value/one_sided_ratio": 3,
+      "full-minus-homogeneous_linear_value/trade_count": 3,
+      "full-minus-homogeneous_linear_value/traded_quantity": 3,
+      "full-minus-homogeneous_linear_value/two_sided_coverage": 3,
+      "full-minus-zero_intelligence/daily_log_return": 3,
+      "full-minus-zero_intelligence/fees_minor": 3,
+      "full-minus-zero_intelligence/no_trade_ratio": 3,
+      "full-minus-zero_intelligence/one_sided_ratio": 3,
+      "full-minus-zero_intelligence/trade_count": 3,
+      "full-minus-zero_intelligence/traded_quantity": 3,
+      "full-minus-zero_intelligence/two_sided_coverage": 3
+    },
+    "formal_H1_H2_H3_completed": false
+  },
+  "rows": [
+    {
+      "label": "seed-932201-full",
+      "seed": 932201,
+      "baseline": "full",
+      "run_id": "run-c6eaaa7d81c14c7c8bbd576ffc3f1158",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.67,
+        "one_sided_ratio": 0.69,
+        "two_sided_coverage": 0.18,
+        "trade_count": 57,
+        "fees_minor": 37831435,
+        "traded_quantity": 371,
+        "daily_log_return": 0.028781801425452162
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 67,
+        "one_sided_ratio": 69,
+        "two_sided_coverage": 18
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 511,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T04:22:33.041616+00:00",
+      "analysis_controller_elapsed_seconds": 1636.870009206992,
+      "analysis_wall_seconds": 1636.2163606809918,
+      "analysis_peak_rss_bytes": 1090187264
+    },
+    {
+      "label": "seed-932201-zero_intelligence",
+      "seed": 932201,
+      "baseline": "zero_intelligence",
+      "run_id": "run-c6d9e02575464022b07bb0ad11ba9d74",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.67,
+        "one_sided_ratio": 0.73,
+        "two_sided_coverage": 0.11,
+        "trade_count": 50,
+        "fees_minor": 21865002,
+        "traded_quantity": 214,
+        "daily_log_return": 0.0321767316952212
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 67,
+        "one_sided_ratio": 73,
+        "two_sided_coverage": 11
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 511,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T04:22:33.042698+00:00",
+      "analysis_controller_elapsed_seconds": 1624.621922433027,
+      "analysis_wall_seconds": 1624.0138446759665,
+      "analysis_peak_rss_bytes": 1089085440
+    },
+    {
+      "label": "seed-932201-homogeneous_linear_value",
+      "seed": 932201,
+      "baseline": "homogeneous_linear_value",
+      "run_id": "run-03fe58ce8c16483b88ff81974e457757",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.73,
+        "one_sided_ratio": 0.73,
+        "two_sided_coverage": 0.13,
+        "trade_count": 43,
+        "fees_minor": 25327804,
+        "traded_quantity": 249,
+        "daily_log_return": 0.02732329564889041
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 73,
+        "one_sided_ratio": 73,
+        "two_sided_coverage": 13
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 511,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T04:22:33.043183+00:00",
+      "analysis_controller_elapsed_seconds": 1620.7977364240214,
+      "analysis_wall_seconds": 1620.1410244939616,
+      "analysis_peak_rss_bytes": 1085190144
+    },
+    {
+      "label": "seed-932202-full",
+      "seed": 932202,
+      "baseline": "full",
+      "run_id": "run-8527a9fb9f7d485bb921cfb856610b92",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.76,
+        "one_sided_ratio": 0.76,
+        "two_sided_coverage": 0.18,
+        "trade_count": 34,
+        "fees_minor": 34211774,
+        "traded_quantity": 345,
+        "daily_log_return": -0.025522957231085892
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 76,
+        "one_sided_ratio": 76,
+        "two_sided_coverage": 18
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 471,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T04:49:33.842956+00:00",
+      "analysis_controller_elapsed_seconds": 1637.6780285440036,
+      "analysis_wall_seconds": 1636.940513946989,
+      "analysis_peak_rss_bytes": 1086214144
+    },
+    {
+      "label": "seed-932202-zero_intelligence",
+      "seed": 932202,
+      "baseline": "zero_intelligence",
+      "run_id": "run-2d961f43de1f47c999de615a34262f0e",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.78,
+        "one_sided_ratio": 0.71,
+        "two_sided_coverage": 0.2,
+        "trade_count": 34,
+        "fees_minor": 19548665,
+        "traded_quantity": 195,
+        "daily_log_return": -0.0009004052431641551
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 78,
+        "one_sided_ratio": 71,
+        "two_sided_coverage": 20
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 471,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T04:49:37.666443+00:00",
+      "analysis_controller_elapsed_seconds": 1631.7816839779844,
+      "analysis_wall_seconds": 1631.0759255739977,
+      "analysis_peak_rss_bytes": 1087348736
+    },
+    {
+      "label": "seed-932202-homogeneous_linear_value",
+      "seed": 932202,
+      "baseline": "homogeneous_linear_value",
+      "run_id": "run-98ca0b38e7d24848b57319f16c1ad686",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.78,
+        "one_sided_ratio": 0.68,
+        "two_sided_coverage": 0.24,
+        "trade_count": 36,
+        "fees_minor": 31100070,
+        "traded_quantity": 314,
+        "daily_log_return": -0.022859294146082558
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 78,
+        "one_sided_ratio": 68,
+        "two_sided_coverage": 24
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 471,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T04:49:49.913527+00:00",
+      "analysis_controller_elapsed_seconds": 1620.845699391968,
+      "analysis_wall_seconds": 1620.1220693679643,
+      "analysis_peak_rss_bytes": 1088221184
+    },
+    {
+      "label": "seed-932203-full",
+      "seed": 932203,
+      "baseline": "full",
+      "run_id": "run-0eece9d7041842a797ae5512e4df8c47",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.66,
+        "one_sided_ratio": 0.7,
+        "two_sided_coverage": 0.19,
+        "trade_count": 40,
+        "fees_minor": 36377381,
+        "traded_quantity": 365,
+        "daily_log_return": -0.01491061273575424
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 66,
+        "one_sided_ratio": 70,
+        "two_sided_coverage": 19
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 503,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T05:16:49.449609+00:00",
+      "analysis_controller_elapsed_seconds": 1648.6487150120083,
+      "analysis_wall_seconds": 1647.9606040299986,
+      "analysis_peak_rss_bytes": 1089875968
+    },
+    {
+      "label": "seed-932203-zero_intelligence",
+      "seed": 932203,
+      "baseline": "zero_intelligence",
+      "run_id": "run-844a4c50f3f244de8c95643a0e3f3045",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.66,
+        "one_sided_ratio": 0.68,
+        "two_sided_coverage": 0.17,
+        "trade_count": 44,
+        "fees_minor": 24984253,
+        "traded_quantity": 251,
+        "daily_log_return": -0.004208844774054682
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 66,
+        "one_sided_ratio": 68,
+        "two_sided_coverage": 17
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 503,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T05:16:50.760723+00:00",
+      "analysis_controller_elapsed_seconds": 1639.7650503789773,
+      "analysis_wall_seconds": 1639.0268906800193,
+      "analysis_peak_rss_bytes": 1089409024
+    },
+    {
+      "label": "seed-932203-homogeneous_linear_value",
+      "seed": 932203,
+      "baseline": "homogeneous_linear_value",
+      "run_id": "run-75f8291767024effb88af3b6537d2bc6",
+      "raw_runtime_status": "completed",
+      "financial_admission": "PASS",
+      "analysis_controller_status": "completed",
+      "analysis_stop_reason": null,
+      "analysis_read_error": null,
+      "controller_read_error": null,
+      "analysis_stage_status": "completed",
+      "analysis_stage_reason": null,
+      "complete_health_outcomes": true,
+      "formal_eligible": false,
+      "metrics": {
+        "no_trade_ratio": 0.61,
+        "one_sided_ratio": 0.64,
+        "two_sided_coverage": 0.24,
+        "trade_count": 55,
+        "fees_minor": 40313942,
+        "traded_quantity": 407,
+        "daily_log_return": -0.016841017196026556
+      },
+      "ratio_numerators": {
+        "no_trade_ratio": 61,
+        "one_sided_ratio": 64,
+        "two_sided_coverage": 24
+      },
+      "tick_denominator": 100,
+      "decision_count": 10000,
+      "active_decisions": 503,
+      "daily_return_count": 1,
+      "undefined_daily_metrics": [
+        "excess_kurtosis",
+        "mean_abs_return_acf_lags_1_20",
+        "maximum_abs_raw_return_acf_lags_1_20",
+        "volume_abs_return_correlation"
+      ],
+      "analysis_started_at": "2026-11-15T05:16:51.523580+00:00",
+      "analysis_controller_elapsed_seconds": 1665.4488463340094,
+      "analysis_wall_seconds": 1664.783054606989,
+      "analysis_peak_rss_bytes": 1089355776
+    }
+  ],
+  "observed_common_activation_checks": [
+    {
+      "seed": 932201,
+      "comparison": "full-vs-zero_intelligence",
+      "actor_tick_slots": 10000,
+      "mismatched_activation_flags": 0
+    },
+    {
+      "seed": 932201,
+      "comparison": "full-vs-homogeneous_linear_value",
+      "actor_tick_slots": 10000,
+      "mismatched_activation_flags": 0
+    },
+    {
+      "seed": 932202,
+      "comparison": "full-vs-zero_intelligence",
+      "actor_tick_slots": 10000,
+      "mismatched_activation_flags": 0
+    },
+    {
+      "seed": 932202,
+      "comparison": "full-vs-homogeneous_linear_value",
+      "actor_tick_slots": 10000,
+      "mismatched_activation_flags": 0
+    },
+    {
+      "seed": 932203,
+      "comparison": "full-vs-zero_intelligence",
+      "actor_tick_slots": 10000,
+      "mismatched_activation_flags": 0
+    },
+    {
+      "seed": 932203,
+      "comparison": "full-vs-homogeneous_linear_value",
+      "actor_tick_slots": 10000,
+      "mismatched_activation_flags": 0
+    }
+  ],
+  "metric_ranges_all_baselines": {
+    "no_trade_ratio": {
+      "minimum": 0.61,
+      "maximum": 0.78,
+      "observed_trajectories": 9,
+      "planned_trajectories": 9
+    },
+    "one_sided_ratio": {
+      "minimum": 0.64,
+      "maximum": 0.76,
+      "observed_trajectories": 9,
+      "planned_trajectories": 9
+    },
+    "two_sided_coverage": {
+      "minimum": 0.11,
+      "maximum": 0.24,
+      "observed_trajectories": 9,
+      "planned_trajectories": 9
+    },
+    "trade_count": {
+      "minimum": 34,
+      "maximum": 57,
+      "observed_trajectories": 9,
+      "planned_trajectories": 9
+    },
+    "fees_minor": {
+      "minimum": 19548665,
+      "maximum": 40313942,
+      "observed_trajectories": 9,
+      "planned_trajectories": 9
+    },
+    "daily_log_return": {
+      "minimum": -0.025522957231085892,
+      "maximum": 0.0321767316952212,
+      "observed_trajectories": 9,
+      "planned_trajectories": 9
+    },
+    "traded_quantity": {
+      "minimum": 195,
+      "maximum": 407,
+      "observed_trajectories": 9,
+      "planned_trajectories": 9
+    }
+  },
+  "paired_difference_signs": [
+    {
+      "comparison": "full-minus-zero_intelligence",
+      "metric": "no_trade_ratio",
+      "positive": 0,
+      "zero": 2,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        0.0,
+        -0.020000000000000018,
+        0.0
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-zero_intelligence",
+      "metric": "one_sided_ratio",
+      "positive": 2,
+      "zero": 0,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        -0.040000000000000036,
+        0.050000000000000044,
+        0.019999999999999907
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-zero_intelligence",
+      "metric": "two_sided_coverage",
+      "positive": 2,
+      "zero": 0,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        0.06999999999999999,
+        -0.020000000000000018,
+        0.01999999999999999
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-zero_intelligence",
+      "metric": "trade_count",
+      "positive": 1,
+      "zero": 1,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        7.0,
+        0.0,
+        -4.0
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-zero_intelligence",
+      "metric": "fees_minor",
+      "positive": 3,
+      "zero": 0,
+      "negative": 0,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        15966433.0,
+        14663109.0,
+        11393128.0
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-zero_intelligence",
+      "metric": "daily_log_return",
+      "positive": 0,
+      "zero": 0,
+      "negative": 3,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        -0.003394930269769038,
+        -0.024622551987921737,
+        -0.010701767961699558
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-zero_intelligence",
+      "metric": "traded_quantity",
+      "positive": 3,
+      "zero": 0,
+      "negative": 0,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        157.0,
+        150.0,
+        114.0
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-homogeneous_linear_value",
+      "metric": "no_trade_ratio",
+      "positive": 1,
+      "zero": 0,
+      "negative": 2,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        -0.05999999999999994,
+        -0.020000000000000018,
+        0.050000000000000044
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-homogeneous_linear_value",
+      "metric": "one_sided_ratio",
+      "positive": 2,
+      "zero": 0,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        -0.040000000000000036,
+        0.07999999999999996,
+        0.05999999999999994
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-homogeneous_linear_value",
+      "metric": "two_sided_coverage",
+      "positive": 1,
+      "zero": 0,
+      "negative": 2,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        0.04999999999999999,
+        -0.06,
+        -0.04999999999999999
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-homogeneous_linear_value",
+      "metric": "trade_count",
+      "positive": 1,
+      "zero": 0,
+      "negative": 2,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        14.0,
+        -2.0,
+        -15.0
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-homogeneous_linear_value",
+      "metric": "fees_minor",
+      "positive": 2,
+      "zero": 0,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        12503631.0,
+        3111704.0,
+        -3936561.0
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-homogeneous_linear_value",
+      "metric": "daily_log_return",
+      "positive": 2,
+      "zero": 0,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        0.0014585057765617512,
+        -0.0026636630850033344,
+        0.0019304044602723152
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    },
+    {
+      "comparison": "full-minus-homogeneous_linear_value",
+      "metric": "traded_quantity",
+      "positive": 2,
+      "zero": 0,
+      "negative": 1,
+      "missing": 0,
+      "planned_seed_pairs": 3,
+      "differences_in_seed_order": [
+        122.0,
+        31.0,
+        -42.0
+      ],
+      "seed_order": [
+        932201,
+        932202,
+        932203
+      ]
+    }
+  ],
+  "signs_use_unrounded_values": true,
+  "cash_scale_minor_per_CNY": 1000000,
+  "timing_receipts": {
+    "original_science_campaign_finished_at": "2026-11-14T21:16:54.280648+00:00",
+    "post_window_financial_first_started_at": "2026-11-15T04:17:34.889509+00:00",
+    "post_window_financial_last_controller_finished_at_derived": "2026-11-15T04:22:33.036613+00:00",
+    "post_window_analysis_stage_finished_at": "2026-11-15T05:44:36.973564+00:00"
+  },
+  "cash_asset_fee_residuals": "all_zero_for_nine_admitted_financial_audits",
+  "four_daily_metrics_per_complete_world": "UNDEFINED_ONE_DAILY_RETURN",
+  "cross_platform_projection": {
+    "completed_comparisons": 3,
+    "distinct_existing_seed_units": 1,
+    "science_differences": 0,
+    "run_identity_differences": 0,
+    "analysis_contract_differences": 0,
+    "operational_differences_per_file": 4,
+    "whole_files_byte_identical": false,
+    "other_six_Mac_NOT_RUN": true
+  },
+  "statistical_scope": "Each baseline n<=3 worlds; at most three paired seed blocks per contrast. No bootstrap CI, power, H1-H3 confirmation, or superiority inference.",
+  "full_state_pipeline_calls": 0,
+  "world_restore_calls": 0,
+  "analyze_run_calls": 0,
+  "new_world_steps": 0,
+  "new_paid_calls": 0,
+  "posthoc_tolerance_applied": false,
+  "bound_input_sha256": {
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932201-full-analysis.json": "504d8bff336aa784031f929568c87e6e82ebd6300e322a356e7f2e3e5e6359b0",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932201-full.json": "959a16044a6d62f6a32bdb5dbcbf8f11bbd590e38d99f97b45147adcb183504c",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932201-full-audit-result.json": "2a9351265179abbeeeb63a770d80b7f08a8232143cdf7a3bc268b4f0049b7080",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932201-full.json": "9ceb1da824d29e415834c7e520ab2ca0da2600b8e031461c77cb252d456f7c78",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932201-zero_intelligence-analysis.json": "b9555e18e643463d9f60b99089f1da8001eba040e067c54031701a16f38d3f1d",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932201-zero_intelligence.json": "a26c1432f435fc59186b4e3b38ec23087d9538963b1a03f5fec7e27a2d8e3586",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932201-zero_intelligence-audit-result.json": "d0083132f5a41194670b779b8e95ba90efb19bdf5e21ceff58122aaee88eebb8",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932201-zero_intelligence.json": "2a5dcc353b500a81e590378fad54fac121d5cee6d255e1bb82fbdf1b2a09247b",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932201-homogeneous_linear_value-analysis.json": "27e8cfd257dc6288f2b4c50423ce93cf53cdf0032bfe0832c112b58548f2f168",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932201-homogeneous_linear_value.json": "f503878309dc857ded3f037da03b4f679f93284af1216c2e01816aad54898203",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932201-homogeneous_linear_value-audit-result.json": "a0397e838b44c47a56f6e28bd7b8ecbd863f2b6dcee095194e9c392d38a5a6c4",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932201-homogeneous_linear_value.json": "a6efcf9db0f2d80a658ac11a9bca96b996469b4f0ac3dfb922087f74a42850d8",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932202-full-analysis.json": "7540a8e0162e0a6ca5bc06d96cb22df3c979d34ed63e92227be10db2c5405966",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932202-full.json": "fccb5769cedeaaf9c644c9db1d8304f15e4d03543d6bfc58c890073cfebb183f",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932202-full-audit-result.json": "4b562698320e6952c3b32a056875a8c87acfedccdb389db55adea38739e836a6",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932202-full.json": "57aa4e406f3115ec8f265e989f28bc59a951529b33ddb689b780e130873431a7",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932202-zero_intelligence-analysis.json": "5c25fd4c5b0a0b2e48b60e1caa47f493c2381606f61bb9dd652be6400c74bba9",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932202-zero_intelligence.json": "c689fbad54afbb66facd3e0302027db0a6bf3dfecf4f7e051ea54f511e10b5dc",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932202-zero_intelligence-audit-result.json": "dd85327ace56759616455b845e38ef44bd81014f946ed2ed44eb395f698329a6",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932202-zero_intelligence.json": "38de9a50f3acac79d986e501eb36205e8c6b8c7437d7fef34e45617480cb374d",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932202-homogeneous_linear_value-analysis.json": "78ca9330f42692c9bbc625df9791919524c0af4154c51e70ec91006df93c8e12",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932202-homogeneous_linear_value.json": "27a9d96dc04385fe99faa4caa5261b2d1cb0a0efd3c0453994c260550345a7cb",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932202-homogeneous_linear_value-audit-result.json": "10bf00f28bdb52ea0b91392c1f5b6287d19e0f517b9e3c4eb63cdbe506f527a0",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932202-homogeneous_linear_value.json": "e26c130414932062f05fdb6c346d408c88d4206ad0464e31df5e84bf0afa534d",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932203-full-analysis.json": "65d0c5643a4dc5c43893d1274ba996e46c5d6b8b08d576a7c1cc0b2be4f4362d",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932203-full.json": "e8dcc8020418f0bcb39778cdd1135a48afe38c6d2efcd77c8dd99dd68a04ee52",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932203-full-audit-result.json": "8b1627c0f32a605f91706a1e264b55140ecc58f619c6ba0bebcee0268e6e5f72",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932203-full.json": "8882f388e0b72b2895a331e24f284757c1c93aede7b6adc57a7e689f997be817",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932203-zero_intelligence-analysis.json": "39ad0faed9a5cd04f2791036b9e0d411cb00a3683f9961d8c72e12d7f36dc0df",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932203-zero_intelligence.json": "59022d8c20ad4067bd98fc5ba125c00995d6e5878f635e49380017d1bde9892e",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932203-zero_intelligence-audit-result.json": "ab6fe291ef275c7e9d7bfab0abd3938ae2b97cc6f5c9a20b6b2982cbc7a6c6ea",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932203-zero_intelligence.json": "c538949becc2fc30c3d9ad7ee5c81aabc7e1b4648068ca83eca9b3ecf531c60b",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932203-homogeneous_linear_value-analysis.json": "af4ee456d010e08e2dfade75b7451935f1fbfbb494eba83f3758194688796725",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-analysis-seed-932203-homogeneous_linear_value.json": "0991826e7aa4b0a6434bd8b0e5c095bffc9e12a87f7c3628257066226abbc5bb",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/seed-932203-homogeneous_linear_value-audit-result.json": "6f460f021d022e27a140377d2f6ece74f60dae07a2d53a2456d9b2803dff9850",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/results/controllers/closeout-audit-seed-932203-homogeneous_linear_value.json": "d7d6912cafc89ec967be5fd62c37079a3b85822017daf89a94618a519dc13ed9",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/tables/paired.csv": "60f7688d122f8149b3dbbfc1be38ea608f50e1aec83b92ed23a7dff6ecbdb008",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/tables/run.csv": "586310e3f3b72fa747936f1d996bc1553490bf162b6a9cb788469a6342779edb",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/tables/descriptive.csv": "6e5af5eb2ca011fe379ef0dc9d4a93c8fbe0e33f039a488ff80af2be4c4953e6",
+    "reviews/capacity/health-pilot-v2/post-window-readonly-closeout/tables/financial.csv": "1946b4ad007065b0c2f0c33d4e2f262b499c13010a65a9b6cc4d2c748c31ac15"
+  },
+  "terminal_review_sha256": "87950cf5d399a5b311da59f702a58bd1a56032fd51acb323f37c675da0b14b74",
+  "financial_review_sha256": "af7939d1630861e93cb15e6142709fadefbd5006ccc4e86ca8fd8c4f05fa6f22",
+  "initial_pairing_review_sha256": "c68a865ec3a731b0286e92aeea358b9270829825d0af3e1790fb63bced00b441",
+  "cross_projection_review_sha256": "d0ff9f5f6b1c2e260104220a716b07a7c6e1a4d581e7276c9dcd463159120f82",
+  "script_sha256": "58e43f4ee33a7856364b2cb3f604cde6731004dbd3561f72c7dfede63cedd78f",
+  "arithmetic_helper_sha256": "bc7860444f36f6db3d6399bc8aeaf6de5c71da4971a44983c3288929a0f7dcde"
+}

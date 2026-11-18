@@ -1,0 +1,111 @@
+{
+  "health.csv": {
+    "source": "kdd27_repository/paper/kdd27_overleaf_v1/derived/health_run.csv",
+    "source_sha256": "586310e3f3b72fa747936f1d996bc1553490bf162b6a9cb788469a6342779edb",
+    "packaged_sha256": "f1d6692f8cb9ebe640ca5541cae0660599264bcdb23c78eb953b08d2f2f28926",
+    "transformation": "selected columns, unchanged rows and values"
+  },
+  "branches.csv": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/rq2_diagnostics.csv",
+    "source_sha256": "c8dab997d20b5865039628fd2eac3703515d21a88e0f42725e360c59835edd2e",
+    "packaged_sha256": "c8dab997d20b5865039628fd2eac3703515d21a88e0f42725e360c59835edd2e",
+    "transformation": "byte copy"
+  },
+  "capacity.csv": {
+    "source": "kdd27_repository/paper/kdd27_overleaf_v1/derived/capacity_runs.csv",
+    "source_sha256": "a04213ee10e952ec298b0712b4c55480cae17fc07553c8702cf0d16a72467a12",
+    "packaged_sha256": "a04213ee10e952ec298b0712b4c55480cae17fc07553c8702cf0d16a72467a12",
+    "transformation": "byte copy"
+  },
+  "snapshot_cases.csv": {
+    "source": "kdd27_repository/paper/kdd27_overleaf_v1/derived/snapshot54_case_results.csv",
+    "source_sha256": "c5dba632026283e1212d8c83bebb2105bb62dd38e153451836ebfb8f40711414",
+    "packaged_sha256": "c5dba632026283e1212d8c83bebb2105bb62dd38e153451836ebfb8f40711414",
+    "transformation": "byte copy"
+  },
+  "snapshot_pairs.csv": {
+    "source": "kdd27_repository/paper/kdd27_overleaf_v1/derived/snapshot54_paired_actions.csv",
+    "source_sha256": "6eb356b4642d1ca0029d2c132ca87e3bce58c2487cbbcdf85002c7b279e4dcfe",
+    "packaged_sha256": "6eb356b4642d1ca0029d2c132ca87e3bce58c2487cbbcdf85002c7b279e4dcfe",
+    "transformation": "byte copy"
+  },
+  "projection:full_control": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/full_control-fb247fa79f83402e8e3e19a008cea721.json",
+    "source_sha256": "81890f38a436b5fc0cc1de5912bbcdc097097fb45d599be5cb5d6e743ef2fdaa",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:no_secondary_contagion": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/no_secondary_contagion-12eeb648631c42dba61d25e97b5ddf9b.json",
+    "source_sha256": "185596ee2f20350a63a2c6f1318f586801202f0cc65a4331629df280278366da",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:no_herding_feedback": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/no_herding_feedback-2ab4340823ec47ceae528df6fe921747.json",
+    "source_sha256": "7d2c490b66ebef672d114f17c57cfb4d8198ea2573e76743abe4c0e4db265a73",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:both_off": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/both_off-5ac27fc66f23448ba51ece1db132101d.json",
+    "source_sha256": "b866c14307dbb7a376e4a6e84845a7056138f391c98feed5b5d630ed93569941",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:full_loss_off": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/full_loss_off-b4973c87ad984bcc9a51df6cdcf7578d.json",
+    "source_sha256": "402fc6498b4fad117ed726d84d13fb5821b0b10fe4d6a6b31ea312288e8e42cf",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:lambda_only_1": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/lambda_only_1-f78df4b9922e41c0ab8c573a71ac54bb.json",
+    "source_sha256": "c01066708e199de1fef8f676d92187a1635f75f57a3be880656002b1819d6ea8",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:reverse_retrospective_mapping": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/reverse_retrospective_mapping-5d91c360e7674031a8152b568ecb5acb.json",
+    "source_sha256": "cdada223a4ada29ab5a3857dce74714db7ecaa90a6bd1fe4dff30d4ad9f8273b",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:halt25": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/halt25-fc996bdc03c14c08a30c537a54b255e0.json",
+    "source_sha256": "752aa9f1c17d7abb0c12d00b52239a468501fd149b9987c4800b49390abcd6a3",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:tax0015": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/tax0015-1f9564e438eb4e1cb85b3dc6bb0dd413.json",
+    "source_sha256": "58a3587b56f24b16b7cdf063056a8683900e7d49c9a48d925b3986f6057cd276",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:same_day_lock": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/same_day_lock-4de95f97fb3d482384c5683d01079871.json",
+    "source_sha256": "4f302c006afa89cc7b7533bb74dd1b8255ab6b056ff88923269c5dce011e10da",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "projection:narrow_band005": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/projections/narrow_band005-72d0ec58de704a04975ee4c48185ce1f.json",
+    "source_sha256": "206343b0cb1e9e989f093edc5dd35656deb8a23d74a636abe9723f82a0d9f7bf",
+    "transformation": "u=0 pre-event and 27 committed price observations; divide by pre-event price and multiply by 100; peak infected / N20"
+  },
+  "branch_paths.csv": {
+    "packaged_sha256": "8ee2be647b8cdbbe5008593dd7f8dc6f2b198f1eb6a6183515023dfcb50b554c",
+    "transformation": "derived from archived projections; no smoothing, simulation or fabricated replicate"
+  },
+  "branch_metrics.csv": {
+    "packaged_sha256": "769a692a2fc0173ccb0d89b66b5cd77844a417e11839dc38378ce3313217732b",
+    "transformation": "derived from archived projections; no smoothing, simulation or fabricated replicate"
+  },
+  "snapshot_summary.json": {
+    "source": "kdd27_repository/paper/kdd27_overleaf_v1/derived/snapshot54_summary.json",
+    "source_sha256": "5b3e41fca1c96951096e6b729bc6774373de8aac7e42dfde3eace67382462171",
+    "packaged_sha256": "5b3e41fca1c96951096e6b729bc6774373de8aac7e42dfde3eace67382462171",
+    "transformation": "byte copy"
+  },
+  "timing_pairs.csv": {
+    "source": "kdd27_completion_20261114/combined_delivery_b362a35/verified-reproduction/legacy/timing_pairs.csv",
+    "source_sha256": "fb09fe3e6cc6b5326c561351da3694c1f54bab206b7abf8838bce552ea2ecba6",
+    "packaged_sha256": "fb09fe3e6cc6b5326c561351da3694c1f54bab206b7abf8838bce552ea2ecba6",
+    "transformation": "byte copy"
+  },
+  "execution_environments.json": {
+    "packaged_sha256": "bdaed9c96ebb24ce1e4b72ece75ae23dc2d425f3beb9cff14948888690cf27ea",
+    "transformation": "Read-only hardware/software field export; original evidence paths and SHA-256 embedded in each record; no new measurements"
+  }
+}

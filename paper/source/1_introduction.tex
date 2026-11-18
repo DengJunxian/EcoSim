@@ -1,0 +1,31 @@
+\section{Introduction}
+\label{sec:introduction}
+
+A last-trade price records the most recent match. Between matches, investors can receive new information, revise their trading intentions, and change how much weight they give to peers. Explaining a price response to a shock therefore requires knowing when the market could trade, how investors responded to one another, and which information reached their decisions. Agent-based models link interactions of this kind to emergent market statistics~\cite{cont2001empirical,lebaron2006agent,farmer2009economy,lux1999scaling}. Our question is how to make the economic relations between investors, groups, and the market explicit enough to study them in a single simulation.
+
+\textbf{Civitas Economica} organizes those relations at three scales (Figure~\ref{fig:overview}).
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+ \item \textbf{Person to person.} An investor's portfolio links financial risk to social contact. On a fixed network, investors with similar risk exposure receive stronger relative ties. Limited attention determines which messages reach each investor.
+ \item \textbf{Person to group.} Exposure to peers can propagate panic. The prevalence of pessimism and an investor's own confidence govern reliance on the group. Investor archetypes provide heterogeneous mandates and decision parameters, and the group state evolves through network interaction.
+ \item \textbf{Group to society.} Orders from the population meet in a continuous double auction. Trading rules determine which orders can execute, and settled trades produce prices, holdings, and liquidity that feed into the next step. This scale represents the collective outcomes of the modeled market.
+\end{itemize}
+
+The design draws on social psychology to model attention, emotional contagion, and conformity~\cite{deutsch1955study,hatfield1993emotional,tajfel1979integrative}, and on behavioral finance to connect holdings and price references to valuation~\cite{kahneman1979prospect,tversky1992advances}. Game theory motivates the focus on strategic interdependence because one investor's actions can change the information, prices, and constraints faced by others~\cite{cooper1988coordinating,keynes1936general,morris2002social}. The simulator expresses these channels as behavioral updates and exchange rules. It uses a common observation and order contract to accommodate numerical rules, persona heuristics, full LLM agents, and a dual-speed policy in this loop.
+
+\subsection{Research Questions}
+\label{sec:rq}
+
+\begin{itemize}[leftmargin=*,itemsep=3pt]
+ \item \textbf{Market activity (RQ1).} How do behavioral rules affect trading activity and quote availability under the same exchange rules and sparse activation?
+ \item \textbf{Feedback across scales (RQ2).} From a common market state, how do panic propagation, confidence-dependent herding, valuation, and regulatory rules change social states, prices, and trading opportunities?
+ \item \textbf{Decision interfaces and scheduling (RQ3).} How do the supported decision backends respond to changes in price, locked inventory, and cash in fixed observations? How does a periodic LLM schedule trade off request opportunities and access to an event message?
+\end{itemize}
+
+\subsection{Main Contributions}
+\label{sec:contributions}
+
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+ \item \textbf{An explicit model of economic relations across three scales.} Portfolio exposure shapes social ties, group states affect valuation and order intent, and market clearing changes the prices and portfolios that agents carry forward.
+ \item \textbf{A common execution environment for heterogeneous agents.} A causal clock defines when information becomes visible. The integer ledger tracks reservations and transfers under the same market rules for each decision backend. The dual-speed policy caches a direction and a resource fraction so the next order can use current prices and balances.
+ \item \textbf{Observable comparisons of the three scales.} Shared checkpoints let us change an interaction or market rule and trace the responses from social states to trades. The diagnostics combine those paths with intraday liquidity records, persona-level action contrasts, and measured runtime.
+\end{itemize}

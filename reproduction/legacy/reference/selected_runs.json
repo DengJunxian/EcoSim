@@ -1,0 +1,2779 @@
+[
+  {
+    "attempts": [
+      {
+        "command": [
+          "kdd04_execution/capacity_check.py",
+          "full"
+        ],
+        "from_tick": 0,
+        "recorded_at": "2026-11-14T08:39:27.697025+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 12
+      },
+      {
+        "checkpoint": {
+          "bytes": 599279,
+          "commit_hash": "21d1eb0e4addf59d492f1b535a12a061ff8c5f1df2f4a3eb54152e5dc7b27348",
+          "encoding": "json+gzip",
+          "path": "kdd04_execution/capacity/full/run/checkpoints/08c25e9f64b265ddd98f79285387fb32dbc7031db71ef3ac7531690512f3ed27.json.gz",
+          "sha256": "08c25e9f64b265ddd98f79285387fb32dbc7031db71ef3ac7531690512f3ed27",
+          "tick": 12
+        },
+        "command": [
+          "kdd04_execution/capacity_check.py",
+          "full"
+        ],
+        "elapsed_seconds": 34.975799249950796,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 0,
+        "recorded_at": "2026-11-14T08:40:13.768263+00:00",
+        "run_id": "run-6cd2229978454547a477210235b323d5",
+        "schema_version": 1,
+        "state_hash": "1fc225afbaca85de031113d7e27df2af5d07388ae6e2e1962e03ef0f8d773a9a",
+        "status": "completed",
+        "tick": 12,
+        "until": 12
+      }
+    ],
+    "branch_point": null,
+    "code_commit": "d195d1ae359cb99eafa473ece1201b4864068a58",
+    "condition_id": "full",
+    "data_version": "synthetic_initialization:ee7ff57d691870bacf82ca544cc44ce37941e4ab99077d6d9d8bae3c1ba4678b",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD04-capacity-128x12",
+    "failure_reason": null,
+    "initial_state_hash": "fba46fe01433c80065144b62f938567b6112c873dc8aa22e7eb1b3dfa04aa6f7",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD04-capacity-128x12:932104",
+    "parent_run_id": null,
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-analysis-v1",
+    "raw_path": "kdd04_execution/capacity/full/run",
+    "raw_status": "completed",
+    "resolved_config_hash": "ee7ff57d691870bacf82ca544cc44ce37941e4ab99077d6d9d8bae3c1ba4678b",
+    "run_id": "run-6cd2229978454547a477210235b323d5",
+    "schema_version": 1,
+    "source_hash": "2c638315fedb6e7d867704e1f2b0d5959af30f401bc2034531cd6b31d75e2016",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 932104
+  },
+  {
+    "attempts": [
+      {
+        "command": [
+          "kdd04_execution/capacity_check.py",
+          "zero_intelligence"
+        ],
+        "from_tick": 0,
+        "recorded_at": "2026-11-14T08:39:28.860603+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 12
+      },
+      {
+        "checkpoint": {
+          "bytes": 577872,
+          "commit_hash": "b8ea0769c82493486e88b3f9fdf92d9b62faa39e8478d5ae1ffc677f9c48e1d7",
+          "encoding": "json+gzip",
+          "path": "kdd04_execution/capacity/zero_intelligence/run/checkpoints/4eca0911dfdb61c981d2e78bc86deea2f29476329bedda4260bdfe8cb58ad00c.json.gz",
+          "sha256": "4eca0911dfdb61c981d2e78bc86deea2f29476329bedda4260bdfe8cb58ad00c",
+          "tick": 12
+        },
+        "command": [
+          "kdd04_execution/capacity_check.py",
+          "zero_intelligence"
+        ],
+        "elapsed_seconds": 35.24267383432016,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 0,
+        "recorded_at": "2026-11-14T08:40:14.781123+00:00",
+        "run_id": "run-41fc64496db845c789509f496c0ea78f",
+        "schema_version": 1,
+        "state_hash": "31878617e61b9e7d69c4ab428f17fea08be8fe603c0079d9d9a23783461fd8f5",
+        "status": "completed",
+        "tick": 12,
+        "until": 12
+      }
+    ],
+    "branch_point": null,
+    "code_commit": "d195d1ae359cb99eafa473ece1201b4864068a58",
+    "condition_id": "zero_intelligence",
+    "data_version": "synthetic_initialization:bb36d3f6d67fc3645dd0fbadef8b41217749afbb07026965f041822ae882d51c",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD04-capacity-128x12",
+    "failure_reason": null,
+    "initial_state_hash": "7ab27672902b87f90ca353cf3179f6214b0c75198d941e65b75a3a98d197d0dc",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD04-capacity-128x12:932104",
+    "parent_run_id": null,
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-analysis-v1",
+    "raw_path": "kdd04_execution/capacity/zero_intelligence/run",
+    "raw_status": "completed",
+    "resolved_config_hash": "bb36d3f6d67fc3645dd0fbadef8b41217749afbb07026965f041822ae882d51c",
+    "run_id": "run-41fc64496db845c789509f496c0ea78f",
+    "schema_version": 1,
+    "source_hash": "2c638315fedb6e7d867704e1f2b0d5959af30f401bc2034531cd6b31d75e2016",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 932104
+  },
+  {
+    "attempts": [
+      {
+        "command": [
+          "kdd04_execution/capacity_check.py",
+          "homogeneous_linear_value"
+        ],
+        "from_tick": 0,
+        "recorded_at": "2026-11-14T08:44:35.520674+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 12
+      },
+      {
+        "checkpoint": {
+          "bytes": 588697,
+          "commit_hash": "0ca66f2f707f049762d1c7609a8477c0fa7cdc6676439ccba9f2be6c36689cf5",
+          "encoding": "json+gzip",
+          "path": "kdd04_execution/capacity/homogeneous_linear_value/run/checkpoints/ce7132c5eaf150afc44d57c667e3ab85204ab848fce7d16e8f5c1ffea20e0e9f.json.gz",
+          "sha256": "ce7132c5eaf150afc44d57c667e3ab85204ab848fce7d16e8f5c1ffea20e0e9f",
+          "tick": 12
+        },
+        "command": [
+          "kdd04_execution/capacity_check.py",
+          "homogeneous_linear_value"
+        ],
+        "elapsed_seconds": 28.30300279194489,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 0,
+        "recorded_at": "2026-11-14T08:45:12.719871+00:00",
+        "run_id": "run-209e7686d9d449c4945b7971b9749beb",
+        "schema_version": 1,
+        "state_hash": "df4b5de97fba5ad0df38cff18f2db22bd1a2c26be0960d007e8c099f08cc105a",
+        "status": "completed",
+        "tick": 12,
+        "until": 12
+      }
+    ],
+    "branch_point": null,
+    "code_commit": "d195d1ae359cb99eafa473ece1201b4864068a58",
+    "condition_id": "homogeneous_linear_value",
+    "data_version": "synthetic_initialization:45005186464777a575efbd22f4d88d03dc8e80fa6480d05427b85e5798c12a3a",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD04-capacity-128x12",
+    "failure_reason": null,
+    "initial_state_hash": "65148b2af6efd7a3e3dc421799f626d072e9a1b4f442c3ff2c857b98f707c2a2",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD04-capacity-128x12:932104",
+    "parent_run_id": null,
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-analysis-v1",
+    "raw_path": "kdd04_execution/capacity/homogeneous_linear_value/run",
+    "raw_status": "completed",
+    "resolved_config_hash": "45005186464777a575efbd22f4d88d03dc8e80fa6480d05427b85e5798c12a3a",
+    "run_id": "run-209e7686d9d449c4945b7971b9749beb",
+    "schema_version": 1,
+    "source_hash": "2c638315fedb6e7d867704e1f2b0d5959af30f401bc2034531cd6b31d75e2016",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 932104
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:28.873178+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:08:51.336619+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81543,
+          "commit_hash": "1935b221f723ca1d28e817b27267039f8e750f31d490d0a2f5eb03bee7addaa3",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/full_control/checkpoints/a11ca17210dbf6ad260712da0ded461c51e08cdd8e82f8a600704468332c339a.json.gz",
+          "sha256": "a11ca17210dbf6ad260712da0ded461c51e08cdd8e82f8a600704468332c339a",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 0.9529838343150914,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:08:52.766650+00:00",
+        "run_id": "full_control-fb247fa79f83402e8e3e19a008cea721",
+        "schema_version": 1,
+        "state_hash": "c254c63ead8e8da766a79f9dfa8c0bf6c81ebd45f183700781c471ada6c30205",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:08:54.410439+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 305363,
+          "commit_hash": "1e7071ba91bde5eff9c9424ae32cc136257bd285dcb1f138a52f1490326230de",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/full_control/checkpoints/e7a18ae86711e54ae1413a5f64e206769ed9cacd756857a636e6502ae934ac80.json.gz",
+          "sha256": "e7a18ae86711e54ae1413a5f64e206769ed9cacd756857a636e6502ae934ac80",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 30.559485374949872,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:09:33.852129+00:00",
+        "run_id": "full_control-fb247fa79f83402e8e3e19a008cea721",
+        "schema_version": 1,
+        "state_hash": "dc08a84dd8666099a49396e485ea9a2db87395d80b1ccab6ac92e27e5ce912b2",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "full_control",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/full_control",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "full_control-fb247fa79f83402e8e3e19a008cea721",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:29.437252+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:10:09.979617+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81725,
+          "commit_hash": "5f749f60ef5184c847663e812b1f7fb4f647870ae86bd0030bdfb9dbc09111b1",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/no_secondary_contagion/checkpoints/ff1aab0c9c9a49d956c6931bdbcc3b5a988eef862a3064825fcceb46b90cf38a.json.gz",
+          "sha256": "ff1aab0c9c9a49d956c6931bdbcc3b5a988eef862a3064825fcceb46b90cf38a",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.171541249845177,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:10:11.823109+00:00",
+        "run_id": "no_secondary_contagion-12eeb648631c42dba61d25e97b5ddf9b",
+        "schema_version": 1,
+        "state_hash": "2e03667df0661d314cf549f24386c0beb10ebe84076e6fe2fc4f1cfee372dcc5",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:10:13.935302+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 299251,
+          "commit_hash": "0c7403b1763bc987cdddad0d5d57c73198a2ace83603c7ad244c8cf0bbad82bd",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/no_secondary_contagion/checkpoints/02730f61ef9971be660b46c8e99a707af73e3252df1514f3d98d726d00129473.json.gz",
+          "sha256": "02730f61ef9971be660b46c8e99a707af73e3252df1514f3d98d726d00129473",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 37.66580641688779,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:11:02.714292+00:00",
+        "run_id": "no_secondary_contagion-12eeb648631c42dba61d25e97b5ddf9b",
+        "schema_version": 1,
+        "state_hash": "be70aaa1e9287590e3df9d88f34513dc6ea65e5b014bc446f33faefe619f6f0d",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "no_secondary_contagion",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/no_secondary_contagion",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "no_secondary_contagion-12eeb648631c42dba61d25e97b5ddf9b",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:30.002391+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:11:46.986811+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81729,
+          "commit_hash": "404f75a92edfc186152dc7c469982a903abae7e616723be485a54e01beab1d77",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/no_herding_feedback/checkpoints/9a84fbfe48e2f9b6a024b313dca6438709d712985eea3b811b2fdcc70c1cfa50.json.gz",
+          "sha256": "9a84fbfe48e2f9b6a024b313dca6438709d712985eea3b811b2fdcc70c1cfa50",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.2490697498433292,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:11:48.862726+00:00",
+        "run_id": "no_herding_feedback-2ab4340823ec47ceae528df6fe921747",
+        "schema_version": 1,
+        "state_hash": "7d0d2cae83fd7b7cdc4d249b9f2fa6f7d7e6130711c0f1f1f31d0e5b67c58d24",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:11:51.094913+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 305151,
+          "commit_hash": "c4685e38b1c2fe0fb31f485b6fdc9976e95fce298e5d76493ee9c1a090abe71e",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/no_herding_feedback/checkpoints/98fa6d8f4dd17667abcbee6370c79f906328e1c0a9e3c97986930eaa151c3603.json.gz",
+          "sha256": "98fa6d8f4dd17667abcbee6370c79f906328e1c0a9e3c97986930eaa151c3603",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 36.975422917399555,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:12:37.673307+00:00",
+        "run_id": "no_herding_feedback-2ab4340823ec47ceae528df6fe921747",
+        "schema_version": 1,
+        "state_hash": "e51bd9f412d4fb9160b08fd3453b1fccd4368936b05749cbf1e8a9dcfbee745d",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "no_herding_feedback",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/no_herding_feedback",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "no_herding_feedback-2ab4340823ec47ceae528df6fe921747",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:30.562023+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:13:15.339233+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81815,
+          "commit_hash": "e580b8400c5e22f1b3af97f1b7fe23351b2ad41b0f3a8b4667ba591cb7567263",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/both_off/checkpoints/bcbebee1edfc1ca8cb1166ddeb5b3bba012a03978a7fa414ab7878d4ccbaad91.json.gz",
+          "sha256": "bcbebee1edfc1ca8cb1166ddeb5b3bba012a03978a7fa414ab7878d4ccbaad91",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 0.9106944580562413,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:13:16.899437+00:00",
+        "run_id": "both_off-5ac27fc66f23448ba51ece1db132101d",
+        "schema_version": 1,
+        "state_hash": "3f972aed6247319f0e33b8141af012b3835f7051edb90757b903785332ee9204",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:13:18.724471+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 298907,
+          "commit_hash": "a35446dffd4d71dc9e864f40155339c13915704ee3e0b98feaa4b7725fc2fbce",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/both_off/checkpoints/8189b0116fb9aa4f4bd70a6d62d4d3139a7972cd1642d4a38950cd6488f4de89.json.gz",
+          "sha256": "8189b0116fb9aa4f4bd70a6d62d4d3139a7972cd1642d4a38950cd6488f4de89",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 32.14905016636476,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:14:00.124372+00:00",
+        "run_id": "both_off-5ac27fc66f23448ba51ece1db132101d",
+        "schema_version": 1,
+        "state_hash": "cfb537d37c38c22bbe1e9603f53dec6ec52ba9e40aec6f12b957f89a992959e5",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "both_off",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/both_off",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "both_off-5ac27fc66f23448ba51ece1db132101d",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:31.147300+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:14:36.610647+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81592,
+          "commit_hash": "4557eca434560121a3fd299e7c940754195d225ac3b61e187c25392969461e7c",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/full_loss_off/checkpoints/e5b4cfac66f28c1fba1cea25f0bd7e1d324d0fd03d7de5cae9d27a0f7b079acd.json.gz",
+          "sha256": "e5b4cfac66f28c1fba1cea25f0bd7e1d324d0fd03d7de5cae9d27a0f7b079acd",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.0498441667295992,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:14:38.324066+00:00",
+        "run_id": "full_loss_off-b4973c87ad984bcc9a51df6cdcf7578d",
+        "schema_version": 1,
+        "state_hash": "ac7b887296a31e0690a82ae0c1d4f82648256727daf4fb616db25c20c3f9c4ea",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:14:39.947603+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 302613,
+          "commit_hash": "0b5faa87d7a2f9f21ea85356eb2ceb29bf0c1fef46d45e0a43c14f8efcb8f07c",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/full_loss_off/checkpoints/f6f205782e6eeadbf1a752b91ca1eeb3c17ba3edd05fe4588ec3ee22f95256fe.json.gz",
+          "sha256": "f6f205782e6eeadbf1a752b91ca1eeb3c17ba3edd05fe4588ec3ee22f95256fe",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 31.86301083303988,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:15:21.479575+00:00",
+        "run_id": "full_loss_off-b4973c87ad984bcc9a51df6cdcf7578d",
+        "schema_version": 1,
+        "state_hash": "019636b36179b2e9d0210f59243208f6e381db090131fa09206cb585818d5ae5",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "full_loss_off",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/full_loss_off",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "full_loss_off-b4973c87ad984bcc9a51df6cdcf7578d",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:31.712066+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:15:58.347961+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81515,
+          "commit_hash": "cf62c4cae633a83c232c2bfbdae8b4245d7def31da3e8131a88bfe0b75aa82fd",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/lambda_only_1/checkpoints/bf7d6203a3a3348001517c32f6da20925f9c66897b0e0ceb2d7db27a9c530b79.json.gz",
+          "sha256": "bf7d6203a3a3348001517c32f6da20925f9c66897b0e0ceb2d7db27a9c530b79",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.1028411253355443,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:16:00.174544+00:00",
+        "run_id": "lambda_only_1-f78df4b9922e41c0ab8c573a71ac54bb",
+        "schema_version": 1,
+        "state_hash": "5cfa383fe914b6279170a735d215999be9904320fb5007e05fe15cb4ba434fa8",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:16:01.881569+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 302409,
+          "commit_hash": "9b9fb172845f88e2c8a47401e880450bfc36714ac035d469a136ef93e85f810e",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/lambda_only_1/checkpoints/a22857f660c5797712b896d72e2af8cb538f23bff910d2f05fe9c5e994654a6b.json.gz",
+          "sha256": "a22857f660c5797712b896d72e2af8cb538f23bff910d2f05fe9c5e994654a6b",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 31.530381082557142,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:16:44.525305+00:00",
+        "run_id": "lambda_only_1-f78df4b9922e41c0ab8c573a71ac54bb",
+        "schema_version": 1,
+        "state_hash": "ce90deaac0c5cb961e1ff7b339cccb218ab9916402c8455861feeb35be69e20f",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "lambda_only_1",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/lambda_only_1",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "lambda_only_1-f78df4b9922e41c0ab8c573a71ac54bb",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:32.280351+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:17:25.109201+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 83389,
+          "commit_hash": "62fb5c63794f3647b099e718e82ff27aa1d5b47ada3b756837c9f4d904521272",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/reverse_retrospective_mapping/checkpoints/1d677d63086fd22903b6428bb0006065b425e1f0759e086a5414da7976355e05.json.gz",
+          "sha256": "1d677d63086fd22903b6428bb0006065b425e1f0759e086a5414da7976355e05",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.145604541990906,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:17:26.583600+00:00",
+        "run_id": "reverse_retrospective_mapping-5d91c360e7674031a8152b568ecb5acb",
+        "schema_version": 1,
+        "state_hash": "7f09156b7133cc18054ac92834153c844a6e946eb718f8d0a4f0f3746a05f536",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:17:28.347202+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 318296,
+          "commit_hash": "25bb7006c71c6f8df8dac8d92f7ede2cc2fa65d5ac630f4cde53bbb8b4ef5653",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/reverse_retrospective_mapping/checkpoints/5f4bbf730bf9c65d0dff80ff49a82b6451967744148d92f8eb2f9dc99442cb55.json.gz",
+          "sha256": "5f4bbf730bf9c65d0dff80ff49a82b6451967744148d92f8eb2f9dc99442cb55",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 33.42816725000739,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:18:11.438912+00:00",
+        "run_id": "reverse_retrospective_mapping-5d91c360e7674031a8152b568ecb5acb",
+        "schema_version": 1,
+        "state_hash": "d99c7911c594356b0ff54ba855b8258f03759015758003e2496074372deccd8a",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "reverse_retrospective_mapping",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/reverse_retrospective_mapping",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "reverse_retrospective_mapping-5d91c360e7674031a8152b568ecb5acb",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:32.928041+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:18:51.577007+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 79547,
+          "commit_hash": "bbf9d65da0bc8a97ba2be38598584d0d65269a1a93ad02ed9011a7bfa320dd0e",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/halt25/checkpoints/460a98efa09564f84467b5434375a1c568f002f38523e83b6727609fdabc9f3e.json.gz",
+          "sha256": "460a98efa09564f84467b5434375a1c568f002f38523e83b6727609fdabc9f3e",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 0.6225008750334382,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:18:53.053386+00:00",
+        "run_id": "halt25-fc996bdc03c14c08a30c537a54b255e0",
+        "schema_version": 1,
+        "state_hash": "9c84efa32c3adc60f2924005767d06a693dacf24800e9e699c57f4ab6c2587c0",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:18:54.355048+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 270057,
+          "commit_hash": "a13834868e20ec179bae6eddf160607bacada37c953f1f09f09c2a4fc51b1f55",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/halt25/checkpoints/404688a8e7fd1be3a137bc897c73b7478b75c207a4483021aa93bea75ae56ade.json.gz",
+          "sha256": "404688a8e7fd1be3a137bc897c73b7478b75c207a4483021aa93bea75ae56ade",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 25.659082541707903,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:19:28.287068+00:00",
+        "run_id": "halt25-fc996bdc03c14c08a30c537a54b255e0",
+        "schema_version": 1,
+        "state_hash": "7d8652d8ab71c04684c49742354acbd197e62b9d03491f38d07ab5844dd038e7",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "halt25",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/halt25",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "halt25-fc996bdc03c14c08a30c537a54b255e0",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:33.497158+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:20:01.731149+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81619,
+          "commit_hash": "67b7b87dc8a07a694e8911e38ae6f568bfdd108abd88a3c4494d098783d98029",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/tax0015/checkpoints/4446a753633cd256dcc52e944b9c585ec8dc27002098f0a7da8906fa50fb0311.json.gz",
+          "sha256": "4446a753633cd256dcc52e944b9c585ec8dc27002098f0a7da8906fa50fb0311",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.312253083102405,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:20:03.376974+00:00",
+        "run_id": "tax0015-1f9564e438eb4e1cb85b3dc6bb0dd413",
+        "schema_version": 1,
+        "state_hash": "2a0e1c2fe28fce0124c9a3cfd8098e349fd741feb0220ccfc7145c46847286c8",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:20:05.239559+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 305311,
+          "commit_hash": "3ca8aa9ec8e187e4bdbbee64070b34bde03bdf7d11999627d5be105de63fd27e",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/tax0015/checkpoints/79eb670ed0bd5e1c407c5785978028d2dbdc33edf9cef19c8aa4871bd9b3fe1f.json.gz",
+          "sha256": "79eb670ed0bd5e1c407c5785978028d2dbdc33edf9cef19c8aa4871bd9b3fe1f",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 30.936892999801785,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:20:45.420535+00:00",
+        "run_id": "tax0015-1f9564e438eb4e1cb85b3dc6bb0dd413",
+        "schema_version": 1,
+        "state_hash": "668729330da46580d1f828b41fa5c8dfcad527355a398445d81b90a2a20df6cd",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "tax0015",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/tax0015",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "tax0015-1f9564e438eb4e1cb85b3dc6bb0dd413",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:34.066028+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:21:21.289419+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81536,
+          "commit_hash": "a51fa48aef0f56f7689c5d9109f922efde8a55fd1d9d9f61e7b7949865a904f9",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/same_day_lock/checkpoints/e32f450c34a931372189e0c706b2c074131c456dae15f636f781e2f8f90451c7.json.gz",
+          "sha256": "e32f450c34a931372189e0c706b2c074131c456dae15f636f781e2f8f90451c7",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.3423592089675367,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:21:22.956187+00:00",
+        "run_id": "same_day_lock-4de95f97fb3d482384c5683d01079871",
+        "schema_version": 1,
+        "state_hash": "e9699ffe708ac7906e3ff9dddb0bc8ee7b2819282b3e1228b19379039470f77f",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:21:24.889216+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 305162,
+          "commit_hash": "59c1b82bd202e04a4481844e0668e8c4b0d3382e040c3a9e0ee3542323db5cc8",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/same_day_lock/checkpoints/7c6a247d3f15a0f1ba4941ef7b366269371fe8a7915dec1b115c681dd1416f45.json.gz",
+          "sha256": "7c6a247d3f15a0f1ba4941ef7b366269371fe8a7915dec1b115c681dd1416f45",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 30.486562958918512,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:22:04.447881+00:00",
+        "run_id": "same_day_lock-4de95f97fb3d482384c5683d01079871",
+        "schema_version": 1,
+        "state_hash": "4b6217aa96f7942b7c2b9ac6358851f6ee03f4e3ca019c70915874003b20a070",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "same_day_lock",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/same_day_lock",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "same_day_lock-4de95f97fb3d482384c5683d01079871",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b0ae73da037245271cea4ca19c95b813dbef73396f881d58cc01750b5a225009",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T09:07:34.625046+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 933001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:22:40.981619+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 81665,
+          "commit_hash": "db882df4694c849bb732d61774049d854138735b0f547bca6b5f9b447f9071bf",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/narrow_band005/checkpoints/266cfea8320e54dce2d9a0a32d45d31841532834baf3c220ac7687b16d5150fe.json.gz",
+          "sha256": "266cfea8320e54dce2d9a0a32d45d31841532834baf3c220ac7687b16d5150fe",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 1.4390899171121418,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T09:22:42.747777+00:00",
+        "run_id": "narrow_band005-72d0ec58de704a04975ee4c48185ce1f",
+        "schema_version": 1,
+        "state_hash": "cb7ffb7b08cd84109c70cc02594b6e61378ae133d0f0c2efeb8aae1cc3de2045",
+        "status": "checkpointed",
+        "tick": 7,
+        "until": 7
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:22:44.781067+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 32
+      },
+      {
+        "checkpoint": {
+          "bytes": 305459,
+          "commit_hash": "ffcc0ed376a6007ed8b8befe19312439ce548e62aff421450d83f79b08b54051",
+          "encoding": "json+gzip",
+          "path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/narrow_band005/checkpoints/203625b205c2ff737159dc67e4610cf350669fce941579594a067596578b637f.json.gz",
+          "sha256": "203625b205c2ff737159dc67e4610cf350669fce941579594a067596578b637f",
+          "tick": 32
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq2.py",
+          "--basetemp=kdd05_execution/pytest-targeted",
+          "--junitxml=kdd05_execution/targeted.xml"
+        ],
+        "elapsed_seconds": 30.368824165780097,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 7,
+        "recorded_at": "2026-11-14T09:23:24.851061+00:00",
+        "run_id": "narrow_band005-72d0ec58de704a04975ee4c48185ce1f",
+        "schema_version": 1,
+        "state_hash": "da8f6599a29f59f14f607c81e0d66e592f4ba76277d15ac1a6c346ae1fbafbfe",
+        "status": "completed",
+        "tick": 32,
+        "until": 32
+      }
+    ],
+    "branch_point": 5,
+    "code_commit": "23f9a8359639b4bfbf3ef4b945b92870c67b619a",
+    "condition_id": "narrow_band005",
+    "data_version": "synthetic_initialization:0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD05-unit-branches",
+    "failure_reason": null,
+    "initial_state_hash": "b8cf4090a3e0a2faa27e4a0a30147e2632c0fe5ab81065ee0bb68185577f9cdf",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD05-unit-branches:933001",
+    "parent_run_id": "parent-26792bf8c80e48fea5cfa7063cf710f1",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq2-v1",
+    "raw_path": "kdd05_execution/pytest-targeted/test_all_eleven_durable_arms_s0/narrow_band005",
+    "raw_status": "completed",
+    "resolved_config_hash": "0aacb011241bc1ad4fa22966f6ac9e3c5682b621e8b4dc895597bebb6bc30dc3",
+    "run_id": "narrow_band005-72d0ec58de704a04975ee4c48185ce1f",
+    "schema_version": 1,
+    "source_hash": "3c5f88f08e3b85bc88fde41d92371514d8338e2e86a164a2ccc9ee5a468c2e16",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 933001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "9a2d446452c2d142d927ebc5a776523cc7fe8b60e1031877670d018dda07aba4",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:19:56.088320+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:19:56.317667+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 26792,
+          "commit_hash": "70247e46b758edb7d8b94b2b59d767722303288401efc1ac43fb2ff895f1d8da",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/neutral/checkpoints/fa5bb7c874384d892d40d29936fa101e3e05c66b7dd324b1ade337528b43f740.json.gz",
+          "sha256": "fa5bb7c874384d892d40d29936fa101e3e05c66b7dd324b1ade337528b43f740",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.220962458755821,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:19:56.654509+00:00",
+        "run_id": "neutral-19dc96ef00d6436eb3d996f128b725eb",
+        "schema_version": 1,
+        "state_hash": "6f8bdf0cd3185718e557e344f991d3a7b72eb8e3e7c63ea5a3c95160f57de616",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:19:56.917633+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 33769,
+          "commit_hash": "06a4374c7b081718dded7f01c535a1b83b4f2119133b1d78002123a3e82ac809",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/neutral/checkpoints/4df005b2b5895676d8ca6ead591f988c7eb7862357b2934984edc98a2700dc9f.json.gz",
+          "sha256": "4df005b2b5895676d8ca6ead591f988c7eb7862357b2934984edc98a2700dc9f",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.27521495800465345,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:19:57.367652+00:00",
+        "run_id": "neutral-19dc96ef00d6436eb3d996f128b725eb",
+        "schema_version": 1,
+        "state_hash": "0c45eaebfc4d1b4b11610c459799ab0c2e96542a2e9b3d9539068c680d8be90b",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "rule:neutral",
+    "data_version": "synthetic_initialization:65359451405a552c03a1168d709c66d6415a43dfe6f1aa5739fe623c7b9a4580",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "1da57866cee1ac25d9085f2a314ba1f1fa98663cbc1d77218643dd4a89d46df4",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-b9204a97ef5f42f09307351ae48191ad",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/neutral",
+    "raw_status": "completed",
+    "resolved_config_hash": "65359451405a552c03a1168d709c66d6415a43dfe6f1aa5739fe623c7b9a4580",
+    "run_id": "neutral-19dc96ef00d6436eb3d996f128b725eb",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "9a2d446452c2d142d927ebc5a776523cc7fe8b60e1031877670d018dda07aba4",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:19:58.508574+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:19:58.743266+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 26807,
+          "commit_hash": "0988b2ac8c58e834eca79b34a523164c3ddc75a1e5aea17dbab52772fd28fe97",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/negative/checkpoints/fb7701691543929b4ad242617a48cb46f6884ed0ed7adc2d2f1bb740f29fa372.json.gz",
+          "sha256": "fb7701691543929b4ad242617a48cb46f6884ed0ed7adc2d2f1bb740f29fa372",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.22139141708612442,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:19:59.084761+00:00",
+        "run_id": "negative-3a4cd030834d405886ea8f4df14adc5f",
+        "schema_version": 1,
+        "state_hash": "f98cd8570acb2200d95e6763d1d239124d92349b39c046d2479b45b1135ae4c8",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:19:59.350359+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 33762,
+          "commit_hash": "004691ec9737a194b2c67f68ab007838f021acee51445c47b378a20feb134c78",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/negative/checkpoints/adc4ecfbe926cfa482e41e941f8ef6c4e55a10cf97569201f1eaa7f3e284bba1.json.gz",
+          "sha256": "adc4ecfbe926cfa482e41e941f8ef6c4e55a10cf97569201f1eaa7f3e284bba1",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.27375900000333786,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:19:59.802236+00:00",
+        "run_id": "negative-3a4cd030834d405886ea8f4df14adc5f",
+        "schema_version": 1,
+        "state_hash": "d54b4ae50556c30b9b9904b2a247ae3da2f56fd8dbbfff5a6292950633ff589e",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "rule:negative",
+    "data_version": "synthetic_initialization:65359451405a552c03a1168d709c66d6415a43dfe6f1aa5739fe623c7b9a4580",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "1da57866cee1ac25d9085f2a314ba1f1fa98663cbc1d77218643dd4a89d46df4",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-b9204a97ef5f42f09307351ae48191ad",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/negative",
+    "raw_status": "completed",
+    "resolved_config_hash": "65359451405a552c03a1168d709c66d6415a43dfe6f1aa5739fe623c7b9a4580",
+    "run_id": "negative-3a4cd030834d405886ea8f4df14adc5f",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "73915f5b4bfb9427f81eb9befb4ed66e4e3b25c7f525be8765f779e03b0aeda5",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:20:01.812774+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:02.089999+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 36815,
+          "commit_hash": "d4108abb86410ae5d5ed894079d3f454de7e2140755587ab7ba5691da1c0e781",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/neutral/checkpoints/a146bd48c9d130a28efd6829fdf61fc12aae3ed4cfee2967c624dfbc41cf2de4.json.gz",
+          "sha256": "a146bd48c9d130a28efd6829fdf61fc12aae3ed4cfee2967c624dfbc41cf2de4",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.3068621251732111,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:02.560408+00:00",
+        "run_id": "neutral-e437cd2d9b974b5d96e5351e1b056cba",
+        "schema_version": 1,
+        "state_hash": "9553f6daa097d15b35b5f68c5b95a0afda452a01ce3053f0f9cb068dbf657e08",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:02.890852+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 45260,
+          "commit_hash": "a1ee61b2044dedd36d70d5c0550c6a964a6bd1f01643a3b4a8432ea2ee198a03",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/neutral/checkpoints/a57ba649154b5cebc2528c7887a7aae2b03e3ee28ae5124c15a50f200b606124.json.gz",
+          "sha256": "a57ba649154b5cebc2528c7887a7aae2b03e3ee28ae5124c15a50f200b606124",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.36698354175314307,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:03.485537+00:00",
+        "run_id": "neutral-e437cd2d9b974b5d96e5351e1b056cba",
+        "schema_version": 1,
+        "state_hash": "ae9b380ad634c7ffa1305beed82615a3dec62d2be078b8992ccdf9d8590f9691",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "heuristic:neutral",
+    "data_version": "synthetic_initialization:4315a96a9f90c02072130ac1a01fad79c83acd655e8bd172dc2fe80d9bd0f2c4",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "c19c6330db78bdf149a7f715313299b24e66977160814be012ffbda463f0b07b",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-d22b1db5834442b3a8c84b648a02e8ed",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/neutral",
+    "raw_status": "completed",
+    "resolved_config_hash": "4315a96a9f90c02072130ac1a01fad79c83acd655e8bd172dc2fe80d9bd0f2c4",
+    "run_id": "neutral-e437cd2d9b974b5d96e5351e1b056cba",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "73915f5b4bfb9427f81eb9befb4ed66e4e3b25c7f525be8765f779e03b0aeda5",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:20:04.938566+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:05.218460+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 36683,
+          "commit_hash": "21bef6b030286f0b4f958cf67370eda059079f23b32edad44ab6ed7ee5757c79",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/negative/checkpoints/adcf3386014743eecaa0a9a513a67afeca27714977e799e69b70b5820b4863d2.json.gz",
+          "sha256": "adcf3386014743eecaa0a9a513a67afeca27714977e799e69b70b5820b4863d2",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.30490637477487326,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:05.685039+00:00",
+        "run_id": "negative-950a2bf6a67b4b2d8110b74eeb577f1b",
+        "schema_version": 1,
+        "state_hash": "45e1763627095303cc4f550e2f8c5807d4832725d6cbd77434b1b391d2ac8dc6",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:06.027655+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 45100,
+          "commit_hash": "d758dd1fa4fc8b4d5a44e774cd1152ab132fcc6cbe7fe1523dbe83934c14282f",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/negative/checkpoints/4e521c09234e0c68080693f80589a9b53ba170c64fa9b36d9ea33713e714dae9.json.gz",
+          "sha256": "4e521c09234e0c68080693f80589a9b53ba170c64fa9b36d9ea33713e714dae9",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.3763048332184553,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:06.630265+00:00",
+        "run_id": "negative-950a2bf6a67b4b2d8110b74eeb577f1b",
+        "schema_version": 1,
+        "state_hash": "aef4277a9b4738d768ed53a403b90842a6be4c984e87e8f288bb8aa954bb8f8a",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "heuristic:negative",
+    "data_version": "synthetic_initialization:4315a96a9f90c02072130ac1a01fad79c83acd655e8bd172dc2fe80d9bd0f2c4",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "c19c6330db78bdf149a7f715313299b24e66977160814be012ffbda463f0b07b",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-d22b1db5834442b3a8c84b648a02e8ed",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/negative",
+    "raw_status": "completed",
+    "resolved_config_hash": "4315a96a9f90c02072130ac1a01fad79c83acd655e8bd172dc2fe80d9bd0f2c4",
+    "run_id": "negative-950a2bf6a67b4b2d8110b74eeb577f1b",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b682ae9df9ede466a8b0b809a372b549dd23c29e8e9934ecda5d3c05e84735d4",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:20:09.164229+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:09.459560+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 27626,
+          "commit_hash": "8c47984e20bf10d9c98b857a383c5a1dd15f79edc1efe2a68c4a57afd418fa9b",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/neutral/checkpoints/aa00b19da02969a84a3bb6ba971bdc08f865d419d6c64ed9bd83c92ae740f75a.json.gz",
+          "sha256": "aa00b19da02969a84a3bb6ba971bdc08f865d419d6c64ed9bd83c92ae740f75a",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.2835342916660011,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/neutral/diagnostics/model-facts-febdfe7fdd2043a5961f1ac9dc9eb06d.json",
+        "recorded_at": "2026-11-14T10:20:09.890814+00:00",
+        "run_id": "neutral-c15c9d2d284c482da989811818c11b31",
+        "schema_version": 1,
+        "state_hash": "420c1c6ddce66acc3e30dcd7a4d6344485f26244fcd628de9e0e7beaa90ccd3d",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:10.278171+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 34974,
+          "commit_hash": "3e4ab30d5aab9cb41d63d537a7264b7c6229b13c7c77658d66925562420e7910",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/neutral/checkpoints/83aa6175e6d1cb12ac952bc7f7964f4667f971e3f124b728dd74160d251717fb.json.gz",
+          "sha256": "83aa6175e6d1cb12ac952bc7f7964f4667f971e3f124b728dd74160d251717fb",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.3517205002717674,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/neutral/diagnostics/model-facts-a8b7271d447f4c9a9449ab4ff3a64a1d.json",
+        "recorded_at": "2026-11-14T10:20:10.882055+00:00",
+        "run_id": "neutral-c15c9d2d284c482da989811818c11b31",
+        "schema_version": 1,
+        "state_hash": "4fb456684557742db2397996f02738f63482302c2ed2212401ff305cfa5b6c51",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "llm:neutral",
+    "data_version": "synthetic_initialization:8c80d56b088e8cb80dfda168bb7bd176cca017a3d4d6f9f3c379d4fc31f7c66f",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "0468111884eae4afc0b8fc62ab780d5b6d5d47b706daab6f725d8adc18e9c0cc",
+    "input_kind": "synthetic_initialization",
+    "model_id": "synthetic-test-v1",
+    "model_sample_id": null,
+    "output_kind": "mock_fixture",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-1d4e49068f1d43ab9eba196863547a20",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/neutral",
+    "raw_status": "completed",
+    "resolved_config_hash": "8c80d56b088e8cb80dfda168bb7bd176cca017a3d4d6f9f3c379d4fc31f7c66f",
+    "run_id": "neutral-c15c9d2d284c482da989811818c11b31",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [
+      "model_sample_id",
+      "prompt_version",
+      "parser_version"
+    ],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "b682ae9df9ede466a8b0b809a372b549dd23c29e8e9934ecda5d3c05e84735d4",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:20:12.580830+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:12.906394+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 27622,
+          "commit_hash": "f5a7198ef7f866fc2af399137941343b048cb5917cca87bf0ebd83f8114cc6c4",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/negative/checkpoints/a15911541149354d335497695a78fac8c506974045b0436c8a230bb3a358da70.json.gz",
+          "sha256": "a15911541149354d335497695a78fac8c506974045b0436c8a230bb3a358da70",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.3192869168706238,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/negative/diagnostics/model-facts-7013e89a430c4da49cc4a5665765c137.json",
+        "recorded_at": "2026-11-14T10:20:13.394444+00:00",
+        "run_id": "negative-85df1646170a4621b15aa0e15f503936",
+        "schema_version": 1,
+        "state_hash": "5e88e10308030a7c7949817872ab671cc38cf1c64772646a30d49167271c7e12",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:13.812602+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 34960,
+          "commit_hash": "d97e2b5dffa3b9a55eec0e131cab1b98b34efe01cf5bec8223b8b9ba3ce9a9f7",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/negative/checkpoints/945c031b643d3dc09455aa21ece538b81ff4c77c66b4d9fbd512083d7e79cc8d.json.gz",
+          "sha256": "945c031b643d3dc09455aa21ece538b81ff4c77c66b4d9fbd512083d7e79cc8d",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.39929975010454655,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/negative/diagnostics/model-facts-c4b181235b944173b314cda4f788f808.json",
+        "recorded_at": "2026-11-14T10:20:14.468831+00:00",
+        "run_id": "negative-85df1646170a4621b15aa0e15f503936",
+        "schema_version": 1,
+        "state_hash": "65428301b584fee3a8df7375128f576ac4c698d68335c3a326f89c4a0d309b75",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "llm:negative",
+    "data_version": "synthetic_initialization:8c80d56b088e8cb80dfda168bb7bd176cca017a3d4d6f9f3c379d4fc31f7c66f",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "0468111884eae4afc0b8fc62ab780d5b6d5d47b706daab6f725d8adc18e9c0cc",
+    "input_kind": "synthetic_initialization",
+    "model_id": "synthetic-test-v1",
+    "model_sample_id": null,
+    "output_kind": "mock_fixture",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-1d4e49068f1d43ab9eba196863547a20",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r2/negative",
+    "raw_status": "completed",
+    "resolved_config_hash": "8c80d56b088e8cb80dfda168bb7bd176cca017a3d4d6f9f3c379d4fc31f7c66f",
+    "run_id": "negative-85df1646170a4621b15aa0e15f503936",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [
+      "model_sample_id",
+      "prompt_version",
+      "parser_version"
+    ],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "011a58155bf289d2576491f8b339d763d4b899e35bd86ec8956b827efa8d535b",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:20:17.029840+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:17.262326+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 27609,
+          "commit_hash": "9c8b966e4d68014c4417eb3f6a8df36d0884df34b2d8a2d6f67160710f4a3085",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/neutral/checkpoints/58faf79179431ec3cf66303a78f4ef2d5c17422b287946f60bf10338cf95a781.json.gz",
+          "sha256": "58faf79179431ec3cf66303a78f4ef2d5c17422b287946f60bf10338cf95a781",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.2570342910476029,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/neutral/diagnostics/model-facts-fb7a2b2289bd4a159aa8560e9c2edf9a.json",
+        "recorded_at": "2026-11-14T10:20:17.646848+00:00",
+        "run_id": "neutral-ffca1f6647974b3cae7eb6831d2cc613",
+        "schema_version": 1,
+        "state_hash": "e5c96af4b9b4ec1516176b0409bab258dd9a533b49349af7c8b2ef48bf67d75c",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:17.956477+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 34384,
+          "commit_hash": "d2ed654c6c87f8abcaa0826388c00fcbf17fa1c8b269899cccd008b3e8512316",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/neutral/checkpoints/3efcac30754cf7be311f96af4127252f742fd4a8d4d35d8b7b0f20943b8f4265.json.gz",
+          "sha256": "3efcac30754cf7be311f96af4127252f742fd4a8d4d35d8b7b0f20943b8f4265",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.305826208088547,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/neutral/diagnostics/model-facts-7b52fb056f714888ae0dd95210623871.json",
+        "recorded_at": "2026-11-14T10:20:18.458583+00:00",
+        "run_id": "neutral-ffca1f6647974b3cae7eb6831d2cc613",
+        "schema_version": 1,
+        "state_hash": "90d132168ee5a4a2d0c1aec5f6d8d12e37f73269becabd692b095a322c789718",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "hybrid:neutral",
+    "data_version": "synthetic_initialization:5871d6cd41e4976b0bd86e7f30de60de246371d6844ed1a2616588a07d4018c0",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "f308feba086b1396ae5a99eed9028f144e59d6b62bd691c66df107cc471fdabe",
+    "input_kind": "synthetic_initialization",
+    "model_id": "synthetic-test-v1",
+    "model_sample_id": null,
+    "output_kind": "mock_fixture",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-21486177808c4edeb4f72ba3b606c31a",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/neutral",
+    "raw_status": "completed",
+    "resolved_config_hash": "5871d6cd41e4976b0bd86e7f30de60de246371d6844ed1a2616588a07d4018c0",
+    "run_id": "neutral-ffca1f6647974b3cae7eb6831d2cc613",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [
+      "model_sample_id",
+      "prompt_version",
+      "parser_version"
+    ],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  {
+    "attempts": [
+      {
+        "parent_commit_hash": "011a58155bf289d2576491f8b339d763d4b899e35bd86ec8956b827efa8d535b",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:20:19.724742+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:19.963336+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 27680,
+          "commit_hash": "9d641ad3e03c36ad40a57ff2f3244b367542eaad245dbaffbb1449de7f02ea75",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/negative/checkpoints/36c59b3daf45de03c71c99d7a0d589a21aca8edeaf24a3fc97416384139195ed.json.gz",
+          "sha256": "36c59b3daf45de03c71c99d7a0d589a21aca8edeaf24a3fc97416384139195ed",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.2426045830361545,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/negative/diagnostics/model-facts-258e16a19d1d47968644f5b4fa0b6ba7.json",
+        "recorded_at": "2026-11-14T10:20:20.352728+00:00",
+        "run_id": "negative-c0974de7650f471982ca2d8d6d76c543",
+        "schema_version": 1,
+        "state_hash": "a65935e479444d2509aee9253ee7f8744671f3c8cf6cd2f877465c32d37493be",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:20.656091+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 34466,
+          "commit_hash": "fc52485a18e473bc23dc7cbe7c37b2940f25f5e66cf164f93016f39650e2af61",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/negative/checkpoints/b8a2378c1750047e2b2dad7f5383951c71354414c15645f3cf4df51b1c26b8de.json.gz",
+          "sha256": "b8a2378c1750047e2b2dad7f5383951c71354414c15645f3cf4df51b1c26b8de",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.302669791970402,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "model_facts": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/negative/diagnostics/model-facts-8879339280514e98a70587df13ef433c.json",
+        "recorded_at": "2026-11-14T10:20:21.156954+00:00",
+        "run_id": "negative-c0974de7650f471982ca2d8d6d76c543",
+        "schema_version": 1,
+        "state_hash": "106c4d980042a4fb7b2b7762695e09ef52e4982d438766ffa78272f4a81510a4",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "hybrid:negative",
+    "data_version": "synthetic_initialization:5871d6cd41e4976b0bd86e7f30de60de246371d6844ed1a2616588a07d4018c0",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "f308feba086b1396ae5a99eed9028f144e59d6b62bd691c66df107cc471fdabe",
+    "input_kind": "synthetic_initialization",
+    "model_id": "synthetic-test-v1",
+    "model_sample_id": null,
+    "output_kind": "mock_fixture",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-21486177808c4edeb4f72ba3b606c31a",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r3/negative",
+    "raw_status": "completed",
+    "resolved_config_hash": "5871d6cd41e4976b0bd86e7f30de60de246371d6844ed1a2616588a07d4018c0",
+    "run_id": "negative-c0974de7650f471982ca2d8d6d76c543",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [
+      "model_sample_id",
+      "prompt_version",
+      "parser_version"
+    ],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  }
+]

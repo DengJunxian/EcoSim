@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "config_hash": "6e4207d0f764fb26433b3b88467c91b5553a8a5832d8bb4fdf5de86fc48f71c5",
+  "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+  "dependency_hash": "146037c924261da23438e62fdb900455cdcb218f59886e61e07940e7eba0de04",
+  "run_id": "run-a689613c0c2146c08498415993cb0fe8",
+  "n_agents": 100,
+  "ticks_requested": 200,
+  "seed": 931104,
+  "initialization": {
+    "wall_seconds": 0.08203158294782043,
+    "cpu_seconds": 0.07123599999999997
+  },
+  "total": {
+    "wall_seconds": 7619.7673667497,
+    "cpu_seconds": 7589.936649
+  },
+  "checkpoint": {
+    "wall_seconds": 1394.5066615408286,
+    "cpu_seconds": 1391.1966219999995,
+    "path": "kdd27_completion_20261114/reviews/capacity/mac-n100-t200/run/checkpoints/7a9dd9b783661acbfe21d55a31d19f2227b197d15fe670692cda60c2e5bd98bd.json.gz",
+    "sha256": "7a9dd9b783661acbfe21d55a31d19f2227b197d15fe670692cda60c2e5bd98bd",
+    "bytes": 6815213,
+    "encoding": "json+gzip",
+    "tick": 200,
+    "commit_hash": "2e165d2cab68c80197526aedae33583073af7ba3706c302d5254fadefa98edba"
+  },
+  "peak_rss_bytes": 2669428736,
+  "archive_bytes": 29331939,
+  "controller": {
+    "status": "completed",
+    "elapsed_seconds": 7620.894540000241,
+    "stop_reason": null,
+    "sampled_peak_rss_bytes": 2487189504,
+    "signal_count": 0
+  },
+  "ticks_wall_sum": 6219.274960838258,
+  "first_step": {
+    "tick": 1,
+    "wall_seconds": 0.5135213332250714,
+    "cpu_seconds": 0.509248,
+    "active": 5,
+    "trades": 0
+  },
+  "last_step": {
+    "tick": 200,
+    "wall_seconds": 63.18011208297685,
+    "cpu_seconds": 62.986095999999634,
+    "active": 8,
+    "trades": 3
+  },
+  "last10_mean": 61.55758632500656,
+  "free_gib": 23.796653747558594,
+  "independent_replication": false,
+  "model_days": 2,
+  "scope": "Two-model-day capacity continuation with complete history; seed931104 repeated prefix does not add an independent replication. Frozen daily kurtosis/20-lag ACF remain undefined."
+}

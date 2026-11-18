@@ -1,0 +1,8 @@
+{
+  "status": "controlled_stop",
+  "exit_code": -2,
+  "stop_reason": "time_limit",
+  "elapsed_seconds": 2196.3138115019538,
+  "sampled_peak_rss_bytes": 1817165824,
+  "deadline_seconds": 1800.0
+}

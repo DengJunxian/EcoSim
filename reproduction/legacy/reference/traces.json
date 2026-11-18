@@ -1,0 +1,102 @@
+[
+  {
+    "id": "T1",
+    "method": "CommitStore.states -> project_snapshot -> summarize_facts; missing quote excluded from mean, kept in coverage denominator",
+    "metric": "two_sided_spread_bps_and_coverage",
+    "source_runs": [
+      "run-6cd2229978454547a477210235b323d5"
+    ],
+    "values": {
+      "two_sided_coverage": {
+        "n_total": 12,
+        "n_valid": 4,
+        "value": 0.3333333333333333
+      },
+      "two_sided_spread_bps": {
+        "n_total": 12,
+        "n_valid": 4,
+        "value": 13.228755727168378
+      }
+    }
+  },
+  {
+    "id": "T2",
+    "method": "Raw committed price path -> event_metrics/recovery -> paired_summary/factorial_interaction; one seed, CI null",
+    "metric": "paired_MDD_and_four_cell_interaction",
+    "source_runs": [
+      "full_control-fb247fa79f83402e8e3e19a008cea721",
+      "no_secondary_contagion-12eeb648631c42dba61d25e97b5ddf9b",
+      "no_herding_feedback-2ab4340823ec47ceae528df6fe921747",
+      "both_off-5ac27fc66f23448ba51ece1db132101d"
+    ],
+    "values": {
+      "both_off_minus_control": -0.003300703101349889,
+      "interaction": 0.0
+    }
+  },
+  {
+    "id": "T3",
+    "method": "Original per-run measured total wall seconds; compute each B/A, then median; no new timing runs, no confidence interval",
+    "metric": "median_paired_wall_reduction_percent",
+    "source_measurements": [
+      {
+        "measurement": {
+          "bytes": 7848,
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-1-A/measurement.json",
+          "sha256": "d24b545e7df667466efcdc55c16fede6aefcbf223af0b5b18d4cfe92f8bba2ac"
+        },
+        "pair": 1,
+        "variant": "A"
+      },
+      {
+        "measurement": {
+          "bytes": 7878,
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-1-B/measurement.json",
+          "sha256": "411d4b83ea9709b7ed6bc5a21085fdb3dc3cb76afd73830c67398def86e6392e"
+        },
+        "pair": 1,
+        "variant": "B"
+      },
+      {
+        "measurement": {
+          "bytes": 7865,
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-2-A/measurement.json",
+          "sha256": "6092b0bda0711f4c429e3d5dd2f2dcb7690ef15073b458124334d5e3104a32bd"
+        },
+        "pair": 2,
+        "variant": "A"
+      },
+      {
+        "measurement": {
+          "bytes": 7874,
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-2-B/measurement.json",
+          "sha256": "03eb701be2fcd4df4380993427387d401f163feafda866e667bf449b36a22527"
+        },
+        "pair": 2,
+        "variant": "B"
+      },
+      {
+        "measurement": {
+          "bytes": 7877,
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-3-A/measurement.json",
+          "sha256": "10953fdca0a702bf35fc29f5bfa07bfaea9b094254c0445b9f015aeb1792b9db"
+        },
+        "pair": 3,
+        "variant": "A"
+      },
+      {
+        "measurement": {
+          "bytes": 7887,
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-3-B/measurement.json",
+          "sha256": "4b66b366633c06eb72cd4d30003642a715daa0a39c81cf03aabd79441ed33a01"
+        },
+        "pair": 3,
+        "variant": "B"
+      }
+    ],
+    "values": {
+      "median_paired_reduction_percent": 1.9951020945769726,
+      "ratio_of_means_reduction_percent": 2.197683225270819
+    }
+  }
+]

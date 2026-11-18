@@ -1,0 +1,20 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{How social states reach the market}
+
+Market feedback begins with differences in portfolios and information exposure. Common risk exposure increases the weight of an investor's existing ties. Once the investor receives a message, its effect depends on the local infection state and on how confidence changes the relative weights on personal and peer signals. These states shape an order before it meets other orders in the auction. Settlement then changes the portfolios and reference prices available at the next observation. The shared-parent comparison makes this sequence observable in the same market history up to the intervention.
+
+Contagion and herding affect different margins in that comparison. Suppressing onward infection reduces the interim drawdown despite the upward drift of both price paths. Disabling herding changes the quantity traded at the trough of the same drawdown. The price and fill records therefore reveal a change in trading activity even before the price paths diverge. Reversing the retrospective valuation signs moves the price path below its starting point. Joint records of infection, confidence, and trades let a researcher distinguish these responses to mechanism switches. The effects are conditional on the parent state and the specified event.
+
+\subsection{Trading institutions shape market access}
+
+RQ1 uses two-sided coverage to identify the trading conditions under which a spread is observable. The halt in RQ2 makes the same point about transaction prices. During the halt, the carried-forward price records zero drawdown and satisfies the confirmation rule at step 20. Infection and sentiment continue to evolve during those same steps. Price-based assessments of recovery therefore need the contemporaneous trading opportunities and the social state. The other branches illustrate interventions at three distinct points. The price band tests admissible quotes, the settlement lock changes available inventory, and the tax redistributes cash at execution. In this history the submitted prices stay inside the band, and the additional restriction on shares leaves the submitted sell orders unchanged. The tax changes ledger balances with the same fills. A policy comparison therefore benefits from inspecting order admission, reservations, and cash settlement alongside prices and turnover.
+
+\subsection{An LLM policy depends on its observation schedule}
+
+The system places language-model decisions in the same market as rule-based agents. An LLM can condition an order on eligible messages and account facts. Typed intents and integer resource checks place its orders under the auction's rules. A public release makes a message visible in the market view. Reaching the model also requires an active investor at an eligible request step. The offline audit finds that this intersection is empty for the slow group in half of the seeds, even with the announcement on a scheduled step. Resource-aware caching reuses a direction and a budget fraction after a request. Evaluating that policy entails recording both the observations sent to the model and the intents later recomputed from the cache.
+
+\subsection{Scope of the evaluation}
+
+The measured paths cover one single-asset market, three matched intraday seeds, and branch interventions in one parent world. Multi-day return validation would require held-out market data and longer trajectories, and the variation of branch effects would require independent parent states. Behavioral fidelity and realized compute for the hybrid policy call for closed-loop comparisons with consistent state and trace fields. The present fixed-observation and offline schedule benchmarks establish the interface behavior and the subset of observations each schedule can offer.

@@ -1,0 +1,20 @@
+\begin{table*}[t]
+  \centering\small
+  \caption{\tr{各匹配种子的账本守恒与终态恢复。同平台只读恢复结果与各归档的终态哈希一致。}{Ledger conservation and terminal restoration for each matched seed. Read-only restorations on the same platform reproduce the archived terminal state hashes.}}
+  \label{tab:invariants}
+  \begin{tabularx}{\textwidth}{@{}l X r r r r c@{}}
+    \toprule
+    \tr{种子}{Seed} & \tr{交易策略}{Trading policy} & \tr{提交步数}{Commits} & \tr{现金残差}{Cash residual} & \tr{股份残差}{Share residual} & \tr{税费残差}{Fee residual} & \tr{终态哈希}{Terminal hash}\\
+    \midrule
+    932201 & \tr{完整模型}{Full model} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932201 & \tr{零智能}{Zero intelligence} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932201 & \tr{同质线性价值}{Linear value} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932202 & \tr{完整模型}{Full model} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932202 & \tr{零智能}{Zero intelligence} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932202 & \tr{同质线性价值}{Linear value} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932203 & \tr{完整模型}{Full model} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932203 & \tr{零智能}{Zero intelligence} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    932203 & \tr{同质线性价值}{Linear value} & 100 & 0 & 0 & 0 & \tr{匹配}{Match} \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}

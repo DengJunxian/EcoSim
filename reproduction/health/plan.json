@@ -1,0 +1,90 @@
+{
+  "base_commit": "33fe94f2cf53fc830cdd75e3eec6c52cb9d5fd55",
+  "campaign_protocol_id": "kdd27-health-pilot-20261114-v1",
+  "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+  "seed_order": [
+    932201,
+    932202,
+    932203
+  ],
+  "baseline_order": [
+    "full",
+    "zero_intelligence",
+    "homogeneous_linear_value"
+  ],
+  "scientific_scope": "Independent initial-transient market health pilots; one complete model day; not H1, formal replication, or power confirmation. Runtime protocol Literal unchanged; this campaign ID is external.",
+  "jobs": [
+    {
+      "label": "seed-932201-full",
+      "seed": 932201,
+      "baseline": "full",
+      "config_file": "configs/seed-932201-full.json",
+      "config_hash": "cd7f54c9fd1075650fa7f84e0a68db2d6072641fc73d68976084ee8a554f4149",
+      "config_file_sha256": "b29a202515bc8570b1476a26b73dce882d556ef3037079c22fa980c235b6a3c1"
+    },
+    {
+      "label": "seed-932201-zero_intelligence",
+      "seed": 932201,
+      "baseline": "zero_intelligence",
+      "config_file": "configs/seed-932201-zero_intelligence.json",
+      "config_hash": "e17c5e417866ba7c10262332a764310665bd64e616cd07acb1436cc619144f9f",
+      "config_file_sha256": "23c38c8386be5b8c6e462a036aab68a9402adeef9dfc9cf3057905cda9904833"
+    },
+    {
+      "label": "seed-932201-homogeneous_linear_value",
+      "seed": 932201,
+      "baseline": "homogeneous_linear_value",
+      "config_file": "configs/seed-932201-homogeneous_linear_value.json",
+      "config_hash": "66ec4166d204b45d4e3ea62d13db1ae5e58894f842f0da63c09e2876b1c6cfae",
+      "config_file_sha256": "5bf3a317ebc427b557fe6d05cae4a859ce4cc9304d5bb994a8348716d246be93"
+    },
+    {
+      "label": "seed-932202-full",
+      "seed": 932202,
+      "baseline": "full",
+      "config_file": "configs/seed-932202-full.json",
+      "config_hash": "fe8b4a840efb0b47f28682ef32f120e9c6dbdfe8e0787404404f7e491e3a4237",
+      "config_file_sha256": "52135ea1311f39be0cbbe7b797ec7b427cfcf4be78ec5715695866fd1e1bca27"
+    },
+    {
+      "label": "seed-932202-zero_intelligence",
+      "seed": 932202,
+      "baseline": "zero_intelligence",
+      "config_file": "configs/seed-932202-zero_intelligence.json",
+      "config_hash": "e95a025fb9cdffeb9444ccde35ef12f9fb92657d76a35c40672f72603c918a35",
+      "config_file_sha256": "2452e912d16795c60dc0f81ee813a489de44e565847b82d67a3ae751045ec309"
+    },
+    {
+      "label": "seed-932202-homogeneous_linear_value",
+      "seed": 932202,
+      "baseline": "homogeneous_linear_value",
+      "config_file": "configs/seed-932202-homogeneous_linear_value.json",
+      "config_hash": "d85081cf6d36b960d2eb3b7daa90b186960197e28108560a4bb89e50f3b88e1b",
+      "config_file_sha256": "69dc9383c6fb8fc7b3834f1ee1e5ff0575afaa570882f74747fa5832bcc07ffb"
+    },
+    {
+      "label": "seed-932203-full",
+      "seed": 932203,
+      "baseline": "full",
+      "config_file": "configs/seed-932203-full.json",
+      "config_hash": "d9fd575bead2d56b164dca739b9fc3faac47837c981fd1e8ba9b72ef5fa00b1d",
+      "config_file_sha256": "43da672877444ff7ad127b6bec91f9d48c31b4b76bf1d772576c95ed41c526ed"
+    },
+    {
+      "label": "seed-932203-zero_intelligence",
+      "seed": 932203,
+      "baseline": "zero_intelligence",
+      "config_file": "configs/seed-932203-zero_intelligence.json",
+      "config_hash": "b9d89865612628f192af8c6d3f8f1e598bc25eb29c8b1be95bfdb0ff4fdac433",
+      "config_file_sha256": "a1b01b67d909300afaf6a2e1a9f3951b9b978afca4de2126a3273fa6ab201efc"
+    },
+    {
+      "label": "seed-932203-homogeneous_linear_value",
+      "seed": 932203,
+      "baseline": "homogeneous_linear_value",
+      "config_file": "configs/seed-932203-homogeneous_linear_value.json",
+      "config_hash": "4663e6fc3ba32ad4afea791d6e99e327d919b68ce3ee06ce229406624970c8a0",
+      "config_file_sha256": "1fa9634686b3176ff3c935027d5695c0c87842e1b03e3b4925565627039bb8dc"
+    }
+  ]
+}

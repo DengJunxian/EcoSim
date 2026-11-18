@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "artifact": "schedule_exposure.csv",
+  "artifact_sha256": "516e26b2d1a76986083350d567a6546af5d6fb414d5f8b2b8c702ea7ec9b8cd2",
+  "source": "kdd27_repository/docs/research/kdd27/evidence/continuation_20261114/rq3_exposure_audit.json",
+  "source_sha256": "156191108ba03aedacfd9768934a47c8992d7ac5b03097bb143a5ec86f023059",
+  "source_path_base": "original engineering evidence bundle root",
+  "source_scope": "OFFLINE_MASK_ARITHMETIC_AND_STATIC_CODE_AUDIT",
+  "source_baseline_commit": "33fe94f2cf53fc830cdd75e3eec6c52cb9d5fd55",
+  "assumed_branch_condition": "neutral; identical schedule for negative",
+  "numeric_parameters": {
+    "N": 100,
+    "T": 4000,
+    "p_active": 0.05,
+    "event_tick": 1200,
+    "slow_agents": 10,
+    "slow_period": 10,
+    "direct_infected_count": 5,
+    "maximum_cache_age": 10
+  },
+  "row_count": 20,
+  "field_mapping": {
+    "full_text_requests": "llm_scheduled_text_requests",
+    "periodic_text_requests": "hybrid_scheduled_text_requests",
+    "full_direct_infected_requests": "llm_scheduled_directly_infected_requests",
+    "periodic_direct_infected_requests": "hybrid_scheduled_directly_infected_requests"
+  },
+  "definition": "Deterministic scheduled request opportunities containing the announcement at tick 1200, conditional on the neutral wording branch. These are not provider successes, executed trajectories, event-triggered schedule measurements, token savings, or H3 evidence.",
+  "theory_panel": "Pure design arithmetic 100*(1-k/(N*L)), N=100, k in [5,10,20], L in [1,2,5,10,20]; separate from event-tick scheduled counts.",
+  "assertions": {
+    "ordered_unique_seeds": 20,
+    "full_text_request_sum": 101,
+    "periodic_text_request_sum": 10,
+    "periodic_zero_text_seeds": 10,
+    "periodic_direct_infected_request_sum": 0
+  },
+  "new_world_steps": 0,
+  "new_model_requests": 0
+}

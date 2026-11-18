@@ -1,0 +1,79 @@
+% !TEX program = xelatex
+% 中文稿：Overleaf 中请将编译器设为 XeLaTeX（Menu -> Compiler -> XeLaTeX）。
+\documentclass[sigconf,anonymous,review,balance=false]{acmart}
+
+\usepackage{xeCJK}
+\setCJKmainfont{FandolSong-Regular.otf}[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolKai-Regular.otf]
+\setCJKsansfont{FandolHei-Regular.otf}[BoldFont=FandolHei-Bold.otf]
+\setCJKmonofont{FandolFang-Regular.otf}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{amsmath}
+\let\Bbbk\relax
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\settopmatter{printacmref=false,printccs=false}
+\setcopyright{none}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+\acmConference[KDD '27]{The 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}{August 1--5, 2027}{San Jose, CA, USA}
+\acmISBN{}
+\acmDOI{}
+\acmYear{2027}
+\copyrightyear{2027}
+
+\newcommand{\clip}{\operatorname{clip}}
+\newcommand{\sigmoid}{\operatorname{sigmoid}}
+\newcommand{\ind}{\mathbf{1}}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{Bib\TeX}}%
+  \renewcommand{\abstractname}{摘要}%
+  \renewcommand{\keywordsname}{关键词}%
+  \renewcommand{\figurename}{图}%
+  \renewcommand{\tablename}{表}%
+  \renewcommand{\lstlistingname}{代码清单}%
+  \renewcommand{\refname}{参考文献}}
+
+\newcommand{\tr}[2]{#1}
+\emergencystretch=1em
+\begin{document}
+
+\title[Civitas Economica：多尺度市场仿真]{Civitas Economica：融合社会心理学、金融关系与博弈论的 LLM 智能体市场社会仿真系统}
+
+\begin{abstract}
+本文提出 Civitas Economica，一个可接入 LLM 智能体的社会仿真系统，用于刻画人与人、人与群体、群体与市场制度之间经济关系的共同演化。社会心理学为注意力筛选、恐慌传染及信心依赖从众提供动机，行为金融学将持仓及多重价格参考点连接到估值，博弈论启发对共享信息、价格与交易约束下策略相互依赖的刻画。离散因果时钟、连续双向拍卖和整数账本将这些机制接入同一执行过程。数值规则、画像启发式、全量 LLM 和双速调度共用订单契约。在一个共同父世界的分支中，阻断二次传染使感染峰值由 45\% 降至 5\%，最大回撤由 0.4754\% 降至 0.1453\%。关闭从众时换手率改变，传播与从众的回撤交互项为零。停牌分支则说明，价格平稳与撮合机会需要联合观测。日内轨迹和固定观察请求分别检验市场执行与认知接口。该系统能够追踪个体状态如何经群体互动和市场制度反馈至后续决策。
+\end{abstract}
+
+\keywords{基于主体的社会仿真, 行为金融, 社会传染, LLM 智能体, 策略相互依赖, 市场微观结构}
+
+\maketitle
+
+\input{1_introduction_zh}
+\input{2_related_work_zh}
+\input{3_methods_zh}
+\input{4_experiments_zh}
+\input{5_discussion_zh}
+\input{6_conclusion_zh}
+
+\label{end:maintext}
+\FloatBarrier
+\label{start:references}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{ref}
+
+\clearpage
+\input{appendix_zh}
+
+\end{document}

@@ -1,0 +1,540 @@
+{
+  "observed_at": "2026-11-14T16:42:21.744313+00:00",
+  "run_id": "run-554815d06a194993ba5700fcad1e0be5",
+  "config_hash": "50b95e390ec26236c6b4fd1da241d96b225de423e58f0f70c9aca3a76b8e84cf",
+  "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+  "dependency_hash": "ea432387c4abcda377aff49ca55b315de3a55f36a8672c4d4484d534e0bdc23b",
+  "controller": {
+    "command": [
+      "<local-home>/civitas_wp08_20261113/.venv/bin/python",
+      "-B",
+      "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/profile_run.py",
+      "--config",
+      "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/configs/asus-n1000-t12.json",
+      "--output",
+      "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/asus-n1000-t12",
+      "--expected-source-hash",
+      "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+      "--expected-config-hash",
+      "50b95e390ec26236c6b4fd1da241d96b225de423e58f0f70c9aca3a76b8e84cf"
+    ],
+    "cwd": "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/source",
+    "started_at": "2026-11-14T16:04:09.593197+00:00",
+    "elapsed_seconds": 2196.3138115019538,
+    "exit_code": -2,
+    "status": "controlled_stop",
+    "stop_reason": "time_limit",
+    "deadline_seconds": 1800.0,
+    "rss_limit_mib": 8192,
+    "minimum_free_gib": 8.0,
+    "sampled_peak_rss_bytes": 1817165824,
+    "signal_count": 1,
+    "signal": "SIGINT",
+    "force_kill": false,
+    "scope": "Calculation bound; rollback and finally checkpoint may extend beyond the bound",
+    "credential_environment_removed": true,
+    "offline_guard": "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/asus-n1000-t12-network.log",
+    "guard_installed": true,
+    "blocked_network_attempts": [],
+    "resource_samples": [
+      {
+        "elapsed_seconds": 0.5050055919564329,
+        "rss_bytes": 50311168,
+        "free_bytes": 874088562688
+      },
+      {
+        "elapsed_seconds": 30.824536860978696,
+        "rss_bytes": 262381568,
+        "free_bytes": 874087436288
+      },
+      {
+        "elapsed_seconds": 61.11343583796406,
+        "rss_bytes": 262381568,
+        "free_bytes": 874087436288
+      },
+      {
+        "elapsed_seconds": 91.406467030989,
+        "rss_bytes": 309903360,
+        "free_bytes": 874086367232
+      },
+      {
+        "elapsed_seconds": 121.71646151697496,
+        "rss_bytes": 309903360,
+        "free_bytes": 874086367232
+      },
+      {
+        "elapsed_seconds": 152.02089889795752,
+        "rss_bytes": 363012096,
+        "free_bytes": 874085298176
+      },
+      {
+        "elapsed_seconds": 182.33477767696604,
+        "rss_bytes": 363012096,
+        "free_bytes": 874085298176
+      },
+      {
+        "elapsed_seconds": 212.63943852600642,
+        "rss_bytes": 363012096,
+        "free_bytes": 874085298176
+      },
+      {
+        "elapsed_seconds": 242.9595667370013,
+        "rss_bytes": 417067008,
+        "free_bytes": 874084265984
+      },
+      {
+        "elapsed_seconds": 273.26166304497747,
+        "rss_bytes": 417067008,
+        "free_bytes": 874084265984
+      },
+      {
+        "elapsed_seconds": 303.5611402099603,
+        "rss_bytes": 417067008,
+        "free_bytes": 874084265984
+      },
+      {
+        "elapsed_seconds": 333.8610679479898,
+        "rss_bytes": 417067008,
+        "free_bytes": 874084265984
+      },
+      {
+        "elapsed_seconds": 364.16851061896887,
+        "rss_bytes": 467496960,
+        "free_bytes": 874083217408
+      },
+      {
+        "elapsed_seconds": 394.47453151695663,
+        "rss_bytes": 467501056,
+        "free_bytes": 874083217408
+      },
+      {
+        "elapsed_seconds": 424.770504568005,
+        "rss_bytes": 467501056,
+        "free_bytes": 874083213312
+      },
+      {
+        "elapsed_seconds": 455.06610503798584,
+        "rss_bytes": 467501056,
+        "free_bytes": 874083213312
+      },
+      {
+        "elapsed_seconds": 485.36001108796336,
+        "rss_bytes": 467501056,
+        "free_bytes": 874083213312
+      },
+      {
+        "elapsed_seconds": 515.6602543029585,
+        "rss_bytes": 533905408,
+        "free_bytes": 874082160640
+      },
+      {
+        "elapsed_seconds": 545.9621195189538,
+        "rss_bytes": 533905408,
+        "free_bytes": 874082160640
+      },
+      {
+        "elapsed_seconds": 576.2627855229657,
+        "rss_bytes": 533905408,
+        "free_bytes": 874082160640
+      },
+      {
+        "elapsed_seconds": 606.563445370004,
+        "rss_bytes": 533905408,
+        "free_bytes": 874082160640
+      },
+      {
+        "elapsed_seconds": 636.8665833859704,
+        "rss_bytes": 533905408,
+        "free_bytes": 874082160640
+      },
+      {
+        "elapsed_seconds": 667.1574758659699,
+        "rss_bytes": 849858560,
+        "free_bytes": 874082160640
+      },
+      {
+        "elapsed_seconds": 697.4637326929951,
+        "rss_bytes": 582426624,
+        "free_bytes": 874081112064
+      },
+      {
+        "elapsed_seconds": 727.7575233289972,
+        "rss_bytes": 582426624,
+        "free_bytes": 874081107968
+      },
+      {
+        "elapsed_seconds": 758.0537922479562,
+        "rss_bytes": 582426624,
+        "free_bytes": 874081107968
+      },
+      {
+        "elapsed_seconds": 788.3428138899617,
+        "rss_bytes": 582426624,
+        "free_bytes": 874081107968
+      },
+      {
+        "elapsed_seconds": 818.6365987609606,
+        "rss_bytes": 582426624,
+        "free_bytes": 874081107968
+      },
+      {
+        "elapsed_seconds": 848.9272547189612,
+        "rss_bytes": 582426624,
+        "free_bytes": 874081107968
+      },
+      {
+        "elapsed_seconds": 879.2371450539795,
+        "rss_bytes": 899850240,
+        "free_bytes": 874081107968
+      },
+      {
+        "elapsed_seconds": 909.5369364239741,
+        "rss_bytes": 615440384,
+        "free_bytes": 874080059392
+      },
+      {
+        "elapsed_seconds": 939.8317816979834,
+        "rss_bytes": 615440384,
+        "free_bytes": 874080059392
+      },
+      {
+        "elapsed_seconds": 970.1355513029848,
+        "rss_bytes": 615440384,
+        "free_bytes": 874080059392
+      },
+      {
+        "elapsed_seconds": 1000.4293582419632,
+        "rss_bytes": 615440384,
+        "free_bytes": 874080059392
+      },
+      {
+        "elapsed_seconds": 1030.7209787009633,
+        "rss_bytes": 615440384,
+        "free_bytes": 874080059392
+      },
+      {
+        "elapsed_seconds": 1061.0188674029778,
+        "rss_bytes": 615440384,
+        "free_bytes": 874080059392
+      },
+      {
+        "elapsed_seconds": 1091.3124777519843,
+        "rss_bytes": 928284672,
+        "free_bytes": 874080055296
+      },
+      {
+        "elapsed_seconds": 1121.6131576789776,
+        "rss_bytes": 1366253568,
+        "free_bytes": 874078990336
+      },
+      {
+        "elapsed_seconds": 1151.909848635958,
+        "rss_bytes": 672215040,
+        "free_bytes": 874078986240
+      },
+      {
+        "elapsed_seconds": 1182.214236701955,
+        "rss_bytes": 672215040,
+        "free_bytes": 874078986240
+      },
+      {
+        "elapsed_seconds": 1212.504018188978,
+        "rss_bytes": 672215040,
+        "free_bytes": 874078986240
+      },
+      {
+        "elapsed_seconds": 1242.7929132129648,
+        "rss_bytes": 672215040,
+        "free_bytes": 874078986240
+      },
+      {
+        "elapsed_seconds": 1273.0875882160035,
+        "rss_bytes": 672215040,
+        "free_bytes": 874078982144
+      },
+      {
+        "elapsed_seconds": 1303.3777026179596,
+        "rss_bytes": 672215040,
+        "free_bytes": 874078982144
+      },
+      {
+        "elapsed_seconds": 1333.6692077459884,
+        "rss_bytes": 672215040,
+        "free_bytes": 874078982144
+      },
+      {
+        "elapsed_seconds": 1363.9722840279574,
+        "rss_bytes": 828321792,
+        "free_bytes": 874078982144
+      },
+      {
+        "elapsed_seconds": 1394.2727391819935,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077933568
+      },
+      {
+        "elapsed_seconds": 1424.5828940609936,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077933568
+      },
+      {
+        "elapsed_seconds": 1454.8848097319715,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077876224
+      },
+      {
+        "elapsed_seconds": 1485.1807096569682,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077872128
+      },
+      {
+        "elapsed_seconds": 1515.4800004419521,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077872128
+      },
+      {
+        "elapsed_seconds": 1545.7820921359817,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077872128
+      },
+      {
+        "elapsed_seconds": 1576.0767414319562,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077667328
+      },
+      {
+        "elapsed_seconds": 1606.3725544419722,
+        "rss_bytes": 730562560,
+        "free_bytes": 874077671424
+      },
+      {
+        "elapsed_seconds": 1636.6734688139986,
+        "rss_bytes": 1109381120,
+        "free_bytes": 874077667328
+      },
+      {
+        "elapsed_seconds": 1666.9762302029994,
+        "rss_bytes": 1473544192,
+        "free_bytes": 874076590080
+      },
+      {
+        "elapsed_seconds": 1697.2775970409857,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076581888
+      },
+      {
+        "elapsed_seconds": 1727.5698556809803,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076581888
+      },
+      {
+        "elapsed_seconds": 1757.86594108399,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076573696
+      },
+      {
+        "elapsed_seconds": 1788.175091958954,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076573696
+      },
+      {
+        "elapsed_seconds": 1818.4792972859577,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076569600
+      },
+      {
+        "elapsed_seconds": 1848.784560361004,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076565504
+      },
+      {
+        "elapsed_seconds": 1879.0786174979876,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076561408
+      },
+      {
+        "elapsed_seconds": 1909.3706734229927,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076557312
+      },
+      {
+        "elapsed_seconds": 1939.6691919409786,
+        "rss_bytes": 779079680,
+        "free_bytes": 874076561408
+      },
+      {
+        "elapsed_seconds": 1969.9700352589716,
+        "rss_bytes": 1214566400,
+        "free_bytes": 874076561408
+      },
+      {
+        "elapsed_seconds": 2000.2637359329965,
+        "rss_bytes": 824684544,
+        "free_bytes": 874075500544
+      },
+      {
+        "elapsed_seconds": 2030.5624747339753,
+        "rss_bytes": 824684544,
+        "free_bytes": 874075500544
+      },
+      {
+        "elapsed_seconds": 2060.8690334690036,
+        "rss_bytes": 812351488,
+        "free_bytes": 874075500544
+      },
+      {
+        "elapsed_seconds": 2091.1717327429797,
+        "rss_bytes": 820285440,
+        "free_bytes": 874075492352
+      },
+      {
+        "elapsed_seconds": 2121.460526116949,
+        "rss_bytes": 1061191680,
+        "free_bytes": 874075508736
+      },
+      {
+        "elapsed_seconds": 2151.7597380179795,
+        "rss_bytes": 839925760,
+        "free_bytes": 874075508736
+      },
+      {
+        "elapsed_seconds": 2182.0566707020043,
+        "rss_bytes": 1130819584,
+        "free_bytes": 874075508736
+      }
+    ]
+  },
+  "runtime_terminal": {
+    "checkpoint": {
+      "bytes": 4494805,
+      "commit_hash": "edde0b251d61e200c19b1d0b1e5834f36b38345d3036d81bfef5b4b9713ba2ce",
+      "encoding": "json+gzip",
+      "path": "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/asus-n1000-t12/run/checkpoints/de19465df97dc203dc580a21c97ddbbef3aeeb351dc7882c21c368fb00f86a86.json.gz",
+      "sha256": "de19465df97dc203dc580a21c97ddbbef3aeeb351dc7882c21c368fb00f86a86",
+      "tick": 12
+    },
+    "command": [
+      "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/profile_run.py",
+      "--config",
+      "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/configs/asus-n1000-t12.json",
+      "--output",
+      "<local-home>/civitas_kdd27_capacity_20261114_33fe94f/asus-n1000-t12",
+      "--expected-source-hash",
+      "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+      "--expected-config-hash",
+      "50b95e390ec26236c6b4fd1da241d96b225de423e58f0f70c9aca3a76b8e84cf"
+    ],
+    "elapsed_seconds": 1993.4090055060224,
+    "error": null,
+    "exit_code": 0,
+    "from_tick": 0,
+    "recorded_at": "2026-11-14T16:40:45.050482+00:00",
+    "run_id": "run-554815d06a194993ba5700fcad1e0be5",
+    "schema_version": 1,
+    "state_hash": "f2a23248d1d64358cff2363a0bfe7d029359a8133c26927035d57c4f665aeb1b",
+    "status": "completed",
+    "tick": 12,
+    "until": 12
+  },
+  "ticks": [
+    {
+      "progress": "committed",
+      "tick": 1,
+      "wall_seconds": 23.76446604199009,
+      "cpu_seconds": 23.717975261,
+      "active": 47,
+      "trades": 14
+    },
+    {
+      "progress": "committed",
+      "tick": 2,
+      "wall_seconds": 47.42131879803492,
+      "cpu_seconds": 47.329492472,
+      "active": 56,
+      "trades": 9
+    },
+    {
+      "progress": "committed",
+      "tick": 3,
+      "wall_seconds": 72.05197345901979,
+      "cpu_seconds": 71.968820032,
+      "active": 40,
+      "trades": 8
+    },
+    {
+      "progress": "committed",
+      "tick": 4,
+      "wall_seconds": 96.00630422797985,
+      "cpu_seconds": 95.89789385199998,
+      "active": 42,
+      "trades": 8
+    },
+    {
+      "progress": "committed",
+      "tick": 5,
+      "wall_seconds": 121.02612032595789,
+      "cpu_seconds": 120.891801835,
+      "active": 38,
+      "trades": 7
+    },
+    {
+      "progress": "committed",
+      "tick": 6,
+      "wall_seconds": 147.48416128300596,
+      "cpu_seconds": 147.35621604099998,
+      "active": 49,
+      "trades": 15
+    },
+    {
+      "progress": "committed",
+      "tick": 7,
+      "wall_seconds": 177.37396066100337,
+      "cpu_seconds": 177.24215231099998,
+      "active": 36,
+      "trades": 4
+    },
+    {
+      "progress": "committed",
+      "tick": 8,
+      "wall_seconds": 203.76951901102439,
+      "cpu_seconds": 203.62780108800007,
+      "active": 52,
+      "trades": 7
+    },
+    {
+      "progress": "committed",
+      "tick": 9,
+      "wall_seconds": 230.94567623198964,
+      "cpu_seconds": 230.80417418899992,
+      "active": 50,
+      "trades": 7
+    },
+    {
+      "progress": "committed",
+      "tick": 10,
+      "wall_seconds": 259.98977613903116,
+      "cpu_seconds": 259.85277656699986,
+      "active": 47,
+      "trades": 8
+    },
+    {
+      "progress": "committed",
+      "tick": 11,
+      "wall_seconds": 288.49174007901456,
+      "cpu_seconds": 288.31123614399985,
+      "active": 57,
+      "trades": 16
+    },
+    {
+      "progress": "committed",
+      "tick": 12,
+      "wall_seconds": 316.42688822798664,
+      "cpu_seconds": 316.24692488000005,
+      "active": 47,
+      "trades": 10
+    }
+  ],
+  "measurement_exists": false,
+  "archive_bytes": 17135989,
+  "step_wall_sum": 1984.7519044860383
+}

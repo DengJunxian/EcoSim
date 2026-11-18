@@ -1,0 +1,384 @@
+{
+  "status": "passed",
+  "full_window": [
+    "continuous",
+    "split",
+    "historical"
+  ],
+  "full_window_ticks": [
+    1,
+    12
+  ],
+  "fields_exact": [
+    "facts",
+    "decisions",
+    "trades",
+    "summary",
+    "model_cost"
+  ],
+  "none_branch_window_ticks": [
+    7,
+    12
+  ],
+  "none_branch_facts_and_decision_quality_equal": true,
+  "none_summary_is_own_six_step_window_not_full_twelve": true,
+  "summary": {
+    "definition_version": "kdd27-metrics-v1",
+    "window": [
+      1,
+      12
+    ],
+    "metrics": {
+      "no_trade_ratio": {
+        "value": 0.5833333333333334,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 7,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "two_sided_coverage": {
+        "value": 0.3333333333333333,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 4,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "one_sided_ratio": {
+        "value": 0.6666666666666666,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 8,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "empty_book_ratio": {
+        "value": 0.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "halt_ratio": {
+        "value": 0.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "two_sided_spread_bps": {
+        "value": 13.228755727168378,
+        "status": "VALID",
+        "reason": null,
+        "unit": "bp",
+        "sample_count": 4,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "rejected_order_ratio": {
+        "value": 0.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 29,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "executed_order_ratio": {
+        "value": 0.3448275862068966,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 10,
+        "denominator_count": 29,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "cognitive_active_coverage": {
+        "value": 0.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 58,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "degraded_active_ratio": {
+        "value": 0.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 58,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "traded_quantity": {
+        "value": 35.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "shares",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "turnover": {
+        "value": 0.0002834145788459358,
+        "status": "VALID",
+        "reason": null,
+        "unit": "fraction_initial_shares",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "fees_minor": {
+        "value": 3498938.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "minor_currency",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "fee_cash_fraction": {
+        "value": 2.410417711967474e-07,
+        "status": "VALID",
+        "reason": null,
+        "unit": "fraction_initial_tradable_cash",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "peak_infected_count": {
+        "value": 1.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "actors",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "infected_person_steps": {
+        "value": 1.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "actor_steps",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "unique_infected_actors": {
+        "value": 1.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "actors",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "mean_confidence": {
+        "value": 0.610113518976472,
+        "status": "VALID",
+        "reason": null,
+        "unit": "score",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "exposure_items": {
+        "value": 10.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "selected_source_actor_steps",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "price_band_touch_ratio": {
+        "value": 0.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "tradable_cash_end_minor": {
+        "value": 14515895478356.0,
+        "status": "VALID",
+        "reason": null,
+        "unit": "minor_currency",
+        "sample_count": 12,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "depth_bid5": {
+        "value": 31.25,
+        "status": "VALID",
+        "reason": null,
+        "unit": "shares",
+        "sample_count": 4,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "depth_ask5": {
+        "value": 14.25,
+        "status": "VALID",
+        "reason": null,
+        "unit": "shares",
+        "sample_count": 4,
+        "denominator_count": 12,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "excess_kurtosis": {
+        "value": null,
+        "status": "UNDEFINED",
+        "reason": "MISSING_DAY",
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 1,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "mean_abs_return_acf_lags_1_20": {
+        "value": null,
+        "status": "UNDEFINED",
+        "reason": "MISSING_DAY",
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 1,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "maximum_abs_raw_return_acf_lags_1_20": {
+        "value": null,
+        "status": "UNDEFINED",
+        "reason": "MISSING_DAY",
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 1,
+        "definition_version": "kdd27-metrics-v1"
+      },
+      "volume_abs_return_correlation": {
+        "value": null,
+        "status": "UNDEFINED",
+        "reason": "MISSING_DAY",
+        "unit": "ratio",
+        "sample_count": 0,
+        "denominator_count": 1,
+        "definition_version": "kdd27-metrics-v1"
+      }
+    },
+    "daily": [
+      {
+        "day": 0,
+        "close": 100.0,
+        "volume": 0.0,
+        "complete": true,
+        "reason": null
+      },
+      {
+        "day": 1,
+        "close": null,
+        "volume": null,
+        "complete": false,
+        "reason": "INCOMPLETE_MODEL_DAY"
+      }
+    ],
+    "daily_statistics": {
+      "definition_version": "kdd27-metrics-v1",
+      "return_clock": "daily log return; no gap compression",
+      "returns": [
+        null
+      ],
+      "lags": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "raw_acf": null,
+      "absolute_acf": null,
+      "metrics": {
+        "excess_kurtosis": {
+          "value": null,
+          "status": "UNDEFINED",
+          "reason": "MISSING_DAY",
+          "unit": "ratio",
+          "sample_count": 0,
+          "denominator_count": 1,
+          "definition_version": "kdd27-metrics-v1"
+        },
+        "mean_abs_return_acf_lags_1_20": {
+          "value": null,
+          "status": "UNDEFINED",
+          "reason": "MISSING_DAY",
+          "unit": "ratio",
+          "sample_count": 0,
+          "denominator_count": 1,
+          "definition_version": "kdd27-metrics-v1"
+        },
+        "maximum_abs_raw_return_acf_lags_1_20": {
+          "value": null,
+          "status": "UNDEFINED",
+          "reason": "MISSING_DAY",
+          "unit": "ratio",
+          "sample_count": 0,
+          "denominator_count": 1,
+          "definition_version": "kdd27-metrics-v1"
+        },
+        "volume_abs_return_correlation": {
+          "value": null,
+          "status": "UNDEFINED",
+          "reason": "MISSING_DAY",
+          "unit": "ratio",
+          "sample_count": 0,
+          "denominator_count": 1,
+          "definition_version": "kdd27-metrics-v1"
+        }
+      }
+    }
+  },
+  "component_hashes": {
+    "continuous": {
+      "facts": "76274266d06c5d6a5a4ed2b0a7995c0d23ebae2648bd0c5f1074a23f177202c1",
+      "decisions": "daf716c36d4bc59dc72e48e458c913c956a3b5cf6774d986b0186ff62e292cc0",
+      "trades": "6819ab7533bb1cd9211098ecb25669cf70aed4e80469d843abbb7a77c65172f4",
+      "summary": "aad3d8e16e056987de38e6a331243ec34236aabb087b96c9dd6aa555e0e13eb2"
+    },
+    "split": {
+      "facts": "76274266d06c5d6a5a4ed2b0a7995c0d23ebae2648bd0c5f1074a23f177202c1",
+      "decisions": "daf716c36d4bc59dc72e48e458c913c956a3b5cf6774d986b0186ff62e292cc0",
+      "trades": "6819ab7533bb1cd9211098ecb25669cf70aed4e80469d843abbb7a77c65172f4",
+      "summary": "aad3d8e16e056987de38e6a331243ec34236aabb087b96c9dd6aa555e0e13eb2"
+    },
+    "none": {
+      "facts": "ea67d4646e7a77cd605931f96b6fd4bbe5fa69fba9021184a5e0d6a511522db8",
+      "decisions": "61685ed62fa783059b43cb2215b34c1be8e09af4f73513fea6d398a7a70f2218",
+      "trades": "bd20839d0a925f6919c2768595c6a91d96f023bd649189136062ae7f18ade641",
+      "summary": "8b548b8a7df734689fc7741f7d37829d54097750431720b199550586e9ad3b11"
+    }
+  },
+  "new_simulation_steps": 0,
+  "new_online_calls": 0
+}

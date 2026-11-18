@@ -1,0 +1,85 @@
+{
+  "status": "PASS_THREE_EXACT_SCIENTIFIC_PROJECTIONS",
+  "reviewed_at_utc": "2026-11-15T04:52:49.484991+00:00",
+  "comparisons": [
+    {
+      "label": "seed-932201-full",
+      "status": "EXACT_SCIENTIFIC_AND_CONTRACT_MATCH",
+      "science_exact_equal": true,
+      "run_identity_exact_equal": true,
+      "analysis_contract_exact_equal": true,
+      "source_files_byte_identical": false,
+      "difference_counts": {
+        "scientific": 0,
+        "run_identity": 0,
+        "analysis_contract": 0,
+        "operational": 4,
+        "other_top_level": 0
+      },
+      "comparison_file": "kdd27_completion_20261114/reviews/package_audit/health_cross_projection_seed932201_full.json",
+      "comparison_sha256": "38df28c670fcaf905b3bfe59c8bdcf6bdaed447f4302b31e02224ebecb3efccd",
+      "differences_file": "kdd27_completion_20261114/reviews/package_audit/health_cross_projection_seed932201_full.differences.jsonl",
+      "differences_sha256": "559c27c7e30216b7ba1bcbcc6b831dbe02d24c82d702916b11a4b231346239af"
+    },
+    {
+      "label": "seed-932201-zero_intelligence",
+      "status": "EXACT_SCIENTIFIC_AND_CONTRACT_MATCH",
+      "science_exact_equal": true,
+      "run_identity_exact_equal": true,
+      "analysis_contract_exact_equal": true,
+      "source_files_byte_identical": false,
+      "difference_counts": {
+        "scientific": 0,
+        "run_identity": 0,
+        "analysis_contract": 0,
+        "operational": 4,
+        "other_top_level": 0
+      },
+      "comparison_file": "kdd27_completion_20261114/reviews/package_audit/health_cross_projection_seed932201_zero_intelligence.json",
+      "comparison_sha256": "1240be35ba7401cecf5f2ef6efdc0ddfbf5d45c194117d42daec9716c54f810a",
+      "differences_file": "kdd27_completion_20261114/reviews/package_audit/health_cross_projection_seed932201_zero_intelligence.differences.jsonl",
+      "differences_sha256": "aea55aa545136f8bd20cf0cb0348540e2cd374eedde13115639a4749e535c346"
+    },
+    {
+      "label": "seed-932201-homogeneous_linear_value",
+      "status": "EXACT_SCIENTIFIC_AND_CONTRACT_MATCH",
+      "science_exact_equal": true,
+      "run_identity_exact_equal": true,
+      "analysis_contract_exact_equal": true,
+      "source_files_byte_identical": false,
+      "difference_counts": {
+        "scientific": 0,
+        "run_identity": 0,
+        "analysis_contract": 0,
+        "operational": 4,
+        "other_top_level": 0
+      },
+      "comparison_file": "kdd27_completion_20261114/reviews/package_audit/health_cross_projection_seed932201_homogeneous_linear_value.json",
+      "comparison_sha256": "9bc04e38136cb5f84f2d5fcc73e9e57e61d26e9fbb10c4ce47fbb9b3633e347a",
+      "differences_file": "kdd27_completion_20261114/reviews/package_audit/health_cross_projection_seed932201_homogeneous_linear_value.differences.jsonl",
+      "differences_sha256": "f64288414801dbcea9598ffcba5ffe92a73114ab2d40878e1dfb7299f296d944"
+    }
+  ],
+  "compared_trajectories": 3,
+  "distinct_existing_seed_units": 1,
+  "only_seed": 932201,
+  "remaining_six_Mac_NOT_RUN": [
+    "seed-932202-full",
+    "seed-932202-zero_intelligence",
+    "seed-932202-homogeneous_linear_value",
+    "seed-932203-full",
+    "seed-932203-zero_intelligence",
+    "seed-932203-homogeneous_linear_value"
+  ],
+  "new_independent_seed_units": 0,
+  "world_restore_calls": 0,
+  "analyze_run_calls": 0,
+  "new_paid_calls": 0,
+  "tolerance_or_posthoc_rounding_applied": false,
+  "whole_files_byte_identical": false,
+  "scope": "Read-only projection reproducibility for three baselines of one existing seed, not cross-platform simulation or WorldKernel restoration. All exact differences, including operational fields, are retained.",
+  "mac_terminal_review_sha256": "f637f0cc347c654e29239aaf37c63fa888891516f1ae59c15547e33b9e10bc5a",
+  "financial_review_sha256": "af7939d1630861e93cb15e6142709fadefbd5006ccc4e86ca8fd8c4f05fa6f22",
+  "comparator_sha256": "d20deb05d38b3a5d2c6c04923f0dcd66237cc1c2e401b6b742fc3a5365d38bad",
+  "script_sha256": "dee8bc33234861284f96dd6cf693e00d245866a52b5177f26f6aa34dc916daa0"
+}

@@ -1,0 +1,684 @@
+{
+  "status": "PASS",
+  "audit_scope": "read-only append-only ledger/request/response/budget audit; no provider call",
+  "audited_at_utc": "2026-11-14T16:23:23.221384+00:00",
+  "run_id": "kdd27-neutral-snapshot54-20261114-v1",
+  "harness_sha256": "9122e635917910e45dcf75fe423406a507242c150b7308045ef8c514e33a057c",
+  "input_hashes": {
+    "plan.json": "caaa04b2656f3ae3b06b82d1ebd52aef285ae244a88680c6e8b6bbf39998563e",
+    "cases.json": "4dd171ac36bf9cd5ad0d79d923d5ee2b3ea9064b5bcce865e7989a3db235552c",
+    "requests.json": "bb184e87fb703f52021913009355c11b4051075ed0fe0d79b17a3475713ec0d2",
+    "snapshot_pilot.py": "9122e635917910e45dcf75fe423406a507242c150b7308045ef8c514e33a057c"
+  },
+  "ledger_path": "project_control/model-budget.sqlite",
+  "ledger_sha256_at_audit": "70239b4d1ec3d1bd20ddf5c720f5d8a4653c4f760d6fcc8d897645c1fab20bb3",
+  "ledger_bytes_unchanged_during_audit": true,
+  "table_comparison": {
+    "contracts": {
+      "old_count": 18,
+      "current_count": 20,
+      "old_rows_unchanged": true,
+      "old_rows_removed": 0,
+      "old_rows_modified": 0,
+      "added_count": 2,
+      "old_rows_sha256_canonical": "8a3b1cab8a56ad1bea51dadc9181e162abc0703a293d4c878bfa25d19e5e89a3"
+    },
+    "requests": {
+      "old_count": 561,
+      "current_count": 615,
+      "old_rows_unchanged": true,
+      "old_rows_removed": 0,
+      "old_rows_modified": 0,
+      "added_count": 54,
+      "old_rows_sha256_canonical": "7d57da43b16f2078af2bb9c871baf2dc9aa3c95859a161ced0205bb2a82dc7b5"
+    },
+    "attempts": {
+      "old_count": 537,
+      "current_count": 591,
+      "old_rows_unchanged": true,
+      "old_rows_removed": 0,
+      "old_rows_modified": 0,
+      "added_count": 54,
+      "old_rows_sha256_canonical": "3e0311b0fe1834b8721d8d12d5db34a904d35a518ba93823035a53a4abe12e26"
+    },
+    "reservations": {
+      "old_count": 537,
+      "current_count": 591,
+      "old_rows_unchanged": true,
+      "old_rows_removed": 0,
+      "old_rows_modified": 0,
+      "added_count": 54,
+      "old_rows_sha256_canonical": "2da70c2a34468197e081436dbfd7e0289e3b3376b0711288f57d43f3a98dd043"
+    }
+  },
+  "added_contract_names": [
+    "pilot-plan:kdd27-neutral-snapshot54-20261114-v1",
+    "run:kdd27-neutral-snapshot54-20261114-v1"
+  ],
+  "old_unknown_usage_count": 18,
+  "current_unknown_usage_count": 18,
+  "old_unknown_set_unchanged": true,
+  "unknown_set_hash": "9c4a18568f6fff0e63257edadb08b20e23ac2bdc259518022cc0a99e4d9e4b61",
+  "budget_limits_unchanged": true,
+  "project_limits": {
+    "cny_nano": 80000000000,
+    "max_attempts": 594,
+    "max_tokens": 20680704,
+    "usd_nano": 80000000000
+  },
+  "run_hard_caps": {
+    "usd_nano": 497664000,
+    "cny_nano": 0,
+    "max_attempts": 54,
+    "max_tokens": 1880064
+  },
+  "actual_delta": {
+    "attempts": 54,
+    "requests": 54,
+    "reservations": 54,
+    "contracts": 2,
+    "reserved_tokens": 1880064,
+    "incoming_tokens": 119637,
+    "outgoing_tokens": 9306,
+    "accounted_cost_upper_bound_nano_usd": 34562250,
+    "accounted_cost_upper_bound_usd": 0.03456225,
+    "new_unknown_attempts": 0,
+    "retries": 0,
+    "exact_cache_hits": 0
+  },
+  "cumulative_after": {
+    "attempts": 591,
+    "reserved_tokens": 20576256,
+    "unknown_usage_count": 18,
+    "remaining_attempt_capacity": 3,
+    "remaining_reserved_token_capacity": 104448,
+    "USD_accounted_nano": 794090750,
+    "USD_unknown_reserved_nano": 165888000
+  },
+  "data_integrity": {
+    "frozen_request_contents_equal": 54,
+    "semantic_keys_equal": 54,
+    "raw_response_parses_equal_saved_bundle": 54,
+    "receipts_equal_ledger_reconstruction": 54,
+    "results_rows": 54,
+    "resource_executable": 54,
+    "result_action_counts": {
+      "hold": 54
+    },
+    "provider_models": {
+      "gpt-6-luna": 54
+    },
+    "output_sources": {
+      "live": 54
+    },
+    "unique_observations": 45
+  },
+  "interpretation": {
+    "input_origin": "constructed engineering observations",
+    "output_origin": "actual live provider responses",
+    "formal_eligible": false,
+    "closed_loop_steps": 0,
+    "cost_label": "Conservative ledger accounting at configured caps/tariffs; not an independently verified provider invoice.",
+    "not_supported": [
+      "wording robustness",
+      "independent five-repeat uncertainty",
+      "holdout validation",
+      "persona holding-period fidelity",
+      "market equivalence",
+      "H3 confirmation"
+    ]
+  },
+  "artifact_hashes": {
+    "execution-start.json": "b3527073dadf74bddc1cb0256111a505f7ca6c38e0354cca44341501b7746c52",
+    "execution-summary.json": "82fc6a125450d63845ca3a03004f21ea99c6db5b12582e5aaf756bd65db35108",
+    "budget-after.json": "11f4c47f0668bb0d1b1fabff820ab067b3cea4ede46bfd004e349bc67ad6ef38",
+    "invocations.json": "8a22a6135c349c0bcc48f19106086ef38b11e7c69bd9969a54e7d5596f6c7940",
+    "results.jsonl": "300f4db555a34cba027891097acecd71df43824131e02d18b4870dc02b4060af",
+    "ledger-before-rows.json": "43e178dd604e8097412afd5bec2c522d7751d446dced69010715ba614ac3bf60",
+    "ledger-before-identity.json": "1b19e438136cb90c6aaad1b84ae0c56cb733f26201cdf0f57f7d3d7987a3acc2"
+  },
+  "raw_requests_responses_copied_to_audit_or_overleaf": false,
+  "new_api_calls_in_audit": 0,
+  "case_accounting_receipts": [
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:price:1:neutral",
+      "request_id": "request:02819d4aad3e79239277430ee09ac36e7977ac776aaf860d85469ae69be47573",
+      "attempt_id": "request:02819d4aad3e79239277430ee09ac36e7977ac776aaf860d85469ae69be47573:attempt:1",
+      "semantic_key": "e0cf7a9d573f1b82e0097832685dddbef68c398324900a0a82a75dc5e3a7850f",
+      "incoming_tokens": 2216,
+      "outgoing_tokens": 177,
+      "accounted_cost_upper_bound_nano_usd": 642500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:price:0:neutral",
+      "request_id": "request:0cb01642c93a46e79d8235de7eb6edccd9a3e9f182c63cbaca86d62fcbf91bf8",
+      "attempt_id": "request:0cb01642c93a46e79d8235de7eb6edccd9a3e9f182c63cbaca86d62fcbf91bf8:attempt:1",
+      "semantic_key": "e6f5db6385066f84a189763180a43c34e3e9c2d2ad69676991067da235206654",
+      "incoming_tokens": 2240,
+      "outgoing_tokens": 186,
+      "accounted_cost_upper_bound_nano_usd": 653000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:locked_inventory:1:neutral",
+      "request_id": "request:0ddaea9e41c73986d89ec5ae068138994b688ec44baaa9d30a36fcb192c081b8",
+      "attempt_id": "request:0ddaea9e41c73986d89ec5ae068138994b688ec44baaa9d30a36fcb192c081b8:attempt:1",
+      "semantic_key": "5cac20b207cceaac763800fa9a5aebedcd98b58d9d7fe1c4306175a15c6b1e6d",
+      "incoming_tokens": 2226,
+      "outgoing_tokens": 181,
+      "accounted_cost_upper_bound_nano_usd": 647000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:price:0:neutral",
+      "request_id": "request:0eeb851ceace97cac25c742996652643008b91f7558e65ac1d365312a29c7428",
+      "attempt_id": "request:0eeb851ceace97cac25c742996652643008b91f7558e65ac1d365312a29c7428:attempt:1",
+      "semantic_key": "dfae55a1d67963cb9ded7eec75b47aea9219b11b2be0c3ca286ad2f81cb5b064",
+      "incoming_tokens": 2217,
+      "outgoing_tokens": 179,
+      "accounted_cost_upper_bound_nano_usd": 643750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:price:0:neutral",
+      "request_id": "request:10124e5e520a0b37143f96cffca233cf1ae6b2d84aa281c52cc36b26d20bda9d",
+      "attempt_id": "request:10124e5e520a0b37143f96cffca233cf1ae6b2d84aa281c52cc36b26d20bda9d:attempt:1",
+      "semantic_key": "41f5bea583a1aeadfe90249afddfaf59cb5042fb9187665a947731daaec632fc",
+      "incoming_tokens": 2211,
+      "outgoing_tokens": 166,
+      "accounted_cost_upper_bound_nano_usd": 635750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:price:0:neutral",
+      "request_id": "request:1480b94bf363e8cb7526b386154710082857a3da30356e194fbe59badc5294e5",
+      "attempt_id": "request:1480b94bf363e8cb7526b386154710082857a3da30356e194fbe59badc5294e5:attempt:1",
+      "semantic_key": "1dc2ebdc76c57902c28d00b25fea99fbcd9c4e20b6d3b4e4b2dbf19349858922",
+      "incoming_tokens": 2198,
+      "outgoing_tokens": 174,
+      "accounted_cost_upper_bound_nano_usd": 636500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:cash:1:neutral",
+      "request_id": "request:1c59a0dcb3f26b06b7a69ac4df52db711328954954a626ea69dc0b36da0402e3",
+      "attempt_id": "request:1c59a0dcb3f26b06b7a69ac4df52db711328954954a626ea69dc0b36da0402e3:attempt:1",
+      "semantic_key": "ede0fef8b4f4dc9d76710bc52fec8a41352ced7bc6bbdc844948fdeee11876d2",
+      "incoming_tokens": 2193,
+      "outgoing_tokens": 172,
+      "accounted_cost_upper_bound_nano_usd": 634250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:price:1:neutral",
+      "request_id": "request:1e3248775c9285f89125cfb2773b4d2cf027f71d7365a4d3bda5a764ea82c56d",
+      "attempt_id": "request:1e3248775c9285f89125cfb2773b4d2cf027f71d7365a4d3bda5a764ea82c56d:attempt:1",
+      "semantic_key": "4706d0ced9f5a4fa0cf9f14c386607cb6f288996f273f2201ddbc72951a78a38",
+      "incoming_tokens": 2219,
+      "outgoing_tokens": 159,
+      "accounted_cost_upper_bound_nano_usd": 634250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:cash:1:neutral",
+      "request_id": "request:253edec7dc717869169ca0d89ac95a268e984e3ddf619cab2a5b0e72383b8d5b",
+      "attempt_id": "request:253edec7dc717869169ca0d89ac95a268e984e3ddf619cab2a5b0e72383b8d5b:attempt:1",
+      "semantic_key": "fa250ae8d887b7c095d968c63abe2941789673faf6fa0e2c4853cd10b859f71c",
+      "incoming_tokens": 2207,
+      "outgoing_tokens": 167,
+      "accounted_cost_upper_bound_nano_usd": 635250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:cash:1:neutral",
+      "request_id": "request:25ae00f26b558c48d27840a14a769a362d9b86061bdf52fa74de338f1d440e01",
+      "attempt_id": "request:25ae00f26b558c48d27840a14a769a362d9b86061bdf52fa74de338f1d440e01:attempt:1",
+      "semantic_key": "53b01c28c4b3a5e761200561e8d541a3e8ddb7311de3c75f4c0b569164d39e7d",
+      "incoming_tokens": 2217,
+      "outgoing_tokens": 180,
+      "accounted_cost_upper_bound_nano_usd": 644250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:locked_inventory:1:neutral",
+      "request_id": "request:31fe00ef9672ec0046ce8d5fa4e42bbf651a6477b949aa5ff44ff87996fd9c0a",
+      "attempt_id": "request:31fe00ef9672ec0046ce8d5fa4e42bbf651a6477b949aa5ff44ff87996fd9c0a:attempt:1",
+      "semantic_key": "81d20f605cff2d80ce074d88f3d6775a80f5648569e8aca7a91cda35e638394d",
+      "incoming_tokens": 2206,
+      "outgoing_tokens": 154,
+      "accounted_cost_upper_bound_nano_usd": 628500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:locked_inventory:1:neutral",
+      "request_id": "request:3795273653313afec7c87e4ff29cdae7a768695b7824708db7c06e860edf36f8",
+      "attempt_id": "request:3795273653313afec7c87e4ff29cdae7a768695b7824708db7c06e860edf36f8:attempt:1",
+      "semantic_key": "586c7c9796bc02b041afcfd7fd930eeb0894abe43c78ad60218afa199b6cc4f2",
+      "incoming_tokens": 2210,
+      "outgoing_tokens": 174,
+      "accounted_cost_upper_bound_nano_usd": 639500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:locked_inventory:1:neutral",
+      "request_id": "request:381efeacb6b719396ff551cfa109223f62e1d7aa9240f1ea8a5df88e8ed1f49a",
+      "attempt_id": "request:381efeacb6b719396ff551cfa109223f62e1d7aa9240f1ea8a5df88e8ed1f49a:attempt:1",
+      "semantic_key": "1f76f896975da1a2085369a13766565eef61432e7b55a27acdc93bd8c1c2c6e8",
+      "incoming_tokens": 2210,
+      "outgoing_tokens": 176,
+      "accounted_cost_upper_bound_nano_usd": 640500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:locked_inventory:0:neutral",
+      "request_id": "request:3a775f92847a1e65a17c2f13ce684a2ea950b856f33c74bb253a83b5efb44a1b",
+      "attempt_id": "request:3a775f92847a1e65a17c2f13ce684a2ea950b856f33c74bb253a83b5efb44a1b:attempt:1",
+      "semantic_key": "48b56f1292851f4a8d3baae9a72e2231d6d38238efa24c37d1570a409503a58b",
+      "incoming_tokens": 2223,
+      "outgoing_tokens": 170,
+      "accounted_cost_upper_bound_nano_usd": 640750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:locked_inventory:0:neutral",
+      "request_id": "request:3add2620123bb269db573d5bc71949e4d2c3bf1c682b005412eff0401dac4896",
+      "attempt_id": "request:3add2620123bb269db573d5bc71949e4d2c3bf1c682b005412eff0401dac4896:attempt:1",
+      "semantic_key": "0340d20691ad5f00c6d678266d00becdba792b3d7da61e5800c91789c23a1888",
+      "incoming_tokens": 2202,
+      "outgoing_tokens": 175,
+      "accounted_cost_upper_bound_nano_usd": 638000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:price:0:neutral",
+      "request_id": "request:43a8632f902724c300e51331f74685ca1206f17fd907e1309f85babdeb3a60e7",
+      "attempt_id": "request:43a8632f902724c300e51331f74685ca1206f17fd907e1309f85babdeb3a60e7:attempt:1",
+      "semantic_key": "2f7da67e16e135a526422630e77a32b5a177c15837d66d81d633aa70a562fb1f",
+      "incoming_tokens": 2229,
+      "outgoing_tokens": 172,
+      "accounted_cost_upper_bound_nano_usd": 643250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:cash:0:neutral",
+      "request_id": "request:477f2fbe5c0ba36bafb9497704bfc4e3684837e9a86686f291d1b15e85fcab25",
+      "attempt_id": "request:477f2fbe5c0ba36bafb9497704bfc4e3684837e9a86686f291d1b15e85fcab25:attempt:1",
+      "semantic_key": "7a50ef7d46980d4e25bcceb74f22c120696dc4b2a253183a0cb2b18033cd2843",
+      "incoming_tokens": 2210,
+      "outgoing_tokens": 176,
+      "accounted_cost_upper_bound_nano_usd": 640500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:price:1:neutral",
+      "request_id": "request:4d947237d526fe7a5d985ce4922b2d1a2efce0d199b417bbe7373c46ba671d13",
+      "attempt_id": "request:4d947237d526fe7a5d985ce4922b2d1a2efce0d199b417bbe7373c46ba671d13:attempt:1",
+      "semantic_key": "840bf34cf1a3b6858e2cfeada026a65aa0df3d01e4d2fd4f3f2beadc891079ba",
+      "incoming_tokens": 2225,
+      "outgoing_tokens": 183,
+      "accounted_cost_upper_bound_nano_usd": 647750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:locked_inventory:0:neutral",
+      "request_id": "request:50ba3c3aa43293a32ea976a83651c1ccac0cf8fad4df3f048e8af3b414de273d",
+      "attempt_id": "request:50ba3c3aa43293a32ea976a83651c1ccac0cf8fad4df3f048e8af3b414de273d:attempt:1",
+      "semantic_key": "9c3f75dff8eb9a69dd1639158abcf25bb46eb81a2a4bd5e122899cf63094b990",
+      "incoming_tokens": 2212,
+      "outgoing_tokens": 167,
+      "accounted_cost_upper_bound_nano_usd": 636500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:cash:0:neutral",
+      "request_id": "request:5820930b4f7060f3ffbb61122b3c1c2b3af7279aaea91cc5d17ce8469bc280f1",
+      "attempt_id": "request:5820930b4f7060f3ffbb61122b3c1c2b3af7279aaea91cc5d17ce8469bc280f1:attempt:1",
+      "semantic_key": "0ed7bc12bb8a76fc751d6826311cb8adf4f783b7bda1268fa87354578584f1c9",
+      "incoming_tokens": 2211,
+      "outgoing_tokens": 167,
+      "accounted_cost_upper_bound_nano_usd": 636250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:cash:1:neutral",
+      "request_id": "request:6736f1257c1ab875072a5d74ab0c2c21f7997bae61d01fbbbdf73186239b9db3",
+      "attempt_id": "request:6736f1257c1ab875072a5d74ab0c2c21f7997bae61d01fbbbdf73186239b9db3:attempt:1",
+      "semantic_key": "f46c4153a0cfef3e5a5a64b913c8a13e38f1523d621dacc14a65753b579cd1df",
+      "incoming_tokens": 2216,
+      "outgoing_tokens": 182,
+      "accounted_cost_upper_bound_nano_usd": 645000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:locked_inventory:1:neutral",
+      "request_id": "request:67fee86a2901a1eb1200c9a984498379876b6efaa446a64de7f57db0fc9bb204",
+      "attempt_id": "request:67fee86a2901a1eb1200c9a984498379876b6efaa446a64de7f57db0fc9bb204:attempt:1",
+      "semantic_key": "304dccb5cd27f79ad512397d8173b11cfbf3a0433c8cd8c7d33413a16204d420",
+      "incoming_tokens": 2219,
+      "outgoing_tokens": 173,
+      "accounted_cost_upper_bound_nano_usd": 641250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:locked_inventory:1:neutral",
+      "request_id": "request:6a2011029d0be618998a59a062149f3dcdb9123b28ab2894605d3aafa82a82db",
+      "attempt_id": "request:6a2011029d0be618998a59a062149f3dcdb9123b28ab2894605d3aafa82a82db:attempt:1",
+      "semantic_key": "74a958ec356c07638000ebf392d6402e8f9727071a73544d81d9ee2b451c2cd5",
+      "incoming_tokens": 2220,
+      "outgoing_tokens": 181,
+      "accounted_cost_upper_bound_nano_usd": 645500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:price:1:neutral",
+      "request_id": "request:6bb6cf87847d82dd9e03dc96c27f85e2c02e8d47d5383799091bb8aee12c4dce",
+      "attempt_id": "request:6bb6cf87847d82dd9e03dc96c27f85e2c02e8d47d5383799091bb8aee12c4dce:attempt:1",
+      "semantic_key": "7fe1e5c961d640f4dc428d01a3ff2d6637b683a74706f6faa20f2161a2d8d91e",
+      "incoming_tokens": 2208,
+      "outgoing_tokens": 166,
+      "accounted_cost_upper_bound_nano_usd": 635000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:price:1:neutral",
+      "request_id": "request:6cd326f628b611e2bff655e89e15b5b133f29a87888d90e927aeecda435a4af2",
+      "attempt_id": "request:6cd326f628b611e2bff655e89e15b5b133f29a87888d90e927aeecda435a4af2:attempt:1",
+      "semantic_key": "0a255ddb959573b96c6b7fd786265ba83e958b33945875ee710f4e61c5fadcbf",
+      "incoming_tokens": 2206,
+      "outgoing_tokens": 153,
+      "accounted_cost_upper_bound_nano_usd": 628000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:price:0:neutral",
+      "request_id": "request:6d7f5fb8d22a4607e199da5baaa5400709c5a1ce71f31d027b2e21a4227ae542",
+      "attempt_id": "request:6d7f5fb8d22a4607e199da5baaa5400709c5a1ce71f31d027b2e21a4227ae542:attempt:1",
+      "semantic_key": "8fabbd95dda09d24ddf7a918ae57c5810744254edc8058f01d6181684da27281",
+      "incoming_tokens": 2214,
+      "outgoing_tokens": 166,
+      "accounted_cost_upper_bound_nano_usd": 636500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:locked_inventory:1:neutral",
+      "request_id": "request:76a2ba5b5374030ea8b3ecece33197e1a1375d9fb7f9ccf3ad7cd4475d87b53f",
+      "attempt_id": "request:76a2ba5b5374030ea8b3ecece33197e1a1375d9fb7f9ccf3ad7cd4475d87b53f:attempt:1",
+      "semantic_key": "d3ecc2cf09f4011ffb1f7e35d24aadd6979a6f85530242e9f231b8557ad710b8",
+      "incoming_tokens": 2211,
+      "outgoing_tokens": 166,
+      "accounted_cost_upper_bound_nano_usd": 635750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:cash:0:neutral",
+      "request_id": "request:7889ea34ad7df8a54aa2ca9220872a123657ff53dee5e366c99599f841980666",
+      "attempt_id": "request:7889ea34ad7df8a54aa2ca9220872a123657ff53dee5e366c99599f841980666:attempt:1",
+      "semantic_key": "a33ff4eecff10348090b2c9c97d24cfd477ecd012d915e6569721ae6233a74fa",
+      "incoming_tokens": 2201,
+      "outgoing_tokens": 175,
+      "accounted_cost_upper_bound_nano_usd": 637750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:price:0:neutral",
+      "request_id": "request:7f8200a68af2e171a59cd075663f58718fd8cafd0cff0940470214de6072527b",
+      "attempt_id": "request:7f8200a68af2e171a59cd075663f58718fd8cafd0cff0940470214de6072527b:attempt:1",
+      "semantic_key": "4819d6478323c86a309fe9da814e6f9e34203c7a7bbef301bde214620a8f7334",
+      "incoming_tokens": 2224,
+      "outgoing_tokens": 159,
+      "accounted_cost_upper_bound_nano_usd": 635500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:price:1:neutral",
+      "request_id": "request:7f85f87a62854aee6ec5f3530cb91091ecf89812c572fda3a15b2cdf7b10e4d1",
+      "attempt_id": "request:7f85f87a62854aee6ec5f3530cb91091ecf89812c572fda3a15b2cdf7b10e4d1:attempt:1",
+      "semantic_key": "969bf361c1315c5ee0a557af93b9fa094463f098f2f588e883e0f94c61b7d4c8",
+      "incoming_tokens": 2208,
+      "outgoing_tokens": 155,
+      "accounted_cost_upper_bound_nano_usd": 629500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:locked_inventory:0:neutral",
+      "request_id": "request:839b9251595b73c36431345dc04890c55b4bcfcf2c3d2d0d7b8867e003e4aacb",
+      "attempt_id": "request:839b9251595b73c36431345dc04890c55b4bcfcf2c3d2d0d7b8867e003e4aacb:attempt:1",
+      "semantic_key": "113f33b6aa1a9f8c4799ab494d80c35781d13e29da48afe1749f59eaa43312dc",
+      "incoming_tokens": 2215,
+      "outgoing_tokens": 157,
+      "accounted_cost_upper_bound_nano_usd": 632250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:cash:0:neutral",
+      "request_id": "request:876fdd4d670e9725f8b684bb44c866ecfc98a802adef807e31442d2ef2f56b47",
+      "attempt_id": "request:876fdd4d670e9725f8b684bb44c866ecfc98a802adef807e31442d2ef2f56b47:attempt:1",
+      "semantic_key": "9cbd0b52f109612cb02f9a44a42e31049a3170bb337d8c0e2a6b8f3ee88c871e",
+      "incoming_tokens": 2214,
+      "outgoing_tokens": 166,
+      "accounted_cost_upper_bound_nano_usd": 636500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:cash:1:neutral",
+      "request_id": "request:8e8009383193c460993fb8c6e49fe7a9db5d17e27320a7b43752e47ab07a9269",
+      "attempt_id": "request:8e8009383193c460993fb8c6e49fe7a9db5d17e27320a7b43752e47ab07a9269:attempt:1",
+      "semantic_key": "eed143486c54dc82264bbf46d6ed4aaae2760b17637275d945f263facfb02e61",
+      "incoming_tokens": 2208,
+      "outgoing_tokens": 177,
+      "accounted_cost_upper_bound_nano_usd": 640500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:price:1:neutral",
+      "request_id": "request:9350a045c3c89852edbd3f3074180e7901c0b58b2b35674bab9da1a221b3ff86",
+      "attempt_id": "request:9350a045c3c89852edbd3f3074180e7901c0b58b2b35674bab9da1a221b3ff86:attempt:1",
+      "semantic_key": "35bee8d88568be6e110d89dcedc64e1cf04e87400b09b0a3ac996d380c0b2cb1",
+      "incoming_tokens": 2214,
+      "outgoing_tokens": 157,
+      "accounted_cost_upper_bound_nano_usd": 632000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:cash:1:neutral",
+      "request_id": "request:9ca8722221a70f539168eda07a9721b52061a8e46fa4b5890dafc7a2794f68bc",
+      "attempt_id": "request:9ca8722221a70f539168eda07a9721b52061a8e46fa4b5890dafc7a2794f68bc:attempt:1",
+      "semantic_key": "3eb6abcf8fad3eaca882721e6058beede9b0ec90343f2692e71a1b509a2d2260",
+      "incoming_tokens": 2215,
+      "outgoing_tokens": 168,
+      "accounted_cost_upper_bound_nano_usd": 637750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:price:1:neutral",
+      "request_id": "request:a38dc96b251d45b2380d9d52e43b9dc42a6679dcea2d705ac0f47cda06fc48af",
+      "attempt_id": "request:a38dc96b251d45b2380d9d52e43b9dc42a6679dcea2d705ac0f47cda06fc48af:attempt:1",
+      "semantic_key": "8b48f214fba374a2425fcb7ba545370c7b6e579e9c9d41ff95f6616384dfe40f",
+      "incoming_tokens": 2225,
+      "outgoing_tokens": 181,
+      "accounted_cost_upper_bound_nano_usd": 646750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:price:0:neutral",
+      "request_id": "request:aaa783f662ef9b176cc0f8c102966834ad7aa816694f83aa3ae245f388882545",
+      "attempt_id": "request:aaa783f662ef9b176cc0f8c102966834ad7aa816694f83aa3ae245f388882545:attempt:1",
+      "semantic_key": "7b796ffc6690f6f1b79389611cd9b166173ea65c7131399baee743e4747d4200",
+      "incoming_tokens": 2218,
+      "outgoing_tokens": 177,
+      "accounted_cost_upper_bound_nano_usd": 643000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:cash:0:neutral",
+      "request_id": "request:b2612b91f84ce0ac1437e534e635a103f1fefd3521c9273cbe863768cbfa42fb",
+      "attempt_id": "request:b2612b91f84ce0ac1437e534e635a103f1fefd3521c9273cbe863768cbfa42fb:attempt:1",
+      "semantic_key": "4edae6b75c2a18c790ea0299b325aa013a82621f8765e6243eb5fd3c6a92c396",
+      "incoming_tokens": 2234,
+      "outgoing_tokens": 183,
+      "accounted_cost_upper_bound_nano_usd": 650000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:locked_inventory:0:neutral",
+      "request_id": "request:c063a676f337c1f34fb9eeb8722373da28f601c47dead55366c55c6eb605b8f0",
+      "attempt_id": "request:c063a676f337c1f34fb9eeb8722373da28f601c47dead55366c55c6eb605b8f0:attempt:1",
+      "semantic_key": "e587dc4a732d82db4ca053dcfde045179973b66aa8ced232b292911bf2b8bc1a",
+      "incoming_tokens": 2215,
+      "outgoing_tokens": 176,
+      "accounted_cost_upper_bound_nano_usd": 641750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:cash:1:neutral",
+      "request_id": "request:cba2ffc301aa113862017af470a2f1a4f9e43b0ee672b3719814eac86baa1da5",
+      "attempt_id": "request:cba2ffc301aa113862017af470a2f1a4f9e43b0ee672b3719814eac86baa1da5:attempt:1",
+      "semantic_key": "3b3f0697ea0cfc72a61c7d9857bf38d9518900951ba8a5df1855e8ae5bf7cdd6",
+      "incoming_tokens": 2211,
+      "outgoing_tokens": 167,
+      "accounted_cost_upper_bound_nano_usd": 636250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:locked_inventory:0:neutral",
+      "request_id": "request:cbec2e4e9c4d0ade85e835d4561af5a1b5b3ba0f428cd92531e811e21448a3ac",
+      "attempt_id": "request:cbec2e4e9c4d0ade85e835d4561af5a1b5b3ba0f428cd92531e811e21448a3ac:attempt:1",
+      "semantic_key": "e7462c8a5022324830463b22b9380961b4464f387f946d6c6e516d4747ecb9f0",
+      "incoming_tokens": 2228,
+      "outgoing_tokens": 180,
+      "accounted_cost_upper_bound_nano_usd": 647000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:locked_inventory:0:neutral",
+      "request_id": "request:cc089848638f3708a9375416314003c89442d48071044a47d69e792af58a5272",
+      "attempt_id": "request:cc089848638f3708a9375416314003c89442d48071044a47d69e792af58a5272:attempt:1",
+      "semantic_key": "e81dfff003acbc74f8c311629955292f1155f9b52c6e52d3a8a907c870ea4b4b",
+      "incoming_tokens": 2211,
+      "outgoing_tokens": 176,
+      "accounted_cost_upper_bound_nano_usd": 640750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:cash:0:neutral",
+      "request_id": "request:cfe76e3c7f559559a779b5e4eeff365ba3d112a0a6c21da5a757ad39ffaf2a16",
+      "attempt_id": "request:cfe76e3c7f559559a779b5e4eeff365ba3d112a0a6c21da5a757ad39ffaf2a16:attempt:1",
+      "semantic_key": "2e135901bd62d03ccc253ce784f45d138cec4240d7f055a2b7465d8b56be129f",
+      "incoming_tokens": 2213,
+      "outgoing_tokens": 177,
+      "accounted_cost_upper_bound_nano_usd": 641750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:cash:0:neutral",
+      "request_id": "request:d598e0bb88fa63b384ad81ceef63e13b7a3e93fde4f39699aae5ace25ae1dca4",
+      "attempt_id": "request:d598e0bb88fa63b384ad81ceef63e13b7a3e93fde4f39699aae5ace25ae1dca4:attempt:1",
+      "semantic_key": "dd1d29069530e79fba810a0f329fabc2ac98cfc6aca3c0203db8c95ed18f04ff",
+      "incoming_tokens": 2214,
+      "outgoing_tokens": 167,
+      "accounted_cost_upper_bound_nano_usd": 637000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:locked_inventory:0:neutral",
+      "request_id": "request:d65867edabd1a9886312ac2416221de0a72c71ab3509c3e3c0d7b8cd1ce36bde",
+      "attempt_id": "request:d65867edabd1a9886312ac2416221de0a72c71ab3509c3e3c0d7b8cd1ce36bde:attempt:1",
+      "semantic_key": "5e52d5903dadd3998041219b744eebbd218885469cc8c36d6ee3ebcc4eebad70",
+      "incoming_tokens": 2235,
+      "outgoing_tokens": 183,
+      "accounted_cost_upper_bound_nano_usd": 650250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:cash:0:neutral",
+      "request_id": "request:d9a7351c175f60258812fe721305001f33b76a73ce4f8fb329f35366d9e335ec",
+      "attempt_id": "request:d9a7351c175f60258812fe721305001f33b76a73ce4f8fb329f35366d9e335ec:attempt:1",
+      "semantic_key": "3a35214dcdaa0493eeb535b25fbf917c3f0bb7e920382afa610e77169dd5721e",
+      "incoming_tokens": 2222,
+      "outgoing_tokens": 180,
+      "accounted_cost_upper_bound_nano_usd": 645500,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:price:1:neutral",
+      "request_id": "request:d9b88d7dffadb68fd81623905bfd269c90cddb2a7818143e234ade66379976a6",
+      "attempt_id": "request:d9b88d7dffadb68fd81623905bfd269c90cddb2a7818143e234ade66379976a6:attempt:1",
+      "semantic_key": "d2b40af28791661026ec2605146c18f9e3c3405fd335664c68efd302625b7524",
+      "incoming_tokens": 2215,
+      "outgoing_tokens": 176,
+      "accounted_cost_upper_bound_nano_usd": 641750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:locked_inventory:0:neutral",
+      "request_id": "request:e8dd6c77ec8f9d76749537b14b73f9b832b950e76ca78d0810fe08030891c045",
+      "attempt_id": "request:e8dd6c77ec8f9d76749537b14b73f9b832b950e76ca78d0810fe08030891c045:attempt:1",
+      "semantic_key": "d63e8b4184c4d1ba0c6b5f16362120fa2832639620b2f993fdc30c92e15f024e",
+      "incoming_tokens": 2214,
+      "outgoing_tokens": 177,
+      "accounted_cost_upper_bound_nano_usd": 642000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:cash:1:neutral",
+      "request_id": "request:ee257d83e41282b184ae12afa3224643d89c23613158bd87f82e56f978919e64",
+      "attempt_id": "request:ee257d83e41282b184ae12afa3224643d89c23613158bd87f82e56f978919e64:attempt:1",
+      "semantic_key": "d29c89fd11659207c3b9f2154691d09b83be33b71074060f42ea3247e0e83dd0",
+      "incoming_tokens": 2199,
+      "outgoing_tokens": 175,
+      "accounted_cost_upper_bound_nano_usd": 637250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:locked_inventory:1:neutral",
+      "request_id": "request:ef326651eab6db2805ac03fc61eb20f39cc47b082e4a27f5fea95f7d6ed0270c",
+      "attempt_id": "request:ef326651eab6db2805ac03fc61eb20f39cc47b082e4a27f5fea95f7d6ed0270c:attempt:1",
+      "semantic_key": "f2383bc7bf473a0da350a36e7102502079ff6b99ea91d0cb3542e1ce2305caff",
+      "incoming_tokens": 2232,
+      "outgoing_tokens": 172,
+      "accounted_cost_upper_bound_nano_usd": 644000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:cash:1:neutral",
+      "request_id": "request:f21009483123f17b800c5b6875d1c017a32f60c40cc7469cb6a85aef35419f29",
+      "attempt_id": "request:f21009483123f17b800c5b6875d1c017a32f60c40cc7469cb6a85aef35419f29:attempt:1",
+      "semantic_key": "dd44a12af89e49b2a759fbbf0e05246c25fc36f9b51f8ad2963110c9fff2b750",
+      "incoming_tokens": 2211,
+      "outgoing_tokens": 177,
+      "accounted_cost_upper_bound_nano_usd": 641250,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:locked_inventory:1:neutral",
+      "request_id": "request:f609ac683b2404504ae14e4c36a9f52db7db5be825e08e5124badc6c83f8b88a",
+      "attempt_id": "request:f609ac683b2404504ae14e4c36a9f52db7db5be825e08e5124badc6c83f8b88a:attempt:1",
+      "semantic_key": "be8bf50aa326ca71e4827ce751a49d2539f75624b7e69b1714c142209daf9492",
+      "incoming_tokens": 2228,
+      "outgoing_tokens": 180,
+      "accounted_cost_upper_bound_nano_usd": 647000,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:cash:0:neutral",
+      "request_id": "request:f844accb737380e09d1c4ab7dc29798df7a1d8f8f82f539b0e8e09ddec1a5a6e",
+      "attempt_id": "request:f844accb737380e09d1c4ab7dc29798df7a1d8f8f82f539b0e8e09ddec1a5a6e:attempt:1",
+      "semantic_key": "2f0fddd6d872be028a618e6fd67ece4296c78796e2b2cf6f60cb033512f3ded9",
+      "incoming_tokens": 2227,
+      "outgoing_tokens": 180,
+      "accounted_cost_upper_bound_nano_usd": 646750,
+      "resource_executable": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:price:0:neutral",
+      "request_id": "request:fa9e099c4bc0d736e985e472de5b42778c8d8c2b48486f22a3613768f4bace13",
+      "attempt_id": "request:fa9e099c4bc0d736e985e472de5b42778c8d8c2b48486f22a3613768f4bace13:attempt:1",
+      "semantic_key": "6e6057b82fdbcdf730471c237833053f2ab83a2e54bf273f7fbf3330d8943a3b",
+      "incoming_tokens": 2210,
+      "outgoing_tokens": 166,
+      "accounted_cost_upper_bound_nano_usd": 635500,
+      "resource_executable": true
+    }
+  ]
+}

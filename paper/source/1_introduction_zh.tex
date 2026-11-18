@@ -1,0 +1,31 @@
+\section{引言}
+\label{sec:introduction}
+
+最新成交价来自最近一次撮合。两笔成交之间，投资者仍可能接收新信息、修正交易意图并调整对同伴的依赖程度。要解释冲击后的价格变化，需要同时知道市场何时可交易、投资者如何相互影响，以及哪些信息实际进入了决策。基于主体的模型为理解个体互动如何形成市场统计特征提供了工具~\cite{cont2001empirical,lebaron2006agent,farmer2009economy,lux1999scaling}。本文关心的是，如何在同一仿真中刻画投资者之间、投资者与群体之间、群体与市场之间的经济关系，并追踪这些关系的共同演化。
+
+\textbf{Civitas Economica} 将上述关系组织为三个尺度（图~\ref{fig:overview}）。
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+ \item \textbf{人与人。} 持仓将金融风险与社会联系连接起来。在固定网络上，风险暴露相近的投资者获得较高的边权，注意力筛选决定哪些同伴消息进入观察。
+ \item \textbf{人与群体。} 同伴接触可以传播恐慌，悲观邻居占比与个人信心调节对群体的依赖。投资者画像提供异质的角色与决策参数，群体状态在网络互动中演化。
+ \item \textbf{群体与社会。} 群体的订单进入连续双向拍卖。交易制度决定哪些订单能够成交，结算后形成的价格、持仓和流动性反馈到下一步。此处社会尺度指模型内的市场集体结果。
+\end{itemize}
+
+社会心理学为注意力、情绪传染与从众提供动机~\cite{deutsch1955study,hatfield1993emotional,tajfel1979integrative}，行为金融学为持仓、价格参考点与估值之间的关系提供依据~\cite{kahneman1979prospect,tversky1992advances}。博弈论启发了对策略相互依赖的刻画：一个投资者的行动会改变他人面对的信息、价格与约束~\cite{cooper1988coordinating,keynes1936general,morris2002social}。系统将这些通道写成可执行的行为更新和市场规则。在同一观察与订单契约下，数值规则、画像启发式、全量 LLM 与双速混合策略均可接入这个闭环。
+
+\subsection{研究问题}
+\label{sec:rq_zh}
+
+\begin{itemize}[leftmargin=*,itemsep=3pt]
+ \item \textbf{市场活动（RQ1）。} 在相同的撮合规则与稀疏激活下，不同行为规则生成怎样的交易活动与盘口覆盖？
+ \item \textbf{跨尺度反馈（RQ2）。} 从共同市场状态出发，恐慌传播、信心依赖从众、估值与监管规则如何改变社会状态、价格与交易机会？
+ \item \textbf{决策接口与调度（RQ3）。} 在固定观察中，不同后端如何响应价格、锁仓与现金变化？周期式 LLM 调度如何影响请求机会与公告文字曝光？
+\end{itemize}
+
+\subsection{本文主要贡献}
+\label{sec:contributions_zh}
+
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+ \item \textbf{显式的三层经济关系模型。} 风险暴露塑造同伴关系，群体状态进入估值与订单意图，市场出清再改变主体在下一步面对的价格与持仓。
+ \item \textbf{异质主体共用的执行环境。} 因果时钟规定信息可见性，整数账本按同一规则预留资源并执行结算。双速策略缓存方向与资源比例，并用当步价格与余额重新生成订单。
+ \item \textbf{可追踪的跨尺度比较。} 共同检查点分支使行为机制与制度规则可分别干预，并记录从社会状态到交易的路径。本文结合日内流动性记录、分画像的动作差异和运行计时检验这一设计。
+\end{itemize}

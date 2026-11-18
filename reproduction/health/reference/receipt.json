@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "plan_sha256": "eb0644f91d9f8293e11c7d40be0e31b00a0885306f6cefee7785b4cd0223909e",
+  "postprocessing_phase": "post_window_readonly_closeout",
+  "closeout_plan_sha256": "cd619f357fc3372eed77cf7b45e515e144b45ccd7c2edb7a6b4aa6883792b4d5",
+  "original_asus_postprocess_status": "NOT_RUN_PRESERVED",
+  "planned_worlds": 9,
+  "complete_health_outcomes": 9,
+  "independent_seeds": [
+    932201,
+    932202,
+    932203
+  ],
+  "same_seed_baselines_are_paired": true,
+  "independent_seed_units": 3,
+  "trajectories_per_seed": 3,
+  "zero_fill": false,
+  "retries": 0,
+  "new_simulations": 0,
+  "scope": "Three raw world points per baseline; descriptive variation and paired differences only. No power confirmation, inference, or H1 claim.",
+  "files": {
+    "paired.csv": "60f7688d122f8149b3dbbfc1be38ea608f50e1aec83b92ed23a7dff6ecbdb008",
+    "run.csv": "586310e3f3b72fa747936f1d996bc1553490bf162b6a9cb788469a6342779edb",
+    "descriptive.csv": "6e5af5eb2ca011fe379ef0dc9d4a93c8fbe0e33f039a488ff80af2be4c4953e6",
+    "financial.csv": "1946b4ad007065b0c2f0c33d4e2f262b499c13010a65a9b6cc4d2c748c31ac15"
+  }
+}

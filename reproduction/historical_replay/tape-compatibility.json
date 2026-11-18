@@ -1,0 +1,17 @@
+{
+  "original_code_commit": "c7eb844aac8e5b3e678007705b639066af65062c",
+  "current_base_commit": "342b0814c51df112b36792a9a4d3a8608a53e042",
+  "diagnosis": "Old WP05 HybridBeliefPolicy.slow preserved model evidence_ids order. Existing b9f4a00c change merges and sorts model/numeric evidence_ids; it predates KDD12. Case 10 differs in five list positions.",
+  "current_source": "src/civitas/cognition/policy.py:212",
+  "current_policy_sha256": "6f3f861d08b8592411c5cfbfdcffbd0c3c8c3d32e0e991b6cdea75c009fcce63",
+  "case_count": 20,
+  "exact_case_matches": 19,
+  "exact_case_mismatches": [
+    10
+  ],
+  "tape_responses_and_parsed": "20 of 20 exact, keyed by existing semantic_key",
+  "decision_exact_claim": "failed",
+  "no_posthoc_exclusion": true,
+  "new_runtime_fix": false,
+  "scope": "old WP05 fixture response reproducibility; not KDD RQ3 findings"
+}

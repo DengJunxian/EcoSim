@@ -1,0 +1,26 @@
+\begin{table*}[t]
+  \centering\small
+  \caption{\tr{实测基准及离线调度核对的配置。长周期参考配置见附录~\ref{app:benchmark_details_zh}。}{Settings for the Measured Benchmarks and Offline Schedule Audit. Appendix~\ref{app:benchmark_details} gives the prospective long-horizon configuration.}}
+  \label{tab:measured_design}
+  \begin{tabularx}{\textwidth}{@{}p{0.24\textwidth} p{0.28\textwidth} X@{}}
+    \toprule
+    \tr{评估任务}{Evaluation} & \tr{执行配置}{Settings} & \tr{比较单位}{Unit of comparison} \\
+    \midrule
+    \tr{日内交易活动（RQ1）}{Intraday activity (RQ1)} &
+    $N=100$, $T=T_{\rm day}=100$, $p_{\rm act}=0.05$ &
+    \tr{三个匹配种子，各比较三种规则策略。}{Three matched seeds, each shared by three rule policies.} \\
+    \tr{共同父世界分支（RQ2）}{Shared-parent branches (RQ2)} &
+    $N=20$, $T_{\rm day}=4$, $p_{\rm act}=1$, \tr{27 步事件窗}{27 event steps} &
+    \tr{一个父世界，十一条分支。}{Eleven branches from one parent world.} \\
+    \tr{固定观察（RQ3）}{Fixed observations (RQ3)} &
+    \tr{九类画像 $\times$ 三类对比 $\times$ 两个状态}{Nine archetypes $\times$ three contrasts $\times$ two states} &
+    \tr{54 次真实 LLM 请求，构成 27 对比较。}{54 live LLM requests, organized into 27 pairs.} \\
+    \tr{离线调度核对（RQ3）}{Offline scheduling (RQ3)} &
+    $N=100$, $p_{\rm act}=0.05$, $k=10$, $T_{\rm slow}=10$ &
+    \tr{20 个固定种子在公告发布步的计划资格。}{Scheduled eligibility at announcement release across 20 fixed seeds.} \\
+    \tr{规则运行剖面（RQ3）}{Rule profiles (RQ3)} &
+    \tr{同一平台 $N=100$、$T=100,200$；另一平台 $N=1{,}000$、$T=12$}{Same host $N=100$, $T=100,200$; second host $N=1{,}000$, $T=12$} &
+    \tr{Mac 各期限一次完整剖面；ASUS 保存 12 步、终期剖面未完成。}{One complete Mac profile per horizon. The ASUS run saved 12 steps and stopped during final profiling.} \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}

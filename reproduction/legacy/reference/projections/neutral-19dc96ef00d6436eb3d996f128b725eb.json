@@ -1,0 +1,1250 @@
+{
+  "analysis_is_new_simulation": false,
+  "committed_hashes": [
+    {
+      "commit_hash": "391bd7298e02a70f82fc407a94865b7acf267c5356119cc4494d19a7cf9c9459",
+      "state_hash": "3868cf803d25e7d2d4cd4b29c6e65307c22b5cc8d71e32deeeca35d73a38c961",
+      "tick": 4
+    },
+    {
+      "commit_hash": "70247e46b758edb7d8b94b2b59d767722303288401efc1ac43fb2ff895f1d8da",
+      "state_hash": "6f8bdf0cd3185718e557e344f991d3a7b72eb8e3e7c63ea5a3c95160f57de616",
+      "tick": 5
+    },
+    {
+      "commit_hash": "ed9826004b5e1b4a7d17c511c8effa02ab0cf397e000c9f1f9db288bc3ebce36",
+      "state_hash": "d6fff93953d4cd4e88fb81de3af381ec9e17b8a7462568c6d3943868a292d5b7",
+      "tick": 6
+    },
+    {
+      "commit_hash": "06a4374c7b081718dded7f01c535a1b83b4f2119133b1d78002123a3e82ac809",
+      "state_hash": "0c45eaebfc4d1b4b11610c459799ab0c2e96542a2e9b3d9539068c680d8be90b",
+      "tick": 7
+    }
+  ],
+  "decisions": [
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0000",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:a177517ccf22799653b4494656708c7973406dd35e875ae6126731c13d2f7c86",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0001",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:4eaee12b72dad6bfd98bac2ea2f35e31786d83d97fdd68a1c1cf706eb852d32d",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0002",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:43fffbfcf0088fe16fdc1a9941180b3f9525807e576833a509b2bc46b1eb7399",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0003",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:ba30cfc6d4a80af677bbbdd53557a205b907bbe89a25b4f5b1a1f0adf3ba4c07",
+      "path": "rule",
+      "quantity": 6,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0004",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:54790e6fe3aba0184c7fe17047a694866b8687d050613baea7266b91530d1dbc",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0005",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:785c6ba0fc29c48d8c1ac8c85dd924b9feee29e57848d75201f9fb2525b36973",
+      "path": "rule",
+      "quantity": 7,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0006",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:e1c5c15b48f6d5b731303aa93f04fd716cf9cb96b05ab5e4ef91e06de24a1ff8",
+      "path": "rule",
+      "quantity": 6,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:5c6d09b7e219797a37bb6bca6f7dcc45ca4621852de7865565e5b0e84af40001",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0000",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:16e7cd949311d328a2842baaff63e7cfb1a264aebf976851961bf867cb0d259b",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0001",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:4e35956403c7b4337f585b238c29f314cd64b38228e76081615b1dda08ee86a4",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0002",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:d7698d9412364f716ca8279b6050b712671cd8f0cabbaee62e52155770d7931c",
+      "path": "rule",
+      "quantity": 5,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0003",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:08eca0a8478bcfa82e160d44010ae6836180039a15f84475fd65f1e0c76a10f6",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0004",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:40a25e087bc53d65ba0f7bfadd82e2a7939d386c093327b8472cd84d8d852ab4",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0005",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:2df5a19638b4c4d13ed86234c4a023e498a7595cb8ec7c8263d9ff015cd23f6f",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0006",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:d7a034d05482587b72f08f368330041c13a58176fc18524545ed13acb68f7ab7",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:4e4a706021470c312faaad01356e8fa246b170d809f16284f5e6e55b42277eb7",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0000",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:d16a26e076bf9dbd47113fecfb3816543fefbd2fd968e7c45b488833a522481c",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0001",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:9cf103639862944b9613ef9494a0d66a38088c796d15abb9775e8f8d0abff95c",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0002",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:2736056b583fe077d6e4f41db97e5758ae1e8d92eed85123654040b4580500f9",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0003",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:f7d27f73d6c2441c831cf83e18209da9a3aac7709632a17ee547cb10de161064",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0004",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:a4bc74aab8eb8ae054e46de64ffc41db3bf6233fd4c0d63f8c2bd858b722b724",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0005",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:ecf18ff1f2937f39d4a9ca156803e93ffaf291d20a98db820358740cac80f7ca",
+      "path": "rule",
+      "quantity": 38,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0006",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:ac2041da2ad66114c46f181628c6ffe3e6eb219fd19f40ee7523604031769b2c",
+      "path": "rule",
+      "quantity": 12,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:e14a466913060e804ee828d716e7871479e2b53c787431391729bfa5e41f6a10",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0000",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:8b0c70d48fd1cc994df37b4b9b6e25880678ee03cc78e63fce0dc6cd8444f50f",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0001",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:22a9ec50958ba3db096824935a4a9565c8662295a4cafc6a829be28a1f70af08",
+      "path": "rule",
+      "quantity": 2,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0002",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:ec2995954ff4c8cddd04499c7f016a99ffff06943c4dcbd0c4dc30592762d50f",
+      "path": "rule",
+      "quantity": 9,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0003",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:852eef193725c1302c94fefb54e4979410ab5f7503abb29c9a8f5b94a9ab6195",
+      "path": "rule",
+      "quantity": 3,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0004",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:d509038d10c4836b04269b90180b13a76c6bef505bcbcc7566ab3492f380e418",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0005",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:b58ca8c762703eafb7886a48d65d7c6fa292e43f8c5d6dee0c73ea7589e48b96",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0006",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:11e68eb7eb6464c5e1e46b471524bb51c0b473548d4b2d32509ab8bd20b36308",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:8e0a1d19cc1e7b5206a01d9d6b55429d787020a05d9e28e8cff8ebe6ad93ef34",
+      "path": "rule",
+      "quantity": 0,
+      "tick": 7
+    }
+  ],
+  "facts": [
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.32000000000001,
+      "confidence_mean": 0.5356190080797262,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 14,
+      "fees_cumulative_minor": 1800889,
+      "fees_step_minor": 601920,
+      "filled_orders": 2,
+      "free_cash_minor": 1136768728716,
+      "free_shares": 7755,
+      "halted": false,
+      "infected": 2,
+      "infected_actor_ids": [
+        "agent_0002",
+        "agent_0004"
+      ],
+      "marked_wealth_minor": 1915452568716,
+      "net_sell_quantity": 7,
+      "one_sided": true,
+      "order_imbalance": -0.3684210526315789,
+      "orders": 3,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 4,
+      "tradable_cash_minor": 1136768728716,
+      "trade_count": 1,
+      "two_sided": false,
+      "volume": 6
+    },
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.32000000000001,
+      "confidence_mean": 0.5369066279181317,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 14,
+      "fees_cumulative_minor": 1800889,
+      "fees_step_minor": 0,
+      "filled_orders": 0,
+      "free_cash_minor": 1136768728716,
+      "free_shares": 7757,
+      "halted": false,
+      "infected": 1,
+      "infected_actor_ids": [
+        "agent_0004"
+      ],
+      "marked_wealth_minor": 1915452568716,
+      "net_sell_quantity": 5,
+      "one_sided": true,
+      "order_imbalance": -1.0,
+      "orders": 1,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 5,
+      "tradable_cash_minor": 1136768728716,
+      "trade_count": 0,
+      "two_sided": false,
+      "volume": 0
+    },
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.2,
+      "confidence_mean": 0.5381684953597691,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 7,
+      "fees_cumulative_minor": 3003289,
+      "fees_step_minor": 1202400,
+      "filled_orders": 2,
+      "free_cash_minor": 1134157774041,
+      "free_shares": 7762,
+      "halted": false,
+      "infected": 2,
+      "infected_actor_ids": [
+        "agent_0004",
+        "agent_0006"
+      ],
+      "marked_wealth_minor": 1914519926316,
+      "net_sell_quantity": -26,
+      "one_sided": true,
+      "order_imbalance": 0.52,
+      "orders": 2,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 6,
+      "tradable_cash_minor": 1136767526316,
+      "trade_count": 1,
+      "two_sided": false,
+      "volume": 12
+    },
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.2,
+      "confidence_mean": 0.5394051254525737,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 12,
+      "fees_cumulative_minor": 3003289,
+      "fees_step_minor": 0,
+      "filled_orders": 0,
+      "free_cash_minor": 1136767526316,
+      "free_shares": 7748,
+      "halted": false,
+      "infected": 2,
+      "infected_actor_ids": [
+        "agent_0004",
+        "agent_0006"
+      ],
+      "marked_wealth_minor": 1914519926316,
+      "net_sell_quantity": 14,
+      "one_sided": true,
+      "order_imbalance": -1.0,
+      "orders": 3,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 7,
+      "tradable_cash_minor": 1136767526316,
+      "trade_count": 0,
+      "two_sided": false,
+      "volume": 0
+    }
+  ],
+  "formal_eligible": false,
+  "model_cost": {
+    "input_tokens": 0,
+    "known_accounted_nano": {
+      "CNY": 0,
+      "USD": 0
+    },
+    "output_tokens": 0,
+    "owned_attempts": 0,
+    "scope": "No provider configured; not an online cost benchmark",
+    "total_accounted_nano": {
+      "CNY": 0,
+      "USD": 0
+    },
+    "unknown_usage_attempts": 0
+  },
+  "run": {
+    "attempts": [
+      {
+        "parent_commit_hash": "9a2d446452c2d142d927ebc5a776523cc7fe8b60e1031877670d018dda07aba4",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:19:56.088320+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:19:56.317667+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 26792,
+          "commit_hash": "70247e46b758edb7d8b94b2b59d767722303288401efc1ac43fb2ff895f1d8da",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/neutral/checkpoints/fa5bb7c874384d892d40d29936fa101e3e05c66b7dd324b1ade337528b43f740.json.gz",
+          "sha256": "fa5bb7c874384d892d40d29936fa101e3e05c66b7dd324b1ade337528b43f740",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.220962458755821,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:19:56.654509+00:00",
+        "run_id": "neutral-19dc96ef00d6436eb3d996f128b725eb",
+        "schema_version": 1,
+        "state_hash": "6f8bdf0cd3185718e557e344f991d3a7b72eb8e3e7c63ea5a3c95160f57de616",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:19:56.917633+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 33769,
+          "commit_hash": "06a4374c7b081718dded7f01c535a1b83b4f2119133b1d78002123a3e82ac809",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/neutral/checkpoints/4df005b2b5895676d8ca6ead591f988c7eb7862357b2934984edc98a2700dc9f.json.gz",
+          "sha256": "4df005b2b5895676d8ca6ead591f988c7eb7862357b2934984edc98a2700dc9f",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.27521495800465345,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:19:57.367652+00:00",
+        "run_id": "neutral-19dc96ef00d6436eb3d996f128b725eb",
+        "schema_version": 1,
+        "state_hash": "0c45eaebfc4d1b4b11610c459799ab0c2e96542a2e9b3d9539068c680d8be90b",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "rule:neutral",
+    "data_version": "synthetic_initialization:65359451405a552c03a1168d709c66d6415a43dfe6f1aa5739fe623c7b9a4580",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "1da57866cee1ac25d9085f2a314ba1f1fa98663cbc1d77218643dd4a89d46df4",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-b9204a97ef5f42f09307351ae48191ad",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r0/neutral",
+    "raw_status": "completed",
+    "resolved_config_hash": "65359451405a552c03a1168d709c66d6415a43dfe6f1aa5739fe623c7b9a4580",
+    "run_id": "neutral-19dc96ef00d6436eb3d996f128b725eb",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  "source_archive_manifest_hash": "bc8f6dc8cb33601dc14a3a60e95599d3d9162082691f7e4d36c59e07f3d380e9",
+  "summary": {
+    "daily": [
+      {
+        "close": null,
+        "complete": false,
+        "day": 0,
+        "reason": "PARTIAL_PREFIX_DAY",
+        "volume": 0.0
+      },
+      {
+        "close": null,
+        "complete": false,
+        "day": 1,
+        "reason": "INCOMPLETE_MODEL_DAY",
+        "volume": null
+      }
+    ],
+    "daily_statistics": {
+      "absolute_acf": null,
+      "definition_version": "kdd27-metrics-v1",
+      "lags": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "metrics": {
+        "excess_kurtosis": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        },
+        "maximum_abs_raw_return_acf_lags_1_20": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        },
+        "mean_abs_return_acf_lags_1_20": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        },
+        "volume_abs_return_correlation": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        }
+      },
+      "raw_acf": null,
+      "return_clock": "daily log return; no gap compression",
+      "returns": [
+        null
+      ]
+    },
+    "definition_version": "kdd27-metrics-v1",
+    "metrics": {
+      "cognitive_active_coverage": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 32,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "degraded_active_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 32,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "depth_ask5": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": "NO_TWO_SIDED_OBSERVATIONS",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "shares",
+        "value": null
+      },
+      "depth_bid5": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": "NO_TWO_SIDED_OBSERVATIONS",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "shares",
+        "value": null
+      },
+      "empty_book_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "excess_kurtosis": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      },
+      "executed_order_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 9,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.4444444444444444
+      },
+      "exposure_items": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "selected_source_actor_steps",
+        "value": 47.0
+      },
+      "fee_cash_fraction": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "fraction_initial_tradable_cash",
+        "value": 1.5872332656503306e-06
+      },
+      "fees_minor": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "minor_currency",
+        "value": 1804320.0
+      },
+      "halt_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "infected_person_steps": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "actor_steps",
+        "value": 7.0
+      },
+      "maximum_abs_raw_return_acf_lags_1_20": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      },
+      "mean_abs_return_acf_lags_1_20": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      },
+      "mean_confidence": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "score",
+        "value": 0.5375248142025502
+      },
+      "no_trade_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 2,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.5
+      },
+      "one_sided_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 1.0
+      },
+      "peak_infected_count": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "actors",
+        "value": 2.0
+      },
+      "price_band_touch_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "rejected_order_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 9,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "tradable_cash_end_minor": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "minor_currency",
+        "value": 1136767526316.0
+      },
+      "traded_quantity": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "shares",
+        "value": 18.0
+      },
+      "turnover": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "fraction_initial_shares",
+        "value": 0.0023189899510435456
+      },
+      "two_sided_coverage": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "two_sided_spread_bps": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": "NO_TWO_SIDED_OBSERVATIONS",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "bp",
+        "value": null
+      },
+      "unique_infected_actors": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "actors",
+        "value": 3.0
+      },
+      "volume_abs_return_correlation": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      }
+    },
+    "window": [
+      4,
+      7
+    ]
+  },
+  "trades": [
+    {
+      "buyer_fee_minor": 150480,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 601920000,
+      "postings": [
+        {
+          "account_id": "agent_0006",
+          "amount": -602070480,
+          "posting_id": "tx:A-trade-00000004:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000004"
+        },
+        {
+          "account_id": "agent_0005",
+          "amount": 601468560,
+          "posting_id": "tx:A-trade-00000004:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000004"
+        },
+        {
+          "account_id": "fees",
+          "amount": 601920,
+          "posting_id": "tx:A-trade-00000004:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000004"
+        },
+        {
+          "account_id": "agent_0006",
+          "amount": 6,
+          "posting_id": "tx:A-trade-00000004:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000004"
+        },
+        {
+          "account_id": "agent_0005",
+          "amount": -6,
+          "posting_id": "tx:A-trade-00000004:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000004"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 150480,
+      "tax_minor": 300960,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:4:agent_0006",
+        "buyer_id": "agent_0006",
+        "buyer_reservation_id": "reservation:paper-order:4:agent_0006",
+        "maker_order_id": "paper-order:4:agent_0005",
+        "price_ticks": 10032,
+        "quantity_units": 6,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:4:agent_0005",
+        "seller_id": "agent_0005",
+        "seller_reservation_id": "reservation:paper-order:4:agent_0005",
+        "taker_order_id": "paper-order:4:agent_0006",
+        "tick": 4,
+        "trade_id": "A-trade-00000004"
+      },
+      "tx_id": "tx:A-trade-00000004"
+    },
+    {
+      "buyer_fee_minor": 300600,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 1202400000,
+      "postings": [
+        {
+          "account_id": "agent_0005",
+          "amount": -1202700600,
+          "posting_id": "tx:A-trade-00000005:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000005"
+        },
+        {
+          "account_id": "agent_0006",
+          "amount": 1201498200,
+          "posting_id": "tx:A-trade-00000005:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000005"
+        },
+        {
+          "account_id": "fees",
+          "amount": 1202400,
+          "posting_id": "tx:A-trade-00000005:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000005"
+        },
+        {
+          "account_id": "agent_0005",
+          "amount": 12,
+          "posting_id": "tx:A-trade-00000005:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000005"
+        },
+        {
+          "account_id": "agent_0006",
+          "amount": -12,
+          "posting_id": "tx:A-trade-00000005:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000005"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 300600,
+      "tax_minor": 601200,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:6:agent_0005",
+        "buyer_id": "agent_0005",
+        "buyer_reservation_id": "reservation:paper-order:6:agent_0005",
+        "maker_order_id": "paper-order:6:agent_0006",
+        "price_ticks": 10020,
+        "quantity_units": 12,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:6:agent_0006",
+        "seller_id": "agent_0006",
+        "seller_reservation_id": "reservation:paper-order:6:agent_0006",
+        "taker_order_id": "paper-order:6:agent_0005",
+        "tick": 6,
+        "trade_id": "A-trade-00000005"
+      },
+      "tx_id": "tx:A-trade-00000005"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "run_id": "kdd27-neutral-snapshot54-20261114-v1",
+  "planned_cells": 54,
+  "attempts": 54,
+  "unique_observations": 45,
+  "independent_worlds": 0,
+  "samples_per_cell": 1,
+  "reused_baseline_observations": 9,
+  "frames": [
+    "neutral"
+  ],
+  "formal_eligible": false,
+  "backend_summaries": {
+    "gpt6_luna_live": {
+      "cells": 54,
+      "action_counts": {
+        "hold": 54
+      },
+      "resource_executable": 54,
+      "fact_pairs": 27,
+      "changed_economic_actions": 0,
+      "changed_by_fact": {
+        "price": 0,
+        "locked_inventory": 0,
+        "cash": 0
+      }
+    },
+    "heuristic": {
+      "cells": 54,
+      "action_counts": {
+        "hold": 27,
+        "sell": 18,
+        "buy": 9
+      },
+      "resource_executable": 54,
+      "fact_pairs": 27,
+      "changed_economic_actions": 16,
+      "changed_by_fact": {
+        "price": 7,
+        "locked_inventory": 1,
+        "cash": 8
+      }
+    },
+    "rule": {
+      "cells": 54,
+      "action_counts": {
+        "buy": 45,
+        "hold": 9
+      },
+      "resource_executable": 54,
+      "fact_pairs": 27,
+      "changed_economic_actions": 18,
+      "changed_by_fact": {
+        "price": 9,
+        "locked_inventory": 0,
+        "cash": 9
+      }
+    }
+  },
+  "live_input_tokens": 119637,
+  "live_output_tokens": 9306,
+  "live_accounted_upper_bound_USD": 0.03456225,
+  "live_latency_ms": {
+    "median": 2296.5,
+    "minimum": 1910,
+    "maximum": 8986
+  },
+  "actual_wall_seconds": 69.59713016729802,
+  "model_ids": {
+    "gpt-6-luna": 54
+  },
+  "immutable_model_revision_verified": false,
+  "retry_attempts": 0,
+  "new_unknown_billing": 0,
+  "cache_hits": 0,
+  "no_inference": "Descriptive fixed observations, no world-level CI, no H3, no holding period or wording robustness claim.",
+  "negative_result": "Every live response was HOLD. Syntax and resource admissibility do not establish useful trading behavior; these fixed neutral cases showed no economic-action distinction across the 27 fact pairs.",
+  "measurement_definition": "Economic action signature is side, signed quantity and limit price, excluding identity and evidence ordering. HOLD has quantity0 and price NA. Pair contrast is state1 minus state0.",
+  "input_hashes": {
+    "kdd27_completion_20261114/snapshot54/cases.json": "4dd171ac36bf9cd5ad0d79d923d5ee2b3ea9064b5bcce865e7989a3db235552c",
+    "kdd27_completion_20261114/snapshot54/requests.json": "bb184e87fb703f52021913009355c11b4051075ed0fe0d79b17a3475713ec0d2",
+    "kdd27_completion_20261114/snapshot54/results.jsonl": "300f4db555a34cba027891097acecd71df43824131e02d18b4870dc02b4060af",
+    "kdd27_completion_20261114/snapshot54/invocations.json": "8a22a6135c349c0bcc48f19106086ef38b11e7c69bd9969a54e7d5596f6c7940",
+    "kdd27_completion_20261114/snapshot54/plan.json": "caaa04b2656f3ae3b06b82d1ebd52aef285ae244a88680c6e8b6bbf39998563e",
+    "kdd06_execution/benchmark/results.json": "738568054c508cdb0c1832d56b521ef9c7d77be1891760bffb1ec443e451eaac",
+    "kdd27_completion_20261114/analyze_snapshot.py": "67724a4c73dd860ff1d2212750c3096b9280668a1eba2600b52d7327012ab866"
+  }
+}

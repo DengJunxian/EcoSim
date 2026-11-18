@@ -1,0 +1,306 @@
+{
+  "audited_at_utc": "2026-11-14T16:31:51.638926+00:00",
+  "cases_sha256": "4dd171ac36bf9cd5ad0d79d923d5ee2b3ea9064b5bcce865e7989a3db235552c",
+  "case_count": 54,
+  "risk_field_mismatch_count": 54,
+  "reference_field_mismatch_count": 54,
+  "actor_ids": [
+    "agent_0000"
+  ],
+  "observation_ticks": [
+    2
+  ],
+  "first_case_example": {
+    "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:price:0:neutral",
+    "state_risk": 0.5,
+    "behavior_risk": 0.39972601060519447,
+    "state_references": [
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "behavior_references": [
+      100.10915943008872,
+      100.0,
+      99.93488739976992,
+      100.0
+    ]
+  },
+  "source": "src/civitas/cognition/kdd27_benchmark.py:26-50",
+  "interpretation": "Frozen constructor overrides state and selected behavior fields while retaining remaining template traces; these are constructed interface snapshots, not internally aligned evolving-world commits. This limits any interpretation of all-HOLD as persona reasoning quality. Do not retrospectively change consumed requests.",
+  "new_api_calls": 0,
+  "worlds_executed": 0,
+  "per_case": [
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:arbitrage:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:insurance:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:market_maker:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:mutual_fund:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:pension:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:proprietary:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:retail:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:rumor_sensitive:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:price:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:price:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:locked_inventory:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:locked_inventory:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:cash:0:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    },
+    {
+      "case_id": "kdd27-frozen-observations-v1:engineering:stabilization:cash:1:neutral",
+      "risk_mismatch": true,
+      "reference_mismatch": true
+    }
+  ]
+}

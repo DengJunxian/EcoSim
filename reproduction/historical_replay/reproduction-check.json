@@ -1,0 +1,346 @@
+{
+  "status": "completed_with_declared_tape_case_mismatch",
+  "rule_status": "passed",
+  "business_hash_rule": "complete WorldSnapshot; no post-hoc exclusions",
+  "states_by_run": {
+    "continuous": [
+      {
+        "tick": 0,
+        "state_hash": "fba46fe01433c80065144b62f938567b6112c873dc8aa22e7eb1b3dfa04aa6f7",
+        "commit_hash": "49780d3646c06b396f881459fe55a010c5dfb6b01735668fa8e74d60e5ae0f2b"
+      },
+      {
+        "tick": 1,
+        "state_hash": "32da4bddb759c0ecea8d771c8bfd93be5e48a77462126d055f48c8dcecc827be",
+        "commit_hash": "d176f2c52868e9a58a60ba74681316a80bc7d7da8a667fd2d05a3d012502436b"
+      },
+      {
+        "tick": 2,
+        "state_hash": "5330eefd6667e582aca5257506e83260de2c51b698b113bb202b585ca3eebfff",
+        "commit_hash": "13537c86f5a10f5cf6eb50986ea1960f494b1153ece904d263f1941affd8b111"
+      },
+      {
+        "tick": 3,
+        "state_hash": "928791f9aa96a2ad6ff83664e63cc198e686dcee04213c603e3327b1c53ad50d",
+        "commit_hash": "52ed268cc39aa155259e06218ec2ea8611bedbdcbfe7ead05a2d05348b632db9"
+      },
+      {
+        "tick": 4,
+        "state_hash": "96aea12329e12d6d4de1912c12e4c34c8689e9bfadf480d72680c8e75a46f0d0",
+        "commit_hash": "098da124ceba41a91c9dfc06c080d37d8e4f0c5252b163ae2f33d65051347c76"
+      },
+      {
+        "tick": 5,
+        "state_hash": "60acddb338e36c456abe44b209264c929566aa58392f7fa27a0a4a1514e5f18a",
+        "commit_hash": "e4f7f76231216dd31a3a40454a66061a395fab57b759738c929923c9f707c959"
+      },
+      {
+        "tick": 6,
+        "state_hash": "1d7a42adce6f67a193e3e2e563bd070e8c1b8425620733cbea1234dda32a3c48",
+        "commit_hash": "5f0d29c5a8911dab9531cd9860c35b3ffc8e01c6a01eeef26414e5e183ceb7a1"
+      },
+      {
+        "tick": 7,
+        "state_hash": "88636c0a783f2f03def2eb0f6a39c32ed700182d5e05eb8b7a517513a744aa79",
+        "commit_hash": "aa9267d3a5fa95a00c05c83533a219b8c2844e2fa93242aa8869a671a9de71ef"
+      },
+      {
+        "tick": 8,
+        "state_hash": "97ed238073bf3dbabb3cb4ee97561757d55d5f290bac7356c663208e8f027c4e",
+        "commit_hash": "21733cae2b2a56dd9dfee8acde02f61bc18e88646b0e3d955aa07f6309c22ca1"
+      },
+      {
+        "tick": 9,
+        "state_hash": "de454604b6e424b4dfa48c6de200ed1216701d9fb011eee1a73ffef315f42e6d",
+        "commit_hash": "8c2ea3cb25820db2fda01a03d9dd7d46fdf1a49371b796ce0370274cd334a19a"
+      },
+      {
+        "tick": 10,
+        "state_hash": "68178c1d523fa59073fc44d66ff7da3eb834534e72e4d04e08d18e762f29cb0f",
+        "commit_hash": "f8691a67abb7bab04b8353ca4ef058c28aed613f007b8682896543841e8ea542"
+      },
+      {
+        "tick": 11,
+        "state_hash": "d48e36b29a28b242e7766387d8c28abd089200f1e9bcd515373b0c0ec3c55de0",
+        "commit_hash": "2f974962d5fb359ae00703e6ce9a47030cb37da4af55251c215ed8864dc41f40"
+      },
+      {
+        "tick": 12,
+        "state_hash": "1fc225afbaca85de031113d7e27df2af5d07388ae6e2e1962e03ef0f8d773a9a",
+        "commit_hash": "96d7d2f62f8138f496b2e4928e21bc924e0fde05769dd05e88242826bcb8e09c"
+      }
+    ],
+    "split": [
+      {
+        "tick": 0,
+        "state_hash": "fba46fe01433c80065144b62f938567b6112c873dc8aa22e7eb1b3dfa04aa6f7",
+        "commit_hash": "01e67249eec466b57afff741186d3a3fc9e39b7b14a7d121220b64ac7340edac"
+      },
+      {
+        "tick": 1,
+        "state_hash": "32da4bddb759c0ecea8d771c8bfd93be5e48a77462126d055f48c8dcecc827be",
+        "commit_hash": "e36dc313bc103cf1a01dd2a6c4c78d0e89784df58232fe7ecb8825d26c9e243a"
+      },
+      {
+        "tick": 2,
+        "state_hash": "5330eefd6667e582aca5257506e83260de2c51b698b113bb202b585ca3eebfff",
+        "commit_hash": "4a47b5b59b2220e0b08b4ba4f991a639c6a40602f36581ece984716c10797436"
+      },
+      {
+        "tick": 3,
+        "state_hash": "928791f9aa96a2ad6ff83664e63cc198e686dcee04213c603e3327b1c53ad50d",
+        "commit_hash": "5bf1e482a4230a2e0a36a04ecb1634c9b42028c9d94e4d483d6ebee60717d378"
+      },
+      {
+        "tick": 4,
+        "state_hash": "96aea12329e12d6d4de1912c12e4c34c8689e9bfadf480d72680c8e75a46f0d0",
+        "commit_hash": "dbcbb1286c801ffe0087ebd53163a89cfd14039efd507b6b5721c1e350c43a6a"
+      },
+      {
+        "tick": 5,
+        "state_hash": "60acddb338e36c456abe44b209264c929566aa58392f7fa27a0a4a1514e5f18a",
+        "commit_hash": "391e4ac5e20513c8454a42cf5d1797ed06bcb38d470f9c1d1055a4d7df0f89f8"
+      },
+      {
+        "tick": 6,
+        "state_hash": "1d7a42adce6f67a193e3e2e563bd070e8c1b8425620733cbea1234dda32a3c48",
+        "commit_hash": "bdd3e5454654ecea552e1a821d312d36d0d3cf514fcafb11aedd09633a088dea"
+      },
+      {
+        "tick": 7,
+        "state_hash": "88636c0a783f2f03def2eb0f6a39c32ed700182d5e05eb8b7a517513a744aa79",
+        "commit_hash": "270d4b984f873175ae05b5a7c308a543c9aacaa94fe3774da7e530a4f6b4bdf4"
+      },
+      {
+        "tick": 8,
+        "state_hash": "97ed238073bf3dbabb3cb4ee97561757d55d5f290bac7356c663208e8f027c4e",
+        "commit_hash": "0ebaaad084ad99cdb30ea73ba621211115d59ad85635028330120cc9d4109d50"
+      },
+      {
+        "tick": 9,
+        "state_hash": "de454604b6e424b4dfa48c6de200ed1216701d9fb011eee1a73ffef315f42e6d",
+        "commit_hash": "c43ca8f9297218bee8b20da7511bc8ff7aee9721f4198f7a8cf709b773ba8ae4"
+      },
+      {
+        "tick": 10,
+        "state_hash": "68178c1d523fa59073fc44d66ff7da3eb834534e72e4d04e08d18e762f29cb0f",
+        "commit_hash": "9e66b5f974a74d56a74f974a407b6631b295fcc4921bafde754ef4b119ce5047"
+      },
+      {
+        "tick": 11,
+        "state_hash": "d48e36b29a28b242e7766387d8c28abd089200f1e9bcd515373b0c0ec3c55de0",
+        "commit_hash": "45851ec64bbbbdb76098e90e60d32d565ba8cd087576029236cf8b1124d2b113"
+      },
+      {
+        "tick": 12,
+        "state_hash": "1fc225afbaca85de031113d7e27df2af5d07388ae6e2e1962e03ef0f8d773a9a",
+        "commit_hash": "623158d331383c275183623cde098609c5764d97ea87a041d082d9d8e042d221"
+      }
+    ],
+    "none": [
+      {
+        "tick": 6,
+        "state_hash": "1d7a42adce6f67a193e3e2e563bd070e8c1b8425620733cbea1234dda32a3c48",
+        "commit_hash": "4e1bff29c55159aba8cd1093678e1391462c0efc138bf696d6e4593ba6a7989d"
+      },
+      {
+        "tick": 7,
+        "state_hash": "88636c0a783f2f03def2eb0f6a39c32ed700182d5e05eb8b7a517513a744aa79",
+        "commit_hash": "e79941115c2af4d8fcc8adf8af058f4d2eb87fa602bb153cb70314abc12031dd"
+      },
+      {
+        "tick": 8,
+        "state_hash": "97ed238073bf3dbabb3cb4ee97561757d55d5f290bac7356c663208e8f027c4e",
+        "commit_hash": "0c020907f385a619ffeb6eb0809a8b4a94dfc5991e57261de1bf6e18b6f40f23"
+      },
+      {
+        "tick": 9,
+        "state_hash": "de454604b6e424b4dfa48c6de200ed1216701d9fb011eee1a73ffef315f42e6d",
+        "commit_hash": "3e920f1386f0c7e0ea2f9daf4be2e6630ae51dfc0f5486b91d2653064c637a68"
+      },
+      {
+        "tick": 10,
+        "state_hash": "68178c1d523fa59073fc44d66ff7da3eb834534e72e4d04e08d18e762f29cb0f",
+        "commit_hash": "8149170d5b131c12f45fd9ae21c85f7f7300ce6b341b45f50ec750872db43d7d"
+      },
+      {
+        "tick": 11,
+        "state_hash": "d48e36b29a28b242e7766387d8c28abd089200f1e9bcd515373b0c0ec3c55de0",
+        "commit_hash": "5d594b9a1ab8b8cf7bd54c23c00bc4a93974832eff9678d231fe6515cb91295c"
+      },
+      {
+        "tick": 12,
+        "state_hash": "1fc225afbaca85de031113d7e27df2af5d07388ae6e2e1962e03ef0f8d773a9a",
+        "commit_hash": "5484c388db91699047ee4f7039a7152a31552427720847d3cd484d625c44fadd"
+      }
+    ],
+    "historical": [
+      {
+        "tick": 0,
+        "state_hash": "fba46fe01433c80065144b62f938567b6112c873dc8aa22e7eb1b3dfa04aa6f7",
+        "commit_hash": "3dda1532a01cb59fb6184ca9ae400feca67fb9e15d11d4d0920ab837ecbc7824"
+      },
+      {
+        "tick": 1,
+        "state_hash": "32da4bddb759c0ecea8d771c8bfd93be5e48a77462126d055f48c8dcecc827be",
+        "commit_hash": "14cd374d79e5ed884cf84543be76c964eac4dae5050dec0a761b256c7ca1fb27"
+      },
+      {
+        "tick": 2,
+        "state_hash": "5330eefd6667e582aca5257506e83260de2c51b698b113bb202b585ca3eebfff",
+        "commit_hash": "7c9089d1a9fb32603c9a97e794945cafca1425a4086ec2bdde7dc4fb1c195425"
+      },
+      {
+        "tick": 3,
+        "state_hash": "928791f9aa96a2ad6ff83664e63cc198e686dcee04213c603e3327b1c53ad50d",
+        "commit_hash": "e2048e237fde0cfa96b4cfe0c4c3148ccb42abaea3686450ba9ae82aedaca192"
+      },
+      {
+        "tick": 4,
+        "state_hash": "96aea12329e12d6d4de1912c12e4c34c8689e9bfadf480d72680c8e75a46f0d0",
+        "commit_hash": "fdae6120ea03d26c93626f10a32dc6ea226f8cb7e9436ad5402b8e5988c6b30b"
+      },
+      {
+        "tick": 5,
+        "state_hash": "60acddb338e36c456abe44b209264c929566aa58392f7fa27a0a4a1514e5f18a",
+        "commit_hash": "dc028cf796a3dd6b276e273bbad6ba8284964a515533fa0b49bae182fa069338"
+      },
+      {
+        "tick": 6,
+        "state_hash": "1d7a42adce6f67a193e3e2e563bd070e8c1b8425620733cbea1234dda32a3c48",
+        "commit_hash": "a45f76ac14cb7e5c5bedb8a38be2211c1af7a766c0e79a56525c86233d692a56"
+      },
+      {
+        "tick": 7,
+        "state_hash": "88636c0a783f2f03def2eb0f6a39c32ed700182d5e05eb8b7a517513a744aa79",
+        "commit_hash": "ab70c51ba6815ebd31318e619877164e457ee51b2b61a56c49130386e3592930"
+      },
+      {
+        "tick": 8,
+        "state_hash": "97ed238073bf3dbabb3cb4ee97561757d55d5f290bac7356c663208e8f027c4e",
+        "commit_hash": "97f365256599d7984ee3735ff221b0337c441be11adc3f24339a7a460cad1fff"
+      },
+      {
+        "tick": 9,
+        "state_hash": "de454604b6e424b4dfa48c6de200ed1216701d9fb011eee1a73ffef315f42e6d",
+        "commit_hash": "ee43ce0d5816e9c14ed49b90e73cbdc681b1f701725d1678121e34da611140ef"
+      },
+      {
+        "tick": 10,
+        "state_hash": "68178c1d523fa59073fc44d66ff7da3eb834534e72e4d04e08d18e762f29cb0f",
+        "commit_hash": "340f2742879f971f9409a056ad85ac46eff4bf6d50f1c7a82d6f7ad3a7638359"
+      },
+      {
+        "tick": 11,
+        "state_hash": "d48e36b29a28b242e7766387d8c28abd089200f1e9bcd515373b0c0ec3c55de0",
+        "commit_hash": "1c95b89340ca99c89e22d043a265399bf3fc9f2cd3951d178149ab5f878ba29e"
+      },
+      {
+        "tick": 12,
+        "state_hash": "1fc225afbaca85de031113d7e27df2af5d07388ae6e2e1962e03ef0f8d773a9a",
+        "commit_hash": "21d1eb0e4addf59d492f1b535a12a061ff8c5f1df2f4a3eb54152e5dc7b27348"
+      }
+    ]
+  },
+  "run_ids": {
+    "continuous": "continuous-c6dda75bbee743a5a7737da6a1d3aa62",
+    "split": "split-2700a78dac4c4dac863536fd06dffb0c",
+    "none": "none-81ba80f1dd20472cabdb7f00f23fe95a",
+    "historical": "run-6cd2229978454547a477210235b323d5"
+  },
+  "terminal_components": {
+    "tick": "eba487c494e97b52f06688174226e870cc1b9229869e51dc8a09ed2a4ec1c49a",
+    "world_version": "eba487c494e97b52f06688174226e870cc1b9229869e51dc8a09ed2a4ec1c49a",
+    "execution_seq": "7b272bed3a033dd32ec3fc4b6f5a1484c2c04bd8504f28b29f7060d1199bf278",
+    "actors": "b16b2629337663e0fbaa3997186f022f8c18d2eb24a807a9741d6b5553c961cf",
+    "data": "ee053b0fe039851dba6b40203b16b373cf7c5bf52e61625fb2c6fab89ab0d542",
+    "schema_version": "62aa34522d6f030a947319959d8482600acb56d6f51f1c38265f612fad3bd44f",
+    "pending_events": "b30419e0333e5747683e2f3d51341452e75b9ef774d41cb0a7c2231368be00ac",
+    "events": "b30419e0333e5747683e2f3d51341452e75b9ef774d41cb0a7c2231368be00ac",
+    "decisions": "42396db39c6bc0dc6f79b540405f04aa5a0a8499c1127ecdae5036ee4a995195",
+    "receipts": "64d70662fb67eaa8b9fa36297061110dc483dfb2213be5dd988542a06fa01da9",
+    "messages": "b30419e0333e5747683e2f3d51341452e75b9ef774d41cb0a7c2231368be00ac",
+    "memories": "620ad7ac589051c805eb712f0edff97ed54d97cb1fad1c99550dc28188dbfedb",
+    "beliefs": "37bdf71f5f0743858b3c79c92d41e40f9a4b3df28e3bc01ab072fe3212868622",
+    "relations": "7ab03564370965ddac6488ae299fb222cde6dd3dc427182e48495b0769a9a56a",
+    "pending_relations": "b30419e0333e5747683e2f3d51341452e75b9ef774d41cb0a7c2231368be00ac",
+    "used_ids": "6ed37758fb2f68d5d81aada2fbc16b26890609c65ede691083b5b1f35f53f7af",
+    "market.ledger": "8b46ac38a09aa1aed5101059a8ec40d53304a94e10588678257ff9a7b8e475c5",
+    "market.venues": "5159a53ba3689f38de3ae673f9c3b2b8836cea8281ed0012ea914e593b555d70",
+    "market.commands": "d515aaea3c38d2b93117191c2a18860ed4c694ec67d52d59ff5754a32445d673",
+    "market.receipts": "64d70662fb67eaa8b9fa36297061110dc483dfb2213be5dd988542a06fa01da9",
+    "market.events": "2c24d8445d3c875bd8afee6a1947d75d9fe3148935429c514a5c82725570e432"
+  },
+  "state_replay_executed_ticks": 0,
+  "verification_ticks": [
+    12,
+    6
+  ],
+  "all_participants_validated": true,
+  "historical_all_13_states_match": true,
+  "real_tape": {
+    "source_origin": "live",
+    "replay_mode": "archived_response",
+    "cases": 20,
+    "all_case_results_equal": false,
+    "case_result_differences": [
+      {
+        "path": "/10/result/evidence_ids/0",
+        "kind": "value",
+        "left": "quotes:3",
+        "right": "memory:command:intent:1:agent_0002"
+      },
+      {
+        "path": "/10/result/evidence_ids/1",
+        "kind": "value",
+        "left": "wp05-event:fee-rise-day-6",
+        "right": "memory:command:intent:2:agent_0002"
+      },
+      {
+        "path": "/10/result/evidence_ids/2",
+        "kind": "value",
+        "left": "wp05-institution:multiasset",
+        "right": "quotes:3"
+      },
+      {
+        "path": "/10/result/evidence_ids/3",
+        "kind": "value",
+        "left": "memory:command:intent:1:agent_0002",
+        "right": "wp05-event:fee-rise-day-6"
+      },
+      {
+        "path": "/10/result/evidence_ids/4",
+        "kind": "value",
+        "left": "memory:command:intent:2:agent_0002",
+        "right": "wp05-institution:multiasset"
+      }
+    ],
+    "full_decision_equality_claim": "failed; no field exclusion or sorted comparison applied",
+    "all_semantic_requests_responses_and_parsed_equal": true,
+    "fixture_state_hash": "82e3f8603aef3a1f1333a7e12746991a77fd13ad170ecc5fe47112f0f31b1f47",
+    "original_input_tokens": 45487,
+    "original_output_tokens": 4679,
+    "new_online_calls": 0,
+    "new_project_attempts": 0,
+    "local_archive_attempts": 20,
+    "monetary_spend_added": 0,
+    "scope": "WP05 engineering fixture; not KDD RQ3 research; local controlled use; no redistribution permission asserted"
+  },
+  "negative_cases": [
+    {
+      "case": "missing_tape",
+      "status": "rejected",
+      "error": "Archived response missing; online substitution is disabled"
+    },
+    {
+      "case": "unknown_sample",
+      "status": "rejected",
+      "error": "Archived response missing; online substitution is disabled"
+    }
+  ],
+  "actual_rule_steps": 48,
+  "actual_fixture_steps": 3,
+  "independent_research_worlds": 0,
+  "budget_unchanged": true,
+  "formal_H1_H2_H3": "pending"
+}

@@ -1,0 +1,48 @@
+{
+  "buildable": [
+    "fig:overview",
+    "eng:rq1-liquidity",
+    "eng:rq2-arms",
+    "eng:timing"
+  ],
+  "formal_results": [
+    {
+      "id": "fig:rq1",
+      "output": null,
+      "reason": "Original formal RQ prerequisites not met",
+      "status": "pending"
+    },
+    {
+      "id": "fig:rq2",
+      "output": null,
+      "reason": "Original formal RQ prerequisites not met",
+      "status": "pending"
+    },
+    {
+      "id": "fig:rq3",
+      "output": null,
+      "reason": "Original formal RQ prerequisites not met",
+      "status": "pending"
+    },
+    {
+      "id": "tab:rq1-results",
+      "output": null,
+      "reason": "Original formal RQ prerequisites not met",
+      "status": "pending"
+    },
+    {
+      "id": "tab:rq2-results",
+      "output": null,
+      "reason": "Original formal RQ prerequisites not met",
+      "status": "pending"
+    },
+    {
+      "id": "tab:rq3-results",
+      "output": null,
+      "reason": "Original formal RQ prerequisites not met",
+      "status": "pending"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "method and engineering appendix only"
+}

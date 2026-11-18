@@ -1,0 +1,4 @@
+label,host,seed,requested_ticks,committed_ticks,runtime_status,controller_status,total_seconds,step_wall_seconds,checkpoint_wall_seconds,peak_rss_bytes,peak_kind,archive_bytes,readonly_restore,unchanged_archive_files,paid_calls
+mac-n100-t100,Mac,931104,100,100,completed,completed,1863.7864622082561,1494.9555400791578,364.7802165001631,1329872896,ru_maxrss,14623207,passed,208,0
+asus-n1000-t12,ASUS,931104,12,12,completed,controlled_stop,2196.3138115019538,1984.7519044860383,,1817165824,sampled only; ru_maxrss missing because profiler result did not finish,17135989,passed,32,0
+mac-n100-t200,Mac,931104,200,200,completed,completed,7620.894540000241,6219.274960838258,1394.5066615408286,2669428736,ru_maxrss,29331939,passed,408,0

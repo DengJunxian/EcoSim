@@ -1,0 +1,873 @@
+{
+  "definition_version": "kdd27-metrics-v1",
+  "metrics": [
+    {
+      "spec": {
+        "metric_id": "excess_kurtosis",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "complete daily returns",
+        "raw_fields": [
+          "daily.close",
+          "daily.volume"
+        ],
+        "clock": "100 ticks per model day",
+        "window": "E1 close days50..200 ->150 returns; E3 days10..40 ->30",
+        "aggregation": "G2=(n-1)/((n-2)(n-3))*((n+1)*(m4/m2^2-3)+6); n>=4",
+        "missing_rule": "Any missing daily return invalidates primary window; constant series undefined",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:primary metrics"
+      },
+      "meaning": "有限样本偏差修正超额峰度",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "mean_abs_return_acf_lags_1_20",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "complete daily returns",
+        "raw_fields": [
+          "daily.close",
+          "daily.volume"
+        ],
+        "clock": "100 ticks per model day",
+        "window": "E1 close days50..200 ->150 returns; E3 days10..40 ->30",
+        "aggregation": "mean rho_abs(lag1..20); ACF uses full centered sum-of-squares denominator; n>=22",
+        "missing_rule": "Any missing daily return invalidates primary window; constant series undefined",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:primary metrics"
+      },
+      "meaning": "绝对日收益ACF的20阶均值",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "maximum_abs_raw_return_acf_lags_1_20",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "complete daily returns",
+        "raw_fields": [
+          "daily.close",
+          "daily.volume"
+        ],
+        "clock": "100 ticks per model day",
+        "window": "E1 close days50..200 ->150 returns; E3 days10..40 ->30",
+        "aggregation": "max abs rho_raw(lag1..20); same centering/denominator; n>=22",
+        "missing_rule": "Any missing daily return invalidates primary window; constant series undefined",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:primary metrics"
+      },
+      "meaning": "原始日收益ACF的最大绝对值",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "volume_abs_return_correlation",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "complete daily returns",
+        "raw_fields": [
+          "daily.close",
+          "daily.volume"
+        ],
+        "clock": "100 ticks per model day",
+        "window": "E1 close days50..200 ->150 returns; E3 days10..40 ->30",
+        "aggregation": "Pearson(volume[d], abs(log(close[d]/close[d-1]))); n>=2",
+        "missing_rule": "Any missing daily return invalidates primary window; constant series undefined",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:primary metrics"
+      },
+      "meaning": "当日日成交股数与绝对对数收益相关",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "two_sided_spread_bps",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "bp",
+        "denominator": "all selected end-of-tick quotes; report valid coverage",
+        "raw_fields": [
+          "quote.best_bid_ticks",
+          "quote.best_ask_ticks",
+          "kdd27.halted"
+        ],
+        "clock": "committed tick",
+        "window": "declared analysis window",
+        "aggregation": "mean 20000*(ask-bid)/(ask+bid) on nonhalted two-sided quotes",
+        "missing_rule": "Missing side/halt -> null, never zero",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:H1"
+      },
+      "meaning": "最优双边报价价差",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "no_trade_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "all committed ticks",
+        "raw_fields": [
+          "trade_count"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "count(trade_count=0)/ticks",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "no_trade_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "two_sided_coverage",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "all committed ticks",
+        "raw_fields": [
+          "two_sided"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "nonhalted two-sided ticks/ticks",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "two_sided_coverage",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "one_sided_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "all committed ticks",
+        "raw_fields": [
+          "one_sided"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "exactly one quote side/ticks; halts reported separately",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "one_sided_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "empty_book_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "all committed ticks",
+        "raw_fields": [
+          "empty_book"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "no quote sides/ticks",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "empty_book_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "halt_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "all committed ticks",
+        "raw_fields": [
+          "halted"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "halted ticks/ticks",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "halt_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "rejected_order_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "submitted portfolio orders",
+        "raw_fields": [
+          "rejected_orders",
+          "orders",
+          "rejection_reasons"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "rejected/ordered; reason tallies may overlap",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "rejected_order_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "executed_order_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "submitted portfolio orders",
+        "raw_fields": [
+          "filled_orders",
+          "orders"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "orders with any fill on submission tick/orders, both maker and taker; TTL1 scope",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "executed_order_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "price_band_touch_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "all committed ticks",
+        "raw_fields": [
+          "price_at_band"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "fraction at or beyond daily band, exact rational comparison",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "price_band_touch_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "cognitive_active_coverage",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "active actor decisions",
+        "raw_fields": [
+          "covered",
+          "active"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "active decisions using current model result or valid cache / active decisions",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "cognitive_active_coverage",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "degraded_active_ratio",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "active actor decisions",
+        "raw_fields": [
+          "degraded",
+          "active"
+        ],
+        "clock": "tick",
+        "window": "selected committed window",
+        "aggregation": "degraded / active decisions",
+        "missing_rule": "Zero denominator -> null + reason",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health/quality"
+      },
+      "meaning": "degraded_active_ratio",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "depth_bid5",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "shares",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "active venue orders"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "sum best5 distinct bid price levels, then time mean",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "depth_bid5",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "depth_ask5",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "shares",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "active venue orders"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "sum best5 distinct ask price levels, then time mean",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "depth_ask5",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "fees_minor",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "minor_currency",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "ledger.journal buyer_fee_minor",
+          "seller_fee_minor",
+          "tax_minor"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "sum exact integers; retain raw integer totals",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "fees_minor",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "fee_cash_fraction",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "fees_minor",
+          "ledger.initial_accounts"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "fees / initial actor cash, fees account excluded from denominator",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "fee_cash_fraction",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "traded_quantity",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "shares",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "ledger.journal trade.quantity_units"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "sum each trade once",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "traded_quantity",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "turnover",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "fraction_initial_shares",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "trade.quantity_units",
+          "ledger.initial_accounts"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "sum traded shares / initial outstanding shares",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "turnover",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "tradable_cash_end_minor",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "minor_currency",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "ledger.accounts"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "sum actor cash at last committed tick",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "tradable_cash_end_minor",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "free_cash_minor",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "minor_currency",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "ledger.accounts",
+          "ledger.reservations"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "cash less reservations; fact series",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "free_cash_minor",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "free_shares",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "shares",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "ledger.accounts",
+          "ledger.reservations"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "shares less locked shares and reservations; fact series",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "free_shares",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "buy_feasible_actors",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "actors",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "free_cash_minor",
+          "last_price",
+          "commission"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "actors able to fund 1 share at last close plus commission; diagnostic, not executable quote guarantee",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "buy_feasible_actors",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "sell_feasible_actors",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "actors",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "free_shares"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "actors with at least 1 free share",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "sell_feasible_actors",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "marked_wealth_minor",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "minor_currency",
+        "denominator": "selected ticks or explicit initial balance",
+        "raw_fields": [
+          "cash",
+          "shares",
+          "last_price"
+        ],
+        "clock": "tick",
+        "window": "declared analysis window",
+        "aggregation": "cash + shares * last committed price; no wealth conservation claim",
+        "missing_rule": "depth conditional on nonhalted two-sided book; absent denominators null; negative free resources fail",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:health"
+      },
+      "meaning": "marked_wealth_minor",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "peak_infected_count",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "actors",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "kdd27.states infection"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "max post-social-update I count",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "感染峰值",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "infected_person_steps",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "actor_steps",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "kdd27.states infection"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "sum post-social-update I count across event ticks",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "感染人时",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "unique_infected_actors",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "actors",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "kdd27.states",
+          "direct_injected"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "union post-update I and direct-injected identities; no person-step substitution",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "至少感染一次的不同主体",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "exposure_items",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "selected_source_actor_steps",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "kdd27.last_trace.social.feed"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "count selected source items; retain source IDs in committed trace, not unique audience",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "入选信息条数与来源",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "mean_confidence",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "score",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "kdd27.states.confidence"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "equal actor mean per tick then time mean; event change subtract u=0",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "群体信心与相对pre变化",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "order_imbalance",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "submitted buy quantity",
+          "submitted sell quantity"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "(buy-sell)/(buy+sell); zero order denominator null",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "订单失衡",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "net_sell_quantity",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "shares",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "submitted sell quantity",
+          "submitted buy quantity"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "sell-buy, not executed volume; numerical facts matched in wording pair",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "净卖单数量",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "mdd",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "committed last prices"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "max peak-to-later-trough over pre-price plus H event prices",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "事件窗最大回撤",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "drop_from_pre",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "committed last prices"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "max(0, 1-min(price)/pre_price)",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "相对冲击前价最大跌幅",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "restricted_recovery",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "steps",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "committed last prices"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "first confirmation after earliest global trough; min(T,H), separately censored flag",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "谷值后20步恢复确认",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "unrecovered",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "recovery.censored"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "mean right-censored across eligible worlds; incomplete window is missing",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "未恢复世界比例",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "relative_turnover",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "full declared event window / matched world",
+        "raw_fields": [
+          "turnover",
+          "treatment/control world identity"
+        ],
+        "clock": "u=0 at tick9999; u=1..1000",
+        "window": "E2 u1..1000; causal lead0..40/intermediate41..100/outcome101..1000",
+        "aggregation": "within-world treatment/control before world aggregation",
+        "missing_rule": "missing full window -> null; missing/zero control turnover -> null; censored not exact recovery",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E2"
+      },
+      "meaning": "匹配control换手比",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "legal_response_rate",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "ratio",
+        "denominator": "all attempted calls / eligible actors / independent worlds",
+        "raw_fields": [
+          "invocation state",
+          "owned attempts"
+        ],
+        "clock": "attempt and committed tick",
+        "window": "declared E3 window",
+        "aggregation": "success terminal responses / all owned attempts; failed retry remains denominator",
+        "missing_rule": "No calls -> not applicable; unknown usage separate",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E3"
+      },
+      "meaning": "模型合法响应率",
+      "implementation_status": "IMPLEMENTED_COST_FACTS"
+    },
+    {
+      "spec": {
+        "metric_id": "persona_score",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "score",
+        "denominator": "all attempted calls / eligible actors / independent worlds",
+        "raw_fields": [
+          "holding_duration",
+          "turnover",
+          "risk_exposure",
+          "frozen targets"
+        ],
+        "clock": "attempt and committed tick",
+        "window": "declared E3 window",
+        "aggregation": "1-mean clipped normalized distance across3 dimensions; compute actor score then within-world average",
+        "missing_rule": "Insufficient trades or missing targets -> null; zero width requires frozen scale",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E3"
+      },
+      "meaning": "画像一致性及可评覆盖",
+      "implementation_status": "HELPER_TESTED_TARGETS_PENDING_KDD06"
+    },
+    {
+      "spec": {
+        "metric_id": "model_usage",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "tokens_and_currency",
+        "denominator": "all attempted calls / eligible actors / independent worlds",
+        "raw_fields": [
+          "read-only invocation records",
+          "reservations"
+        ],
+        "clock": "attempt and committed tick",
+        "window": "declared E3 window",
+        "aggregation": "owned attempts including uncommitted failures; inherited cache/tape not new API cost",
+        "missing_rule": "Unknown totals remain null; known subtotals and unknown reserve separate",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E3"
+      },
+      "meaning": "真实attempt/Token/费用",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "spec": {
+        "metric_id": "resource_cost",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "seconds_and_bytes",
+        "denominator": "all attempted calls / eligible actors / independent worlds",
+        "raw_fields": [
+          "execution receipt",
+          "resource monitor"
+        ],
+        "clock": "attempt and committed tick",
+        "window": "declared E3 window",
+        "aggregation": "per-run actual wall, CPU, RSS; source software/hardware retained",
+        "missing_rule": "Unmeasured CPU/time/RSS -> null; no synthetic throughput",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E3"
+      },
+      "meaning": "耗时和峰值内存",
+      "implementation_status": "REUSE_KDD02_RECEIPTS"
+    },
+    {
+      "spec": {
+        "metric_id": "backend_quality_difference",
+        "definition_version": "kdd27-metrics-v1",
+        "unit": "metric_specific",
+        "denominator": "all attempted calls / eligible actors / independent worlds",
+        "raw_fields": [
+          "frozen observation benchmark",
+          "closed-loop runs"
+        ],
+        "clock": "attempt and committed tick",
+        "window": "declared E3 window",
+        "aggregation": "paired worlds separately within fixed-input and closed-loop designs",
+        "missing_rule": "No qualified backend/observations -> pending; no pooled score",
+        "statistical_unit": "world_seed",
+        "paper_anchor": "4_experiments.tex:E3"
+      },
+      "meaning": "固定输入与闭环质量差",
+      "implementation_status": "PENDING_KDD06_KDD07"
+    }
+  ]
+}

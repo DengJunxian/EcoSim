@@ -1,0 +1,130 @@
+{
+  "health_trajectories": 9,
+  "health_independent_seeds": 3,
+  "branch_parent_worlds": 1,
+  "branches": 11,
+  "branch_step_rows": 308,
+  "branch_step_extraction_assertions": {
+    "raw_state_hashes": 308,
+    "prices_vs_projection": 308,
+    "infection_confidence_volume_rows_vs_projection": 297,
+    "terminal_checkpoint_exact_matches": 11
+  },
+  "drawdown_interaction": 0.0,
+  "live_requests": 54,
+  "live_changed_action_pairs": 0,
+  "snapshot_changed_counts_by_price_lock_cash": {
+    "rule": [
+      9,
+      0,
+      9
+    ],
+    "heuristic": [
+      7,
+      1,
+      8
+    ],
+    "gpt6_luna_live": [
+      0,
+      0,
+      0
+    ]
+  },
+  "quote_only_quantity_zero_cells": [
+    {
+      "backend": "heuristic",
+      "archetype": "insurance",
+      "fact": "price",
+      "quote_delta_ticks": 1002
+    }
+  ],
+  "capacity_phase_seconds": [
+    {
+      "requested_ticks": 100,
+      "step_loop_seconds": 1494.9555400791578,
+      "terminal_checkpoint_seconds": 364.7802165001631,
+      "other_seconds": 2.661053088027984,
+      "total_seconds": 1862.3968096673489
+    },
+    {
+      "requested_ticks": 200,
+      "step_loop_seconds": 6219.274960838258,
+      "terminal_checkpoint_seconds": 1394.5066615408286,
+      "other_seconds": 5.985744370613247,
+      "total_seconds": 7619.7673667497
+    }
+  ],
+  "schedule_seed_count": 20,
+  "schedule_full_event_requests": 101,
+  "schedule_periodic_event_requests": 10,
+  "schedule_periodic_zero_seeds": 10,
+  "new_simulations": 0,
+  "new_model_calls": 0,
+  "confidence_intervals_drawn": false,
+  "theory_panel": "Explicit arithmetic only: 100*(1-k/(N*L)); not a measured cost saving",
+  "figure3_canvas_inches": [
+    10.7,
+    7.0
+  ],
+  "figure3_selected_trajectories": [
+    "full_control",
+    "no_secondary_contagion",
+    "reverse_retrospective_mapping",
+    "halt25"
+  ],
+  "style_reference": "KDD27_Economica reference palette and serif typography",
+  "figure1_unchanged_sha256": {
+    "fig1_methodology_overview.svg": "49a6006f2ca1dcd9f5cf0737e526e5b638f55924f41e61fcee5405dd0a72f04a",
+    "fig1_methodology_overview.png": "b1bc3f6827da09ca1eef32a5cf49fed75584ef30b7aa6661d05291459e29182d",
+    "fig1_methodology_overview.pdf": "cbcde757e1c43ee32c59027e966b2049b2afb58df51b0d3bd8476c13c7c88e3e"
+  },
+  "rendered_figure_stems": [
+    "fig2_rq1_stylized_facts",
+    "fig3_rq2_mechanisms_policy",
+    "fig4_rq3_cognition_cost",
+    "archetype_order_response",
+    "schedule_exposure",
+    "engineering_timing"
+  ],
+  "replaced_figure_stems": [
+    "health_diagnostics",
+    "engineering_branches"
+  ],
+  "source_hashes": {
+    "branch_metrics.csv": "769a692a2fc0173ccb0d89b66b5cd77844a417e11839dc38378ce3313217732b",
+    "branch_paths.csv": "8ee2be647b8cdbbe5008593dd7f8dc6f2b198f1eb6a6183515023dfcb50b554c",
+    "branch_step_metrics.csv": "038ce6c489c4010a681f9ff682d3f470dfa07f703f8f0f2e8ad98aad487ef24c",
+    "branches.csv": "c8dab997d20b5865039628fd2eac3703515d21a88e0f42725e360c59835edd2e",
+    "capacity.csv": "a04213ee10e952ec298b0712b4c55480cae17fc07553c8702cf0d16a72467a12",
+    "health.csv": "f1d6692f8cb9ebe640ca5541cae0660599264bcdb23c78eb953b08d2f2f28926",
+    "schedule_exposure.csv": "516e26b2d1a76986083350d567a6546af5d6fb414d5f8b2b8c702ea7ec9b8cd2",
+    "snapshot_cases.csv": "c5dba632026283e1212d8c83bebb2105bb62dd38e153451836ebfb8f40711414",
+    "snapshot_pairs.csv": "6eb356b4642d1ca0029d2c132ca87e3bce58c2487cbbcdf85002c7b279e4dcfe",
+    "timing_pairs.csv": "fb09fe3e6cc6b5326c561351da3694c1f54bab206b7abf8838bce552ea2ecba6"
+  },
+  "outputs_sha256": {
+    "fig2_rq1_stylized_facts.pdf": "ea79ae726793c4da7fdfa01a18981acbd0bc22a30fe3b10ca364a2058c60c27b",
+    "fig2_rq1_stylized_facts.png": "d634db2dc09d1e5279d41ef9ee407489baecbbee06f112489a9bb713df9601f0",
+    "fig2_rq1_stylized_facts.svg": "e7f62041778700326a13c7420f3c83fe3ca0e9c09695456c1a524aced6a7c943",
+    "fig3_rq2_mechanisms_policy.pdf": "be43bb0534fed3445586829081d56740e0f99b0734dd4b2194ca6db6f0eb739d",
+    "fig3_rq2_mechanisms_policy.png": "7d08d769aacf32e57e24d351d52a3c89bc749604a7abe90224f5ddc28c78ff54",
+    "fig3_rq2_mechanisms_policy.svg": "0e334d2ec2f33141e88494896880f6be947e6d33074d1c8e3177670f52c1b77b",
+    "fig4_rq3_cognition_cost.pdf": "dc5f7fef2fdcd26db8f1e388162b16281146b2258e199403190221caf491526a",
+    "fig4_rq3_cognition_cost.png": "add865662b4791ef469262df65d69a82fb3af53c4a6dbd9c58a23d6d2b7445af",
+    "fig4_rq3_cognition_cost.svg": "82204c1a60696a193ac0606d5e42f718925983623350d3ff7adb9fdc4deabcc2",
+    "archetype_order_response.pdf": "94f6c67344bf20515a5da6fa1f08c78bf0d456db464dfd3bc802c7ea19c76352",
+    "archetype_order_response.png": "206ff9647c03a46e3caabd0bcac8b3d5f474fa5a91813fe115ccbe641b537f62",
+    "archetype_order_response.svg": "4d7102c101b2822692ea2f897fbda233b828990cdf5a400f69867736f0cd9e6c",
+    "schedule_exposure.pdf": "7cca2bd40384dbdb4e62279e175afc000f1bb6d54e273cb1ae3beec44a8d24da",
+    "schedule_exposure.png": "46501a6e1ba7ea74c8c1a23d0241c24658357cf741d032c809507b0afeb26817",
+    "schedule_exposure.svg": "e6622aaccc788b66fa62922360e0260b7c48e2596741e86073faa20be69edfe9",
+    "engineering_timing.pdf": "ca84f3d5d38cc39a50b9a11fcc850073f12c8aabcf92f78d72d464553b0c157e",
+    "engineering_timing.png": "c83a35aa82f85fdca60f43a025b7c3f8728f02cf94f88e8f9263691020b7c664",
+    "engineering_timing.svg": "9744d917c4f067e6a770523e9fe2a740ed080ef358ddf14f2dc5b66c2787e8d4"
+  },
+  "generated_table_sha256": {
+    "tab_rq1_results.tex": "1189f153bc8db74fa55f398715868444a93fb7e859e60fe1a9576307ee8bc7df",
+    "tab_rq2_results.tex": "0c21520155f206e3c8a43cd1bdc33e1d96afecc47d60a40ebafbd43c3d88104e",
+    "tab_rq3_results.tex": "516dec352b5f82491ee0c5928ce839dd42556484ac7daa77382b73c116684358"
+  }
+}

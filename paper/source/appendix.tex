@@ -1,0 +1,77 @@
+\appendix
+\section{Supplementary Methodological Details and Prompts}
+\label{sec:appendix}
+
+\subsection{Observation and Decision Contract}
+\label{app:prompt}
+
+The observation separates account facts, public market facts, and private records. The market view identifies the previous committed quote by \texttt{as\_of\_tick} and carries the current policy state and events. The private view contains the agent profile, its updated state, its behavior trace, the selected messages, and the cache entry. In the cognition profile, it also includes recent execution receipts for the same agent, available from the following step.
+
+Listing~\ref{lst:prompt} gives an example response envelope. The identity and version fields are bound to the observation and policy. The direct-action task allows one hold or one typed portfolio order. A portfolio order supplies its asset, side, quantity in shares, and integer limit-price ticks. Evidence IDs refer to facts in the observation. The exchange applies resource and price checks when processing the intent.
+
+\noindent\begin{minipage}{\columnwidth}
+\begin{lstlisting}[caption={Example of a typed hold response.}, label={lst:prompt}, basicstyle=\ttfamily\scriptsize, breaklines=true, frame=single, aboveskip=3pt, belowskip=3pt]
+{
+  "schema_version": 3,
+  "decision_id": "decision-example",
+  "actor_id": "agent-example",
+  "observation_id": "observation-example",
+  "batch_id": "batch-example",
+  "observation_version": 1,
+  "world_version": 1,
+  "tick": 1,
+  "policy_id": "kdd27_policy",
+  "policy_version": "2",
+  "economic_intents": [
+    {"kind": "hold", "intent_id": "intent-example"}
+  ],
+  "evidence_ids": [],
+  "belief_patch": {},
+  "message_drafts": []
+}
+\end{lstlisting}
+\end{minipage}
+
+\section{Benchmark Details}
+\label{app:benchmark_details}
+
+\paragraph{Reference settings for multi-day evaluation.}
+Tables~\ref{tab:params} and~\ref{tab:behavior} document a prospective long-horizon design with $N=10{,}000$, $T=20{,}000$, $T_{\rm day}=100$, and 50 burn-in days within a 200-day horizon. The daily-return protocol specifies finite-sample-corrected excess kurtosis, return and absolute-return autocorrelations at lags 1--20, and volume--absolute-return correlation. Its reference inputs are separate from the settings actually used in Table~\ref{tab:measured_design}.
+
+\input{tables/tab_params}
+\input{tables/tab_behavior}
+
+\paragraph{Benchmark records.}
+Table~\ref{tab:invariants} gives the ledger checks for each trajectory. Tables~\ref{tab:rq1_results} and~\ref{tab:rq2_results} contain the intraday summaries and all shared-parent outcomes. Tables~\ref{tab:pilot} and~\ref{tab:rq3_results} report the decision counts and compute measurements.
+
+\input{tables/tab_invariants}
+\input{tables/tab_rq1_results}
+\input{tables/tab_rq2_results}
+\input{tables/tab_pilot}
+\input{tables/tab_rq3_results}
+
+\section{Schedule and Validator Diagnostics}
+\label{app:timing}
+
+The schedule audit uses fixed masks for 20 seeds in the $N=100$, $T=4{,}000$ reference cognition configuration. The event message is available in every public market view at tick 1,200. A scheduled text request requires that the investor be active and eligible for a model request on that step. The right panel of Figure~\ref{fig:schedule_exposure} gives the seed-level counts.
+
+In the strict-validator timing comparison, both variants process the same $N=100$, $T=12$ rule world. Figure~\ref{fig:timing_supp} shows three paired timing repeats.
+
+\begin{figure*}[t]
+ \centering
+ \begin{subfigure}{0.96\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figures/schedule_exposure.pdf}
+  \caption{Expected request reduction and announcement eligibility.}
+  \label{fig:schedule_exposure}
+ \end{subfigure}
+ \par\medskip
+ \begin{subfigure}{0.55\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figures/engineering_timing.pdf}
+  \caption{Paired wall-clock time for two strict validators.}
+  \label{fig:timing_supp}
+ \end{subfigure}
+ \caption{Schedule and validator diagnostics. (a) The left panel varies the period $T_{\mathrm{slow}}$ and the slow group size $k$ at $N=100$ over horizons divisible by the period. The right panel counts active agents eligible to send the announcement at release. (b) Each line connects the generic and scalar-optimized timings for the same rule world.}
+ \Description{Expected request reduction by schedule, announcement eligibility for 20 seeds, and paired validation timings.}
+\end{figure*}

@@ -1,0 +1,162 @@
+{
+  "checked_on": "2026-11-15",
+  "scope": "Archived execution environments; no current-machine probing or new measurements",
+  "records": [
+    {
+      "label": "mac-n100-t100",
+      "hardware": {
+        "cpu_model": "Apple M5",
+        "logical_cpus": 10,
+        "ram_bytes": 25769803776,
+        "memory_scope": "physical/unified memory reported by macOS",
+        "source": {
+          "path": "kdd27_completion_20261114/reviews/capacity/local-readonly.json",
+          "sha256": "f73127421a1351d6a4470d3ddd2e460d363d64953cfccdccb9bd5423400c893b"
+        }
+      },
+      "dependencies": {
+        "PyYAML": "6.0.3",
+        "machine": "arm64",
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.1",
+        "platform": "macOS-27.0-arm64-arm-64bit",
+        "pydantic": "2.14.3",
+        "pydantic_core": "2.50.4",
+        "python": "3.12.13"
+      },
+      "dependency_hash": "146037c924261da23438e62fdb900455cdcb218f59886e61e07940e7eba0de04",
+      "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+      "mode": "rule",
+      "policy_concurrency": 8,
+      "software_evidence": {
+        "path": "kdd27_completion_20261114/reviews/capacity/mac-n100-t100/measurement.json",
+        "sha256": "8d3180e7aa3e5c5115fd370d481a3bd44434d797dafb6e3707064a18c7b3cc8e"
+      }
+    },
+    {
+      "label": "mac-n100-t200",
+      "hardware": {
+        "cpu_model": "Apple M5",
+        "logical_cpus": 10,
+        "ram_bytes": 25769803776,
+        "memory_scope": "physical/unified memory reported by macOS",
+        "source": {
+          "path": "kdd27_completion_20261114/reviews/capacity/local-readonly.json",
+          "sha256": "f73127421a1351d6a4470d3ddd2e460d363d64953cfccdccb9bd5423400c893b"
+        }
+      },
+      "dependencies": {
+        "PyYAML": "6.0.3",
+        "machine": "arm64",
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.1",
+        "platform": "macOS-27.0-arm64-arm-64bit",
+        "pydantic": "2.14.3",
+        "pydantic_core": "2.50.4",
+        "python": "3.12.13"
+      },
+      "dependency_hash": "146037c924261da23438e62fdb900455cdcb218f59886e61e07940e7eba0de04",
+      "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+      "mode": "rule",
+      "policy_concurrency": 8,
+      "software_evidence": {
+        "path": "kdd27_completion_20261114/reviews/capacity/mac-n100-t200/measurement.json",
+        "sha256": "05b803e0a28586dbbe635f1c4b2ca3e904dc923bf883aba7c5777b82af7ecfe5"
+      }
+    },
+    {
+      "label": "asus-n1000-t12",
+      "hardware": {
+        "cpu_model": "AMD Ryzen AI 7 H 350 w/ Radeon 860M",
+        "logical_cpus": 16,
+        "ram_bytes": 16300789760,
+        "memory_scope": "WSL-visible MemTotal; not Windows host physical RAM",
+        "source": {
+          "path": "kdd27_completion_20261114/reviews/capacity/asus-readonly.json",
+          "sha256": "72ecf367fd3c787d984e4a0245e99925ca6e9779247d8c8b943bf74289ca8bda"
+        }
+      },
+      "dependencies": {
+        "PyYAML": "6.0.3",
+        "machine": "x86_64",
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.1",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "pydantic": "2.14.3",
+        "pydantic_core": "2.50.4",
+        "python": "3.12.3"
+      },
+      "dependency_hash": "ea432387c4abcda377aff49ca55b315de3a55f36a8672c4d4484d534e0bdc23b",
+      "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+      "mode": "rule",
+      "policy_concurrency": 8,
+      "software_evidence": {
+        "path": "kdd27_completion_20261114/reviews/capacity/asus-results/asus-n1000-t12/run/identity.json",
+        "sha256": "c9136b131ed3d4c1ccf461abaf6866f4eca898162d85e76a2d0616e5dfe44ec4"
+      },
+      "final_measurement_file_present": false
+    },
+    {
+      "label": "scalar-validation-n100-t12-three-pairs",
+      "hardware": {
+        "cpu_model": "Apple M5",
+        "logical_cpus": 10,
+        "ram_bytes": 25769803776,
+        "memory_scope": "physical/unified memory recorded in the frozen benchmark plan",
+        "os_version": "macOS 27.0",
+        "os_build": "26A428",
+        "source": {
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/frozen-plan.json",
+          "sha256": "a6403a492962b15adcac0ab71af56a5fbeba9bd1ec9a5847353f7ad2f95dd4ba"
+        }
+      },
+      "dependencies": {
+        "PyYAML": "6.0.3",
+        "machine": "arm64",
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.1",
+        "platform": "macOS-27.0-arm64-arm-64bit",
+        "pydantic": "2.14.3",
+        "pydantic_core": "2.50.4",
+        "python": "3.12.13"
+      },
+      "dependency_hash": "146037c924261da23438e62fdb900455cdcb218f59886e61e07940e7eba0de04",
+      "mode": "rule",
+      "software_evidence": [
+        {
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-1-A/measurement.json",
+          "sha256": "d24b545e7df667466efcdc55c16fede6aefcbf223af0b5b18d4cfe92f8bba2ac"
+        },
+        {
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-1-B/measurement.json",
+          "sha256": "411d4b83ea9709b7ed6bc5a21085fdb3dc3cb76afd73830c67398def86e6392e"
+        },
+        {
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-2-A/measurement.json",
+          "sha256": "6092b0bda0711f4c429e3d5dd2f2dcb7690ef15073b458124334d5e3104a32bd"
+        },
+        {
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-2-B/measurement.json",
+          "sha256": "03eb701be2fcd4df4380993427387d401f163feafda866e667bf449b36a22527"
+        },
+        {
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-3-A/measurement.json",
+          "sha256": "10953fdca0a702bf35fc29f5bfa07bfaea9b094254c0445b9f015aeb1792b9db"
+        },
+        {
+          "path": "kdd27_repository/docs/research/kdd27/evidence/kdd08/pair-3-B/measurement.json",
+          "sha256": "4b66b366633c06eb72cd4d30003642a715daa0a39c81cf03aabd79441ed33a01"
+        }
+      ]
+    }
+  ],
+  "missing_fields": {
+    "capacity_mac": "Exact OS build not present in capacity sources used here; CPU frequency and power mode not recorded",
+    "capacity_asus": "Windows host physical RAM, Windows build, CPU frequency and power mode not recorded; final profiling measurement is absent"
+  },
+  "privacy": "Only hardware/software fields exported; hostnames, users, paths to keys, commands and remote directory listings omitted"
+}

@@ -1,0 +1,16 @@
+% Generated from packaged archive data by scripts/render_real_figures.py
+\begin{table*}[t]
+\centering\small
+\caption{\tr{模型请求与规则世界的实测计算记录。$^{a}$ 快照批次壁钟时间。规则世界的运行剖面包括终态检查点。$^{b}$ ASUS 内存为采样峰值，最终运行剖面缺失。}{Measured Compute for Model Requests and Rule Worlds. $^{a}$~Snapshot batch wall time. Rule-world profiles include terminal checkpoints. $^{b}$~ASUS memory is the sampled peak. Its final profile is unavailable.}}
+\label{tab:rq3_results}
+\begin{tabularx}{\textwidth}{@{}l r c c c X@{}}
+\toprule
+Measured workload & Live calls & Input / output tokens & Time (s) & Memory (GiB) & Completion status \\
+\midrule
+Live snapshot batch & 54 & 119,637 / 9,306 & 69.597$^{a}$ & --- & 54/54 responses; all HOLD \\
+Mac: $N=100,T=100$ & 0 & 0 / 0 & 1862.397 & 1.239 & Runner/controller complete \\
+Mac: $N=100,T=200$ & 0 & 0 / 0 & 7619.767 & 2.486 & Runner/controller complete \\
+ASUS: $N=1000,T=12$ & 0 & 0 / 0 & Missing & 1.692$^{b}$ & Runner saved 12 steps; controller stopped \\
+\bottomrule
+\end{tabularx}
+\end{table*}

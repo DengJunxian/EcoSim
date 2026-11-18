@@ -1,0 +1,108 @@
+{
+  "status": "PASS_MAC200_TERMINAL_RECEIPT_ARCHIVE_AND_ARITHMETIC_REVIEW",
+  "reviewed_at_utc": "2026-11-14T18:54:18.276157+00:00",
+  "delivery_manifest_sha256": "a891fe8ebe163529907af76b9e977a6b1839727dbf2b7b1aa699d84222489947",
+  "bound_files_verified": 13,
+  "run_id": "run-a689613c0c2146c08498415993cb0fe8",
+  "config_hash": "6e4207d0f764fb26433b3b88467c91b5553a8a5832d8bb4fdf5de86fc48f71c5",
+  "source_hash": "cae19e7057d3d42beb18dc431d6c8ebee4ca04bdfba67b23a1c84a77c511b29b",
+  "dependency_hash": "146037c924261da23438e62fdb900455cdcb218f59886e61e07940e7eba0de04",
+  "paper_config_schema_version": 1,
+  "world_scope": "same-seed capacity continuation; separate from schema-v2 health9",
+  "runtime_status": "completed",
+  "controller_status": "completed",
+  "complete_checkpoint": true,
+  "signals": 0,
+  "committed_tick": 200,
+  "marker_chain_count": 201,
+  "terminal_state_hash": "0707983eb5d7333686ea1f77675f750121d53aa8bd6ae9439e831aaff1a35202",
+  "head_commit_hash": "2e165d2cab68c80197526aedae33583073af7ba3706c302d5254fadefa98edba",
+  "checkpoint_sha256": "7a9dd9b783661acbfe21d55a31d19f2227b197d15fe670692cda60c2e5bd98bd",
+  "archive_files_hash_verified": 408,
+  "archive_bytes": 29331939,
+  "archive_unchanged_during_review": true,
+  "timings": {
+    "controller_envelope_seconds": 7620.894540000241,
+    "measurement_full_profile_seconds": 7619.7673667497,
+    "runtime_pre_final_checkpoint_seconds": 6225.173828125,
+    "step_wall_seconds": 6219.274960838258,
+    "checkpoint_wall_seconds": 1394.5066615408286,
+    "same_platform_restore_audit_seconds": 83.5682487920858,
+    "restore_audit_controller_envelope_seconds": 84.47531483275816,
+    "clock_difference_is_error": false
+  },
+  "memory": {
+    "ru_maxrss_bytes": 2669428736,
+    "ru_maxrss_GiB": 2.4860992431640625,
+    "sampled_peak_rss_bytes": 2487189504,
+    "bound_bytes": 4294967296,
+    "within_frozen_sampled_control_limits": true
+  },
+  "mac200_over_mac100": {
+    "total_seconds": 4.088931159512144,
+    "step_wall_seconds": 4.160173860761738,
+    "checkpoint_wall_seconds": 3.8228681229487815,
+    "peak_rss_bytes": 2.007281104855302,
+    "archive_bytes": 2.005848580273807,
+    "measurement_full_profile_seconds": 4.091376943515438
+  },
+  "same_platform_restore_evidence": {
+    "status": "passed",
+    "strict_primary_audit_verified_markers": 201,
+    "archive_files_unchanged": 408,
+    "forward_steps": 0,
+    "primary_audit_script": "kdd27_completion_20261114/reviews/capacity/audit_archive.py",
+    "primary_audit_script_sha256": "f1e96d5e64d05a00b612ec9840c96919a50ba5d2d7f1ec3d565924e68e15a7ff",
+    "reviewer_repeated_full_restore_or_state_pipeline": false
+  },
+  "financial_arithmetic": {
+    "initial_totals": {
+      "A": 109724,
+      "CNY": 12920084191331
+    },
+    "terminal_totals": {
+      "A": 109724,
+      "CNY": 12920084191331
+    },
+    "resource_residuals": {
+      "A": 0,
+      "CNY": 0
+    },
+    "cash_scale": 1000000,
+    "journal_transactions": 86,
+    "journal_fee_tax_total_minor": 80292556,
+    "fee_account_change_minor": 80292556,
+    "fee_residual_minor": 0,
+    "journal_posting_residuals_all_zero": true,
+    "reservation_records": 573,
+    "nonzero_reservation_records": 1,
+    "reserved_by_resource": {
+      "A": 55,
+      "CNY": 0
+    },
+    "scope": "Independent terminal-checkpoint arithmetic only; primary participant/ledger validation is supplied by the sealed same-platform restore audit."
+  },
+  "prefix_review": "Reuses the prior independent0..100 byte/changes audit; its source receipts remain bound and unchanged. Raw hashes0/101 equal; delta changes100/100 equal; config_hash only at tick0.",
+  "independent_new_seed_units": 0,
+  "model_days": 2,
+  "formal_eligible": false,
+  "health9_status": "IN_PROGRESS_SEPARATE_CAMPAIGN",
+  "limits": [
+    "Two model days do not supply frozen H1 daily kurtosis or20-lag ACF; no tick-return substitution.",
+    "Three scattered capacity points are not a common-condition N100/N1000/N10000 scale curve.",
+    "Controller and measurement clocks are separate; controller ratio4.088931 must not be mixed with measurement times.",
+    "Existing strict restore/state validation was not skipped by the primary run, but this reviewer did not rerun that costly pipeline."
+  ],
+  "reviewer_world_constructions": 0,
+  "reviewer_forward_steps": 0,
+  "reviewer_API_calls": 0,
+  "project_budget_reaudit_deferred": true,
+  "reviewer_elapsed_seconds": 4.678159166127443,
+  "evidence_hashes": {
+    "reviews/capacity/mac-n100-t200-delivery.json": "a891fe8ebe163529907af76b9e977a6b1839727dbf2b7b1aa699d84222489947",
+    "reviews/capacity/audit_archive.py": "f1e96d5e64d05a00b612ec9840c96919a50ba5d2d7f1ec3d565924e68e15a7ff",
+    "reviews/capacity/mac-n100-t200-network.log": "525eee03f271f00c28a151ca988774763c64e81dba9ba213c97bc121d8c50599",
+    "reviews/capacity/mac-n100-t200-audit-network.log": "525eee03f271f00c28a151ca988774763c64e81dba9ba213c97bc121d8c50599",
+    "reviews/package_audit/mac_prefix_independent_review.json": "4735aa74421a2e418c284125422fcfc22d456cb67f8d22df929f104365d04b17"
+  }
+}

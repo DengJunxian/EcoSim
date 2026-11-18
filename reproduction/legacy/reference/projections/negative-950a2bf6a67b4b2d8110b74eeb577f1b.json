@@ -1,0 +1,1570 @@
+{
+  "analysis_is_new_simulation": false,
+  "committed_hashes": [
+    {
+      "commit_hash": "3b51120c53b79ff61fdb2b42820974b485c34ea9e9b1e796e0827dd5905868ba",
+      "state_hash": "ba88c3034ca7948a214c17e0e0313b1828b1d76b62d2015a4f57f23c6f3fbcc2",
+      "tick": 4
+    },
+    {
+      "commit_hash": "21bef6b030286f0b4f958cf67370eda059079f23b32edad44ab6ed7ee5757c79",
+      "state_hash": "45e1763627095303cc4f550e2f8c5807d4832725d6cbd77434b1b391d2ac8dc6",
+      "tick": 5
+    },
+    {
+      "commit_hash": "06b735b6766363df65cc0eb8af7dfe881e198e3d64a19a67d2551e48c1520851",
+      "state_hash": "49d3b1e8870efffcfcc1be95a49ee9209aae56e39bb37539ceef1be8f8c0b85d",
+      "tick": 6
+    },
+    {
+      "commit_hash": "d758dd1fa4fc8b4d5a44e774cd1152ab132fcc6cbe7fe1523dbe83934c14282f",
+      "state_hash": "aef4277a9b4738d768ed53a403b90842a6be4c984e87e8f288bb8aa954bb8f8a",
+      "tick": 7
+    }
+  ],
+  "decisions": [
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0000",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:f2a6e0b6837d88d3bd7c612897a11533f14e165e069d1a716b4cb20bd77950ea",
+      "path": "heuristic",
+      "quantity": 17,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0001",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:6fde380fc3d63f73fb309759d234ac721f4e4f0f88abcb8a2c1144c7650acd8e",
+      "path": "heuristic",
+      "quantity": 90,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0002",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:aa4a1f072002d16acd8854bc38b7a6f492642fef003df2454e56eabde3b2336a",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0003",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:2b10dd374c9c73d3bce8545a64f01e303e4b0a57bdfc9a8d0a21f2984e3eaea6",
+      "path": "heuristic",
+      "quantity": 78,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0004",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:865a7abc62267b336a91d69cbcafc329dd8eb21545f90565abf5e35e5109c417",
+      "path": "heuristic",
+      "quantity": 82,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0005",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:a20cbdc103272c94e7f29f7364e20ea58e772a74305027b63316d3e757edfc24",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0006",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:6d0fd463d098ad437cfeab2e049b22ad314d81ac4ab464a8096b0e4bc2f29057",
+      "path": "heuristic",
+      "quantity": 14,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:4:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:b7e19fd20f7a4a56e70dd767b1eccb6bccf425809c1f95e8aa4c6e25d534fa33",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 4
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0000",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:e62425047167eb4a0cb1347a98e145ffbe88a0d6b0191746ce061c899f63187b",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0001",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:78a2c5f46e364161080c6432b2047dd512d0acf11340331355d694fd31636dcd",
+      "path": "heuristic",
+      "quantity": 81,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0002",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:47535c79b1ec7355dade5a4ad93d2f2aff1c810f7cec0cf839aacfd9ad3117f2",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0003",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:558e402bf36358e8ea745ce7fe2892f9db52549525592c7553440231752a4c24",
+      "path": "heuristic",
+      "quantity": 62,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0004",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:6e6781c5ff1955f87e7f98510a512adc5f916d7cb52367102024e52afbd53365",
+      "path": "heuristic",
+      "quantity": 46,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0005",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:519da9e228dc7ebf4f5b237da3000e44a0be9c204ec1e12f4223e0c0f4311ce7",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0006",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:ce530049aa13ad08fa35d87177b221ff0a7ded1629d1030d41ba4304ec8665f3",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:5:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:152f0421046c25fa8f52b60343efed196f513538c35d1a5bb9b5ca6801db8d5e",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 5
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0000",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:7b5f979f55e9d6bbc2c4f0c987b4da4aa95da23089411393707de01f0dd8a4f4",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0001",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:f85e3d302d28f3f8a00ebcd20bcac2133291baa771abe1ab8c246232ecd1d7fa",
+      "path": "heuristic",
+      "quantity": 77,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0002",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:f7e6981ed4f5c294c4f9bdf5861a17fa3b9472dcc10f06f6925edb03e3c7e27c",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0003",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:a145ef9739b7869d466ae8e31832c1daf44ec501454cf3303719e8780a19f661",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0004",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:22d84b15bbafa31f1f83375e284d21fc591ac989baa92c0f21ab770e110e97c3",
+      "path": "heuristic",
+      "quantity": 29,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0005",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:d2a7f4a571d8a9d1c2a950b02ccea6276398325b02d5533c75245fdc51eb57df",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0006",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:99b9fa4ec4f9f3b9a1a829be5dd29641a5790d8b0d2f7cd5ef7d5c66507a15ae",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:6:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:bdec0b87adb1dc176af55f84135b6a7a092abf30b1cf16609f7ab8c8b597c548",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 6
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0000",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0000",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:66c63f956c5f64b1ef62d6f69ec959bbb5f0cb23bf46efab41fe2f0a92b2e831",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0001",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0001",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:249e8feb2d1c4a28e68c8b2a91eeed459d70aba299704e3bcefa009420b7bcc1",
+      "path": "heuristic",
+      "quantity": 74,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0002",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0002",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:475126f4bb31fc38491a4cb5906cda8400e210ea8a1566f5fe1fcb2e29b43f7f",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0003",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0003",
+      "degraded": false,
+      "kind": "portfolio_order",
+      "observation_id": "observation:07f14a23047f6f23c33fa39abc08a683a0d125d2a606b7f8f20e0eb80c177272",
+      "path": "heuristic",
+      "quantity": 53,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0004",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0004",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:9dbac7a164048c893509582e4a553f00a08cd224904d8499027e03c377be50eb",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0005",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0005",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:7855c23cc7b6ff4055c077e0dd696c4680a324934e7cde7390d4b2e6ce9c32ad",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0006",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0006",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:53cc01bdff4688de0695ceb68c6fedaa92f390647de3f5eca3b294620dcca1a2",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 7
+    },
+    {
+      "active": true,
+      "actor_id": "agent_0007",
+      "attempt_id": null,
+      "covered": false,
+      "decision_id": "decision:7:agent_0007",
+      "degraded": false,
+      "kind": "hold",
+      "observation_id": "observation:cdf2a93d44b3454252d493eda8ffa1de67f94a1fcce2b86aac7246deb6ed6b14",
+      "path": "heuristic",
+      "quantity": 0,
+      "tick": 7
+    }
+  ],
+  "facts": [
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.7,
+      "confidence_mean": 0.5356190080797262,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 14,
+      "fees_cumulative_minor": 69334845,
+      "fees_step_minor": 11379998,
+      "filled_orders": 5,
+      "free_cash_minor": 1131161310135,
+      "free_shares": 7762,
+      "halted": false,
+      "infected": 2,
+      "infected_actor_ids": [
+        "agent_0002",
+        "agent_0004"
+      ],
+      "marked_wealth_minor": 1918334594760,
+      "net_sell_quantity": -55,
+      "one_sided": true,
+      "order_imbalance": 0.19572953736654805,
+      "orders": 5,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 4,
+      "tradable_cash_minor": 1136701194760,
+      "trade_count": 4,
+      "two_sided": false,
+      "volume": 113
+    },
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.65,
+      "confidence_mean": 0.5369066279181317,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 14,
+      "fees_cumulative_minor": 73964745,
+      "fees_step_minor": 4629900,
+      "filled_orders": 2,
+      "free_cash_minor": 1126933554718,
+      "free_shares": 7762,
+      "halted": false,
+      "infected": 1,
+      "infected_actor_ids": [
+        "agent_0004"
+      ],
+      "marked_wealth_minor": 1917941864860,
+      "net_sell_quantity": -97,
+      "one_sided": true,
+      "order_imbalance": 0.5132275132275133,
+      "orders": 3,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 5,
+      "tradable_cash_minor": 1136696564860,
+      "trade_count": 1,
+      "two_sided": false,
+      "volume": 46
+    },
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.82000000000001,
+      "confidence_mean": 0.5381684953597691,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 7,
+      "fees_cumulative_minor": 76888525,
+      "fees_step_minor": 2923780,
+      "filled_orders": 2,
+      "free_cash_minor": 1131852111000,
+      "free_shares": 7762,
+      "halted": false,
+      "infected": 2,
+      "infected_actor_ids": [
+        "agent_0004",
+        "agent_0006"
+      ],
+      "marked_wealth_minor": 1919258481080,
+      "net_sell_quantity": -48,
+      "one_sided": true,
+      "order_imbalance": 0.4528301886792453,
+      "orders": 2,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 6,
+      "tradable_cash_minor": 1136693641080,
+      "trade_count": 1,
+      "two_sided": false,
+      "volume": 29
+    },
+    {
+      "active": 8,
+      "buy_feasible_actors": 8,
+      "close": 100.82000000000001,
+      "confidence_mean": 0.5394051254525737,
+      "covered": 0,
+      "degraded": 0,
+      "depth_ask5": null,
+      "depth_bid5": null,
+      "empty_book": false,
+      "exposure_items": 12,
+      "fees_cumulative_minor": 76888525,
+      "fees_step_minor": 0,
+      "filled_orders": 0,
+      "free_cash_minor": 1123882259035,
+      "free_shares": 7762,
+      "halted": false,
+      "infected": 2,
+      "infected_actor_ids": [
+        "agent_0004",
+        "agent_0006"
+      ],
+      "marked_wealth_minor": 1919258481080,
+      "net_sell_quantity": -127,
+      "one_sided": true,
+      "order_imbalance": 1.0,
+      "orders": 2,
+      "price_at_band": false,
+      "rejected_orders": 0,
+      "rejection_reasons": {},
+      "sell_feasible_actors": 8,
+      "spread_bps": null,
+      "spread_reason": "MISSING_QUOTE_SIDE",
+      "tick": 7,
+      "tradable_cash_minor": 1136693641080,
+      "trade_count": 0,
+      "two_sided": false,
+      "volume": 0
+    }
+  ],
+  "formal_eligible": false,
+  "model_cost": {
+    "input_tokens": 0,
+    "known_accounted_nano": {
+      "CNY": 0,
+      "USD": 0
+    },
+    "output_tokens": 0,
+    "owned_attempts": 0,
+    "scope": "No provider configured; not an online cost benchmark",
+    "total_accounted_nano": {
+      "CNY": 0,
+      "USD": 0
+    },
+    "unknown_usage_attempts": 0
+  },
+  "run": {
+    "attempts": [
+      {
+        "parent_commit_hash": "73915f5b4bfb9427f81eb9befb4ed66e4e3b25c7f525be8765f779e03b0aeda5",
+        "reason": "new branch awaiting execution",
+        "recorded_at": "2026-11-14T10:20:04.938566+00:00",
+        "schema_version": 1,
+        "shared_rng": {
+          "algorithm": "civitas-addressed-sha256-v1",
+          "entity": "init",
+          "process": "init",
+          "replica": 0,
+          "root_seed": 935001,
+          "semantic_slot": "init",
+          "tick": 0
+        },
+        "status": "planned",
+        "tick": 3
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:05.218460+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 5
+      },
+      {
+        "checkpoint": {
+          "bytes": 36683,
+          "commit_hash": "21bef6b030286f0b4f958cf67370eda059079f23b32edad44ab6ed7ee5757c79",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/negative/checkpoints/adcf3386014743eecaa0a9a513a67afeca27714977e799e69b70b5820b4863d2.json.gz",
+          "sha256": "adcf3386014743eecaa0a9a513a67afeca27714977e799e69b70b5820b4863d2",
+          "tick": 5
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.30490637477487326,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 3,
+        "recorded_at": "2026-11-14T10:20:05.685039+00:00",
+        "run_id": "negative-950a2bf6a67b4b2d8110b74eeb577f1b",
+        "schema_version": 1,
+        "state_hash": "45e1763627095303cc4f550e2f8c5807d4832725d6cbd77434b1b391d2ac8dc6",
+        "status": "checkpointed",
+        "tick": 5,
+        "until": 5
+      },
+      {
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:06.027655+00:00",
+        "schema_version": 1,
+        "status": "running",
+        "until": 7
+      },
+      {
+        "checkpoint": {
+          "bytes": 45100,
+          "commit_hash": "d758dd1fa4fc8b4d5a44e774cd1152ab132fcc6cbe7fe1523dbe83934c14282f",
+          "encoding": "json+gzip",
+          "path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/negative/checkpoints/4e521c09234e0c68080693f80589a9b53ba170c64fa9b36d9ea33713e714dae9.json.gz",
+          "sha256": "4e521c09234e0c68080693f80589a9b53ba170c64fa9b36d9ea33713e714dae9",
+          "tick": 7
+        },
+        "command": [
+          ".wp00-venv/lib/python3.12/site-packages/pytest/__main__.py",
+          "-q",
+          "tests/nextgen/test_kdd27_rq3.py",
+          "--basetemp=kdd07_execution/pytest-rq3",
+          "--junitxml=kdd07_execution/rq3-contract.xml"
+        ],
+        "elapsed_seconds": 0.3763048332184553,
+        "error": null,
+        "exit_code": 0,
+        "from_tick": 5,
+        "recorded_at": "2026-11-14T10:20:06.630265+00:00",
+        "run_id": "negative-950a2bf6a67b4b2d8110b74eeb577f1b",
+        "schema_version": 1,
+        "state_hash": "aef4277a9b4738d768ed53a403b90842a6be4c984e87e8f288bb8aa954bb8f8a",
+        "status": "completed",
+        "tick": 7,
+        "until": 7
+      }
+    ],
+    "branch_point": 3,
+    "code_commit": "af2109fb1ca78215afb72092d843549c66fb9fad",
+    "condition_id": "heuristic:negative",
+    "data_version": "synthetic_initialization:4315a96a9f90c02072130ac1a01fad79c83acd655e8bd172dc2fe80d9bd0f2c4",
+    "evidence_scope": "engineering",
+    "execution_phase": "smoke",
+    "experiment_id": "KDD07-unit",
+    "failure_reason": null,
+    "initial_state_hash": "c19c6330db78bdf149a7f715313299b24e66977160814be012ffbda463f0b07b",
+    "input_kind": "synthetic_initialization",
+    "model_id": null,
+    "model_sample_id": null,
+    "output_kind": "measured_simulation",
+    "pair_id": "KDD07-unit:935001",
+    "parent_run_id": "parent-d22b1db5834442b3a8c84b648a02e8ed",
+    "parser_version": null,
+    "prompt_version": null,
+    "protocol_version": "kdd27-rq3-v1",
+    "raw_path": "kdd07_execution/pytest-rq3/test_own_prefix_pure_wording_r1/negative",
+    "raw_status": "completed",
+    "resolved_config_hash": "4315a96a9f90c02072130ac1a01fad79c83acd655e8bd172dc2fe80d9bd0f2c4",
+    "run_id": "negative-950a2bf6a67b4b2d8110b74eeb577f1b",
+    "schema_version": 1,
+    "source_hash": "32a068d6c2cbfd6e9dccf0a48e2c38c3d37b9ff3be4ccc9b3170ca26896ee3f2",
+    "status": "completed",
+    "unknown_fields": [],
+    "verified_integrity": true,
+    "world_schema": 3,
+    "world_seed": 935001
+  },
+  "source_archive_manifest_hash": "530c56b5a16a00c9ab25bb87fc88575471b1a0e16cb60754e9aae87a68476488",
+  "summary": {
+    "daily": [
+      {
+        "close": null,
+        "complete": false,
+        "day": 0,
+        "reason": "PARTIAL_PREFIX_DAY",
+        "volume": 0.0
+      },
+      {
+        "close": null,
+        "complete": false,
+        "day": 1,
+        "reason": "INCOMPLETE_MODEL_DAY",
+        "volume": null
+      }
+    ],
+    "daily_statistics": {
+      "absolute_acf": null,
+      "definition_version": "kdd27-metrics-v1",
+      "lags": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "metrics": {
+        "excess_kurtosis": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        },
+        "maximum_abs_raw_return_acf_lags_1_20": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        },
+        "mean_abs_return_acf_lags_1_20": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        },
+        "volume_abs_return_correlation": {
+          "definition_version": "kdd27-metrics-v1",
+          "denominator_count": 1,
+          "reason": "MISSING_DAY",
+          "sample_count": 0,
+          "status": "UNDEFINED",
+          "unit": "ratio",
+          "value": null
+        }
+      },
+      "raw_acf": null,
+      "return_clock": "daily log return; no gap compression",
+      "returns": [
+        null
+      ]
+    },
+    "definition_version": "kdd27-metrics-v1",
+    "metrics": {
+      "cognitive_active_coverage": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 32,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "degraded_active_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 32,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "depth_ask5": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": "NO_TWO_SIDED_OBSERVATIONS",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "shares",
+        "value": null
+      },
+      "depth_bid5": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": "NO_TWO_SIDED_OBSERVATIONS",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "shares",
+        "value": null
+      },
+      "empty_book_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "excess_kurtosis": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      },
+      "executed_order_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 12,
+        "reason": null,
+        "sample_count": 9,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.75
+      },
+      "exposure_items": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "selected_source_actor_steps",
+        "value": 47.0
+      },
+      "fee_cash_fraction": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "fraction_initial_tradable_cash",
+        "value": 1.665567280898722e-05
+      },
+      "fees_minor": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "minor_currency",
+        "value": 18933678.0
+      },
+      "halt_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "infected_person_steps": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "actor_steps",
+        "value": 7.0
+      },
+      "maximum_abs_raw_return_acf_lags_1_20": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      },
+      "mean_abs_return_acf_lags_1_20": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      },
+      "mean_confidence": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "score",
+        "value": 0.5375248142025502
+      },
+      "no_trade_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 1,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.25
+      },
+      "one_sided_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 1.0
+      },
+      "peak_infected_count": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "actors",
+        "value": 2.0
+      },
+      "price_band_touch_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "rejected_order_ratio": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 12,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "tradable_cash_end_minor": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "minor_currency",
+        "value": 1136693641080.0
+      },
+      "traded_quantity": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "shares",
+        "value": 188.0
+      },
+      "turnover": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "fraction_initial_shares",
+        "value": 0.024220561710899254
+      },
+      "two_sided_coverage": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 0,
+        "status": "VALID",
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "two_sided_spread_bps": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": "NO_TWO_SIDED_OBSERVATIONS",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "bp",
+        "value": null
+      },
+      "unique_infected_actors": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 4,
+        "reason": null,
+        "sample_count": 4,
+        "status": "VALID",
+        "unit": "actors",
+        "value": 3.0
+      },
+      "volume_abs_return_correlation": {
+        "definition_version": "kdd27-metrics-v1",
+        "denominator_count": 1,
+        "reason": "MISSING_DAY",
+        "sample_count": 0,
+        "status": "UNDEFINED",
+        "unit": "ratio",
+        "value": null
+      }
+    },
+    "window": [
+      4,
+      7
+    ]
+  },
+  "trades": [
+    {
+      "buyer_fee_minor": 428017,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 1712070000,
+      "postings": [
+        {
+          "account_id": "agent_0001",
+          "amount": -1712498017,
+          "posting_id": "tx:A-trade-00000014:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000014"
+        },
+        {
+          "account_id": "agent_0000",
+          "amount": 1710785948,
+          "posting_id": "tx:A-trade-00000014:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000014"
+        },
+        {
+          "account_id": "fees",
+          "amount": 1712069,
+          "posting_id": "tx:A-trade-00000014:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000014"
+        },
+        {
+          "account_id": "agent_0001",
+          "amount": 17,
+          "posting_id": "tx:A-trade-00000014:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000014"
+        },
+        {
+          "account_id": "agent_0000",
+          "amount": -17,
+          "posting_id": "tx:A-trade-00000014:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000014"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 428017,
+      "tax_minor": 856035,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:4:agent_0001",
+        "buyer_id": "agent_0001",
+        "buyer_reservation_id": "reservation:paper-order:4:agent_0001",
+        "maker_order_id": "paper-order:4:agent_0001",
+        "price_ticks": 10071,
+        "quantity_units": 17,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:4:agent_0000",
+        "seller_id": "agent_0000",
+        "seller_reservation_id": "reservation:paper-order:4:agent_0000",
+        "taker_order_id": "paper-order:4:agent_0000",
+        "tick": 4,
+        "trade_id": "A-trade-00000014"
+      },
+      "tx_id": "tx:A-trade-00000014"
+    },
+    {
+      "buyer_fee_minor": 352485,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 1409940000,
+      "postings": [
+        {
+          "account_id": "agent_0001",
+          "amount": -1410292485,
+          "posting_id": "tx:A-trade-00000015:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000015"
+        },
+        {
+          "account_id": "agent_0006",
+          "amount": 1408882545,
+          "posting_id": "tx:A-trade-00000015:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000015"
+        },
+        {
+          "account_id": "fees",
+          "amount": 1409940,
+          "posting_id": "tx:A-trade-00000015:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000015"
+        },
+        {
+          "account_id": "agent_0001",
+          "amount": 14,
+          "posting_id": "tx:A-trade-00000015:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000015"
+        },
+        {
+          "account_id": "agent_0006",
+          "amount": -14,
+          "posting_id": "tx:A-trade-00000015:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000015"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 352485,
+      "tax_minor": 704970,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:4:agent_0001",
+        "buyer_id": "agent_0001",
+        "buyer_reservation_id": "reservation:paper-order:4:agent_0001",
+        "maker_order_id": "paper-order:4:agent_0001",
+        "price_ticks": 10071,
+        "quantity_units": 14,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:4:agent_0006",
+        "seller_id": "agent_0006",
+        "seller_reservation_id": "reservation:paper-order:4:agent_0006",
+        "taker_order_id": "paper-order:4:agent_0006",
+        "tick": 4,
+        "trade_id": "A-trade-00000015"
+      },
+      "tx_id": "tx:A-trade-00000015"
+    },
+    {
+      "buyer_fee_minor": 1485472,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 5941890000,
+      "postings": [
+        {
+          "account_id": "agent_0001",
+          "amount": -5943375472,
+          "posting_id": "tx:A-trade-00000016:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000016"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": 5937433583,
+          "posting_id": "tx:A-trade-00000016:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000016"
+        },
+        {
+          "account_id": "fees",
+          "amount": 5941889,
+          "posting_id": "tx:A-trade-00000016:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000016"
+        },
+        {
+          "account_id": "agent_0001",
+          "amount": 59,
+          "posting_id": "tx:A-trade-00000016:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000016"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": -59,
+          "posting_id": "tx:A-trade-00000016:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000016"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 1485472,
+      "tax_minor": 2970945,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:4:agent_0001",
+        "buyer_id": "agent_0001",
+        "buyer_reservation_id": "reservation:paper-order:4:agent_0001",
+        "maker_order_id": "paper-order:4:agent_0001",
+        "price_ticks": 10071,
+        "quantity_units": 59,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:4:agent_0004",
+        "seller_id": "agent_0004",
+        "seller_reservation_id": "reservation:paper-order:4:agent_0004",
+        "taker_order_id": "paper-order:4:agent_0004",
+        "tick": 4,
+        "trade_id": "A-trade-00000016"
+      },
+      "tx_id": "tx:A-trade-00000016"
+    },
+    {
+      "buyer_fee_minor": 579025,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 2316100000,
+      "postings": [
+        {
+          "account_id": "agent_0003",
+          "amount": -2316679025,
+          "posting_id": "tx:A-trade-00000017:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000017"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": 2314362925,
+          "posting_id": "tx:A-trade-00000017:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000017"
+        },
+        {
+          "account_id": "fees",
+          "amount": 2316100,
+          "posting_id": "tx:A-trade-00000017:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000017"
+        },
+        {
+          "account_id": "agent_0003",
+          "amount": 23,
+          "posting_id": "tx:A-trade-00000017:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000017"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": -23,
+          "posting_id": "tx:A-trade-00000017:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000017"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 579025,
+      "tax_minor": 1158050,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:4:agent_0003",
+        "buyer_id": "agent_0003",
+        "buyer_reservation_id": "reservation:paper-order:4:agent_0003",
+        "maker_order_id": "paper-order:4:agent_0003",
+        "price_ticks": 10070,
+        "quantity_units": 23,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:4:agent_0004",
+        "seller_id": "agent_0004",
+        "seller_reservation_id": "reservation:paper-order:4:agent_0004",
+        "taker_order_id": "paper-order:4:agent_0004",
+        "tick": 4,
+        "trade_id": "A-trade-00000017"
+      },
+      "tx_id": "tx:A-trade-00000017"
+    },
+    {
+      "buyer_fee_minor": 1157475,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 4629900000,
+      "postings": [
+        {
+          "account_id": "agent_0001",
+          "amount": -4631057475,
+          "posting_id": "tx:A-trade-00000018:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000018"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": 4626427575,
+          "posting_id": "tx:A-trade-00000018:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000018"
+        },
+        {
+          "account_id": "fees",
+          "amount": 4629900,
+          "posting_id": "tx:A-trade-00000018:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000018"
+        },
+        {
+          "account_id": "agent_0001",
+          "amount": 46,
+          "posting_id": "tx:A-trade-00000018:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000018"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": -46,
+          "posting_id": "tx:A-trade-00000018:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000018"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 1157475,
+      "tax_minor": 2314950,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:5:agent_0001",
+        "buyer_id": "agent_0001",
+        "buyer_reservation_id": "reservation:paper-order:5:agent_0001",
+        "maker_order_id": "paper-order:5:agent_0001",
+        "price_ticks": 10065,
+        "quantity_units": 46,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:5:agent_0004",
+        "seller_id": "agent_0004",
+        "seller_reservation_id": "reservation:paper-order:5:agent_0004",
+        "taker_order_id": "paper-order:5:agent_0004",
+        "tick": 5,
+        "trade_id": "A-trade-00000018"
+      },
+      "tx_id": "tx:A-trade-00000018"
+    },
+    {
+      "buyer_fee_minor": 730945,
+      "day": 0,
+      "fees": {
+        "commission": {
+          "denominator": 4000,
+          "numerator": 1
+        },
+        "fee_id": "fees-v1",
+        "rounding": "floor_per_fill",
+        "schema_version": 3,
+        "tax": {
+          "denominator": 2000,
+          "numerator": 1
+        }
+      },
+      "notional_minor": 2923780000,
+      "postings": [
+        {
+          "account_id": "agent_0001",
+          "amount": -2924510945,
+          "posting_id": "tx:A-trade-00000019:0",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000019"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": 2921587165,
+          "posting_id": "tx:A-trade-00000019:1",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000019"
+        },
+        {
+          "account_id": "fees",
+          "amount": 2923780,
+          "posting_id": "tx:A-trade-00000019:2",
+          "resource_id": "CNY",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000019"
+        },
+        {
+          "account_id": "agent_0001",
+          "amount": 29,
+          "posting_id": "tx:A-trade-00000019:3",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000019"
+        },
+        {
+          "account_id": "agent_0004",
+          "amount": -29,
+          "posting_id": "tx:A-trade-00000019:4",
+          "resource_id": "A",
+          "schema_version": 3,
+          "tx_id": "tx:A-trade-00000019"
+        }
+      ],
+      "schema_version": 3,
+      "seller_fee_minor": 730945,
+      "tax_minor": 1461890,
+      "trade": {
+        "asset_id": "A",
+        "buy_order_id": "paper-order:6:agent_0001",
+        "buyer_id": "agent_0001",
+        "buyer_reservation_id": "reservation:paper-order:6:agent_0001",
+        "maker_order_id": "paper-order:6:agent_0004",
+        "price_ticks": 10082,
+        "quantity_units": 29,
+        "schema_version": 3,
+        "sell_order_id": "paper-order:6:agent_0004",
+        "seller_id": "agent_0004",
+        "seller_reservation_id": "reservation:paper-order:6:agent_0004",
+        "taker_order_id": "paper-order:6:agent_0001",
+        "tick": 6,
+        "trade_id": "A-trade-00000019"
+      },
+      "tx_id": "tx:A-trade-00000019"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+% Market and Social Layer Default Configurations
+\begin{table*}[t]
+  \centering\small
+  \caption{\tr{长周期参考设计的市场环境与社会传播参数。}{Market and social propagation parameters for the prospective multi-day design.}}
+  \label{tab:params}
+  \begin{tabularx}{\textwidth}{@{}l p{3.2cm} p{3.5cm} X@{}}
+    \toprule
+    \tr{模块}{Module} & \tr{参数}{Parameter} & \tr{设置}{Setting} & \tr{含义}{Meaning} \\
+    \midrule
+    \tr{执行}{Execution} & \tr{主体数、日内步数、仿真期限、预热期}{$N, T_{\mathrm{day}}$, horizon, burn-in} & \tr{$10^4$ 名主体，100 步/日\newline 200 日，预热 50 日}{$10^4$, $100$ steps, $200$ days, $50$ days} & \tr{种群规模、每个交易日的步数、总交易日数与预热日数}{Population, steps per day, horizon, and warm-up} \\
+    \tr{账本}{Ledger} & $P_0, \mu_C, \sigma_C, Q_{\max}$ & $100, \log(10^5), 0.6, 2000$ & \tr{初始价格、对数正态现金分布与初始持仓上限}{Initial price, lognormal cash, and maximum initial shares} \\
+    \tr{初始禀赋}{Endowments} & $\mu_K, \sigma_K, a_s, b_s$ & $100, 5, 2, 2$ & \tr{截断持仓成本分布与初始情绪 $s_{i,0}\in[-1,1]$ 的对称 Beta 抽样}{Truncated cost and symmetric Beta draws for $s_{i,0} \in [-1, 1]$} \\
+    \tr{认知状态}{Cognition} & $q_0, \sigma_{q,0}, a_{i,0}, R^\bullet_{i,0}$ & $0.6, 0.1, 0.5, P_0$ & \tr{信心截断至 $[0,1]$，以及初始风险容忍度与价格参考点}{Confidence truncated to $[0,1]$, risk tolerance, and price anchors} \\
+    \tr{网络拓扑}{Topology} & \tr{平均度 $k$、重连概率 $p$}{Mean degree $k$, rewiring $p$} & $6, 0.1$ & \tr{带聚类及短路径的 Watts--Strogatz 网络}{Watts--Strogatz network with clustering and shortcuts} \\
+    \tr{边权}{Edge Weights} & $w_0, w_{\min}, w_{\max}, \omega$ & $1.0, 1.0, 2.0, 0.1$ & \tr{边权向 $2-|x_i^{\rm exp}-x_j^{\rm exp}|$ 调整}{Edge weights move toward $2-|x_i^{\rm exp}-x_j^{\rm exp}|$} \\
+    \tr{消息筛选}{Information} & \tr{注意力容量 $A_i$、衰减 $\zeta_E$、权重 $\boldsymbol{\theta}$}{Capacity $A_i$, decay $\zeta_E$, weights $\boldsymbol{\theta}$} & $3, 0.05$,\newline$(0.35, 0.25, 0.15, 0.15, 0.10)$ & \tr{按情绪、主题、风险、影响力及曝光记录排序}{Attention-bounded filtering; ranking by emotion, topic, risk, influence, and exposure} \\
+    \tr{传播}{Contagion} & \tr{基础感染率 $\beta$、恢复率 $\gamma$、免疫衰减 $\delta$}{Base infection $\beta$, recovery $\gamma$, waning $\delta$} & $0.30, 0.10, 0.05$ & \tr{社会联系上的离散时钟 SIRS 传播参数}{Discrete-time SIRS epidemiological parameters governing panic transmission across social edges} \\
+    \tr{感染压力}{Pressure} & \tr{分量权重 $(\kappa_0,\kappa_1,\kappa_2)$}{Coupling weights $(\kappa_0, \kappa_1, \kappa_2)$} & $0.40, 0.40, 0.20$ & \tr{结合感染邻居和注意力筛选后信息的感染压力}{Multiscale infection pressure coupling infected-neighbor share and filtered exposure} \\
+    \tr{回音室}{Echo Chamber} & \tr{持续时间 $\eta_d$、回音室 $\eta_e$、再易感 $\eta_\psi$}{Duration $\eta_d$, echo $\eta_e$, resusceptibility $\eta_\psi$} & $0.02, 0.50, 0.50$ & \tr{感染持续时间、曝光集中度与再次易感}{Duration, exposure concentration, and return to susceptibility} \\
+    \tr{从众}{Herding} & \tr{悲观阈值 $s_*$、权重转移 $\eta_H$、信心更新 $\eta_q,\eta_{\mathrm{rec}}$}{Threshold $s_*$, shift $\eta_H$, learning $\eta_q, \eta_{\mathrm{rec}}$} & $0.20, 0.50, 0.05, 0.02$ & \tr{信心调节个人估值和同伴信号之间的权重转移}{Panic sentiment boundary; confidence-dependent cognitive weight reallocation to peer consensus} \\
+    \tr{市场制度}{Microstructure} & \tr{佣金 $c$、印花税 $\tau^{\mathrm{tax}}$、价带 $L$、价格档位 $\Delta_p$}{Fee $c$, stamp tax $\tau^{\mathrm{tax}}$, band $L$, tick $\Delta_p$} & $0.025\%, 0.05\%, 10\%, 0.01$ & \tr{双边佣金、卖方税、日价格限制与最小报价单位}{Bilateral commission, seller-side transaction tax, daily price fluctuation limit, and price tick} \\
+    \tr{订单规则}{Order Rules} & \tr{活跃率 $p_{\mathrm{act}}$、有效期、$T+1$ 限制}{Activity rate $p_{\mathrm{act}}$, lifespan, T+1 limit} & \tr{$p_{\mathrm{act}}=0.05$，有效期 1 步\newline $T+1$ 可配置}{$0.05$, $1$ step, configurable} & \tr{伯努利活跃概率、未成交订单的撤单期限与当日回转限制}{Bernoulli activity probability, unexecuted order cancellation horizon, and day-trade turnover restriction} \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}

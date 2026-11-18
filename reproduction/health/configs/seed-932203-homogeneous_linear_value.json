@@ -1,0 +1,193 @@
+{
+  "scenario": "kdd27_v1",
+  "schema_version": 2,
+  "protocol_id": "kdd27-rq1-v1",
+  "mechanism_version": "kdd27-rq1-v1",
+  "metric_version": "kdd27-trace-v1-not-formal-metrics",
+  "rng_version": "kdd27-addressed-pcg64-v1",
+  "execution_backend": "python_reference_v1",
+  "backend": "fixedpoint_multiasset",
+  "n_agents": 100,
+  "ticks": 100,
+  "root_seed": 932203,
+  "replica": 0,
+  "concurrency": 8,
+  "activation_probability": 0.05,
+  "background_infection_fraction_per_day": 0.002,
+  "population": {
+    "archetype_proportions": {
+      "retail": 0.7,
+      "mutual_fund": 0.08,
+      "pension": 0.05,
+      "insurance": 0.04,
+      "proprietary": 0.04,
+      "market_maker": 0.04,
+      "stabilization": 0.01,
+      "rumor_sensitive": 0.02,
+      "arbitrage": 0.02
+    },
+    "cognitive_type_proportions": {
+      "technical": 0.3333333333333333,
+      "news": 0.3333333333333333,
+      "herding": 0.3333333333333334
+    },
+    "cash_log_mean": 11.512925464970229,
+    "cash_log_sd": 0.6,
+    "inventory_max": 2000,
+    "cost_normal_mean": 100.0,
+    "cost_normal_sd": 5.0,
+    "emotion_beta": [
+      2.0,
+      2.0
+    ],
+    "confidence_mean": 0.6,
+    "confidence_sd": 0.1,
+    "initial_risk": 0.5,
+    "loss_aversion": 2.25,
+    "herding_beta": [
+      2.0,
+      2.0
+    ],
+    "topics": [
+      "fundamentals",
+      "technical",
+      "macro",
+      "policy"
+    ],
+    "topic_probabilities": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "initial_infection_fraction": 0.01
+  },
+  "market": {
+    "asset_id": "A",
+    "currency": "CNY",
+    "cash_scale": 1000000,
+    "initial_price": 100.0,
+    "price_tick": 0.01,
+    "commission": 0.00025,
+    "seller_tax": 0.0005,
+    "band": 0.1,
+    "order_ttl": 1,
+    "same_day_lock": false,
+    "ticks_per_day": 100,
+    "fee_rounding": "floor_per_fill",
+    "quote_rounding": "half_even",
+    "self_trade_prevention": "cancel_incoming_remainder"
+  },
+  "network": {
+    "topology": "watts_strogatz",
+    "neighbors": 6,
+    "rewiring": 0.1,
+    "weight_initial": 1.0,
+    "weight_min": 1.0,
+    "weight_max": 2.0,
+    "weight_smoothing": 0.1,
+    "exposure_epsilon": 1e-12,
+    "attention_capacity": 3,
+    "exposure_ema": 0.05,
+    "ranking_weights": [
+      0.35,
+      0.25,
+      0.15,
+      0.15,
+      0.1
+    ]
+  },
+  "social": {
+    "infection_beta": 0.3,
+    "recovery_gamma": 0.1,
+    "resusceptibility_delta": 0.05,
+    "pressure_coefficients": [
+      0.4,
+      0.4,
+      0.2
+    ],
+    "duration_recovery": 0.02,
+    "echo_recovery": 0.5,
+    "pressure_resusceptibility": 0.5,
+    "pessimism_threshold": 0.2,
+    "pessimistic_neighbor_threshold": 0.5,
+    "herding_weight_transfer": 0.5,
+    "confidence_drop": 0.05,
+    "confidence_recovery": 0.02,
+    "confidence_target": 0.6,
+    "return_scale": 0.01,
+    "emotion_noise_sd": 0.02,
+    "emotion_weights": {
+      "technical": [
+        0.6,
+        0.1,
+        0.1,
+        0.2
+      ],
+      "news": [
+        0.35,
+        0.35,
+        0.2,
+        0.1
+      ],
+      "herding": [
+        0.25,
+        0.15,
+        0.5,
+        0.1
+      ]
+    }
+  },
+  "behavior": {
+    "prospect_alpha": 0.88,
+    "direction_scale": 10.0,
+    "reference_update": [
+      0.03,
+      0.1,
+      0.16,
+      0.18
+    ],
+    "reference_weight": [
+      0.34,
+      0.26,
+      0.2,
+      0.2
+    ],
+    "rolling_high_window": 100,
+    "peer_price_amplitude": 0.05,
+    "policy_price_amplitude": 0.05,
+    "loss_pressure_multiplier": 0.5,
+    "loss_pressure_min": 1.0,
+    "loss_pressure_max": 5.0,
+    "loss_pressure_scale": 4.0,
+    "risk_weights": [
+      0.35,
+      0.45,
+      0.1,
+      0.1,
+      0.15
+    ],
+    "intention_weights": [
+      0.45,
+      0.4,
+      0.15
+    ],
+    "action_logistic_scale": 5.0,
+    "hold_threshold": 0.25,
+    "resource_fraction_min": 0.01,
+    "resource_fraction_max": 0.1,
+    "quote_log_noise_sd": 0.002,
+    "reverse_retrospective": false
+  },
+  "cognition_mode": "rule",
+  "policy_backend": "rule",
+  "slow_agents": 10,
+  "slow_period": 10,
+  "maximum_cache_age": 10,
+  "memory_policy": "no_extra_memory_kdd01",
+  "event_triggered_calls": false,
+  "interventions": [],
+  "baseline": "homogeneous_linear_value",
+  "burn_in_ticks": 0,
+  "quiet_after_burn_in": false
+}

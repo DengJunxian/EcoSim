@@ -1,0 +1,77 @@
+\appendix
+\section{补充方法细节与提示词架构}
+\label{sec:appendix_zh}
+
+\subsection{观察与决策契约}
+\label{app:prompt_zh}
+
+观察包含账户、公共市场事实及私人记录。市场视图通过 \texttt{as\_of\_tick} 标记上一步的已提交行情，并提供当步政策状态和事件。私人记录包含画像、更新后的行为状态、所选消息和缓存。认知配置还提供从下一步开始可见的本人近期执行回执。
+
+代码清单~\ref{lst:prompt_zh}示例为符合类型约束的观望响应。主体、观察及版本标识与本次请求对应。后端返回一个观望动作或一张有类型的委托，后者包含资产、方向、股数和整数报价档位。证据标识指向观察内可见事实。交易所在执行阶段校验价格和资源约束。
+
+\noindent\begin{minipage}{\columnwidth}
+\begin{lstlisting}[caption={观望动作响应示例。}, label={lst:prompt_zh}, basicstyle=\ttfamily\scriptsize, breaklines=true, frame=single, aboveskip=3pt, belowskip=3pt]
+{
+  "schema_version": 3,
+  "decision_id": "decision-example",
+  "actor_id": "agent-example",
+  "observation_id": "observation-example",
+  "batch_id": "batch-example",
+  "observation_version": 1,
+  "world_version": 1,
+  "tick": 1,
+  "policy_id": "kdd27_policy",
+  "policy_version": "2",
+  "economic_intents": [
+    {"kind": "hold", "intent_id": "intent-example"}
+  ],
+  "evidence_ids": [],
+  "belief_patch": {},
+  "message_drafts": []
+}
+\end{lstlisting}
+\end{minipage}
+
+\section{基准配置与结果明细}
+\label{app:benchmark_details_zh}
+
+\paragraph{多日评价的参考配置。}
+表~\ref{tab:params}与表~\ref{tab:behavior}记录长周期参考方案，其中 $N=10{,}000$、$T=20{,}000$、每个交易日 $T_{\rm day}=100$ 步，共 200 个交易日，含 50 日预热。日频协议计算有限样本校正的超额峰度、收益率和绝对收益率的 1--20 阶自相关，以及成交量与绝对收益率的相关性。表~\ref{tab:measured_design}单列本研究实际采用的基准配置。
+
+\input{tables/tab_params}
+\input{tables/tab_behavior}
+
+\paragraph{基准结果明细。}
+表~\ref{tab:invariants}逐条报告账本核验。表~\ref{tab:rq1_results}汇总日内轨迹，表~\ref{tab:rq2_results}报告全部共同父世界分支的结果。表~\ref{tab:pilot}和表~\ref{tab:rq3_results}分别记录决策计数与计算开销。
+
+\input{tables/tab_invariants}
+\input{tables/tab_rq1_results}
+\input{tables/tab_rq2_results}
+\input{tables/tab_pilot}
+\input{tables/tab_rq3_results}
+
+\section{调度与校验器诊断}
+\label{app:timing_zh}
+
+调度核对使用 $N=100$、$T=4{,}000$ 的认知参考配置及 20 个固定种子的活跃掩码。在仿真步 1,200，所有主体的市场视图均含有公告。按计划发出包含文本的请求，需要主体在该步活跃并符合模型请求资格。图~\ref{fig:schedule_exposure_zh}右图给出逐种子计数。
+
+两种严格校验器处理同一个 $N=100$、$T=12$ 的规则世界。图~\ref{fig:timing_supp_zh}给出三组配对计时。
+
+\begin{figure*}[t]
+ \centering
+ \begin{subfigure}{0.96\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figures/schedule_exposure.pdf}
+  \caption{期望请求缩减与公告请求资格。}
+  \label{fig:schedule_exposure_zh}
+ \end{subfigure}
+ \par\medskip
+ \begin{subfigure}{0.55\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figures/engineering_timing.pdf}
+  \caption{两种严格校验器的配对壁钟耗时。}
+  \label{fig:timing_supp_zh}
+ \end{subfigure}
+ \caption{调度与校验器诊断。（a）左图设 $N=100$、期限为周期整数倍，改变周期 $T_{\mathrm{slow}}$ 与慢组人数 $k$。右图记录公告发布时具备请求资格的活跃主体数。（b）各条连线连接同一规则世界下通用与标量优化校验器的配对计时。}
+ \Description{调度的期望请求缩减率、20 个种子的公告请求资格计数和严格校验配对计时。}
+\end{figure*}

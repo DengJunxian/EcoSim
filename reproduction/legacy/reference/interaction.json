@@ -1,0 +1,14 @@
+{
+  "cells": {
+    "00": 0.0014533475438427423,
+    "01": 0.0014533475438427423,
+    "10": 0.004754050645192631,
+    "11": 0.004754050645192631
+  },
+  "ci95": null,
+  "metric": "mdd",
+  "reason": "ONE_ENGINEERING_WORLD",
+  "resampling_unit": "world_seed",
+  "value": 0.0,
+  "world_seed": 933001
+}

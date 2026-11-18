@@ -1,0 +1,15 @@
+\begin{table*}[t]
+  \centering\small
+  \caption{\tr{九类画像及三类配对对比的固定观察响应。各后端均在相同的 54 个请求单元上评价。变化计数以每类九对为分母。}{Fixed-observation responses across nine archetypes and three paired contrasts. All backends use the same 54 cells. Signature changes are counted out of nine pairs per contrast.}}
+  \label{tab:pilot}
+  \begin{tabularx}{\textwidth}{@{}X rrr c ccc@{}}
+    \toprule
+    \tr{决策后端}{Backend} & HOLD & BUY & SELL & \tr{资源可行}{Resource feasible} &
+    \tr{价格签名变化}{Price changes} & \tr{锁定签名变化}{Lock changes} & \tr{现金签名变化}{Cash changes} \\
+    \midrule
+    \tr{数值规则}{Numerical rules} & 9 & 45 & 0 & 54/54 & 9/9 & 0/9 & 9/9 \\
+    \tr{画像启发式}{Persona heuristics} & 27 & 9 & 18 & 54/54 & 7/9 & 1/9 & 8/9 \\
+    \tr{真实 LLM}{Live LLM} & 54 & 0 & 0 & 54/54 & 0/9 & 0/9 & \mbox{0/9} \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}

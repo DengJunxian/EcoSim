@@ -1,0 +1,22 @@
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Behavioral Finance and Social Relations}
+
+Prospect theory describes reference dependence, loss aversion, and diminishing sensitivity~\cite{kahneman1979prospect,tversky1992advances}. Mental accounting and endogenous references explain how one price can be assessed against different benchmarks~\cite{thaler1985mental,koszegi2006model}. The disposition effect motivates tracking acquisition costs separately from current prices~\cite{shefrin1985disposition,odean1998reluctant}. Civitas connects these financial states to person-to-person relations through portfolio-exposure similarity. Acquisition cost, recent highs, peer consensus, and policy signals enter reference-dependent valuation.
+
+Social psychology studies group affiliation, emotional contagion, and informational and normative influence~\cite{tajfel1979integrative,hatfield1993emotional,deutsch1955study}. Small-world connectivity and selective exposure motivate the contact network and access to information~\cite{watts1998collective,sunstein2001republic}. At the person-to-group scale, Civitas uses attention-bounded message selection and synchronous panic transitions to update local social states. Confidence controls the weight placed on peers. Investor archetypes specify heterogeneous roles independently of network position. The modeled group feedback arises through neighborhood interaction.
+
+\subsection{Coordination and Market Institutions}
+
+Strategic complementarities, expectations about others' valuations, and public-information games describe incentives to coordinate~\cite{cooper1988coordinating,keynes1936general,morris2002social}. Information-cascade models explain how earlier actions influence later decisions~\cite{bikhchandani1992theory,banerjee1992simple}. Noise-trader risk and limits to arbitrage explain why price deviations can persist~\cite{delong1990noise,shleifer1997limits}. These theories motivate peer-dependent updates in Civitas, which evolves its specified behavioral rules forward in time. Its group-to-society scale is the modeled market institution, where collective orders produce prices and trading opportunities that feed back into individual decisions.
+
+Exchange design governs this aggregation. Zero-intelligence experiments isolate the contribution of budget constraints and double-auction rules~\cite{gode1993allocative}. Interacting chartist and fundamentalist models generate heavy tails and volatility clustering~\cite{lux1999scaling,lux2000volatility,raberto2001agent}. Microstructure theory links price formation to information asymmetry~\cite{kyle1985continuous,glosten1985bid}. ABIDES provides a discrete-event limit order book with configurable communication delays and programmable agents~\cite{abides2020}. Civitas uses discrete decision barriers followed by sequential order arrivals at a continuous double auction, with a common information boundary before matching.
+
+\subsection{Language Models in Market Simulations}
+
+Generative agents interpret observations and enact roles through language~\cite{park2023generative}. Financial applications include layered memory in FinMem, multimodal signals and tools in FinAgent, and role-based trading in StockAgent and TradingAgents~\cite{yu2023finmem,zhang2024finagent,li2024stockagent,xiao2024tradingagents}. EconAgent models household labor and consumption~\cite{li2024econagent}. TwinMarket couples belief--desire--intention investors and social information to a call auction~\cite{yang2025twinmarket}. MarketSim separates strategic LLM decisions from high-frequency execution in a continuous double auction~\cite{marketsim2026}. StockSim provides order-level LLM evaluation with two execution settings, latency, and slippage~\cite{papadakis2025stocksim}.
+
+Table~\ref{tab:related_comparison} separates exchange design, social and behavioral mechanisms, decision organization, and evaluation focus. Civitas combines independently adjustable social and valuation rules with integer accounting and branches from a shared state. The comparison follows changes from interpersonal exposure and group feedback to order intent and execution under a common decision contract.
+
+\input{tables/tab_related_comparison}
