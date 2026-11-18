@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "design_fixed_no_health_plot_generated",
+  "plan": {
+    "completion_package_relative_path": "reviews/capacity/health-pilot-v2/plan.json",
+    "sha256": "eb0644f91d9f8293e11c7d40be0e31b00a0885306f6cefee7785b4cd0223909e",
+    "campaign_id": "kdd27-health-pilot-20261114-v1",
+    "revision": 2
+  },
+  "independent_seed_units": 3,
+  "planned_trajectories": 9,
+  "seeds": [
+    932201,
+    932202,
+    932203
+  ],
+  "baselines": [
+    "full",
+    "zero_intelligence",
+    "homogeneous_linear_value"
+  ],
+  "trajectory_config_sha256": {
+    "seed-932201-full": "b29a202515bc8570b1476a26b73dce882d556ef3037079c22fa980c235b6a3c1",
+    "seed-932201-zero_intelligence": "23c38c8386be5b8c6e462a036aab68a9402adeef9dfc9cf3057905cda9904833",
+    "seed-932201-homogeneous_linear_value": "5bf3a317ebc427b557fe6d05cae4a859ce4cc9304d5bb994a8348716d246be93",
+    "seed-932202-full": "52135ea1311f39be0cbbe7b797ec7b427cfcf4be78ec5715695866fd1e1bca27",
+    "seed-932202-zero_intelligence": "2452e912d16795c60dc0f81ee813a489de44e565847b82d67a3ae751045ec309",
+    "seed-932202-homogeneous_linear_value": "69dc9383c6fb8fc7b3834f1ee1e5ff0575afaa570882f74747fa5832bcc07ffb",
+    "seed-932203-full": "43da672877444ff7ad127b6bec91f9d48c31b4b76bf1d772576c95ed41c526ed",
+    "seed-932203-zero_intelligence": "a1b01b67d909300afaf6a2e1a9f3951b9b978afca4de2126a3273fa6ab201efc",
+    "seed-932203-homogeneous_linear_value": "1fa9634686b3176ff3c935027d5695c0c87842e1b03e3b4925565627039bb8dc"
+  },
+  "n_agents": 100,
+  "ticks": 100,
+  "burn_in_ticks": 0,
+  "ticks_per_day": 100,
+  "metric_definition": "kdd27-metrics-v1",
+  "metric_source": "civitas.analytics.kdd27_data.analyze_run",
+  "panels": [
+    "raw no_trade_ratio",
+    "raw two_sided_coverage",
+    "paired full-minus-comparator no_trade_ratio",
+    "paired full-minus-comparator two_sided_coverage"
+  ],
+  "raw_axis_percent": [
+    0,
+    100
+  ],
+  "paired_axis_rule": "symmetric shared half-range ceil(max absolute paired pp across both panels / 10) * 10; minimum 10; maximum 100",
+  "seed_markers": [
+    "circle",
+    "triangle",
+    "square"
+  ],
+  "fixed_horizontal_offsets": [
+    -0.13,
+    0,
+    0.13
+  ],
+  "vertical_jitter": false,
+  "intervals_or_significance_tests": false,
+  "failure_policy": "all 9 planned rows retained; eligible complete outcomes only; null is NA with reason, never zero; paired point only when both same-seed outcomes valid",
+  "daily_undefined": [
+    "kurtosis",
+    "raw_return_acf",
+    "absolute_return_acf"
+  ],
+  "daily_undefined_reason": "one complete daily return per trajectory; no tick-return substitution",
+  "memo_sha256": "c6242e0f6f267ab1f737ee83668e06d0b8b499be840a71ad19f23194a4b5568c",
+  "figure_generated": false,
+  "memo_sha256_at_health_display_freeze": "b0bcaa4c56b79a5c0485e94b1865d7f745029987eef28613a6e92a7fe350d6d5",
+  "memo_update": "Added explicit full behavioral-rule name and file-byte/resolved-hash distinction; frozen panels,metric rules and seed units unchanged",
+  "trajectory_config_sha256_semantics": "SHA256 of original configuration file bytes; distinct from resolved configuration content hash",
+  "trajectory_resolved_config_hash": {
+    "seed-932201-full": "cd7f54c9fd1075650fa7f84e0a68db2d6072641fc73d68976084ee8a554f4149",
+    "seed-932201-zero_intelligence": "e17c5e417866ba7c10262332a764310665bd64e616cd07acb1436cc619144f9f",
+    "seed-932201-homogeneous_linear_value": "66ec4166d204b45d4e3ea62d13db1ae5e58894f842f0da63c09e2876b1c6cfae",
+    "seed-932202-full": "fe8b4a840efb0b47f28682ef32f120e9c6dbdfe8e0787404404f7e491e3a4237",
+    "seed-932202-zero_intelligence": "e95a025fb9cdffeb9444ccde35ef12f9fb92657d76a35c40672f72603c918a35",
+    "seed-932202-homogeneous_linear_value": "d85081cf6d36b960d2eb3b7daa90b186960197e28108560a4bb89e50f3b88e1b",
+    "seed-932203-full": "d9fd575bead2d56b164dca739b9fc3faac47837c981fd1e8ba9b72ef5fa00b1d",
+    "seed-932203-zero_intelligence": "b9d89865612628f192af8c6d3f8f1e598bc25eb29c8b1be95bfdb0ff4fdac433",
+    "seed-932203-homogeneous_linear_value": "4663e6fc3ba32ad4afea791d6e99e327d919b68ce3ee06ce229406624970c8a0"
+  },
+  "baseline_display_names": {
+    "full": "Full behavioral-rule",
+    "zero_intelligence": "Zero intelligence",
+    "homogeneous_linear_value": "Homogeneous linear-value"
+  },
+  "full_label_scope": "Full means the full behavioral-rule baseline in RQ1/health, not the full-LLM backend in RQ3"
+}
